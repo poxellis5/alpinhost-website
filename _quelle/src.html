@@ -408,10 +408,43 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
         <div class="field">
           <label for="region">Wo liegt die Wohnung?</label>
           <select id="region">
-            <option value="jungfrau">Grindelwald und Jungfrau Region</option>
-            <option value="bern">Bern und Umgebung</option>
-            <option value="innerschweiz">Luzern und Innerschweiz</option>
-            <option value="ch">Übrige Schweiz</option>
+            <optgroup label="Berner Oberland">
+              <option value="grindelwald" selected>Grindelwald</option>
+              <option value="lauterbrunnen">Wengen, Mürren, Lauterbrunnen</option>
+              <option value="interlaken">Interlaken</option>
+              <option value="thun">Thun und Thunersee</option>
+              <option value="gstaad">Gstaad und Saanenland</option>
+            </optgroup>
+            <optgroup label="Zentralschweiz">
+              <option value="luzern">Stadt Luzern</option>
+              <option value="vierwaldstaettersee">Vierwaldstättersee (Weggis, Vitznau, Brunnen)</option>
+              <option value="engelberg">Engelberg</option>
+              <option value="andermatt">Andermatt</option>
+            </optgroup>
+            <optgroup label="Wallis">
+              <option value="zermatt">Zermatt</option>
+              <option value="verbier">Verbier</option>
+              <option value="saasfee">Saas-Fee</option>
+              <option value="crans">Crans-Montana</option>
+            </optgroup>
+            <optgroup label="Graubünden">
+              <option value="stmoritz">St. Moritz und Engadin</option>
+              <option value="davos">Davos und Klosters</option>
+              <option value="laax">Laax und Flims</option>
+              <option value="arosa">Arosa und Lenzerheide</option>
+            </optgroup>
+            <optgroup label="Städte">
+              <option value="zuerich">Zürich</option>
+              <option value="bern">Bern</option>
+              <option value="basel">Basel</option>
+              <option value="genf">Genf</option>
+              <option value="lausanne">Lausanne</option>
+            </optgroup>
+            <optgroup label="Tessin">
+              <option value="lugano">Lugano</option>
+              <option value="locarno">Locarno und Ascona</option>
+            </optgroup>
+            <option value="anders">Anderer Ort in der Schweiz</option>
           </select>
         </div>
         <fieldset class="field">
@@ -430,12 +463,13 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
             <input type="radio" name="pkg" id="p20" value="0.21" checked><label for="p20">Komplett 21 %</label>
           </div>
         </fieldset>
-        <p style="font-size:14px;color:var(--muted)">Annahmen pro Region: Auslastung und Nachtpreis vorsichtig gesetzt, unter den Werten erfolgreicher Gastgeber. Grundlage: Airbtics, Auswertung der Airbnb-Gastgeber in Interlaken-Oberhasli (mittlere Auslastung 71 %) und Luzern (68 %), Stand November 2026.</p>
+        <p style="font-size:14px;color:var(--muted)">Grundlage sind echte Marktdaten pro Ort: durchschnittliche Auslastung und Nachtpreis aller aktiven Airbnb-Inserate der letzten 12 Monate (November 2025 bis Oktober 2026, Quelle GuestFavorites). Der Nachtpreis wird nach Wohnungsgrösse angepasst.</p>
       </form>
       <div class="out" aria-live="polite">
         <p class="eyebrow">Geschätzt pro Monat, im Jahresschnitt</p>
         <div class="big num" id="res">CHF 0</div>
         <div class="lines num" id="lines"></div>
+        <p class="fine" id="basis" style="color:#C9D6DD"></p>
         <div class="warn" id="warn" hidden></div>
         <p class="fine">Vor Steuern, Nebenkosten, Versicherung und Verbrauchsmaterial. Keine Ertragsgarantie. Die Zahlen sind eine Schätzung und ersetzen keine Besichtigung.</p>
       </div>
@@ -592,37 +626,66 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
 
 <script>
 (function(){
-  // Vorsichtige Annahmen pro Region. Nachtpreis nach Zimmerzahl (1, 2, 3, 4+), Auslastung.
+  // Marktdaten pro Ort: Ø Auslastung und Ø Nachtpreis aller aktiven Airbnb-Inserate, Nov 2025 - Okt 2026 (GuestFavorites).
+  // Der Ø Nachtpreis liegt über dem Median (grosse Chalets ziehen ihn hoch). 2 Zimmer = ca. 70 % davon, entspricht dem Median. Faktoren nach Grösse (1, 2, 3, 4+ Zimmer).
   var R = {
-    jungfrau:{name:"Grindelwald und Jungfrau Region", adr:[170,230,300,390], occ:0.60, cap:null},
-    bern:{name:"Bern und Umgebung", adr:[130,170,225,300], occ:0.58, cap:null},
-    innerschweiz:{name:"Luzern und Innerschweiz", adr:[140,180,240,320], occ:0.60, cap:null},
-    ch:{name:"Übrige Schweiz", adr:[120,160,210,280], occ:0.50, cap:null}
+    grindelwald:{name:"Grindelwald", n:570, occ:0.72, adr:296},
+    lauterbrunnen:{name:"Wengen, Mürren, Lauterbrunnen", n:535, occ:0.65, adr:343},
+    interlaken:{name:"Interlaken", n:315, occ:0.67, adr:327},
+    thun:{name:"Thun und Thunersee", n:111, occ:0.68, adr:197},
+    gstaad:{name:"Gstaad und Saanenland", n:260, occ:0.61, adr:289},
+    luzern:{name:"Stadt Luzern", n:256, occ:0.76, adr:277},
+    vierwaldstaettersee:{name:"Vierwaldstättersee (Weggis, Vitznau, Brunnen)", n:0, occ:0.68, adr:230},
+    engelberg:{name:"Engelberg", n:227, occ:0.61, adr:199},
+    andermatt:{name:"Andermatt", n:244, occ:0.58, adr:229},
+    zermatt:{name:"Zermatt", n:875, occ:0.61, adr:389},
+    verbier:{name:"Verbier", n:762, occ:0.54, adr:401},
+    saasfee:{name:"Saas-Fee", n:737, occ:0.54, adr:272},
+    crans:{name:"Crans-Montana", n:664, occ:0.51, adr:202},
+    stmoritz:{name:"St. Moritz und Engadin", n:372, occ:0.57, adr:293},
+    davos:{name:"Davos und Klosters", n:607, occ:0.54, adr:237},
+    laax:{name:"Laax und Flims", n:257, occ:0.54, adr:228},
+    arosa:{name:"Arosa und Lenzerheide", n:257, occ:0.51, adr:226},
+    zuerich:{name:"Zürich", n:1970, occ:0.67, adr:183},
+    bern:{name:"Bern", n:309, occ:0.66, adr:144},
+    basel:{name:"Basel", n:777, occ:0.63, adr:153},
+    genf:{name:"Genf", n:704, occ:0.68, adr:149},
+    lausanne:{name:"Lausanne", n:387, occ:0.67, adr:128},
+    lugano:{name:"Lugano", n:567, occ:0.64, adr:145},
+    locarno:{name:"Locarno und Ascona", n:270, occ:0.61, adr:161}
   };
+  var SIZE_ADR = [0.55, 0.7, 0.95, 1.35], SIZE_OCC = [1.04, 1.0, 0.97, 0.92];
   var FEE = 0.155;
   function chf(n){ return "CHF " + Math.round(n).toLocaleString("de-CH").replace(/,/g,"’"); }
   function val(name){ var el=document.querySelector('input[name="'+name+'"]:checked'); return el?parseFloat(el.value):0; }
   function calc(){
-    var r = R[document.getElementById("region").value];
+    var key = document.getElementById("region").value, r = R[key];
     var i = val("rooms"), c = val("pkg");
-    var nights = Math.round(365*r.occ);
-    var capped = r.cap && nights > r.cap;
-    if (capped) nights = r.cap;
-    var gross = nights * r.adr[i];
+    var w = document.getElementById("warn");
+    if (!r){
+      document.getElementById("res").innerHTML = "Persönliche Schätzung";
+      document.getElementById("lines").innerHTML = "";
+      document.getElementById("basis").textContent = "";
+      w.hidden=false; w.innerHTML='Für Ihren Ort rechnen wir mit echten Vergleichswohnungen aus der Nachbarschaft, kostenlos. <a href="#kontakt" style="color:inherit;font-weight:600">Wohnung prüfen lassen</a>';
+      return;
+    }
+    var occ = Math.min(r.occ*SIZE_OCC[i], 0.85);
+    var adr = Math.round(r.adr*SIZE_ADR[i]/5)*5;
+    var nights = Math.round(365*occ);
+    var gross = nights * adr;
     var fee = gross*FEE, net = gross-fee, comm = net*c, keep = net-comm;
     var m = keep/12;
     document.getElementById("res").innerHTML = chf(m*0.85) + " – " + chf(m*1.15).replace("CHF ","") + " <small>pro Monat</small>";
     document.getElementById("lines").innerHTML =
-      "<div><span>Nächte pro Jahr</span><span>"+nights+"</span></div>"+
-      "<div><span>Nachtpreis im Schnitt</span><span>"+chf(r.adr[i])+"</span></div>"+
+      "<div><span>Auslastung "+r.name+"</span><span>"+Math.round(occ*100)+" %</span></div>"+
+      "<div><span>Gebuchte Nächte pro Jahr</span><span>"+nights+"</span></div>"+
+      "<div><span>Nachtpreis im Schnitt</span><span>"+chf(adr)+"</span></div>"+
       "<div><span>Umsatz pro Jahr</span><span>"+chf(gross)+"</span></div>"+
       "<div><span>Plattformgebühr 15,5 %</span><span>− "+chf(fee).replace("CHF ","")+"</span></div>"+
       "<div><span>Provision "+Math.round(c*100)+" %</span><span>− "+chf(comm).replace("CHF ","")+"</span></div>"+
       "<div><span>Bleibt bei Ihnen pro Jahr</span><span>"+chf(keep)+"</span></div>";
-    var w = document.getElementById("warn");
-    if (false){}
-    else if (document.getElementById("region").value==="ch"){ w.hidden=false; w.textContent="Für die übrige Schweiz ist die Schätzung grob. Nachtpreise unterscheiden sich zwischen Bergort, Stadt und Land stark."; }
-    else { w.hidden=true; }
+    w.hidden=true;
+    document.getElementById("basis").textContent = r.n ? "Basis: "+r.n.toLocaleString("de-CH").replace(/,/g,"’")+" aktive Airbnb-Inserate in "+r.name+", Ø Nachtpreis "+chf(r.adr)+", Ø Auslastung "+Math.round(r.occ*100)+" %." : "Basis: Durchschnitt der Airbnb-Inserate in der Zentralschweiz, Ø Nachtpreis "+chf(r.adr)+", Ø Auslastung "+Math.round(r.occ*100)+" %.";
   }
   document.getElementById("calcform").addEventListener("change", calc);
   calc();

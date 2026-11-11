@@ -182,10 +182,43 @@
         <div class="field">
           <label for="region">Wo liegt die Wohnung?</label>
           <select id="region">
-            <option value="jungfrau">Grindelwald und Jungfrau Region</option>
-            <option value="bern">Bern und Umgebung</option>
-            <option value="innerschweiz">Luzern und Innerschweiz</option>
-            <option value="ch">Übrige Schweiz</option>
+            <optgroup label="Berner Oberland">
+              <option value="grindelwald" selected>Grindelwald</option>
+              <option value="lauterbrunnen">Wengen, Mürren, Lauterbrunnen</option>
+              <option value="interlaken">Interlaken</option>
+              <option value="thun">Thun und Thunersee</option>
+              <option value="gstaad">Gstaad und Saanenland</option>
+            </optgroup>
+            <optgroup label="Zentralschweiz">
+              <option value="luzern">Stadt Luzern</option>
+              <option value="vierwaldstaettersee">Vierwaldstättersee (Weggis, Vitznau, Brunnen)</option>
+              <option value="engelberg">Engelberg</option>
+              <option value="andermatt">Andermatt</option>
+            </optgroup>
+            <optgroup label="Wallis">
+              <option value="zermatt">Zermatt</option>
+              <option value="verbier">Verbier</option>
+              <option value="saasfee">Saas-Fee</option>
+              <option value="crans">Crans-Montana</option>
+            </optgroup>
+            <optgroup label="Graubünden">
+              <option value="stmoritz">St. Moritz und Engadin</option>
+              <option value="davos">Davos und Klosters</option>
+              <option value="laax">Laax und Flims</option>
+              <option value="arosa">Arosa und Lenzerheide</option>
+            </optgroup>
+            <optgroup label="Städte">
+              <option value="zuerich">Zürich</option>
+              <option value="bern">Bern</option>
+              <option value="basel">Basel</option>
+              <option value="genf">Genf</option>
+              <option value="lausanne">Lausanne</option>
+            </optgroup>
+            <optgroup label="Tessin">
+              <option value="lugano">Lugano</option>
+              <option value="locarno">Locarno und Ascona</option>
+            </optgroup>
+            <option value="anders">Anderer Ort in der Schweiz</option>
           </select>
         </div>
         <fieldset class="field">
@@ -204,12 +237,13 @@
             <input type="radio" name="pkg" id="p20" value="0.21" checked><label for="p20">Komplett 21 %</label>
           </div>
         </fieldset>
-        <p style="font-size:14px;color:var(--muted)">Annahmen pro Region: Auslastung und Nachtpreis vorsichtig gesetzt, unter den Werten erfolgreicher Gastgeber. Grundlage: Airbtics, Auswertung der Airbnb-Gastgeber in Interlaken-Oberhasli (mittlere Auslastung 71 %) und Luzern (68 %), Stand November 2026.</p>
+        <p style="font-size:14px;color:var(--muted)">Grundlage sind echte Marktdaten pro Ort: durchschnittliche Auslastung und Nachtpreis aller aktiven Airbnb-Inserate der letzten 12 Monate (November 2025 bis Oktober 2026, Quelle GuestFavorites). Der Nachtpreis wird nach Wohnungsgrösse angepasst.</p>
       </form>
       <div class="out" aria-live="polite">
         <p class="eyebrow">Geschätzt pro Monat, im Jahresschnitt</p>
         <div class="big num" id="res">CHF 0</div>
         <div class="lines num" id="lines"></div>
+        <p class="fine" id="basis" style="color:#C9D6DD"></p>
         <div class="warn" id="warn" hidden></div>
         <p class="fine">Vor Steuern, Nebenkosten, Versicherung und Verbrauchsmaterial. Keine Ertragsgarantie. Die Zahlen sind eine Schätzung und ersetzen keine Besichtigung.</p>
       </div>
