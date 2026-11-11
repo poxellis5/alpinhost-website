@@ -1,0 +1,1493 @@
+de: Bern
+en: Bern
+fr: Berne
+it: Berna
+es: Berna
+
+de: Genf
+en: Geneva
+fr: Genève
+it: Ginevra
+es: Ginebra
+
+de: Name
+en: Name
+fr: Nom
+it: Nome
+es: Nombre
+
+de: Fr–Mo
+en: Fri–Mon
+fr: ven–lun
+it: ven–lun
+es: vie–lun
+
+de: Basis
+en: Basic
+fr: Base
+it: Base
+es: Básico
+
+de: Basel
+en: Basel
+fr: Bâle
+it: Basilea
+es: Basilea
+
+de: Paket
+en: Package
+fr: Formule
+it: Pacchetto
+es: Paquete
+
+de: sofort
+en: instantly
+fr: immédiatement
+it: subito
+es: al instante
+
+de: Preise
+en: Pricing
+fr: Tarifs
+it: Prezzi
+es: Precios
+
+de: Zürich
+en: Zurich
+fr: Zurich
+it: Zurigo
+es: Zúrich
+
+de: Grösse
+en: Size
+fr: Taille
+it: Dimensione
+es: Tamaño
+
+de: Fragen
+en: FAQ
+fr: Questions
+it: Domande
+es: Preguntas
+
+de: Zimmer
+en: Rooms
+fr: Pièces
+it: Locali
+es: Habitaciones
+
+de: Mieter
+en: Tenant
+fr: Locataire
+it: Inquilino
+es: Inquilino
+
+de: Luzern
+en: Lucerne
+fr: Lucerne
+it: Lucerna
+es: Lucerna
+
+de: Anfrage
+en: Enquiry
+fr: Demande
+it: Richiesta
+es: Consulta
+
+de: Buchung
+en: Booking
+fr: Réservation
+it: Prenotazione
+es: Reserva
+
+de: Vor Ort
+en: On site
+fr: Sur place
+it: Sul posto
+es: En la zona
+
+de: Kontakt
+en: Contact
+fr: Contact
+it: Contatto
+es: Contacto
+
+de: Telefon
+en: Phone
+fr: Téléphone
+it: Telefono
+es: Teléfono
+
+de: Schweiz
+en: Switzerland
+fr: Suisse
+it: Svizzera
+es: Suiza
+
+de: Haftung
+en: Liability
+fr: Responsabilité
+it: Responsabilità
+es: Responsabilidad
+
+de: Do 18:00
+en: Thu 18:00
+fr: jeu 18:00
+it: gio 18:00
+es: jue 18:00
+
+de: Fr 16:00
+en: Fri 16:00
+fr: ven 16:00
+it: ven 16:00
+es: vie 16:00
+
+de: Mo 10:00
+en: Mon 10:00
+fr: lun 10:00
+it: lun 10:00
+es: lun 10:00
+
+de: Mo 20:00
+en: Mon 20:00
+fr: lun 20:00
+it: lun 20:00
+es: lun 20:00
+
+de: 1 Zimmer
+en: 1 room
+fr: 1 pièce
+it: 1 locale
+es: 1 habitación
+
+de: 2 Zimmer
+en: 2 rooms
+fr: 2 pièces
+it: 2 locali
+es: 2 habitaciones
+
+de: 3 Zimmer
+en: 3 rooms
+fr: 3 pièces
+it: 3 locali
+es: 3 habitaciones
+
+de: 4+ Zimmer
+en: 4+ rooms
+fr: 4+ pièces
+it: 4+ locali
+es: 4+ habitaciones
+
+de: Regionen
+en: Regions
+fr: Régions
+it: Regioni
+es: Regiones
+
+de: Über uns
+en: About us
+fr: À propos
+it: Chi siamo
+es: Quiénes somos
+
+de: Kopieren
+en: Copy
+fr: Copier
+it: Copia
+es: Copiar
+
+de: Sie sind
+en: You are the
+fr: Vous êtes
+it: Lei è
+es: Usted es
+
+de: Komplett
+en: Complete
+fr: Complet
+it: Completo
+es: Completo
+
+de: Anfragen
+en: Enquiries
+fr: Demandes
+it: Richieste
+es: Consultas
+
+de: Check-out
+en: Check-out
+fr: Départ
+it: Check-out
+es: Salida
+
+de: Check-in
+en: Check-in
+fr: Arrivée
+it: Check-in
+es: Llegada
+
+de: Bewertung
+en: Review
+fr: Évaluation
+it: Recensione
+es: Reseña
+
+de: Impressum
+en: Imprint
+fr: Mentions légales
+it: Note legali
+es: Aviso legal
+
+de: Leistungen
+en: Services
+fr: Prestations
+it: Servizi
+es: Servicios
+
+de: Aufenthalt
+en: Stay
+fr: Séjour
+it: Soggiorno
+es: Estancia
+
+de: Monatsende
+en: Month end
+fr: Fin du mois
+it: Fine mese
+es: Fin de mes
+
+de: Abrechnung
+en: Statement
+fr: Décompte
+it: Rendiconto
+es: Liquidación
+
+de: Basis 18 %
+en: Basic 18 %
+fr: Base 18 %
+it: Base 18 %
+es: Básico 18 %
+
+de: Eigentümer
+en: Owner
+fr: Propriétaire
+it: Proprietario
+es: Propietario
+
+de: Noch offen
+en: Not sure yet
+fr: Pas encore décidé
+it: Ancora da decidere
+es: Aún no lo sé
+
+de: Schliessen
+en: Close
+fr: Fermer
+it: Chiudi
+es: Cerrar
+
+de: Kurze Wege
+en: Close by
+fr: Toujours à proximité
+it: Sempre vicini
+es: Siempre cerca
+
+de: 4 oder mehr
+en: 4 or more
+fr: 4 ou plus
+it: 4 o più
+es: 4 o más
+
+de: Ihre Rechte
+en: Your rights
+fr: Vos droits
+it: I Suoi diritti
+es: Sus derechos
+
+de: Konditionen
+en: Terms
+fr: Conditions
+it: Condizioni
+es: Condiciones
+
+de: Anreise-Info
+en: Arrival info
+fr: Infos d'arrivée
+it: Info d'arrivo
+es: Info de llegada
+
+de: Basis wählen
+en: Choose Basic
+fr: Choisir Base
+it: Scegli Base
+es: Elegir Básico
+
+de: Stadt Luzern
+en: Lucerne city
+fr: Ville de Lucerne
+it: Città di Lucerna
+es: Ciudad de Lucerna
+
+de: Mit Partnern
+en: With partners
+fr: Avec partenaires
+it: Con partner
+es: Con socios locales
+
+de: Innerschweiz
+en: Central Switzerland
+fr: Suisse centrale
+it: Svizzera centrale
+es: Suiza central
+
+de: Bildnachweis
+en: Photo credits
+fr: Crédits photos
+it: Crediti fotografici
+es: Créditos de las fotos
+
+de: Komplett 21 %
+en: Complete 21 %
+fr: Complet 21 %
+it: Completo 21 %
+es: Completo 21 %
+
+de: Ganze Schweiz
+en: All of Switzerland
+fr: Toute la Suisse
+it: Tutta la Svizzera
+es: Toda Suiza
+
+de: ganze Schweiz
+en: all of Switzerland
+fr: toute la Suisse
+it: tutta la Svizzera
+es: toda Suiza
+
+de: Rechenbeispiel
+en: Worked example
+fr: Exemple de calcul
+it: Esempio di calcolo
+es: Ejemplo de cálculo
+
+de: Ertragsrechner
+en: Income calculator
+fr: Calculateur de revenus
+it: Calcolatore di ricavi
+es: Calculadora de ingresos
+
+de: Laax und Flims
+en: Laax and Flims
+fr: Laax et Flims
+it: Laax e Flims
+es: Laax y Flims
+
+de: Mehr zu Bern →
+en: More about Bern →
+fr: En savoir plus sur Berne →
+it: Scopri Berna →
+es: Más sobre Berna →
+
+de: Verantwortlich
+en: Controller
+fr: Responsable
+it: Titolare
+es: Responsable
+
+de: Komplett wählen
+en: Choose Complete
+fr: Choisir Complet
+it: Scegli Completo
+es: Elegir Completo
+
+de: Was separat ist
+en: What is charged separately
+fr: Ce qui est facturé à part
+it: Cosa si paga a parte
+es: Qué se cobra aparte
+
+de: Ort der Wohnung
+en: Apartment location
+fr: Lieu du logement
+it: Località dell'appartamento
+es: Ubicación del apartamento
+
+de: Hauptnavigation
+en: Main navigation
+fr: Navigation principale
+it: Navigazione principale
+es: Navegación principal
+
+de: Jungfrau Region
+en: Jungfrau Region
+fr: Région de la Jungfrau
+it: Regione della Jungfrau
+es: Región de la Jungfrau
+
+de: Wo wir arbeiten
+en: Where we work
+fr: Où nous intervenons
+it: Dove lavoriamo
+es: Dónde trabajamos
+
+de: Ertrag berechnen
+en: Calculate income
+fr: Calculer les revenus
+it: Calcola i ricavi
+es: Calcular ingresos
+
+de: Preise jeden Tag
+en: Daily pricing
+fr: Prix ajustés chaque jour
+it: Prezzi ogni giorno
+es: Precios cada día
+
+de: Wohnung anmelden
+en: Register your apartment
+fr: Inscrire votre logement
+it: Registra l'appartamento
+es: Registrar su apartamento
+
+de: z.B. Grindelwald
+en: e.g. Grindelwald
+fr: p. ex. Grindelwald
+it: p. es. Grindelwald
+es: p. ej. Grindelwald
+
+de: Weitere Regionen
+en: Other regions
+fr: Autres régions
+it: Altre regioni
+es: Otras regiones
+
+de: Inserat und Fotos
+en: Listing and photos
+fr: Annonce et photos
+it: Annuncio e foto
+es: Anuncio y fotos
+
+de: Was nichts kostet
+en: What costs nothing
+fr: Ce qui est gratuit
+it: Cosa non costa nulla
+es: Qué no cuesta nada
+
+de: In allen Kantonen
+en: In every canton
+fr: Dans tous les cantons
+it: In tutti i cantoni
+es: En todos los cantones
+
+de: Vor Ort in Luzern
+en: On site in Lucerne
+fr: Sur place à Lucerne
+it: Sul posto a Lucerna
+es: En Lucerna, en persona
+
+de: Was von uns kommt
+en: What we handle
+fr: Ce que nous assurons
+it: Cosa facciamo noi
+es: De qué nos encargamos
+
+de: Worauf wir rechnen
+en: What we charge on
+fr: Base de calcul
+it: Su cosa calcoliamo
+es: Sobre qué calculamos
+
+de: Thun und Thunersee
+en: Thun and Lake Thun
+fr: Thoune et lac de Thoune
+it: Thun e lago di Thun
+es: Thun y lago de Thun
+
+de: Davos und Klosters
+en: Davos and Klosters
+fr: Davos et Klosters
+it: Davos e Klosters
+es: Davos y Klosters
+
+de: Locarno und Ascona
+en: Locarno and Ascona
+fr: Locarno et Ascona
+it: Locarno e Ascona
+es: Locarno y Ascona
+
+de: Kostenlose Prüfung
+en: Free assessment
+fr: Évaluation gratuite
+it: Valutazione gratuita
+es: Evaluación gratuita
+
+de: Ganzjährig gefragt
+en: In demand all year
+fr: Demandé toute l'année
+it: Richiesta tutto l'anno
+es: Demanda todo el año
+
+de: Konditionen ansehen
+en: See terms
+fr: Voir les conditions
+it: Vedi le condizioni
+es: Ver condiciones
+
+de: <span>E-Mail</span>
+en: <span>Email</span>
+fr: <span>E-mail</span>
+it: <span>E-mail</span>
+es: <span>Correo electrónico</span>
+
+de: Reinigung und Wäsche
+en: Cleaning and laundry
+fr: Ménage et linge
+it: Pulizia e biancheria
+es: Limpieza y lavandería
+
+de: Komplett · empfohlen
+en: Complete · recommended
+fr: Complet · recommandé
+it: Completo · consigliato
+es: Completo · recomendado
+
+de: Nachricht (optional)
+en: Message (optional)
+fr: Message (facultatif)
+it: Messaggio (facoltativo)
+es: Mensaje (opcional)
+
+de: Datenschutzerklärung
+en: Privacy policy
+fr: Politique de confidentialité
+it: Informativa sulla privacy
+es: Política de privacidad
+
+de: Internationale Gäste
+en: International guests
+fr: Des hôtes du monde entier
+it: Ospiti internazionali
+es: Huéspedes internacionales
+
+de: Stadt, See und Berge
+en: City, lake and mountains
+fr: Ville, lac et montagnes
+it: Città, lago e montagne
+es: Ciudad, lago y montañas
+
+de: Wohnung prüfen lassen
+en: Get a free assessment
+fr: Faire évaluer mon logement
+it: Far valutare l'appartamento
+es: Evaluar mi apartamento
+
+de: Schweizer Unternehmen
+en: Swiss company
+fr: Entreprise suisse
+it: Azienda svizzera
+es: Empresa suiza
+
+de: Gäste rund um die Uhr
+en: Guests around the clock
+fr: Hôtes 24 h sur 24
+it: Ospiti 24 ore su 24
+es: Huéspedes las 24 horas
+
+de: Was bleibt bei Ihnen?
+en: What do you keep?
+fr: Que vous reste-t-il ?
+it: Quanto Le rimane?
+es: ¿Cuánto le queda?
+
+de: Wo liegt die Wohnung?
+en: Where is the apartment?
+fr: Où se trouve le logement ?
+it: Dove si trova l'appartamento?
+es: ¿Dónde está el apartamento?
+
+de: Gstaad und Saanenland
+en: Gstaad and Saanenland
+fr: Gstaad et Saanenland
+it: Gstaad e Saanenland
+es: Gstaad y Saanenland
+
+de: Arosa und Lenzerheide
+en: Arosa and Lenzerheide
+fr: Arosa et Lenzerheide
+it: Arosa e Lenzerheide
+es: Arosa y Lenzerheide
+
+de: Alpinhost, Startseite
+en: Alpinhost, home
+fr: Alpinhost, accueil
+it: Alpinhost, home
+es: Alpinhost, inicio
+
+de: 18 % – 21 % Provision
+en: 18 % – 21 % commission
+fr: Commission de 18 % à 21 %
+it: Provvigione dal 18 % al 21 %
+es: Comisión del 18 % al 21 %
+
+de: Impressum | Alpinhost
+en: Imprint | Alpinhost
+fr: Mentions légales | Alpinhost
+it: Note legali | Alpinhost
+es: Aviso legal | Alpinhost
+
+de: Hosting und Schriften
+en: Hosting and fonts
+fr: Hébergement et polices
+it: Hosting e caratteri
+es: Alojamiento web y fuentes
+
+de: Abrechnung und Bericht
+en: Statements and reports
+fr: Décompte et rapport
+it: Rendiconto e report
+es: Liquidación e informe
+
+de: Airbnb und Booking.com
+en: Airbnb and Booking.com
+fr: Airbnb et Booking.com
+it: Airbnb e Booking.com
+es: Airbnb y Booking.com
+
+de: St. Moritz und Engadin
+en: St. Moritz and Engadine
+fr: Saint-Moritz et Engadine
+it: St. Moritz ed Engadina
+es: St. Moritz y Engadina
+
+de: Winter bei Grindelwald
+en: Winter near Grindelwald
+fr: L'hiver près de Grindelwald
+it: Inverno vicino a Grindelwald
+es: Invierno cerca de Grindelwald
+
+de: Vor Ort, wenn es zählt
+en: There when it matters
+fr: Sur place quand il le faut
+it: Sul posto quando serve
+es: Presentes cuando importa
+
+de: Ferienwohnungen am See
+en: Holiday apartments by the lake
+fr: Appartements de vacances au bord du lac
+it: Appartamenti di vacanza sul lago
+es: Apartamentos vacacionales junto al lago
+
+de: Mehr zur Innerschweiz →
+en: More about Central Switzerland →
+fr: En savoir plus sur la Suisse centrale →
+it: Scopri la Svizzera centrale →
+es: Más sobre Suiza central →
+
+de: Eigennutzung jederzeit.
+en: Use it yourself any time.
+fr: Usage personnel à tout moment.
+it: Uso personale in ogni momento.
+es: Uso propio cuando quiera.
+
+de: Airbnb-Verwaltung Basis
+en: Airbnb management Basic
+fr: Gestion Airbnb Base
+it: Gestione Airbnb Base
+es: Gestión de Airbnb Básico
+
+de: Datenschutz | Alpinhost
+en: Privacy | Alpinhost
+fr: Confidentialité | Alpinhost
+it: Privacy | Alpinhost
+es: Privacidad | Alpinhost
+
+de: Datenschutz
+en: Privacy
+fr: Confidentialité
+it: Privacy
+es: Privacidad
+
+de: Kostenlos prüfen lassen
+en: Get a free assessment
+fr: Évaluation gratuite
+it: Valutazione gratuita
+es: Evaluación gratuita
+
+de: Luzern und Innerschweiz
+en: Lucerne and Central Switzerland
+fr: Lucerne et Suisse centrale
+it: Lucerna e Svizzera centrale
+es: Lucerna y Suiza central
+
+de: Preise täglich angepasst
+en: Prices adjusted daily
+fr: Prix ajustés chaque jour
+it: Prezzi aggiornati ogni giorno
+es: Precios ajustados a diario
+
+de: Lohnt sich Ihre Wohnung?
+en: Is your apartment worth it?
+fr: Votre logement est-il rentable ?
+it: Il Suo appartamento conviene?
+es: ¿Le sale a cuenta su apartamento?
+
+de: Vor Ort in drei Regionen
+en: On site in three regions
+fr: Sur place dans trois régions
+it: Sul posto in tre regioni
+es: Presentes en tres regiones
+
+de: Ferienwohnungs-Management
+en: Holiday rental management
+fr: Gestion de locations de vacances
+it: Gestione di case vacanza
+es: Gestión de alquileres vacacionales
+
+de: Check-in mit Schlüsselbox
+en: Check-in with a key box
+fr: Arrivée avec boîte à clés
+it: Check-in con cassetta portachiavi
+es: Llegada con caja de llaves
+
+de: Alles aus dem Basis-Paket
+en: Everything in the Basic package
+fr: Tout ce que comprend la formule Base
+it: Tutto il pacchetto Base
+es: Todo lo del paquete Básico
+
+de: Mehr zur ganzen Schweiz →
+en: More about all of Switzerland →
+fr: En savoir plus sur toute la Suisse →
+it: Scopri tutta la Svizzera →
+es: Más sobre toda Suiza →
+
+de: Ihre Konten bleiben Ihre.
+en: Your accounts stay yours.
+fr: Vos comptes restent les vôtres.
+it: I Suoi account restano Suoi.
+es: Sus cuentas siguen siendo suyas.
+
+de: Airbnb-Verwaltung in Bern
+en: Airbnb management in Bern
+fr: Gestion Airbnb à Berne
+it: Gestione Airbnb a Berna
+es: Gestión de Airbnb en Berna
+
+de: Gäste aus der ganzen Welt
+en: Guests from all over the world
+fr: Des hôtes du monde entier
+it: Ospiti da tutto il mondo
+es: Huéspedes de todo el mundo
+
+de: Erlebnisse für Ihre Gäste
+en: Experiences for your guests
+fr: Des activités pour vos hôtes
+it: Esperienze per i Suoi ospiti
+es: Experiencias para sus huéspedes
+
+de: Erlebnisse für Ihre Gäste.
+en: Experiences for your guests.
+fr: Des activités pour vos hôtes.
+it: Esperienze per i Suoi ospiti.
+es: Experiencias para sus huéspedes.
+
+de: Anderer Ort in der Schweiz
+en: Another place in Switzerland
+fr: Autre lieu en Suisse
+it: Altra località in Svizzera
+es: Otro lugar de Suiza
+
+de: Mehr zur Jungfrau Region →
+en: More about the Jungfrau Region →
+fr: En savoir plus sur la région de la Jungfrau →
+it: Scopri la regione della Jungfrau →
+es: Más sobre la región de la Jungfrau →
+
+de: Was Eigentümer uns fragen.
+en: What owners ask us.
+fr: Ce que les propriétaires nous demandent.
+it: Cosa ci chiedono i proprietari.
+es: Lo que nos preguntan los propietarios.
+
+de: Wer bezahlt die Reinigung?
+en: Who pays for cleaning?
+fr: Qui paie le ménage ?
+it: Chi paga la pulizia?
+es: ¿Quién paga la limpieza?
+
+de: Airbnb-Verwaltung Komplett
+en: Airbnb management Complete
+fr: Gestion Airbnb Complet
+it: Gestione Airbnb Completo
+es: Gestión de Airbnb Completo
+
+de: Diese Seite gibt es nicht.
+en: This page does not exist.
+fr: Cette page n'existe pas.
+it: Questa pagina non esiste.
+es: Esta página no existe.
+
+de: Bern und Umgebung bis Thun
+en: Bern and the area up to Thun
+fr: Berne et ses environs jusqu'à Thoune
+it: Berna e dintorni fino a Thun
+es: Berna y alrededores hasta Thun
+
+de: Wie lange bin ich gebunden?
+en: How long am I committed?
+fr: Combien de temps suis-je engagé ?
+it: Per quanto tempo sono vincolato?
+es: ¿Cuánto tiempo me comprometo?
+
+de: Anfrage per WhatsApp senden
+en: Send enquiry via WhatsApp
+fr: Envoyer la demande par WhatsApp
+it: Invia la richiesta via WhatsApp
+es: Enviar consulta por WhatsApp
+
+de: Konditionen auf einen Blick
+en: Terms at a glance
+fr: Conditions en un coup d'œil
+it: Condizioni in sintesi
+es: Condiciones de un vistazo
+
+de: Autofrei heisst gut erklärt
+en: Car-free means well explained
+fr: Sans voitures, donc bien expliqué
+it: Senza auto, quindi ben spiegato
+es: Sin coches, por eso bien explicado
+
+de: Reinigung trotz langer Wege
+en: Cleaning despite long journeys
+fr: Le ménage malgré les longs trajets
+it: Pulizia nonostante i lunghi tragitti
+es: Limpieza pese a los largos trayectos
+
+de: Grindelwald, Berner Oberland
+en: Grindelwald, Bernese Oberland
+fr: Grindelwald, Oberland bernois
+it: Grindelwald, Oberland bernese
+es: Grindelwald, Oberland bernés
+
+de: Keine Cookies, kein Tracking
+en: No cookies, no tracking
+fr: Pas de cookies, pas de suivi
+it: Nessun cookie, nessun tracciamento
+es: Sin cookies ni seguimiento
+
+de: Saubere Wechsel, zuverlässig
+en: Clean turnovers, every time
+fr: Des changements impeccables, à chaque fois
+it: Cambi puliti, ogni volta
+es: Cambios impecables, siempre
+
+de: Verbrauchsmaterial nachfüllen
+en: Restocking supplies
+fr: Réassort des consommables
+it: Rifornimento dei materiali di consumo
+es: Reposición de consumibles
+
+de: Wengen, Mürren, Lauterbrunnen
+en: Wengen, Mürren, Lauterbrunnen
+fr: Wengen, Mürren, Lauterbrunnen
+it: Wengen, Mürren, Lauterbrunnen
+es: Wengen, Mürren, Lauterbrunnen
+
+de: <span>Basis</span><b>18 %</b>
+en: <span>Basic</span><b>18 %</b>
+fr: <span>Base</span><b>18 %</b>
+it: <span>Base</span><b>18 %</b>
+es: <span>Básico</span><b>18 %</b>
+
+de: Ein Dorf mit zwei Hochsaisons
+en: A village with two high seasons
+fr: Un village avec deux hautes saisons
+it: Un villaggio con due alte stagioni
+es: Un pueblo con dos temporadas altas
+
+de: Inserat, Texte und Fotoauswahl
+en: Listing, copy and photo selection
+fr: Annonce, textes et choix des photos
+it: Annuncio, testi e scelta delle foto
+es: Anuncio, textos y selección de fotos
+
+de: Gästebetreuung rund um die Uhr
+en: Guest support around the clock
+fr: Accueil des hôtes 24 h sur 24
+it: Assistenza agli ospiti 24 ore su 24
+es: Atención a huéspedes las 24 horas
+
+de: Eine Buchung, offen gerechnet.
+en: One booking, calculated openly.
+fr: Une réservation, calculée en toute transparence.
+it: Una prenotazione, calcolata in modo trasparente.
+es: Una reserva, calculada con transparencia.
+
+de: Check-in ohne Schlüsselübergabe
+en: Check-in without a key handover
+fr: Arrivée sans remise de clés
+it: Check-in senza consegna delle chiavi
+es: Llegada sin entrega de llaves
+
+de: So läuft ein Aufenthalt bei uns
+en: How a stay works with us
+fr: Comment se déroule un séjour chez nous
+it: Come si svolge un soggiorno con noi
+es: Así funciona una estancia con nosotros
+
+de: Muss die Wohnung möbliert sein?
+en: Does the apartment have to be furnished?
+fr: Le logement doit-il être meublé ?
+it: L'appartamento deve essere arredato?
+es: ¿Tiene que estar amueblado el apartamento?
+
+de: Airbnb-Verwaltung in Interlaken
+en: Airbnb management in Interlaken
+fr: Gestion Airbnb à Interlaken
+it: Gestione Airbnb a Interlaken
+es: Gestión de Airbnb en Interlaken
+
+de: Seite nicht gefunden | Alpinhost
+en: Page not found | Alpinhost
+fr: Page introuvable | Alpinhost
+it: Pagina non trovata | Alpinhost
+es: Página no encontrada | Alpinhost
+
+de: Airbnb-Verwaltung in Grindelwald
+en: Airbnb management in Grindelwald
+fr: Gestion Airbnb à Grindelwald
+it: Gestione Airbnb a Grindelwald
+es: Gestión de Airbnb en Grindelwald
+
+de: Lauterbrunnen, Wengen und Mürren
+en: Lauterbrunnen, Wengen and Mürren
+fr: Lauterbrunnen, Wengen et Mürren
+it: Lauterbrunnen, Wengen e Mürren
+es: Lauterbrunnen, Wengen y Mürren
+
+de: 18 oder 21 Prozent. Sonst nichts.
+en: 18 or 21 percent. Nothing else.
+fr: 18 ou 21 %. Rien d'autre.
+it: 18 o 21 per cento. Nient'altro.
+es: 18 o 21 por ciento. Nada más.
+
+de: Monatsbericht mit allen Buchungen
+en: Monthly report with all bookings
+fr: Rapport mensuel avec toutes les réservations
+it: Report mensile con tutte le prenotazioni
+es: Informe mensual con todas las reservas
+
+de: <span>WhatsApp und Telefon</span>
+en: <span>WhatsApp and phone</span>
+fr: <span>WhatsApp et téléphone</span>
+it: <span>WhatsApp e telefono</span>
+es: <span>WhatsApp y teléfono</span>
+
+de: Sommer im Tal, Winter auf dem Berg
+en: Summer in the valley, winter on the mountain
+fr: L'été dans la vallée, l'hiver sur la montagne
+it: Estate a valle, inverno in montagna
+es: Verano en el valle, invierno en la montaña
+
+de: <b>Alpinhost</b> ist eine Marke der
+en: <b>Alpinhost</b> is a brand of
+fr: <b>Alpinhost</b> est une marque de
+it: <b>Alpinhost</b> è un marchio di
+es: <b>Alpinhost</b> es una marca de
+
+de: Geschätzt pro Monat, im Jahresschnitt
+en: Estimated per month, annual average
+fr: Estimation par mois, en moyenne annuelle
+it: Stima mensile, media annua
+es: Estimación mensual, media anual
+
+de: Was ist mit Versicherung und Schäden?
+en: What about insurance and damage?
+fr: Qu'en est-il de l'assurance et des dégâts ?
+it: Come funzionano assicurazione e danni?
+es: ¿Qué pasa con el seguro y los daños?
+
+de: Airbnb- und Booking-Verwaltung · Bern
+en: Airbnb and Booking management · Bern
+fr: Gestion Airbnb et Booking · Berne
+it: Gestione Airbnb e Booking · Berna
+es: Gestión de Airbnb y Booking · Berna
+
+de: <span>Bei Leerstand</span><b>CHF 0</b>
+en: <span>When vacant</span><b>CHF 0</b>
+fr: <span>En cas d'inoccupation</span><b>CHF 0</b>
+it: <span>Se vuoto</span><b>CHF 0</b>
+es: <span>Si está vacío</span><b>CHF 0</b>
+
+de: Kontrolle nach jedem Wechsel, mit Fotos
+en: Inspection after every turnover, with photos
+fr: Contrôle après chaque changement, avec photos
+it: Controllo dopo ogni cambio, con foto
+es: Revisión tras cada cambio, con fotos
+
+de: <a href="{H0}">Alpinhost</a> › Impressum
+en: <a href="{H0}">Alpinhost</a> › Imprint
+fr: <a href="{H0}">Alpinhost</a> › Mentions légales
+it: <a href="{H0}">Alpinhost</a> › Note legali
+es: <a href="{H0}">Alpinhost</a> › Aviso legal
+
+de: Airbnb-Verwaltung in der ganzen Schweiz
+en: Airbnb management across Switzerland
+fr: Gestion Airbnb dans toute la Suisse
+it: Gestione Airbnb in tutta la Svizzera
+es: Gestión de Airbnb en toda Suiza
+
+de: Alles, was eine gute Vermietung braucht.
+en: Everything a good rental needs.
+fr: Tout ce qu'il faut pour bien louer.
+it: Tutto ciò che serve per affittare bene.
+es: Todo lo que necesita un buen alquiler.
+
+de: Ganze Schweiz. Vor Ort in drei Regionen.
+en: All of Switzerland. On site in three regions.
+fr: Toute la Suisse. Sur place dans trois régions.
+it: Tutta la Svizzera. Sul posto in tre regioni.
+es: Toda Suiza. Presentes en tres regiones.
+
+de: Check-in mit Schlüsselbox oder Smart Lock
+en: Check-in with a key box or smart lock
+fr: Arrivée avec boîte à clés ou serrure connectée
+it: Check-in con cassetta portachiavi o serratura smart
+es: Llegada con caja de llaves o cerradura inteligente
+
+de: Wie viel verdiene ich mit meiner Wohnung?
+en: How much will I earn with my apartment?
+fr: Combien vais-je gagner avec mon logement ?
+it: Quanto guadagno con il mio appartamento?
+es: ¿Cuánto ganaré con mi apartamento?
+
+de: Altstadt von Bern mit Münster an der Aare
+en: Bern's old town with the Minster on the River Aare
+fr: Vieille ville de Berne avec la collégiale au bord de l'Aar
+it: Città vecchia di Berna con la cattedrale sull'Aare
+es: Casco antiguo de Berna con la catedral junto al río Aar
+
+de: 18 %<small>vom Übernachtungsumsatz</small>
+en: 18 %<small>of nightly revenue</small>
+fr: 18 %<small>du revenu des nuitées</small>
+it: 18 %<small>dei ricavi da pernottamento</small>
+es: 18 %<small>de los ingresos por noche</small>
+
+de: 21 %<small>vom Übernachtungsumsatz</small>
+en: 21 %<small>of nightly revenue</small>
+fr: 21 %<small>du revenu des nuitées</small>
+it: 21 %<small>dei ricavi da pernottamento</small>
+es: 21 %<small>de los ingresos por noche</small>
+
+de: <span>Provision</span><b>18 % oder 21 %</b>
+en: <span>Commission</span><b>18 % or 21 %</b>
+fr: <span>Commission</span><b>18 % ou 21 %</b>
+it: <span>Provvigione</span><b>18 % o 21 %</b>
+es: <span>Comisión</span><b>18 % o 21 %</b>
+
+de: <span>Einrichtungsgebühr</span><b>CHF 0</b>
+en: <span>Setup fee</span><b>CHF 0</b>
+fr: <span>Frais de mise en place</span><b>CHF 0</b>
+it: <span>Costo di attivazione</span><b>CHF 0</b>
+es: <span>Tarifa de alta</span><b>CHF 0</b>
+
+de: <span>Kündigungsfrist</span><b>3 Monate</b>
+en: <span>Notice period</span><b>3 months</b>
+fr: <span>Délai de résiliation</span><b>3 mois</b>
+it: <span>Preavviso</span><b>3 mesi</b>
+es: <span>Preaviso</span><b>3 meses</b>
+
+de: Airbnb- und Booking-Verwaltung · Interlaken
+en: Airbnb and Booking management · Interlaken
+fr: Gestion Airbnb et Booking · Interlaken
+it: Gestione Airbnb e Booking · Interlaken
+es: Gestión de Airbnb y Booking · Interlaken
+
+de: So arbeiten wir ausserhalb unserer Regionen
+en: How we work outside our regions
+fr: Comment nous travaillons hors de nos régions
+it: Come lavoriamo fuori dalle nostre regioni
+es: Cómo trabajamos fuera de nuestras regiones
+
+de: Wird die Wohnung schon vermietet? Seit wann?
+en: Is the apartment already rented out? Since when?
+fr: Le logement est-il déjà loué ? Depuis quand ?
+it: L'appartamento è già affittato? Da quando?
+es: ¿El apartamento ya se alquila? ¿Desde cuándo?
+
+de: Ferienwohnungs-Management, Airbnb-Verwaltung
+en: Holiday rental management, Airbnb management
+fr: Gestion de locations de vacances, gestion Airbnb
+it: Gestione di case vacanza, gestione Airbnb
+es: Gestión de alquileres vacacionales, gestión de Airbnb
+
+de: Airbnb- und Booking-Verwaltung · Grindelwald
+en: Airbnb and Booking management · Grindelwald
+fr: Gestion Airbnb et Booking · Grindelwald
+it: Gestione Airbnb e Booking · Grindelwald
+es: Gestión de Airbnb y Booking · Grindelwald
+
+de: Vierwaldstättersee (Weggis, Vitznau, Brunnen)
+en: Lake Lucerne (Weggis, Vitznau, Brunnen)
+fr: Lac des Quatre-Cantons (Weggis, Vitznau, Brunnen)
+it: Lago dei Quattro Cantoni (Weggis, Vitznau, Brunnen)
+es: Lago de los Cuatro Cantones (Weggis, Vitznau, Brunnen)
+
+de: Wir wohnen dort, wo Ihre Gäste Ferien machen.
+en: We live where your guests go on holiday.
+fr: Nous vivons là où vos hôtes passent leurs vacances.
+it: Viviamo dove i Suoi ospiti vanno in vacanza.
+es: Vivimos donde sus huéspedes pasan las vacaciones.
+
+de: Airbnb- und Booking-Verwaltung · ganze Schweiz
+en: Airbnb and Booking management · all of Switzerland
+fr: Gestion Airbnb et Booking · toute la Suisse
+it: Gestione Airbnb e Booking · tutta la Svizzera
+es: Gestión de Airbnb y Booking · toda Suiza
+
+de: Kleine Reparaturen bis zum vereinbarten Betrag
+en: Small repairs up to an agreed amount
+fr: Petites réparations jusqu'au montant convenu
+it: Piccole riparazioni fino all'importo concordato
+es: Pequeñas reparaciones hasta el importe acordado
+
+de: Reinigung, Wäsche und Check-in organisieren Sie
+en: You organise cleaning, laundry and check-in
+fr: Vous organisez le ménage, le linge et l'arrivée
+it: Pulizia, biancheria e check-in li organizza Lei
+es: Usted organiza la limpieza, la ropa y la llegada
+
+de: Chalets im Dorf Grindelwald, dahinter der Eiger
+en: Chalets in the village of Grindelwald with the Eiger behind
+fr: Chalets dans le village de Grindelwald, avec l'Eiger en arrière-plan
+it: Chalet nel villaggio di Grindelwald, sullo sfondo l'Eiger
+es: Chalets en el pueblo de Grindelwald, con el Eiger al fondo
+
+de: Beispiel: 3 Nächte, Anreise Freitag, Grindelwald
+en: Example: 3 nights, arriving Friday, Grindelwald
+fr: Exemple : 3 nuits, arrivée le vendredi, Grindelwald
+it: Esempio: 3 notti, arrivo venerdì, Grindelwald
+es: Ejemplo: 3 noches, llegada el viernes, Grindelwald
+
+de: Worauf genau rechnen Sie die 18 oder 21 Prozent?
+en: What exactly are the 18 or 21 percent charged on?
+fr: Sur quoi calculez-vous exactement les 18 ou 21 % ?
+it: Su cosa calcolate esattamente il 18 o 21 per cento?
+es: ¿Sobre qué calculan exactamente el 18 o el 21 por ciento?
+
+de: Airbnb-Verwaltung in Luzern und der Innerschweiz
+en: Airbnb management in Lucerne and Central Switzerland
+fr: Gestion Airbnb à Lucerne et en Suisse centrale
+it: Gestione Airbnb a Lucerna e nella Svizzera centrale
+es: Gestión de Airbnb en Lucerna y Suiza central
+
+de: Wir verwenden Ihre Angaben nur für diese Anfrage.
+en: We only use your details for this enquiry.
+fr: Nous utilisons vos données uniquement pour cette demande.
+it: Usiamo i Suoi dati solo per questa richiesta.
+es: Solo usamos sus datos para esta consulta.
+
+de: <span>Komplett, inkl. Reinigung</span><b>21 %</b>
+en: <span>Complete, incl. cleaning</span><b>21 %</b>
+fr: <span>Complet, ménage compris</span><b>21 %</b>
+it: <span>Completo, pulizia inclusa</span><b>21 %</b>
+es: <span>Completo, limpieza incluida</span><b>21 %</b>
+
+de: 18 % vom Übernachtungsumsatz nach Plattformgebühr
+en: 18 % of nightly revenue after the platform fee
+fr: 18 % du revenu des nuitées après frais de plateforme
+it: 18 % dei ricavi da pernottamento al netto della commissione della piattaforma
+es: 18 % de los ingresos por noche después de la comisión de la plataforma
+
+de: 21 % vom Übernachtungsumsatz nach Plattformgebühr
+en: 21 % of nightly revenue after the platform fee
+fr: 21 % du revenu des nuitées après frais de plateforme
+it: 21 % dei ricavi da pernottamento al netto della commissione della piattaforma
+es: 21 % de los ingresos por noche después de la comisión de la plataforma
+
+de: <span>3 Nächte × CHF 240</span><span>720.00</span>
+en: <span>3 nights × CHF 240</span><span>720.00</span>
+fr: <span>3 nuits × CHF 240</span><span>720.00</span>
+it: <span>3 notti × CHF 240</span><span>720.00</span>
+es: <span>3 noches × CHF 240</span><span>720.00</span>
+
+de: Bern · Köniz · Muri · Ostermundigen · Thun · Spiez
+en: Bern · Köniz · Muri · Ostermundigen · Thun · Spiez
+fr: Berne · Köniz · Muri · Ostermundigen · Thoune · Spiez
+it: Berna · Köniz · Muri · Ostermundigen · Thun · Spiez
+es: Berna · Köniz · Muri · Ostermundigen · Thun · Spiez
+
+de: Kapellbrücke und Wasserturm in Luzern an der Reuss
+en: Chapel Bridge and Water Tower on the River Reuss in Lucerne
+fr: Pont de la Chapelle et tour d'eau sur la Reuss à Lucerne
+it: Ponte della Cappella e torre dell'acqua sulla Reuss a Lucerna
+es: Puente de la Capilla y torre del agua sobre el río Reuss en Lucerna
+
+de: <a href="{H0}">Alpinhost</a> › Datenschutzerklärung
+en: <a href="{H0}">Alpinhost</a> › Privacy policy
+fr: <a href="{H0}">Alpinhost</a> › Politique de confidentialité
+it: <a href="{H0}">Alpinhost</a> › Informativa sulla privacy
+es: <a href="{H0}">Alpinhost</a> › Política de privacidad
+
+de: Wir bewerten den Gast und bitten um eine Bewertung.
+en: We review the guest and ask for a review in return.
+fr: Nous évaluons l'hôte et lui demandons une évaluation.
+it: Recensiamo l'ospite e gli chiediamo una recensione.
+es: Valoramos al huésped y le pedimos una reseña.
+
+de: Airbnb-Verwaltung in der ganzen Schweiz | Alpinhost
+en: Airbnb management across Switzerland | Alpinhost
+fr: Gestion Airbnb dans toute la Suisse | Alpinhost
+it: Gestione Airbnb in tutta la Svizzera | Alpinhost
+es: Gestión de Airbnb en toda Suiza | Alpinhost
+
+de: <span>Bleibt bei Ihnen</span><span>CHF 480.64</span>
+en: <span>You keep</span><span>CHF 480.64</span>
+fr: <span>Il vous reste</span><span>CHF 480.64</span>
+it: <span>Le rimangono</span><span>CHF 480.64</span>
+es: <span>Le quedan</span><span>CHF 480.64</span>
+
+de: Wohnhäuser in Weggis am Ufer des Vierwaldstättersees
+en: Houses in Weggis on the shore of Lake Lucerne
+fr: Maisons à Weggis au bord du lac des Quatre-Cantons
+it: Case a Weggis sulla riva del lago dei Quattro Cantoni
+es: Casas en Weggis a orillas del lago de los Cuatro Cantones
+
+de: Tief verschneite Holzhütten bei Grindelwald im Winter
+en: Snow-covered wooden huts near Grindelwald in winter
+fr: Chalets en bois enneigés près de Grindelwald en hiver
+it: Baite di legno innevate vicino a Grindelwald in inverno
+es: Cabañas de madera nevadas cerca de Grindelwald en invierno
+
+de: Airbnb-Verwaltung in Lauterbrunnen, Wengen und Mürren
+en: Airbnb management in Lauterbrunnen, Wengen and Mürren
+fr: Gestion Airbnb à Lauterbrunnen, Wengen et Mürren
+it: Gestione Airbnb a Lauterbrunnen, Wengen e Mürren
+es: Gestión de Airbnb en Lauterbrunnen, Wengen y Mürren
+
+de: <strong>24/7</strong><span>für Gäste erreichbar</span>
+en: <strong>24/7</strong><span>available for guests</span>
+fr: <strong>24/7</strong><span>joignables pour les hôtes</span>
+it: <strong>24/7</strong><span>raggiungibili per gli ospiti</span>
+es: <strong>24/7</strong><span>disponibles para los huéspedes</span>
+
+de: Airbnb-Verwaltung Bern | Wohnung vermieten | Alpinhost
+en: Airbnb Management Bern | Holiday Rentals | Alpinhost
+fr: Gestion Airbnb Berne | Louer votre logement | Alpinhost
+it: Gestione Airbnb Berna | Case vacanza | Alpinhost
+es: Gestión de Airbnb Berna | Alquilar su piso | Alpinhost
+
+de: Luzern · Weggis · Vitznau · Engelberg · Zug · Andermatt
+en: Lucerne · Weggis · Vitznau · Engelberg · Zug · Andermatt
+fr: Lucerne · Weggis · Vitznau · Engelberg · Zoug · Andermatt
+it: Lucerna · Weggis · Vitznau · Engelberg · Zugo · Andermatt
+es: Lucerna · Weggis · Vitznau · Engelberg · Zug · Andermatt
+
+de: <a href="{H0}">Alpinhost</a> › Airbnb-Verwaltung in Bern
+en: <a href="{H0}">Alpinhost</a> › Airbnb management in Bern
+fr: <a href="{H0}">Alpinhost</a> › Gestion Airbnb à Berne
+it: <a href="{H0}">Alpinhost</a> › Gestione Airbnb a Berna
+es: <a href="{H0}">Alpinhost</a> › Gestión de Airbnb en Berna
+
+de: Monatsbericht an Sie und Rechnung über unsere Provision.
+en: Monthly report for you and an invoice for our commission.
+fr: Rapport mensuel pour vous et facture de notre commission.
+it: Report mensile per Lei e fattura della nostra provvigione.
+es: Informe mensual para usted y factura de nuestra comisión.
+
+de: <span>Plattformgebühr 15,5 %</span><span>− 111.60</span>
+en: <span>Platform fee 15.5 %</span><span>− 111.60</span>
+fr: <span>Frais de plateforme 15,5 %</span><span>− 111.60</span>
+it: <span>Commissione piattaforma 15,5 %</span><span>− 111.60</span>
+es: <span>Comisión de la plataforma 15,5 %</span><span>− 111.60</span>
+
+de: Airbnb- und Booking-Verwaltung · Luzern und Innerschweiz
+en: Airbnb and Booking management · Lucerne and Central Switzerland
+fr: Gestion Airbnb et Booking · Lucerne et Suisse centrale
+it: Gestione Airbnb e Booking · Lucerna e Svizzera centrale
+es: Gestión de Airbnb y Booking · Lucerna y Suiza central
+
+de: <span>Übernachtungsumsatz netto</span><span>608.40</span>
+en: <span>Net nightly revenue</span><span>608.40</span>
+fr: <span>Revenu net des nuitées</span><span>608.40</span>
+it: <span>Ricavi netti da pernottamento</span><span>608.40</span>
+es: <span>Ingresos netos por noche</span><span>608.40</span>
+
+de: <span>Provision Komplett 21 %</span><span>− 127.76</span>
+en: <span>Complete commission 21 %</span><span>− 127.76</span>
+fr: <span>Commission Complet 21 %</span><span>− 127.76</span>
+it: <span>Provvigione Completo 21 %</span><span>− 127.76</span>
+es: <span>Comisión Completo 21 %</span><span>− 127.76</span>
+
+de: Impressum von Alpinhost, Ferienwohnungs-Management Schweiz.
+en: Imprint of Alpinhost, holiday rental management in Switzerland.
+fr: Mentions légales d'Alpinhost, gestion de locations de vacances en Suisse.
+it: Note legali di Alpinhost, gestione di case vacanza in Svizzera.
+es: Aviso legal de Alpinhost, gestión de alquileres vacacionales en Suiza.
+
+de: Airbnb-Verwaltung Lauterbrunnen, Wengen, Mürren | Alpinhost
+en: Airbnb management Lauterbrunnen, Wengen, Mürren | Alpinhost
+fr: Gestion Airbnb Lauterbrunnen, Wengen, Mürren | Alpinhost
+it: Gestione Airbnb Lauterbrunnen, Wengen, Mürren | Alpinhost
+es: Gestión de Airbnb Lauterbrunnen, Wengen, Mürren | Alpinhost
+
+de: Geschäftsgäste unter der Woche, Städtereisende am Wochenende
+en: Business guests on weekdays, city breakers at weekends
+fr: Voyageurs d'affaires en semaine, touristes urbains le week-end
+it: Ospiti d'affari in settimana, turisti in città nel weekend
+es: Viajeros de negocios entre semana, turistas urbanos el fin de semana
+
+de: Airbnb-Verwaltung Interlaken | Wohnung vermieten | Alpinhost
+en: Airbnb Management Interlaken | Holiday Rentals | Alpinhost
+fr: Gestion Airbnb Interlaken | Louer votre logement | Alpinhost
+it: Gestione Airbnb Interlaken | Case vacanza | Alpinhost
+es: Gestión de Airbnb Interlaken | Alquilar su piso | Alpinhost
+
+de: Airbnb-Verwaltung Grindelwald | Wohnung vermieten | Alpinhost
+en: Airbnb Management Grindelwald | Holiday Rentals | Alpinhost
+fr: Gestion Airbnb Grindelwald | Louer votre logement | Alpinhost
+it: Gestione Airbnb Grindelwald | Case vacanza | Alpinhost
+es: Gestión de Airbnb Grindelwald | Alquilar su piso | Alpinhost
+
+de: <a href="{H0}">Alpinhost</a> › Airbnb-Verwaltung in Interlaken
+en: <a href="{H0}">Alpinhost</a> › Airbnb management in Interlaken
+fr: <a href="{H0}">Alpinhost</a> › Gestion Airbnb à Interlaken
+it: <a href="{H0}">Alpinhost</a> › Gestione Airbnb a Interlaken
+es: <a href="{H0}">Alpinhost</a> › Gestión de Airbnb en Interlaken
+
+de: Geöffnete Schlüsselbox mit Wohnungsschlüssel und Zahlenschloss
+en: Open key box with apartment key and combination lock
+fr: Boîte à clés ouverte avec la clé du logement et un cadenas à code
+it: Cassetta portachiavi aperta con la chiave dell'appartamento e lucchetto a combinazione
+es: Caja de llaves abierta con la llave del apartamento y candado de combinación
+
+de: <a href="{H0}">Alpinhost</a> › Airbnb-Verwaltung in Grindelwald
+en: <a href="{H0}">Alpinhost</a> › Airbnb management in Grindelwald
+fr: <a href="{H0}">Alpinhost</a> › Gestion Airbnb à Grindelwald
+it: <a href="{H0}">Alpinhost</a> › Gestione Airbnb a Grindelwald
+es: <a href="{H0}">Alpinhost</a> › Gestión de Airbnb en Grindelwald
+
+de: Airbnb-Verwaltung Luzern | Ferienwohnung vermieten | Alpinhost
+en: Airbnb Management Lucerne | Holiday Rentals | Alpinhost
+fr: Gestion Airbnb Lucerne | Louer votre logement | Alpinhost
+it: Gestione Airbnb Lucerna | Case vacanza | Alpinhost
+es: Gestión de Airbnb Lucerna | Alquilar su piso | Alpinhost
+
+de: <span>Gewähltes Paket</span><b id="m-pkgname">Komplett 21 %</b>
+en: <span>Selected package</span><b id="m-pkgname">Complete 21 %</b>
+fr: <span>Formule choisie</span><b id="m-pkgname">Complet 21 %</b>
+it: <span>Pacchetto scelto</span><b id="m-pkgname">Completo 21 %</b>
+es: <span>Paquete elegido</span><b id="m-pkgname">Completo 21 %</b>
+
+de: Airbnb-Verwaltung Schweiz – Ferienwohnung vermieten | Alpinhost
+en: Airbnb Management Switzerland – Holiday Rentals | Alpinhost
+fr: Gestion Airbnb Suisse – location de vacances | Alpinhost
+it: Gestione Airbnb Svizzera – affitti per vacanze | Alpinhost
+es: Gestión de Airbnb en Suiza – alquiler vacacional | Alpinhost
+
+de: Graubünden · Wallis · Tessin · Zürich · Ostschweiz · Westschweiz
+en: Grisons · Valais · Ticino · Zurich · Eastern Switzerland · Western Switzerland
+fr: Grisons · Valais · Tessin · Zurich · Suisse orientale · Suisse romande
+it: Grigioni · Vallese · Ticino · Zurigo · Svizzera orientale · Svizzera romanda
+es: Grisones · Valais · Tesino · Zúrich · Suiza oriental · Suiza romanda
+
+de: Sie sperren Ihre eigenen Daten im Kalender. Wir planen rundherum.
+en: You block your own dates in the calendar. We plan around them.
+fr: Vous bloquez vos propres dates dans le calendrier. Nous planifions autour.
+it: Lei blocca le Sue date nel calendario. Noi pianifichiamo il resto.
+es: Usted bloquea sus fechas en el calendario. Nosotros planificamos el resto.
+
+de: Blick vom Harder Kulm auf Interlaken, den Thunersee und die Berge
+en: View from Harder Kulm over Interlaken, Lake Thun and the mountains
+fr: Vue depuis le Harder Kulm sur Interlaken, le lac de Thoune et les montagnes
+it: Vista dall'Harder Kulm su Interlaken, il lago di Thun e le montagne
+es: Vista desde el Harder Kulm sobre Interlaken, el lago de Thun y las montañas
+
+de: Airbnb- und Booking-Verwaltung · Lauterbrunnen, Wengen und Mürren
+en: Airbnb and Booking management · Lauterbrunnen, Wengen and Mürren
+fr: Gestion Airbnb et Booking · Lauterbrunnen, Wengen et Mürren
+it: Gestione Airbnb e Booking · Lauterbrunnen, Wengen e Mürren
+es: Gestión de Airbnb y Booking · Lauterbrunnen, Wengen y Mürren
+
+de: Ihre Ferienwohnung vermietet. <em>Ohne dass Sie sich kümmern.</em>
+en: Your holiday apartment, rented out. <em>Without you lifting a finger.</em>
+fr: Votre appartement de vacances, loué. <em>Sans que vous ayez à vous en occuper.</em>
+it: Il Suo appartamento di vacanza, affittato. <em>Senza che debba occuparsene.</em>
+es: Su apartamento vacacional, alquilado. <em>Sin que tenga que ocuparse de nada.</em>
+
+de: <strong>Direkt</strong><span>Auszahlung der Plattform an Sie</span>
+en: <strong>Direct</strong><span>payout from the platform to you</span>
+fr: <strong>Direct</strong><span>versement de la plateforme à vous</span>
+it: <strong>Diretto</strong><span>pagamento della piattaforma a Lei</span>
+es: <strong>Directo</strong><span>la plataforma le paga a usted</span>
+
+de: Das Dorf Wengen im Winter, umgeben von verschneiten Wiesen und Wald
+en: The village of Wengen in winter, surrounded by snowy meadows and forest
+fr: Le village de Wengen en hiver, entouré de prairies enneigées et de forêt
+it: Il villaggio di Wengen in inverno, circondato da prati innevati e boschi
+es: El pueblo de Wengen en invierno, rodeado de prados nevados y bosque
+
+de: Antworten auf Fragen, Tipps für Bahnen, Wanderungen und Restaurants.
+en: Answers to questions, tips on trains, hikes and restaurants.
+fr: Réponses aux questions, conseils pour les trains, randonnées et restaurants.
+it: Risposte alle domande, consigli su treni, escursioni e ristoranti.
+es: Respuestas a preguntas, consejos sobre trenes, rutas y restaurantes.
+
+de: Lauterbrunnental mit steilen Felswänden, dahinter verschneite Gipfel
+en: Lauterbrunnen Valley with steep rock faces and snowy peaks behind
+fr: Vallée de Lauterbrunnen avec ses parois abruptes et des sommets enneigés
+it: Valle di Lauterbrunnen con pareti rocciose ripide e cime innevate sullo sfondo
+es: Valle de Lauterbrunnen con paredes de roca escarpadas y cumbres nevadas al fondo
+
+de: <strong>2</strong><span>Wohnungen bereits in unserer Betreuung</span>
+en: <strong>2</strong><span>apartments already in our care</span>
+fr: <strong>2</strong><span>logements déjà gérés par nos soins</span>
+it: <strong>2</strong><span>appartamenti già in gestione</span>
+es: <strong>2</strong><span>apartamentos ya gestionados por nosotros</span>
+
+de: <a href="{H0}">Alpinhost</a> › Airbnb-Verwaltung in der ganzen Schweiz
+en: <a href="{H0}">Alpinhost</a> › Airbnb management across Switzerland
+fr: <a href="{H0}">Alpinhost</a> › Gestion Airbnb dans toute la Suisse
+it: <a href="{H0}">Alpinhost</a> › Gestione Airbnb in tutta la Svizzera
+es: <a href="{H0}">Alpinhost</a> › Gestión de Airbnb en toda Suiza
+
+de: Selbständiger Check-in. Wir sind erreichbar, falls etwas nicht klappt.
+en: Self check-in. We are reachable if anything goes wrong.
+fr: Arrivée autonome. Nous restons joignables en cas de souci.
+it: Check-in autonomo. Siamo raggiungibili se qualcosa non funziona.
+es: Llegada autónoma. Estamos localizables si algo falla.
+
+de: Stadtwohnungen in Luzern und Ferienwohnungen am See und in den Bergen.
+en: City apartments in Lucerne and holiday apartments by the lake and in the mountains.
+fr: Appartements en ville à Lucerne et logements de vacances au bord du lac et en montagne.
+it: Appartamenti in città a Lucerna e case vacanza sul lago e in montagna.
+es: Pisos urbanos en Lucerna y apartamentos vacacionales junto al lago y en la montaña.
+
+de: Datenschutzerklärung von Alpinhost, Ferienwohnungs-Management Schweiz.
+en: Privacy policy of Alpinhost, holiday rental management in Switzerland.
+fr: Politique de confidentialité d'Alpinhost, gestion de locations de vacances en Suisse.
+it: Informativa sulla privacy di Alpinhost, gestione di case vacanza in Svizzera.
+es: Política de privacidad de Alpinhost, gestión de alquileres vacacionales en Suiza.
+
+de: Monatsbericht mit allen Buchungen und Belegen für Ihre Steuererklärung.
+en: Monthly report with all bookings and receipts for your tax return.
+fr: Rapport mensuel avec toutes les réservations et justificatifs pour votre déclaration d'impôts.
+it: Report mensile con tutte le prenotazioni e i giustificativi per la dichiarazione dei redditi.
+es: Informe mensual con todas las reservas y justificantes para su declaración de impuestos.
+
+de: Wir führen alles. Sie haben eine Ansprechperson und sonst keine Arbeit.
+en: We run everything. You have one contact person and no work.
+fr: Nous gérons tout. Vous avez un seul interlocuteur et aucun travail.
+it: Gestiamo tutto noi. Lei ha un unico referente e nessun lavoro.
+es: Nos encargamos de todo. Usted tiene un único contacto y ningún trabajo.
+
+de: Vielleicht hat sich die Adresse geändert. <a href="{H0}">Zur Startseite</a>
+en: The address may have changed. <a href="{H0}">Go to the home page</a>
+fr: L'adresse a peut-être changé. <a href="{H0}">Retour à l'accueil</a>
+it: Forse l'indirizzo è cambiato. <a href="{H0}">Vai alla home</a>
+es: Quizá la dirección ha cambiado. <a href="{H0}">Ir a la página de inicio</a>
+
+de: WhatsApp und Telefon: <b style="{S0}">+41 79 531 81 11</b>
+en: WhatsApp and phone: <b style="{S0}">+41 79 531 81 11</b>
+fr: WhatsApp et téléphone : <b style="{S0}">+41 79 531 81 11</b>
+it: WhatsApp e telefono: <b style="{S0}">+41 79 531 81 11</b>
+es: WhatsApp y teléfono: <b style="{S0}">+41 79 531 81 11</b>

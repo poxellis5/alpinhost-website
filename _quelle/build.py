@@ -41,6 +41,19 @@ EXTRA_CSS = """
 .footlinks a{color:var(--muted);text-decoration:none}
 .footlinks a:hover{color:var(--ink)}
 .legal .prose{max-width:72ch}
+.langsw{position:relative;margin-left:0;flex:none}
+@media (max-width:900px){.langsw{margin-left:auto}.top .btn{margin-left:0}}
+.langsw summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:13px;font-weight:500;padding:8px 10px;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;gap:6px;color:var(--ink);background:var(--paper)}
+.langsw summary::-webkit-details-marker{display:none}
+.langsw summary svg{width:10px;height:10px}
+.langsw[open] summary{border-color:var(--ink)}
+.langsw .menu{position:absolute;right:0;top:calc(100% + 6px);background:var(--paper);border:1px solid var(--line);border-radius:10px;box-shadow:0 14px 40px rgba(15,34,48,.16);padding:6px;display:grid;min-width:150px;z-index:60}
+.langsw .menu a{display:flex;justify-content:space-between;gap:14px;padding:9px 12px;border-radius:7px;text-decoration:none;color:var(--ink);font-size:15px}
+.langsw .menu a span{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.langsw .menu a:hover,.langsw .menu a[aria-current]{background:var(--mist,#EEF2F4)}
+@media (max-width:520px){.brand small{display:none}.top .wrap{gap:12px}}
+@media (max-width:420px){.langsw summary{padding:7px 8px}}
+@media (max-width:360px){.top .wrap{gap:8px}.top .btn{padding-inline:12px;font-size:14px}.brand{gap:8px}.brand .mark{width:32px;height:32px}.langsw summary{padding:6px 7px;font-size:12px}}
 """
 
 def img(name, alt, w800=True, cls="", sizes="(max-width: 900px) 100vw, 50vw", root="", eager=False, wh=(1600, 1067)):
@@ -53,7 +66,7 @@ def img(name, alt, w800=True, cls="", sizes="(max-width: 900px) 100vw, 50vw", ro
 REGIONS = {
  "grindelwald": dict(
    slug="airbnb-verwaltung-grindelwald", name="Grindelwald",
-   title="Airbnb-Verwaltung Grindelwald | Ferienwohnung vermieten | Alpinhost",
+   title="Airbnb-Verwaltung Grindelwald | Wohnung vermieten | Alpinhost",
    desc="Wir vermieten und betreuen Ihre Ferienwohnung in Grindelwald auf Airbnb und Booking.com. Vor Ort im Dorf. 18 % oder 21 %, keine Einrichtungsgebühr.",
    h1="Airbnb-Verwaltung in Grindelwald",
    lead="Wir wohnen in Grindelwald und kümmern uns um Ihre Ferienwohnung, als wäre es unsere eigene: Inserat, Preise, Gäste, Reinigung und Abrechnung.",
@@ -69,7 +82,7 @@ REGIONS = {
  ),
  "interlaken": dict(
    slug="airbnb-verwaltung-interlaken", name="Interlaken",
-   title="Airbnb-Verwaltung Interlaken | Ferienwohnung vermieten | Alpinhost",
+   title="Airbnb-Verwaltung Interlaken | Wohnung vermieten | Alpinhost",
    desc="Ferienwohnung in Interlaken, Wilderswil oder am Brienzersee professionell vermieten. Airbnb und Booking.com, Reinigung, Gäste. 18 % oder 21 %.",
    h1="Airbnb-Verwaltung in Interlaken",
    lead="Interlaken ist das Tor zur Jungfrau Region. Wir vermieten Ihre Wohnung an die Gäste, die von hier aus die Berge entdecken, und kümmern uns um alles dazwischen.",
@@ -85,7 +98,7 @@ REGIONS = {
  "lauterbrunnen": dict(
    slug="airbnb-verwaltung-lauterbrunnen-wengen-muerren", name="Lauterbrunnen, Wengen und Mürren",
    title="Airbnb-Verwaltung Lauterbrunnen, Wengen, Mürren | Alpinhost",
-   desc="Ferienwohnung in Lauterbrunnen, Wengen oder Mürren vermieten lassen. Wir kennen die autofreien Bergdörfer und betreuen Ihre Gäste von der Anreise bis zur Abreise.",
+   desc="Ferienwohnung in Lauterbrunnen, Wengen oder Mürren vermieten lassen. Wir kennen die autofreien Bergdörfer und betreuen Ihre Gäste von Anreise bis Abreise.",
    h1="Airbnb-Verwaltung in Lauterbrunnen, Wengen und Mürren",
    lead="Ein Tal mit Wasserfällen und zwei autofreie Bergdörfer. Hier braucht die Vermietung jemanden, der die Wege kennt.",
    photo=("lauterbrunnental", "Lauterbrunnental mit steilen Felswänden, dahinter verschneite Gipfel", (1600,1076)),
@@ -129,7 +142,7 @@ REGIONS = {
  ),
  "schweiz": dict(
    slug="airbnb-verwaltung-schweiz", name="ganze Schweiz",
-   title="Airbnb-Verwaltung Schweiz | Ferienwohnung vermieten lassen | Alpinhost",
+   title="Airbnb-Verwaltung in der ganzen Schweiz | Alpinhost",
    desc="Ferienwohnung in der ganzen Schweiz professionell vermieten lassen. Inserat, Preise, Gäste und Abrechnung von uns, Reinigung über geprüfte Teams vor Ort.",
    h1="Airbnb-Verwaltung in der ganzen Schweiz",
    lead="Bergort, Stadt oder See: Wir führen Ihre Vermietung in jedem Kanton. Inserat, Preise, Gäste und Abrechnung von uns, Reinigung und Schlüssel über geprüfte Teams vor Ort.",
@@ -144,7 +157,7 @@ REGIONS = {
  ),
 }
 
-def head(title, desc, path, root, schema_list, ogimg="img/grindelwald-eiger-1600.webp"):
+def head(title, desc, path, root, schema_list, ogimg="img/og-grindelwald-eiger.jpg"):
     url = DOMAIN + "/" + path
     schemas = "\n".join(f'<script type="application/ld+json">{json.dumps(s, ensure_ascii=False)}</script>' for s in schema_list)
     return f"""<title>{title}</title>
@@ -159,6 +172,10 @@ def head(title, desc, path, root, schema_list, ogimg="img/grindelwald-eiger-1600
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{DOMAIN}/{ogimg}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="theme-color" content="#0F2230">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="{root}favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -176,7 +193,7 @@ ORG = {
   "email":"info@alpinhost.ch",
   "parentOrganization":{"@type":"Organization","name":"R&B Digital Market KlG","address":{"@type":"PostalAddress","streetAddress":"Kellerstrasse 29","postalCode":"6005","addressLocality":"Luzern","addressCountry":"CH"}},
   "areaServed":[{"@type":"Country","name":"Schweiz"},{"@type":"Place","name":"Jungfrau Region"},{"@type":"City","name":"Grindelwald"},{"@type":"City","name":"Interlaken"},{"@type":"City","name":"Lauterbrunnen"},{"@type":"City","name":"Wengen"},{"@type":"City","name":"Luzern"},{"@type":"City","name":"Bern"}],
-  "knowsLanguage":["de","en"],
+  "knowsLanguage":["de","en","fr","it","es"],
   "makesOffer":[
     {"@type":"Offer","name":"Basis","description":"18 % vom Übernachtungsumsatz nach Plattformgebühr. Inserat, Preise, Gästebetreuung, Monatsbericht.","itemOffered":{"@type":"Service","name":"Airbnb-Verwaltung Basis"}},
     {"@type":"Offer","name":"Komplett","description":"21 % vom Übernachtungsumsatz nach Plattformgebühr. Alles inklusive Reinigung, Wäsche, Check-in und Kontrolle.","itemOffered":{"@type":"Service","name":"Airbnb-Verwaltung Komplett"}}
@@ -195,6 +212,7 @@ def header(root, home=False):
     <nav class="main" aria-label="Hauptnavigation">
       <a href="{a('#leistungen')}">Leistungen</a><a href="{a('#preise')}">Preise</a><a href="{a('#rechner')}">Rechner</a><a href="{a('#regionen')}">Regionen</a><a href="{a('#fragen')}">Fragen</a>
     </nav>
+    <!--LANGSW-->
     <a class="btn btn-primary" href="{a('#kontakt')}"><span class="long">Wohnung prüfen lassen</span><span class="short">Anfrage</span></a>
   </div>
 </header>"""
@@ -203,7 +221,7 @@ def footer(root):
     reg = "".join(f'<a href="{root}{r["slug"]}/">{"Airbnb-Verwaltung " + r["name"] if k!="schweiz" else "Airbnb-Verwaltung Schweiz"}</a>' for k, r in REGIONS.items())
     return f"""<footer>
   <div class="wrap">
-    <div><b>Alpinhost</b><br>Ferienwohnungs-Management für Airbnb und Booking.com in der ganzen Schweiz.<br><br>WhatsApp und Telefon: {PHONE}</div>
+    <div><b>Alpinhost</b><br>Ferienwohnungs-Management für Airbnb und Booking.com in der ganzen Schweiz.<br><br>WhatsApp und Telefon: {PHONE}<br>E-Mail: <a href="mailto:info@alpinhost.ch" style="color:inherit">info@alpinhost.ch</a></div>
     <div class="footlinks"><b>Regionen</b>{reg}</div>
     <div class="footlinks"><b>Unternehmen</b><a href="{root}#preise">Preise</a><a href="{root}#fragen">Fragen</a><a href="{root}impressum/">Impressum</a><a href="{root}datenschutz/">Datenschutz</a><span>Alpinhost ist eine Marke der R&amp;B Digital Market KlG</span></div>
     <p class="credits">Fotos: Wikimedia Commons. Grindelwald mit Eiger und Kapellbrücke Luzern: Leonhard Lenz, CC0 · Frühling über Grindelwald: Speedy Füllemann, CC BY 3.0 · Winter bei Grindelwald: Robert Campbell KOR, CC BY 2.0 · Bern Altstadt: August Geyler, CC BY-SA 4.0 · Weggis: Arkelin, CC BY 4.0 · Interlaken vom Harder Kulm: Ank Kumar, CC BY-SA 4.0 · Lauterbrunnental: Chensiyuan, CC BY-SA 4.0 · Wengen im Winter: Jpatokal, CC BY-SA 4.0 · Schlüsselbox: Brainy J, CC0.</p>
@@ -263,7 +281,7 @@ def card(key, pill, h3, text, places, photo):
           <h3><a href="{r['slug']}/" style="text-decoration:none;color:inherit">{h3}</a></h3>
           <p>{text}</p>
           <p class="places">{places}</p>
-          <a class="more" href="{r['slug']}/">{"Mehr zur ganzen Schweiz" if key=="schweiz" else "Mehr zu " + h3} →</a>
+          <a class="more" href="{r['slug']}/">{ {"schweiz":"Mehr zur ganzen Schweiz","grindelwald":"Mehr zur Jungfrau Region","luzern":"Mehr zur Innerschweiz"}.get(key, "Mehr zu " + h3) } →</a>
         </div>
       </article>
 """
@@ -290,7 +308,7 @@ assert "{{" not in body, "placeholder left"
 faqs = re.findall(r'<details><summary>(.*?)</summary><div class="ans">(.*?)</div></details>', body, re.S)
 FAQ = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":re.sub("<[^>]+>","",a)}} for q,a in faqs]}
 WEB = {"@context":"https://schema.org","@type":"WebSite","name":"Alpinhost","url":DOMAIN+"/","inLanguage":"de-CH","publisher":{"@id":DOMAIN+"/#org"}}
-home_title = "Airbnb-Verwaltung Schweiz | Ferienwohnung vermieten lassen | Alpinhost"
+home_title = "Airbnb-Verwaltung Schweiz – Ferienwohnung vermieten | Alpinhost"
 home_desc = "Wir vermieten und betreuen Ihre Ferienwohnung auf Airbnb und Booking.com. Ganze Schweiz, vor Ort in Jungfrau Region, Bern und Innerschweiz. 18 % oder 21 %."
 write("index.html", page_shell(head(home_title, home_desc, "", "", [ORG, WEB, FAQ]), body, "", home=True))
 
@@ -309,7 +327,7 @@ for key, r in REGIONS.items():
     if r["photo2"]:
         p2 = f'<figure class="photo" style="margin:8px 0 0;aspect-ratio:16/10">{img(r["photo2"][0], r["photo2"][1], root=root, wh=r["photo2"][2])}</figure>'
     places = " · ".join(r["places"])
-    others = " · ".join(f'<a href="{root}{o["slug"]}/">{o["name"].capitalize() if k2=="schweiz" else o["name"]}</a>' for k2, o in REGIONS.items() if k2 != key)
+    others = " · ".join(f'<a href="{root}{o["slug"]}/">{"Ganze Schweiz" if k2=="schweiz" else o["name"]}</a>' for k2, o in REGIONS.items() if k2 != key)
     b = f"""<main>
 <div class="wrap crumbs"><a href="{root}">Alpinhost</a> › {r['h1']}</div>
 <section class="local-hero">
@@ -343,12 +361,12 @@ for key, r in REGIONS.items():
       <div class="price-mini"><span>Kündigungsfrist</span><b>3 Monate</b></div>
       <p style="color:var(--muted);font-size:14.5px">Gerechnet auf den Übernachtungsumsatz nach Plattformgebühr. Bei Leerstand zahlen Sie nichts.</p>
       <a class="btn btn-primary" href="{root}#kontakt">Kostenlos prüfen lassen</a>
-      <p style="font-size:14px;color:var(--muted)">WhatsApp und Telefon: <b style="white-space:nowrap">{PHONE}</b></p>
+      <p style="font-size:14px;color:var(--muted)">WhatsApp und Telefon: <b style="white-space:nowrap">{PHONE}</b><br>E-Mail: <a href="mailto:info@alpinhost.ch" style="color:inherit;font-weight:600">info@alpinhost.ch</a></p>
     </aside>
   </div>
 </section>
 </main>"""
-    write(url + "index.html", page_shell(head(r["title"], r["desc"], url, root, [ORG, crumbs, svc], ogimg=f"img/{r['photo'][0]}-1600.webp"), b, root))
+    write(url + "index.html", page_shell(head(r["title"], r["desc"], url, root, [ORG, crumbs, svc], ogimg=f"img/og-{r['photo'][0]}.jpg"), b, root))
 
 # ---------- legal
 def legal(slug, title, h1, html):

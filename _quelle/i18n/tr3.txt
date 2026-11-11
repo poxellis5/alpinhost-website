@@ -1,0 +1,23 @@
+de: Ferienwohnungs-Management für Airbnb und Booking.com in der ganzen Schweiz.
+en: Holiday rental management for Airbnb and Booking.com across Switzerland.
+fr: Gestion de locations de vacances pour Airbnb et Booking.com dans toute la Suisse.
+it: Gestione di case vacanza per Airbnb e Booking.com in tutta la Svizzera.
+es: Gestión de alquileres vacacionales para Airbnb y Booking.com en toda Suiza.
+
+de: WhatsApp und Telefon: +41 79 531 81 11
+en: WhatsApp and phone: +41 79 531 81 11
+fr: WhatsApp et téléphone : +41 79 531 81 11
+it: WhatsApp e telefono: +41 79 531 81 11
+es: WhatsApp y teléfono: +41 79 531 81 11
+
+de: WhatsApp und Telefon:
+en: WhatsApp and phone:
+fr: WhatsApp et téléphone :
+it: WhatsApp e telefono:
+es: WhatsApp y teléfono:
+
+de: E-Mail:
+en: Email:
+fr: E-mail :
+it: E-mail:
+es: Correo:

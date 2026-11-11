@@ -17,3 +17,10 @@
 - [Airbnb-Verwaltung in Luzern und der Innerschweiz](https://alpinhost.ch/airbnb-verwaltung-luzern/)
 - [Airbnb-Verwaltung in Bern](https://alpinhost.ch/airbnb-verwaltung-bern/)
 - [Airbnb-Verwaltung in der ganzen Schweiz](https://alpinhost.ch/airbnb-verwaltung-schweiz/)
+
+## Sprachen
+- Deutsch: https://alpinhost.ch/
+- English: https://alpinhost.ch/en/
+- Français: https://alpinhost.ch/fr/
+- Italiano: https://alpinhost.ch/it/
+- Español: https://alpinhost.ch/es/

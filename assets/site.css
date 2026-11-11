@@ -274,3 +274,16 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
 .footlinks a{color:var(--muted);text-decoration:none}
 .footlinks a:hover{color:var(--ink)}
 .legal .prose{max-width:72ch}
+.langsw{position:relative;margin-left:0;flex:none}
+@media (max-width:900px){.langsw{margin-left:auto}.top .btn{margin-left:0}}
+.langsw summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:13px;font-weight:500;padding:8px 10px;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;gap:6px;color:var(--ink);background:var(--paper)}
+.langsw summary::-webkit-details-marker{display:none}
+.langsw summary svg{width:10px;height:10px}
+.langsw[open] summary{border-color:var(--ink)}
+.langsw .menu{position:absolute;right:0;top:calc(100% + 6px);background:var(--paper);border:1px solid var(--line);border-radius:10px;box-shadow:0 14px 40px rgba(15,34,48,.16);padding:6px;display:grid;min-width:150px;z-index:60}
+.langsw .menu a{display:flex;justify-content:space-between;gap:14px;padding:9px 12px;border-radius:7px;text-decoration:none;color:var(--ink);font-size:15px}
+.langsw .menu a span{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.langsw .menu a:hover,.langsw .menu a[aria-current]{background:var(--mist,#EEF2F4)}
+@media (max-width:520px){.brand small{display:none}.top .wrap{gap:12px}}
+@media (max-width:420px){.langsw summary{padding:7px 8px}}
+@media (max-width:360px){.top .wrap{gap:8px}.top .btn{padding-inline:12px;font-size:14px}.brand{gap:8px}.brand .mark{width:32px;height:32px}.langsw summary{padding:6px 7px;font-size:12px}}
