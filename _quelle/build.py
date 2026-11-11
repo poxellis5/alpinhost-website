@@ -173,7 +173,8 @@ ORG = {
   "name":"Alpinhost","url":DOMAIN+"/","telephone":PHONE.replace(" ",""),
   "description":"Ferienwohnungs-Management für Airbnb und Booking.com in der ganzen Schweiz. Vor Ort in der Jungfrau Region, in Bern und in der Innerschweiz.",
   "image":DOMAIN+"/img/grindelwald-eiger-1600.webp","logo":DOMAIN+"/favicon.svg",
-  "parentOrganization":{"@type":"Organization","name":"R&B Digital Market KlG"},
+  "email":"info@alpinhost.ch",
+  "parentOrganization":{"@type":"Organization","name":"R&B Digital Market KlG","address":{"@type":"PostalAddress","streetAddress":"Kellerstrasse 29","postalCode":"6005","addressLocality":"Luzern","addressCountry":"CH"}},
   "areaServed":[{"@type":"Country","name":"Schweiz"},{"@type":"Place","name":"Jungfrau Region"},{"@type":"City","name":"Grindelwald"},{"@type":"City","name":"Interlaken"},{"@type":"City","name":"Lauterbrunnen"},{"@type":"City","name":"Wengen"},{"@type":"City","name":"Luzern"},{"@type":"City","name":"Bern"}],
   "knowsLanguage":["de","en"],
   "makesOffer":[
@@ -354,14 +355,14 @@ def legal(slug, title, h1, html):
     write(slug + "/index.html", page_shell(h, b, root))
 
 legal("impressum", "Impressum | Alpinhost", "Impressum",
- f"""<p><b>Alpinhost</b> ist eine Marke der</p><p>R&amp;B Digital Market KlG<br>Schweiz</p>
-<p>WhatsApp und Telefon: {PHONE}</p>
+ f"""<p><b>Alpinhost</b> ist eine Marke der</p><p>R&amp;B Digital Market KlG<br>Kellerstrasse 29<br>6005 Luzern<br>Schweiz</p>
+<p>WhatsApp und Telefon: {PHONE}<br>E-Mail: <a href="mailto:info@alpinhost.ch">info@alpinhost.ch</a></p>
 <h2>Haftung</h2><p>Die Angaben auf dieser Website wurden sorgfältig erstellt. Ertragsschätzungen sind unverbindlich und stellen keine Garantie dar.</p>
 <h2>Bildnachweis</h2><p>Die Fotos stammen von Wikimedia Commons. Die Urheber und Lizenzen sind in der Fusszeile jeder Seite aufgeführt.</p>""")
 
 legal("datenschutz", "Datenschutz | Alpinhost", "Datenschutzerklärung",
  """<p>Wir nehmen den Schutz Ihrer Daten ernst und bearbeiten Personendaten nach dem Schweizer Datenschutzgesetz (DSG).</p>
-<h2>Verantwortlich</h2><p>R&amp;B Digital Market KlG, Marke Alpinhost. Kontakt per WhatsApp oder Telefon wie im Impressum angegeben.</p>
+<h2>Verantwortlich</h2><p>R&amp;B Digital Market KlG, Marke Alpinhost, Kellerstrasse 29, 6005 Luzern. Kontakt: <a href="mailto:info@alpinhost.ch">info@alpinhost.ch</a> oder WhatsApp wie im Impressum angegeben.</p>
 <h2>Anfragen</h2><p>Wenn Sie uns über das Formular eine Anfrage senden, wird Ihre Nachricht in WhatsApp vorbereitet und erst gesendet, wenn Sie selbst auf Senden tippen. Wir verwenden Ihre Angaben nur, um Ihre Anfrage zu beantworten, und geben sie nicht weiter.</p>
 <h2>Keine Cookies, kein Tracking</h2><p>Diese Website setzt keine Cookies und verwendet keine Analyse- oder Werbedienste.</p>
 <h2>Hosting und Schriften</h2><p>Beim Aufruf der Website verarbeitet unser Hosting-Anbieter technisch notwendige Daten wie die IP-Adresse. Die Schriften werden von Google Fonts geladen. Dabei wird Ihre IP-Adresse an Google übermittelt.</p>
