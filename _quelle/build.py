@@ -164,7 +164,7 @@ def head(title, desc, path, root, schema_list, ogimg="img/grindelwald-eiger-1600
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="{root}assets/site.css">
+<link rel="stylesheet" href="{root}assets/site.css?v={AV_CSS}">
 {schemas}
 """
 
@@ -224,7 +224,7 @@ def page_shell(headhtml, body, root, home=False):
 {body}
 {MODAL}
 {footer(root)}
-<script src="{root}assets/site.js" defer></script>
+<script src="{root}assets/site.js?v={AV_JS}" defer></script>
 </body>
 </html>
 """
@@ -241,6 +241,9 @@ JS_SAFE = JS.replace('document.getElementById("calcform").addEventListener("chan
   'var cf=document.getElementById("calcform"); if(cf){ cf.addEventListener("change", calc); calc(); }')
 JS_SAFE = JS_SAFE.replace('  var f = document.getElementById("leadform");\n  f.addEventListener(', '  var f = document.getElementById("leadform");\n  if (f) f.addEventListener(')
 open(OUT + "/assets/site.js", "w").write(JS_SAFE)
+import hashlib
+AV_CSS = hashlib.md5((CSS + EXTRA_CSS).encode()).hexdigest()[:8]
+AV_JS = hashlib.md5(JS_SAFE.encode()).hexdigest()[:8]
 open(OUT + "/favicon.svg", "w").write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#0F2230"/><path d="M7 27 L16 13 L21 20 L25 15 L33 27 Z" fill="#F2F5F6"/><path d="M7 31 H33" stroke="#1C5E74" stroke-width="2.4" stroke-linecap="round"/></svg>')
 
 # ---------- home
