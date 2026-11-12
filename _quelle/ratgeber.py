@@ -10,7 +10,7 @@ ARTICLES = [
 {
  "slug": "ferienwohnung-vermieten-ertrag", "cat": "Vermieten", "mins": 6,
  "h1": "Was bringt eine Ferienwohnung in der Schweiz wirklich ein?",
- "title": "Ferienwohnung vermieten: Ertrag in der Schweiz",
+ "title": "Ferienwohnung vermieten: Lohnt es sich? Die Zahlen",
  "desc": "Auslastung und Nachtpreise von Airbnb-Wohnungen in 13 Schweizer Orten, von Zermatt bis Bern. Mit Rechenbeispiel und den Kosten, die oft vergessen gehen.",
  "teaser": "Auslastung und Nachtpreise in 13 Orten, von Zermatt bis Bern. Mit Rechenbeispiel.",
  "lead": "Die ehrliche Antwort hängt vom Ort, von der Grösse und vom Inserat ab. Wir zeigen die Marktzahlen für 13 Schweizer Orte und rechnen ein Beispiel durch.",
@@ -22,7 +22,7 @@ ARTICLES = [
          "Am gleichen Ort sind gute Inserate oft doppelt so viele Nächte gebucht wie schwache."],
  "body": """
 <h2>Die Zahlen pro Ort</h2>
-<p>Die Tabelle zeigt alle aktiven Airbnb-Inserate eines Ortes über 12 Monate, von November 2025 bis Oktober 2026. Die Daten stammen vom Analysedienst GuestFavorites.</p>
+<p>Die Tabelle zeigt alle aktiven Airbnb-Inserate eines Ortes über 12 Monate, von November 2025 bis Oktober 2026.</p>
 <p class="swipe">Tabelle seitlich wischen →</p>
 <div class="tbl wide"><table>
 <thead><tr><th>Ort</th><th class="n">Inserate</th><th class="n">Auslastung</th><th class="n">Ø Nachtpreis</th><th class="n">Typische Wohnung</th></tr></thead>
@@ -84,7 +84,7 @@ ARTICLES = [
 {
  "slug": "airbnb-oder-booking", "cat": "Vermieten", "mins": 5,
  "h1": "Airbnb oder Booking.com: Wo vermieten Sie Ihre Ferienwohnung besser?",
- "title": "Airbnb oder Booking.com für die Ferienwohnung?",
+ "title": "Airbnb oder Booking.com: Gebühren für Gastgeber",
  "desc": "Gebühren, Auszahlung, Kurtaxe und Bewertungen im Vergleich. Mit Rechenbeispiel für eine Wohnung in Grindelwald und einer klaren Empfehlung.",
  "teaser": "Gebühren, Auszahlung, Kurtaxe und Bewertungen im Vergleich, mit Rechenbeispiel.",
  "lead": "Beide Plattformen kosten ähnlich viel. Die Unterschiede liegen bei der Zahlung, der Kurtaxe und den Bewertungen. Unsere Empfehlung: beide nutzen, mit einem gemeinsamen Kalender.",
@@ -105,7 +105,7 @@ ARTICLES = [
 <tr><td>Bewertungen</td><td>Gast und Gastgeber bewerten sich gegenseitig</td><td>nur der Gast bewertet</td></tr>
 </tbody></table></div>
 <p>Airbnb stellt derzeit alle Gastgeber auf eine einheitliche Gebühr um. Sie wird ganz von der Auszahlung abgezogen. Für Gastgeber, die eine Verwaltungssoftware nutzen, ist dieses Modell bereits Pflicht. Das frühere Modell mit 3 % für den Gastgeber und einer separaten Gebühr für den Gast läuft aus.</p>
-<p>Die Angaben zu Booking.com stammen aus einer Branchenübersicht. Der genaue Satz steht in Ihrem Vertrag mit Booking.com und hängt vom Standort und von Zusatzprogrammen ab.</p>
+<p>Der genaue Satz bei Booking.com steht in Ihrem Vertrag mit Booking.com und hängt vom Standort und von Zusatzprogrammen ab.</p>
 
 <h2>Rechenbeispiel: 3 Nächte in Grindelwald</h2>
 <p>Eine 2-Zimmer-Wohnung, 3 Nächte zu CHF 205, also CHF 615 Übernachtungsumsatz.</p>
@@ -126,7 +126,7 @@ ARTICLES = [
 <p>Bei Airbnb zahlt der Gast immer an die Plattform. Airbnb überweist Ihnen den Betrag nach der Anreise. Bei Booking.com gibt es zwei Wege: Der Gast zahlt direkt an Sie, oder Booking.com wickelt die Zahlung gegen eine Gebühr ab.</p>
 
 <h2>Kurtaxe: ein echter Unterschied</h2>
-<p>Airbnb zieht die Tourismusabgaben in zehn Kantonen automatisch ein und leitet sie weiter: Luzern, Zürich, Basel-Landschaft, Basel-Stadt, Zug, Genf, Schaffhausen, Waadt, Freiburg und St. Gallen. Laut Airbnb ist das die einzige Plattform in der Schweiz, die das macht.</p>
+<p>Airbnb zieht die Tourismusabgaben in zehn Kantonen automatisch ein und leitet sie weiter: Luzern, Zürich, Basel-Landschaft, Basel-Stadt, Zug, Genf, Schaffhausen, Waadt, Freiburg und St. Gallen.</p>
 <p>In allen anderen Kantonen und bei jeder Buchung über Booking.com rechnen Sie die Kurtaxe selbst ab. Das gilt zum Beispiel für das ganze Berner Oberland. Wie das geht, steht im Artikel zur <a href="../kurtaxe-ferienwohnung/">Kurtaxe</a>.</p>
 
 <h2>Unsere Empfehlung: beide Plattformen, ein Kalender</h2>
@@ -135,7 +135,7 @@ ARTICLES = [
 """,
  "faq": [("Wie hoch ist die Airbnb-Gebühr für Gastgeber?", "Bei der einheitlichen Gebühr zahlen die meisten Gastgeber 15,5 %, die übrigen in der Regel 14 bis 16 %. Die Gebühr wird von der Auszahlung abgezogen. Airbnb stellt derzeit alle Gastgeber auf dieses Modell um."),
          ("Kann ich meine Wohnung gleichzeitig auf Airbnb und Booking.com anbieten?", "Ja. Wichtig ist ein gemeinsamer Kalender, damit eine Buchung das Datum auf der anderen Plattform sofort sperrt. Sonst riskieren Sie Doppelbuchungen."),
-         ("Zieht Booking.com die Kurtaxe automatisch ein?", "Nein. Laut Airbnb ist Airbnb die einzige Plattform in der Schweiz, die Tourismusabgaben automatisch einzieht, und zwar in zehn Kantonen. Bei Booking.com rechnen Sie die Kurtaxe selbst ab.")],
+         ("Zieht Booking.com die Kurtaxe automatisch ein?", "Nein. Bei Booking.com rechnen Sie die Kurtaxe selbst ab. Airbnb zieht die Tourismusabgaben in zehn Kantonen automatisch ein.")],
  "sources": [("Airbnb Hilfe-Center: Servicegebühren", "https://www.airbnb.ch/help/article/1857"),
              ("Your.Rentals: Booking.com Gebühren für Gastgeber, 2025", "https://your.rentals/de/blog/booking-com-gebuehren-fuer-gastgeber-im-jahr-2025-preise-kosten/"),
              ("Preisüberwacher: Medienmitteilung vom 21. Mai 2025 zu Booking.com", "https://www.admin.ch/en/newnsb/3bBOJ_Hlr0i9FEX_Gy48M"),
@@ -144,7 +144,7 @@ ARTICLES = [
 {
  "slug": "selbst-vermieten-oder-verwaltung", "cat": "Vermieten", "mins": 5,
  "h1": "Selbst vermieten oder eine Verwaltung beauftragen?",
- "title": "Ferienwohnung selbst vermieten oder Verwaltung?",
+ "title": "Selbst vermieten oder Airbnb-Verwaltung? Die Kosten",
  "desc": "Was bei jeder Buchung anfällt, was eine Verwaltung kostet und wann sich welcher Weg lohnt. Mit sieben Fragen, die Sie jeder Verwaltung stellen sollten.",
  "teaser": "Aufwand, Kosten und sieben Fragen, die Sie jeder Verwaltung stellen sollten.",
  "lead": "Selbst vermieten bringt mehr Geld pro Buchung und kostet Zeit. Eine Verwaltung kostet Provision und nimmt Ihnen die Arbeit ab. Hier steht, wie Sie ehrlich vergleichen.",
@@ -211,7 +211,7 @@ ARTICLES = [
 {
  "slug": "airbnb-einnahmen-versteuern", "cat": "Kosten und Steuern", "mins": 6,
  "h1": "Airbnb-Einnahmen versteuern: Was Eigentümer in der Schweiz wissen müssen",
- "title": "Airbnb-Einnahmen versteuern in der Schweiz",
+ "title": "Airbnb Steuern Schweiz: Einnahmen richtig versteuern",
  "desc": "Einkommenssteuer, Pauschalabzug im Kanton Bern, Mehrwertsteuer ab CHF 100'000 und die Abschaffung des Eigenmietwerts. Verständlich erklärt, mit Quellen.",
  "teaser": "Einkommenssteuer, Pauschalabzug, Mehrwertsteuer und Eigenmietwert, verständlich erklärt.",
  "lead": "Mieteinnahmen aus der Ferienwohnung sind steuerbares Einkommen. Wie viel Sie abziehen dürfen, regelt jeder Kanton selbst. Wir zeigen die Grundsätze und das Beispiel des Kantons Bern.",
@@ -251,7 +251,6 @@ ARTICLES = [
 <tr><td>Mieteinnahmen aus 3 Monaten</td><td class="n">CHF 6'000</td></tr>
 <tr><td>Pauschalabzug 33,33 %</td><td class="n">− CHF 2'000</td></tr>
 </tbody></table></div>
-<p>Die ersten vier Zeilen stammen aus dem Beispiel der Steuerverwaltung. Den Pauschalabzug haben wir nach der Regel selbst berechnet.</p>
 
 <h2>Die Abschaffung des Eigenmietwerts</h2>
 <p>Am 28. September 2025 haben die Stimmberechtigten die Abschaffung des Eigenmietwerts mit 57,7 % angenommen. Die Kantone dürfen neu eine besondere Liegenschaftssteuer auf Zweitliegenschaften einführen. Bei vermieteten Liegenschaften bleibt der Unterhalt abziehbar.</p>
@@ -259,7 +258,7 @@ ARTICLES = [
 
 <h2>Mehrwertsteuer: ab CHF 100'000 Umsatz</h2>
 <p>Die Vermietung von Ferienwohnungen gilt bei der Mehrwertsteuer als Beherbergung. Wer damit pro Jahr mehr als CHF 100'000 Umsatz erzielt, muss sich registrieren. Es gilt der Sondersatz von 3,8 %, egal ob Sie direkt oder über eine Plattform vermieten.</p>
-<p>Achtung bei mehreren Wohnungen: Laut Steuerfachleuten zählt auch der Wert der eigenen Nutzung zum Umsatz. Wer nahe an der Grenze liegt, sollte das jedes Jahr prüfen.</p>
+<p>Achtung bei mehreren Wohnungen: Auch der Wert der eigenen Nutzung kann zum Umsatz zählen. Wer nahe an der Grenze liegt, sollte das jedes Jahr prüfen.</p>
 
 <h2>Wann aus der Vermietung ein Gewerbe wird</h2>
 <p>Wer mehrere Wohnungen vermietet oder Leistungen wie in einem Hotel anbietet, kann steuerlich als selbständig erwerbend gelten. Dann fallen auch Sozialversicherungsbeiträge an. Die Steuerverwaltung beurteilt das im Einzelfall. Fragen Sie nach, bevor Sie eine zweite oder dritte Wohnung dazunehmen.</p>
@@ -277,7 +276,7 @@ ARTICLES = [
          ("Wie hoch ist der Pauschalabzug für Ferienwohnungen im Kanton Bern?", "33,33 % des Bruttomietertrags. Die Steuerverwaltung gewährt den Abzug automatisch. Er deckt unter anderem Heizung, Reinigung, Abnutzung der Möbel, Kurtaxe und Vermittlungsgebühren."),
          ("Ab wann bin ich mit einer Ferienwohnung mehrwertsteuerpflichtig?", "Ab einem Umsatz von CHF 100'000 pro Jahr. Für die Beherbergung in Ferienwohnungen gilt der Sondersatz von 3,8 %.")],
  "sources": [("Steuerverwaltung des Kantons Bern, TaxInfo: Vermietung möblierter Liegenschaften", "https://www.taxinfo.sv.fin.be.ch/taxinfo/649588d4-12bb-415e-aa77-4c26e39284a7"),
-             ("Steuerverwaltung des Kantons Bern, Wegleitung 2024: Vermietung Ferienwohnung", "https://www.wegleitung.sv.fin.be.ch/de/start/np2024/grundstuecke-im-privatvermoegen/vermietete-ferienwohnungen.html"),
+             ("Steuerverwaltung des Kantons Bern, Wegleitung 2024: Vermietung Ferienwohnung (Rechenbeispiel, Pauschalabzug selbst berechnet)", "https://www.wegleitung.sv.fin.be.ch/de/start/np2024/grundstuecke-im-privatvermoegen/vermietete-ferienwohnungen.html"),
              ("Eidgenössische Steuerverwaltung: Mehrwertsteuersätze", "https://www.estv.admin.ch/de/mwst-steuersaetze-schweiz"),
              ("Forvis Mazars: Mehrwertsteuer und Privatpersonen, November 2025", "https://www.forvismazars.com/ch/de/insights/swiss-tax-newsletter/swiss-tax-newsletter-november-2025/mwst-privatpersonen-auswirkungen-auf-immobilien"),
              ("Zürcher Kantonalbank: Abschaffung des Eigenmietwerts", "https://www.zkb.ch/de/blog/immobilien/abschaffung-eigenmietwert-was-passiert.html"),
@@ -286,14 +285,14 @@ ARTICLES = [
 {
  "slug": "kurtaxe-ferienwohnung", "cat": "Kosten und Steuern", "mins": 5,
  "h1": "Kurtaxe für Ferienwohnungen: Wer zahlt, wer rechnet ab?",
- "title": "Kurtaxe für Ferienwohnungen: Wer zahlt was?",
+ "title": "Kurtaxe bei Airbnb und Ferienwohnung: Wer zahlt was?",
  "desc": "Was die Kurtaxe ist, wie hoch sie in Grindelwald ausfällt, was in Interlaken gilt und in welchen zehn Kantonen Airbnb sie automatisch einzieht.",
  "teaser": "Was in Grindelwald und Interlaken gilt und wo Airbnb die Kurtaxe automatisch einzieht.",
  "lead": "Die Kurtaxe zahlt der Gast. Abrechnen müssen meistens Sie. Wir erklären das System am Beispiel von Grindelwald und Interlaken und zeigen, wo Airbnb Ihnen die Arbeit abnimmt.",
  "photo": ("bahnhof-interlaken-ost", "Bahnhofgebäude Interlaken Ost mit Vorplatz, dahinter bewaldete Berge",
            "Bahnhof Interlaken Ost: Wer hier ankommt und in einer Ferienwohnung übernachtet, zahlt Kurtaxe und hat Anrecht auf die Gästekarte Interlaken."),
  "key": ["Die Kurtaxe wird pro Person und Nacht erhoben. Der Gast zahlt, der Vermieter rechnet ab.",
-         "In Grindelwald beträgt sie laut Gemeinde CHF 3.70 pro Nacht, dazu kommt CHF 1.00 kantonale Beherbergungsabgabe.",
+         "In Grindelwald beträgt sie CHF 3.70 pro Nacht (Stand 2022), dazu kommt CHF 1.00 kantonale Beherbergungsabgabe.",
          "Im Raum Interlaken müssen sich Vermieter registrieren und brauchen eine Bewilligung der Gemeinde.",
          "Airbnb zieht die Abgabe in zehn Kantonen automatisch ein. Der Kanton Bern gehört nicht dazu."],
  "body": """
@@ -309,7 +308,7 @@ ARTICLES = [
 <tr><td>Pauschalkurtaxe bei Eigennutzung, 2-Zimmer-Wohnung</td><td class="n">CHF 444 pro Jahr</td></tr>
 <tr><td>Pauschalkurtaxe bei Eigennutzung, 3-Zimmer-Wohnung</td><td class="n">CHF 592 pro Jahr</td></tr>
 </tbody></table></div>
-<p>Die Zahlen stammen aus dem Infoblatt der Gemeinde Grindelwald mit Stand April 2022. Die Pauschale für die eigene Nutzung rechnet die Gemeinde mit 40 Nächten pro Bett und Jahr. Wer seine Wohnung gegen Entgelt vermietet, zahlt zusätzlich eine Tourismusförderungsabgabe. Fragen Sie die aktuellen Ansätze bei der Gemeinde nach, sie können sich seither geändert haben.</p>
+<p>Die Zahlen haben den Stand April 2022. Die Pauschale für die eigene Nutzung rechnet die Gemeinde mit 40 Nächten pro Bett und Jahr. Wer seine Wohnung gegen Entgelt vermietet, zahlt zusätzlich eine Tourismusförderungsabgabe. Fragen Sie die aktuellen Ansätze bei der Gemeinde nach, sie können sich seither geändert haben.</p>
 
 <h2>Beispiel Interlaken</h2>
 <p>In Interlaken, Matten, Unterseen, Wilderswil, Gsteigwiler und Saxeten gilt eine Registrierungspflicht. Vermieter von Ferienwohnungen brauchen zuerst eine Bewilligung der Standortgemeinde. Danach melden sie die Unterkunft bei der Tourismus-Organisation Interlaken an. Das gilt unabhängig davon, über welche Plattform vermietet wird.</p>
@@ -335,7 +334,7 @@ ARTICLES = [
 <p>Unsere Kunden erhalten jeden Monat einen Bericht mit allen Buchungen, Personen und Nächten. Damit ist die Abrechnung der Kurtaxe in wenigen Minuten erledigt.</p>
 """,
  "faq": [("Wer bezahlt die Kurtaxe bei einer Ferienwohnung?", "Der Gast. Der Vermieter zieht die Abgabe ein und liefert sie der Gemeinde oder der Tourismusorganisation ab. In zehn Kantonen übernimmt Airbnb den Einzug automatisch."),
-         ("Wie hoch ist die Kurtaxe in Grindelwald?", "Laut Infoblatt der Gemeinde mit Stand April 2022 beträgt sie CHF 3.70 pro Übernachtung. Dazu kommt die kantonale Beherbergungsabgabe von CHF 1.00. Die aktuellen Ansätze nennt die Gemeinde."),
+         ("Wie hoch ist die Kurtaxe in Grindelwald?", "Sie beträgt CHF 3.70 pro Übernachtung (Stand April 2022). Dazu kommt die kantonale Beherbergungsabgabe von CHF 1.00. Die aktuellen Ansätze nennt die Gemeinde."),
          ("Zieht Airbnb die Kurtaxe im Berner Oberland automatisch ein?", "Nein. Der Kanton Bern gehört nicht zu den zehn Kantonen mit einer Vereinbarung. In Grindelwald, Interlaken oder Wengen rechnen Vermieter die Kurtaxe selbst ab.")],
  "sources": [("Gemeinde Grindelwald: Infoblatt Steuern, Gebühren, Abgaben, Stand 1. April 2022", "https://www.gemeinde-grindelwald.ch/wp-content/uploads/2020/06/Infoblatt-2022-Steuern-Gebuehren-Abgaben.pdf"),
              ("Interlaken Tourismus: Informationen für Beherbergende", "https://www.interlaken.swiss/info-service/informationen-fuer-beherbergende"),
@@ -346,7 +345,7 @@ ARTICLES = [
 {
  "slug": "airbnb-regeln-bewilligung-schweiz", "cat": "Kosten und Steuern", "mins": 6,
  "h1": "Brauche ich eine Bewilligung? Regeln für Airbnb in der Schweiz",
- "title": "Airbnb-Regeln und Bewilligung in der Schweiz",
+ "title": "Airbnb in der Schweiz: Regeln, Bewilligung, 90 Nächte",
  "desc": "Zweitwohnungsgesetz, 90-Nächte-Regel in Luzern, Berner Altstadt, Interlaken, Stockwerkeigentum und Meldepflicht. Die wichtigsten Regeln im Überblick.",
  "teaser": "Zweitwohnungsgesetz, 90-Nächte-Regeln, Stockwerkeigentum und Meldepflicht im Überblick.",
  "lead": "Eine nationale Airbnb-Bewilligung gibt es nicht. Ob und wie lange Sie vermieten dürfen, entscheiden Bund, Gemeinde und die eigene Hausgemeinschaft. Hier sind die Regeln, die Sie prüfen müssen.",
@@ -416,7 +415,7 @@ ARTICLES = [
 {
  "slug": "ferienwohnung-einrichten-checkliste", "cat": "Wohnung fit machen", "mins": 5,
  "h1": "Ferienwohnung einrichten: Die Checkliste für gute Bewertungen",
- "title": "Ferienwohnung einrichten: Checkliste",
+ "title": "Ferienwohnung einrichten: Checkliste für Airbnb",
  "desc": "Was Gäste in einer Ferienwohnung erwarten: Betten, Küche, WLAN, Sicherheit und Anreise ohne Schlüsselübergabe. Die Checkliste zum Abhaken.",
  "teaser": "Betten, Küche, WLAN, Sicherheit und Anreise: die Checkliste zum Abhaken.",
  "lead": "Gäste verzeihen eine kleine Wohnung, aber kein schlechtes Bett und kein langsames WLAN. Mit dieser Checkliste ist Ihre Wohnung bereit für die ersten Gäste.",
@@ -496,7 +495,7 @@ ARTICLES = [
 {
  "slug": "versicherung-ferienwohnung-vermieten", "cat": "Wohnung fit machen", "mins": 5,
  "h1": "Versicherung für die Ferienwohnung: Was bei der Vermietung gilt",
- "title": "Versicherung bei Vermietung der Ferienwohnung",
+ "title": "Airbnb Versicherung Schweiz: Was bei Vermietung gilt",
  "desc": "Gebäude, Hausrat, Haftpflicht und der Schutz von Airbnb: Welche Versicherung bei der Vermietung an Feriengäste zahlt und was Sie vorher klären müssen.",
  "teaser": "Gebäude, Hausrat, Haftpflicht und AirCover: was Sie vor dem ersten Gast klären müssen.",
  "lead": "Die meisten Policen wurden für die eigene Nutzung abgeschlossen. Bevor der erste Gast kommt, sollte Ihre Versicherung von der Vermietung wissen. Diese Punkte gehören geklärt.",
@@ -524,7 +523,7 @@ ARTICLES = [
 <p>Stürzt ein Gast auf der Treppe oder wird durch einen Mangel in der Wohnung verletzt, kann der Eigentümer haften. Dafür gibt es die Gebäudehaftpflicht. Bei Einfamilienhäusern und selbst genutzten Wohnungen ist sie oft in der Privathaftpflicht enthalten. Bei regelmässiger Vermietung ist das nicht selbstverständlich. Fragen Sie nach.</p>
 
 <h2>Was Airbnb abdeckt</h2>
-<p>Airbnb bietet Gastgebern einen Schutz mit dem Namen AirCover. Er umfasst laut Airbnb:</p>
+<p>Airbnb bietet Gastgebern einen Schutz mit dem Namen AirCover. Er umfasst:</p>
 <ul>
 <li>Schutz bei Sachschäden bis 3 Millionen US-Dollar, wenn der Gast nicht für den Schaden aufkommt</li>
 <li>Haftpflichtversicherung bis 1 Million US-Dollar, falls ein Gast verletzt wird oder sein Eigentum beschädigt wird</li>
@@ -552,17 +551,116 @@ ARTICLES = [
 <p>Vor dem Start gehen wir diese Fragen mit unseren Kunden durch.</p>
 """,
  "faq": [("Muss ich meiner Versicherung melden, dass ich über Airbnb vermiete?", "Ja, das empfehlen wir dringend. Viele Policen wurden für die eigene Nutzung abgeschlossen. Fragen Sie schriftlich an, ob die Vermietung an wechselnde Feriengäste gedeckt ist."),
-         ("Reicht der Schutz von Airbnb als Versicherung?", "Nein. AirCover deckt laut Airbnb Sachschäden bis 3 Millionen US-Dollar und Haftpflicht bis 1 Million US-Dollar, aber nur bei Buchungen über Airbnb. Für andere Buchungen und für das Gebäude brauchen Sie eigene Versicherungen.")],
+         ("Reicht der Schutz von Airbnb als Versicherung?", "Nein. AirCover deckt Sachschäden bis 3 Millionen US-Dollar und Haftpflicht bis 1 Million US-Dollar, aber nur bei Buchungen über Airbnb. Für andere Buchungen und für das Gebäude brauchen Sie eigene Versicherungen.")],
  "sources": [("Airbnb: AirCover für Gastgeber", "https://www.airbnb.ch/aircover-for-hosts")],
 },
 ]
 
+# ---------- Datenseite: Auslastung nach Ort (Zahlen aus dem Rechner in src.html)
+def _rg_market():
+    import re as _re
+    rows = []
+    for k, name, n, occ, adr in _re.findall(r'(\w+):\{name:"([^"]+)", n:(\d+), occ:([\d.]+), adr:(\d+)\}', open("src.html", encoding="utf-8").read()):
+        if int(n) > 0:
+            rows.append(dict(key=k, name=name, n=int(n), occ=float(occ), adr=int(adr)))
+    assert len(rows) == 23, len(rows)
+    return rows
+
+def _chf(x):
+    return "CHF " + f"{int(round(x)):,}".replace(",", "'")
+
+def _rg_market_article():
+    R = _rg_market()
+    by = {r["key"]: r for r in R}
+    pct = lambda r: f'{round(r["occ"]*100)} %'
+    occs = sorted(R, key=lambda r: (-r["occ"], -r["adr"]))
+    t1 = "".join(f'<tr><td class="n">{i+1}</td><td>{r["name"]}</td><td class="n">{pct(r)}</td><td><div class="occbar"><i style="width:{round(r["occ"]*100)}%"></i></div></td><td class="n">CHF {r["adr"]}</td><td class="n">{_chf(r["n"])[4:]}</td></tr>' for i, r in enumerate(occs))
+    rev = sorted(R, key=lambda r: -r["occ"]*r["adr"])
+    t2 = "".join(f'<tr><td>{r["name"]}</td><td class="n">{round(r["occ"]*365)}</td><td class="n">CHF {r["adr"]}</td><td class="n">{_chf(r["occ"]*365*r["adr"])}</td></tr>' for r in rev)
+    cities = [by[k] for k in ("zuerich", "genf", "lausanne", "bern", "basel", "lugano")]
+    ski = [by[k] for k in ("zermatt", "verbier", "saasfee", "crans", "stmoritz", "davos", "laax", "arosa")]
+    cmin, cmax = min(c["occ"] for c in cities), max(c["occ"] for c in cities)
+    smin, smax = min(c["occ"] for c in ski), max(c["occ"] for c in ski)
+    above = sum(1 for r in R if r["occ"] > 0.59)
+    top, g, last = occs[0], by["grindelwald"], occs[-1]
+    assert top["key"] == "luzern"
+    dear = sorted(R, key=lambda r: -r["adr"])
+    lowest = [r["name"] for r in R if r["occ"] == last["occ"]]
+    body = f"""
+<h2>Die Rangliste nach Auslastung</h2>
+<p>Die Tabelle zeigt alle aktiven Airbnb-Inserate pro Ort über 12 Monate, von November 2025 bis Oktober 2026. Auslastung heisst: Anteil der gebuchten Nächte an allen verfügbaren Nächten.</p>
+<p class="swipe">Tabelle seitlich wischen →</p>
+<div class="tbl wide"><table>
+<thead><tr><th class="n">Rang</th><th>Ort</th><th class="n">Auslastung</th><th></th><th class="n">Ø Nachtpreis</th><th class="n">Inserate</th></tr></thead>
+<tbody>{t1}</tbody></table></div>
+<p>Zum Vergleich: In der ganzen Schweiz liegt die Auslastung bei 59 % und der Durchschnittspreis bei CHF 199. {above} der 23 Orte liegen über dem Schweizer Schnitt.</p>
+
+<h2>Drei Muster in den Zahlen</h2>
+<h3>Städte sind gleichmässig gebucht</h3>
+<p>Zürich, Genf, Lausanne, Bern, Basel und Lugano liegen alle zwischen {round(cmin*100)} und {round(cmax*100)} %. Die Nachtpreise sind tiefer als in den Bergen, von CHF {min(c["adr"] for c in cities)} bis CHF {max(c["adr"] for c in cities)}. Die Stadt Luzern sticht heraus: {pct(top)} Auslastung bei CHF {top["adr"]} pro Nacht.</p>
+<h3>Die Jungfrau Region verbindet beides</h3>
+<p>Grindelwald erreicht {pct(g)} bei CHF {g["adr"]} pro Nacht. Interlaken liegt bei {pct(by["interlaken"])} und CHF {by["interlaken"]["adr"]}, Wengen, Mürren und Lauterbrunnen bei {pct(by["lauterbrunnen"])} und CHF {by["lauterbrunnen"]["adr"]}. Hohe Auslastung und hohe Preise kommen hier zusammen.</p>
+<h3>Wintersportorte: weniger Nächte, höhere Preise</h3>
+<p>Die grossen Wintersportorte im Wallis und in Graubünden liegen zwischen {round(smin*100)} und {round(smax*100)} %. Dafür sind die Preise oft hoch: {dear[0]["name"]} führt mit CHF {dear[0]["adr"]} pro Nacht, {dear[1]["name"]} folgt mit CHF {dear[1]["adr"]}.</p>
+
+<h2>Was heisst das in Franken?</h2>
+<p>Auslastung mal Nachtpreis ergibt den Umsatz. Die Tabelle rechnet das für ein durchschnittliches Inserat auf ein Jahr hoch, vor Plattformgebühr und Kosten.</p>
+<div class="tbl"><table>
+<thead><tr><th>Ort</th><th class="n">Nächte</th><th class="n">Ø Preis</th><th class="n">Umsatz pro Jahr</th></tr></thead>
+<tbody>{t2}</tbody></table></div>
+<p class="note">Der Durchschnitt enthält auch grosse Chalets für acht oder zehn Personen. Eine typische Wohnung mit zwei Zimmern liegt deutlich darunter. Der <a href="../../#rechner">Ertragsrechner</a> passt den Preis an die Grösse Ihrer Wohnung an.</p>
+
+<h2>Was die Zahlen nicht zeigen</h2>
+<ul>
+<li><b>Die Spanne am gleichen Ort.</b> Der Wert ist der Durchschnitt aller Inserate, der guten und der schwachen. Gute Inserate sind oft doppelt so viele Nächte gebucht.</li>
+<li><b>Die Saison.</b> Ein Jahreswert sagt nichts darüber, wie stark Sommer und Winter auseinanderliegen.</li>
+<li><b>Die Kosten.</b> Reinigung, Wäsche, Plattformgebühr, Kurtaxe und Steuern gehen vom Umsatz ab. Mehr dazu im Artikel <a href="../ferienwohnung-vermieten-ertrag/">Was bringt eine Ferienwohnung wirklich ein?</a></li>
+</ul>
+
+<h2>So nutzen Sie die Zahlen</h2>
+<p>Vergleichen Sie Ihre Wohnung mit dem Wert Ihres Ortes. Liegen Sie klar darunter, lohnt sich ein Blick auf Fotos, Preise und Mindestaufenthalt. Wir prüfen das kostenlos. <a href="../../#kontakt">Wohnung prüfen lassen</a></p>
+"""
+    return {
+     "slug": "airbnb-auslastung-schweiz", "cat": "Vermieten", "mins": 4,
+     "h1": "Airbnb-Auslastung in der Schweiz: 23 Orte im Vergleich",
+     "title": "Airbnb-Auslastung Schweiz: 23 Orte im Vergleich",
+     "desc": f"Wie gut sind Airbnb-Wohnungen in der Schweiz gebucht? Rangliste mit Auslastung und Nachtpreis für 23 Orte, von Luzern ({pct(top)}) bis {last['name']} ({pct(last)}).",
+     "teaser": "Die Rangliste: Auslastung, Nachtpreis und Jahresumsatz für 23 Orte von Luzern bis Zermatt.",
+     "lead": "Wo sind Ferienwohnungen am besten gebucht? Die Rangliste zeigt Auslastung, Nachtpreis und Jahresumsatz für 23 Schweizer Orte.",
+     "photo": ("luzern-kapellbruecke", "Kapellbrücke und Wasserturm in Luzern an der Reuss",
+               f"Die Stadt Luzern hat mit {pct(top)} die höchste Auslastung der 23 Orte."),
+     "key": [f"Die Stadt Luzern führt mit {pct(top)} Auslastung, vor Grindelwald mit {pct(g)}.",
+             "Im Schweizer Schnitt sind Airbnb-Wohnungen zu 59 % ausgelastet.",
+             f"Die Städte liegen zwischen {round(cmin*100)} und {round(cmax*100)} %, die grossen Wintersportorte zwischen {round(smin*100)} und {round(smax*100)} %.",
+             f"Die höchsten Nachtpreise haben {dear[0]['name']} (CHF {dear[0]['adr']}) und {dear[1]['name']} (CHF {dear[1]['adr']})."],
+     "body": body,
+     "faq": [("Wo ist die Airbnb-Auslastung in der Schweiz am höchsten?", f"Von den 23 verglichenen Orten liegt die Stadt Luzern mit {pct(top)} vorne. Es folgen {occs[1]['name']} mit {pct(occs[1])}, {occs[2]['name']} mit {pct(occs[2])} und {occs[3]['name']} mit {pct(occs[3])}."),
+             ("Wie hoch ist die durchschnittliche Airbnb-Auslastung in der Schweiz?", "Über alle Inserate in der Schweiz liegt sie bei 59 %. Der durchschnittliche Nachtpreis beträgt CHF 199."),
+             ("Wo sind die Nachtpreise am höchsten?", f"In {dear[0]['name']} mit CHF {dear[0]['adr']}, in {dear[1]['name']} mit CHF {dear[1]['adr']} und in {dear[2]['name']} mit CHF {dear[2]['adr']} pro Nacht im Durchschnitt."),
+             ("Ist eine hohe Auslastung immer besser?", "Nein. Entscheidend ist der Umsatz, also Auslastung mal Nachtpreis. Ein Ort mit tieferer Auslastung und hohen Preisen kann mehr einbringen als ein gut gebuchter Ort mit tiefen Preisen.")],
+     "sources": [("GuestFavorites: Airbnb-Auslastung nach Ort in der Schweiz, Zeitraum November 2025 bis Oktober 2026", "https://www.guestfavorites.com/airbnb-occupancy-rates-by-city-in-switzerland")],
+    }
+
+RG_CREDITS.setdefault("luzern-kapellbruecke", {"author": "Leonhard Lenz", "lic": "CC0", "desc": ""})
+ARTICLES.insert(1, _rg_market_article())
+
 RG_BY_SLUG = {a["slug"]: a for a in ARTICLES}
 RG_CATS = ["Vermieten", "Kosten und Steuern", "Wohnung fit machen"]
 
-def rg_credit(name):
-    m = RG_CREDITS[name]
-    return f'Foto: {m["author"]}, {m["lic"]}, <a href="{m["desc"]}" rel="noopener nofollow">Wikimedia Commons</a>'
+def rg_credits(names):
+    """Bildnachweis, klein, für das Seitenende."""
+    seen, out = set(), []
+    for n in names:
+        if n in seen: continue
+        seen.add(n)
+        m = RG_CREDITS[n]
+        label = RG_LABEL.get(n, n)
+        txt = f'{label}: {m["author"]}, {m["lic"]}'
+        out.append(f'<a href="{m["desc"]}" rel="noopener nofollow">{txt}</a>' if m.get("desc") else txt)
+    return "Fotos: Wikimedia Commons. " + " · ".join(out)
+
+RG_LABEL = {a["photo"][0]: a["photo"][1].split(",")[0] for a in ARTICLES}
+RG_LABEL["wengen-dorf-sommer"] = "Wengen"
 
 def rg_card(a, root, sizes="(max-width: 620px) 100vw, (max-width: 1060px) 50vw, 33vw"):
     url = f'{root}ratgeber/{a["slug"]}/'
@@ -576,19 +674,45 @@ def rg_card(a, root, sizes="(max-width: 620px) 100vw, (max-width: 1060px) 50vw, 
   </div>
 </article>"""
 
+RG_HOME = ("ferienwohnung-vermieten-ertrag", "airbnb-einnahmen-versteuern", "airbnb-oder-booking")
+RG_HOME_CREDITS = rg_credits([RG_BY_SLUG[s]["photo"][0] for s in RG_HOME])
+
 def rg_home_teaser():
-    picks = [RG_BY_SLUG[s] for s in ("ferienwohnung-vermieten-ertrag", "airbnb-einnahmen-versteuern", "airbnb-oder-booking")]
-    creds = " · ".join(f'{a["photo"][1].split(",")[0]}: {RG_CREDITS[a["photo"][0]]["author"]}, {RG_CREDITS[a["photo"][0]]["lic"]}' for a in picks)
+    picks = [RG_BY_SLUG[s] for s in RG_HOME]
     return f"""<section class="block" id="ratgeber" style="padding-top:0" data-de-only>
   <div class="wrap">
     <div class="head"><div><p class="eyebrow">Ratgeber</p><h2 style="margin-top:12px">Wissen für Eigentümer.</h2></div>
-    <p class="lead">Erträge, Steuern, Kurtaxe und Regeln: recherchiert, mit Quellen und ohne Fachchinesisch.</p></div>
+    <p class="lead">Erträge, Steuern, Kurtaxe und Regeln: gründlich recherchiert und ohne Fachchinesisch.</p></div>
     <div class="rg-grid">{''.join(rg_card(a, '') for a in picks)}</div>
     <p style="margin-top:22px"><a class="btn btn-ghost" href="ratgeber/">Alle Artikel im Ratgeber</a></p>
-    <p class="art-credit">Fotos: Wikimedia Commons. {creds}</p>
   </div>
 </section>
 """
+
+RG_REGION = {
+ "grindelwald": ("kurtaxe-ferienwohnung", "airbnb-oder-booking", "ferienwohnung-vermieten-ertrag"),
+ "interlaken": ("kurtaxe-ferienwohnung", "airbnb-regeln-bewilligung-schweiz", "airbnb-auslastung-schweiz"),
+ "lauterbrunnen": ("ferienwohnung-vermieten-ertrag", "kurtaxe-ferienwohnung", "ferienwohnung-einrichten-checkliste"),
+ "luzern": ("airbnb-auslastung-schweiz", "airbnb-regeln-bewilligung-schweiz", "airbnb-einnahmen-versteuern"),
+ "bern": ("airbnb-regeln-bewilligung-schweiz", "airbnb-einnahmen-versteuern", "airbnb-auslastung-schweiz"),
+ "schweiz": ("airbnb-auslastung-schweiz", "ferienwohnung-vermieten-ertrag", "selbst-vermieten-oder-verwaltung"),
+}
+
+def rg_region_block(key, root):
+    """Ratgeber-Karten für eine Regionsseite. Gibt (HTML, Bildnachweis) zurück."""
+    picks = [RG_BY_SLUG[s] for s in RG_REGION[key]]
+    html = f"""<section class="block" style="padding-top:0" data-de-only>
+  <div class="wrap">
+    <h2 class="rg-cat" style="margin-top:0">Aus dem Ratgeber</h2>
+    <div class="rg-grid">{''.join(rg_card(a, root) for a in picks)}</div>
+    <p style="margin-top:22px"><a class="btn btn-ghost" href="{root}ratgeber/">Alle Artikel im Ratgeber</a></p>
+  </div>
+</section>
+"""
+    return html, rg_credits([a["photo"][0] for a in picks])
+
+RG_FEED = '<link rel="alternate" type="application/rss+xml" title="Alpinhost Ratgeber" href="' + DOMAIN + '/ratgeber/feed.xml">\n'
+RG_ROBOTS = '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">\n'
 
 def build_ratgeber():
     urls = ["ratgeber/"]
@@ -604,8 +728,6 @@ def build_ratgeber():
     coll = {"@context":"https://schema.org","@type":"CollectionPage","name":"Ratgeber für Eigentümer von Ferienwohnungen","url":DOMAIN+"/ratgeber/","inLanguage":"de-CH",
             "publisher":{"@id":DOMAIN+"/#org"},
             "mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":i+1,"url":f'{DOMAIN}/ratgeber/{a["slug"]}/',"name":a["h1"]} for i, a in enumerate(ARTICLES)]}}
-    allcred = " · ".join(f'{a["photo"][1].split(",")[0]}: {RG_CREDITS[a["photo"][0]]["author"]}, {RG_CREDITS[a["photo"][0]]["lic"]}' for a in ARTICLES)
-    wm = RG_CREDITS["wengen-dorf-sommer"]
     b = f"""<main>
 <div class="wrap crumbs"><a href="{root}">Alpinhost</a> › Ratgeber</div>
 <section class="local-hero">
@@ -613,21 +735,21 @@ def build_ratgeber():
     <div>
       <p class="eyebrow">Ratgeber · {len(ARTICLES)} Artikel</p>
       <h1 style="margin-top:14px">Ratgeber für Eigentümer von Ferienwohnungen</h1>
-      <p class="lead" style="margin-top:18px">Vom Chalet in Wengen bis zur Stadtwohnung in Luzern: Hier steht, was die Vermietung einbringt, was sie kostet und welche Regeln gelten. Jeder Artikel nennt seine Quellen.</p>
+      <p class="lead" style="margin-top:18px">Vom Chalet in Wengen bis zur Stadtwohnung in Luzern: Hier steht, was die Vermietung einbringt, was sie kostet und welche Regeln gelten.</p>
       <div class="cta-row"><a class="btn btn-primary" href="{root}#rechner">Ertrag berechnen</a><a class="btn btn-ghost" href="{root}#kontakt">Wohnung prüfen lassen</a></div>
     </div>
     <figure class="photo" style="margin:0">{img("wengen-dorf-sommer", "Blick auf das Dorf Wengen im Sommer mit Chalets, Wiesen und Wald", root=root, eager=True)}<figcaption>Wengen, Berner Oberland</figcaption></figure>
   </div>
 </section>
 <section class="block" style="padding-top:30px">
-  <div class="wrap">{groups}
-    <p class="art-credit" style="margin-top:28px">Fotos: Wikimedia Commons. Wengen: {wm['author']}, {wm['lic']} · {allcred}</p>
-  </div>
+  <div class="wrap">{groups}</div>
 </section>
 </main>"""
-    write("ratgeber/index.html", page_shell(head("Ratgeber: Ferienwohnung vermieten in der Schweiz | Alpinhost",
-        "Ratgeber für Eigentümer von Ferienwohnungen: Ertrag, Airbnb oder Booking.com, Steuern, Kurtaxe, Regeln, Einrichtung und Versicherung. Mit Quellen.",
-        "ratgeber/", root, [ORG, crumbs, coll], ogimg="img/og-wengen-dorf-sommer.jpg"), b, root))
+    hub_cred = rg_credits(["wengen-dorf-sommer"] + [a["photo"][0] for a in ARTICLES])
+    h = head("Ratgeber: Ferienwohnung vermieten in der Schweiz | Alpinhost",
+        "Ratgeber für Eigentümer von Ferienwohnungen: Ertrag, Auslastung, Airbnb oder Booking.com, Steuern, Kurtaxe, Regeln, Einrichtung und Versicherung.",
+        "ratgeber/", root, [ORG, crumbs, coll], ogimg="img/og-wengen-dorf-sommer.jpg")
+    write("ratgeber/index.html", page_shell(RG_ROBOTS + RG_FEED + h, b, root, credits=hub_cred))
 
     # ---- Artikel
     root = "../../"
@@ -640,16 +762,16 @@ def build_ratgeber():
             {"@type":"ListItem","position":2,"name":"Ratgeber","item":DOMAIN+"/ratgeber/"},
             {"@type":"ListItem","position":3,"name":a["h1"],"item":full}]}
         art = {"@context":"https://schema.org","@type":"Article","headline":a["h1"],"description":a["desc"],"inLanguage":"de-CH",
-               "image":[f'{DOMAIN}/img/{a["photo"][0]}-1600.webp'],"datePublished":RG_DATE,"dateModified":RG_DATE,
+               "image":[f'{DOMAIN}/img/og-{a["photo"][0]}.jpg', f'{DOMAIN}/img/{a["photo"][0]}-1600.webp'],"datePublished":RG_DATE,"dateModified":RG_DATE,
                "author":{"@type":"Organization","name":"Alpinhost","url":DOMAIN+"/"},"publisher":{"@id":DOMAIN+"/#org"},
-               "mainEntityOfPage":full,"articleSection":a["cat"]}
+               "mainEntityOfPage":full,"articleSection":a["cat"],"isAccessibleForFree":True}
         faq = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":t}} for q, t in a["faq"]]}
         keys = "".join(f"<li>{k}</li>" for k in a["key"])
         faqs = "".join(f"<h3>{q}</h3><p>{t}</p>" for q, t in a["faq"])
         srcs = "".join(f'<li><a href="{u}" rel="noopener nofollow">{l}</a></li>' if u and "alpinhost.ch" not in u else (f'<li><a href="{u}">{l}</a></li>' if u else f"<li>{l}</li>") for l, u in a["sources"])
         related = [x for x in ARTICLES if x["slug"] != a["slug"] and x["cat"] == a["cat"]] + [x for x in ARTICLES if x["cat"] != a["cat"]]
         rel = "".join(rg_card(x, root) for x in related[:3])
-        relcred = " · ".join(f'{x["photo"][1].split(",")[0]}: {RG_CREDITS[x["photo"][0]]["author"]}, {RG_CREDITS[x["photo"][0]]["lic"]}' for x in related[:3])
+        cred = rg_credits([a["photo"][0]] + [x["photo"][0] for x in related[:3]])
         b = f"""<main class="article">
 <div class="wrap crumbs"><a href="{root}">Alpinhost</a> › <a href="{root}ratgeber/">Ratgeber</a> › {a['h1']}</div>
 <article>
@@ -659,7 +781,7 @@ def build_ratgeber():
   <p class="lead" style="margin-top:18px">{a['lead']}</p>
   <p class="art-meta">Stand: {RG_STAND} · Alpinhost Redaktion</p>
   <figure class="photo art-hero">{img(a['photo'][0], a['photo'][1], sizes="(max-width: 1180px) 100vw, 1180px", root=root, eager=True)}</figure>
-  <p class="art-credit">{a['photo'][2]} {rg_credit(a['photo'][0])}</p>
+  <p class="art-credit">{a['photo'][2]}</p>
 </header>
 <section class="block" style="padding-top:34px">
   <div class="wrap twocol">
@@ -668,8 +790,6 @@ def build_ratgeber():
       {a['body']}
       <h2>Häufige Fragen</h2>
       {faqs}
-      <div class="srcs"><h2>Quellen</h2><ol>{srcs}</ol>
-      <p>Alle Angaben wurden im {RG_STAND} geprüft. Sie ersetzen keine Rechts- oder Steuerberatung.</p></div>
     </div>
     <aside class="sidecard">
       <p class="eyebrow">Ihre Wohnung</p>
@@ -688,11 +808,23 @@ def build_ratgeber():
   <div class="wrap">
     <h2 class="rg-cat" style="margin-top:0">Weiterlesen</h2>
     <div class="rg-grid">{rel}</div>
-    <p class="art-credit" style="margin-top:18px">Fotos: Wikimedia Commons. {relcred}</p>
   </div>
+</section>
+<section class="wrap srcs" aria-label="Quellen">
+  <p class="srcs-h">Quellen</p>
+  <ol>{srcs}</ol>
+  <p>Alle Angaben wurden im {RG_STAND} geprüft. Sie ersetzen keine Rechts- oder Steuerberatung.</p>
 </section>
 </main>"""
         h = head(a["title"] + " | Alpinhost", a["desc"], url, root, [ORG, crumbs, art, faq], ogimg=f'img/og-{a["photo"][0]}.jpg').replace('<meta property="og:type" content="website">', '<meta property="og:type" content="article">')
-        write(url + "index.html", page_shell(h, b, root))
+        write(url + "index.html", page_shell(RG_ROBOTS + RG_FEED + h, b, root, credits=cred))
+
+    # ---- RSS-Feed
+    from email.utils import format_datetime
+    import datetime as _dt
+    pub = format_datetime(_dt.datetime.strptime(RG_DATE, "%Y-%m-%d").replace(hour=8, tzinfo=_dt.timezone.utc))
+    esc = lambda t: t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    items = "".join(f'<item><title>{esc(a["h1"])}</title><link>{DOMAIN}/ratgeber/{a["slug"]}/</link><guid isPermaLink="true">{DOMAIN}/ratgeber/{a["slug"]}/</guid><description>{esc(a["desc"])}</description><category>{esc(a["cat"])}</category><pubDate>{pub}</pubDate></item>\n' for a in ARTICLES)
+    write("ratgeber/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alpinhost Ratgeber</title><link>{DOMAIN}/ratgeber/</link><atom:link href="{DOMAIN}/ratgeber/feed.xml" rel="self" type="application/rss+xml"/><description>Ratgeber für Eigentümer von Ferienwohnungen in der Schweiz</description><language>de-CH</language><lastBuildDate>{pub}</lastBuildDate>\n{items}</channel></rss>\n')
     json.dump(urls, open("i18n/ratgeber_urls.json", "w"))
     return urls

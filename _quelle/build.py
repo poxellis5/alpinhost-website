@@ -64,9 +64,15 @@ EXTRA_CSS = """
 .swipe{display:none;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
 @media (max-width:620px){.swipe{display:block}.tbl.wide table{min-width:520px}.tbl th,.tbl td{padding:9px 10px}}
 .note{font-size:14.5px;border-left:3px solid var(--glow);padding-left:14px}
-.srcs{font-size:14px;margin-top:10px;display:grid;gap:10px}
-.srcs h2{font-size:20px;margin-top:8px}
-.srcs a{word-break:break-word}
+.srcs{font-size:12.5px;line-height:1.6;color:var(--muted);padding-bottom:44px}
+.srcs-h{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;margin:0}
+.srcs ol{margin:6px 0 10px;padding-left:18px}
+.srcs a{color:inherit;word-break:break-word}
+.srcs p{margin:0}
+footer .credits a{color:inherit;text-decoration:none}
+footer .credits + .credits{border-top:0;padding-top:0;margin-top:-8px}
+.occbar{width:90px;height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:7px}
+.occbar i{display:block;height:100%;background:var(--glow);border-radius:99px}
 .rg-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 @media (max-width:1060px){.rg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:620px){.rg-grid{grid-template-columns:1fr}}
@@ -253,20 +259,20 @@ def header(root, home=False):
   </div>
 </header>"""
 
-def footer(root):
+def footer(root, credits=""):
     reg = "".join(f'<a href="{root}{r["slug"]}/">{"Airbnb-Verwaltung " + r["name"] if k!="schweiz" else "Airbnb-Verwaltung Schweiz"}</a>' for k, r in REGIONS.items())
     return f"""<footer>
   <div class="wrap">
     <div><b>Alpinhost</b><br>Ferienwohnungs-Management für Airbnb und Booking.com in der ganzen Schweiz.<br><br>WhatsApp und Telefon: {PHONE}<br>E-Mail: <a href="mailto:info@alpinhost.ch" style="color:inherit">info@alpinhost.ch</a></div>
     <div class="footlinks"><b>Regionen</b>{reg}</div>
     <div class="footlinks"><b>Unternehmen</b><a href="{root}#preise">Preise</a><a href="{root}#fragen">Fragen</a><a href="{root}ratgeber/" data-de-only>Ratgeber</a><a href="{root}impressum/">Impressum</a><a href="{root}datenschutz/">Datenschutz</a><span>Alpinhost ist eine Marke der R&amp;B Digital Market KlG</span></div>
-    <p class="credits">Fotos: Wikimedia Commons. Grindelwald mit Eiger und Kapellbrücke Luzern: Leonhard Lenz, CC0 · Frühling über Grindelwald: Speedy Füllemann, CC BY 3.0 · Winter bei Grindelwald: Robert Campbell KOR, CC BY 2.0 · Bern Altstadt: August Geyler, CC BY-SA 4.0 · Weggis: Arkelin, CC BY 4.0 · Interlaken vom Harder Kulm: Ank Kumar, CC BY-SA 4.0 · Lauterbrunnental: Chensiyuan, CC BY-SA 4.0 · Wengen im Winter: Jpatokal, CC BY-SA 4.0 · Schlüsselbox: Brainy J, CC0.</p>
+    <p class="credits">Fotos: Wikimedia Commons. Grindelwald mit Eiger und Kapellbrücke Luzern: Leonhard Lenz, CC0 · Frühling über Grindelwald: Speedy Füllemann, CC BY 3.0 · Winter bei Grindelwald: Robert Campbell KOR, CC BY 2.0 · Bern Altstadt: August Geyler, CC BY-SA 4.0 · Weggis: Arkelin, CC BY 4.0 · Interlaken vom Harder Kulm: Ank Kumar, CC BY-SA 4.0 · Lauterbrunnental: Chensiyuan, CC BY-SA 4.0 · Wengen im Winter: Jpatokal, CC BY-SA 4.0 · Schlüsselbox: Brainy J, CC0. Marktdaten: GuestFavorites, November 2025 bis Oktober 2026.</p>{f'<p class="credits" data-de-only>{credits}</p>' if credits else ""}
   </div>
 </footer>"""
 
 MODAL = src[src.index('<div class="modal" id="pkgmodal"'):src.index('<footer>')].strip()
 
-def page_shell(headhtml, body, root, home=False):
+def page_shell(headhtml, body, root, home=False, credits=""):
     return f"""<!doctype html>
 <html lang="de-CH">
 <head>
@@ -277,7 +283,7 @@ def page_shell(headhtml, body, root, home=False):
 {header(root, home)}
 {body}
 {MODAL}
-{footer(root)}
+{footer(root, credits)}
 <script src="{root}assets/site.js?v={AV_JS}" defer></script>
 </body>
 </html>
@@ -347,7 +353,7 @@ FAQ = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":
 WEB = {"@context":"https://schema.org","@type":"WebSite","name":"Alpinhost","url":DOMAIN+"/","inLanguage":"de-CH","publisher":{"@id":DOMAIN+"/#org"}}
 home_title = "Airbnb-Verwaltung Schweiz – Ferienwohnung vermieten | Alpinhost"
 home_desc = "Wir vermieten und betreuen Ihre Ferienwohnung auf Airbnb und Booking.com. Ganze Schweiz, vor Ort in Jungfrau Region, Bern und Innerschweiz. 18 % oder 21 %."
-write("index.html", page_shell(head(home_title, home_desc, "", "", [ORG, WEB, FAQ]), body, "", home=True))
+write("index.html", page_shell(head(home_title, home_desc, "", "", [ORG, WEB, FAQ]), body, "", home=True, credits=RG_HOME_CREDITS))
 
 # ---------- region pages
 for key, r in REGIONS.items():
@@ -365,6 +371,7 @@ for key, r in REGIONS.items():
         p2 = f'<figure class="photo" style="margin:8px 0 0;aspect-ratio:16/10">{img(r["photo2"][0], r["photo2"][1], root=root, wh=r["photo2"][2])}</figure>'
     places = " · ".join(r["places"])
     others = " · ".join(f'<a href="{root}{o["slug"]}/">{"Ganze Schweiz" if k2=="schweiz" else o["name"]}</a>' for k2, o in REGIONS.items() if k2 != key)
+    rg_html, rg_cred = rg_region_block(key, root)
     b = f"""<main>
 <div class="wrap crumbs"><a href="{root}">Alpinhost</a> › {r['h1']}</div>
 <section class="local-hero">
@@ -402,8 +409,8 @@ for key, r in REGIONS.items():
     </aside>
   </div>
 </section>
-</main>"""
-    write(url + "index.html", page_shell(head(r["title"], r["desc"], url, root, [ORG, crumbs, svc], ogimg=f"img/og-{r['photo'][0]}.jpg"), b, root))
+{rg_html}</main>"""
+    write(url + "index.html", page_shell(head(r["title"], r["desc"], url, root, [ORG, crumbs, svc], ogimg=f"img/og-{r['photo'][0]}.jpg"), b, root, credits=rg_cred))
 
 # ---------- legal
 def legal(slug, title, h1, html):

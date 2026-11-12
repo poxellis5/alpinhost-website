@@ -297,9 +297,15 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
 .swipe{display:none;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
 @media (max-width:620px){.swipe{display:block}.tbl.wide table{min-width:520px}.tbl th,.tbl td{padding:9px 10px}}
 .note{font-size:14.5px;border-left:3px solid var(--glow);padding-left:14px}
-.srcs{font-size:14px;margin-top:10px;display:grid;gap:10px}
-.srcs h2{font-size:20px;margin-top:8px}
-.srcs a{word-break:break-word}
+.srcs{font-size:12.5px;line-height:1.6;color:var(--muted);padding-bottom:44px}
+.srcs-h{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;margin:0}
+.srcs ol{margin:6px 0 10px;padding-left:18px}
+.srcs a{color:inherit;word-break:break-word}
+.srcs p{margin:0}
+footer .credits a{color:inherit;text-decoration:none}
+footer .credits + .credits{border-top:0;padding-top:0;margin-top:-8px}
+.occbar{width:90px;height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:7px}
+.occbar i{display:block;height:100%;background:var(--glow);border-radius:99px}
 .rg-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 @media (max-width:1060px){.rg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:620px){.rg-grid{grid-template-columns:1fr}}
