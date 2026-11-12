@@ -63,7 +63,7 @@ def unplace(html, vals):
         for i, v in enumerate(vals[k]): html = html.replace(f"{{{k}{i}}}", v)
     return html
 
-KEEP = {"Alpinhost","Grindelwald","Interlaken","Engelberg","Andermatt","Zermatt","Verbier","Saas-Fee","Crans-Montana","Lausanne","Lugano","CHF 0","Wengen","Lauterbrunnen","info@alpinhost.ch","de","en","fr","it","es",
+KEEP = {"Alpinhost","Grindelwald Experiences","Jungfrau Flights","Grindelwald","Interlaken","Engelberg","Andermatt","Zermatt","Verbier","Saas-Fee","Crans-Montana","Lausanne","Lugano","CHF 0","Wengen","Lauterbrunnen","info@alpinhost.ch","de","en","fr","it","es",
  "Interlaken · Unterseen · Matten · Wilderswil · Bönigen · Ringgenberg","Lauterbrunnen · Wengen · Mürren · Gimmelwald · Stechelberg · Isenfluh"}
 def tr_text(s, lang, where):
     t = norm(s)

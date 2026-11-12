@@ -40,3 +40,9 @@ en: Email (optional)
 fr: E-mail (facultatif)
 it: E-mail (facoltativa)
 es: Correo (opcional)
+
+de: Schwesterunternehmen
+en: Sister companies
+fr: Sociétés sœurs
+it: Società sorelle
+es: Empresas hermanas
