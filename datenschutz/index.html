@@ -25,7 +25,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&amp;family=Figtree:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
-<link href="../assets/site.css?v=24b7b289" rel="stylesheet"/>
+<link href="../assets/site.css?v=91a7ac7b" rel="stylesheet"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://alpinhost.ch/#org", "name": "Alpinhost", "url": "https://alpinhost.ch/", "telephone": "+41795318111", "description": "Ferienwohnungs-Management für Airbnb und Booking.com in der ganzen Schweiz. Vor Ort in der Jungfrau Region, in Bern und in der Innerschweiz.", "image": "https://alpinhost.ch/img/grindelwald-eiger-1600.webp", "logo": "https://alpinhost.ch/favicon.svg", "email": "info@alpinhost.ch", "parentOrganization": {"@type": "Organization", "name": "R&B Digital Market KlG", "address": {"@type": "PostalAddress", "streetAddress": "Kellerstrasse 29", "postalCode": "6005", "addressLocality": "Luzern", "addressCountry": "CH"}}, "areaServed": [{"@type": "Country", "name": "Schweiz"}, {"@type": "Place", "name": "Jungfrau Region"}, {"@type": "City", "name": "Grindelwald"}, {"@type": "City", "name": "Interlaken"}, {"@type": "City", "name": "Lauterbrunnen"}, {"@type": "City", "name": "Wengen"}, {"@type": "City", "name": "Luzern"}, {"@type": "City", "name": "Bern"}], "knowsLanguage": ["de", "en", "fr", "it", "es"], "makesOffer": [{"@type": "Offer", "name": "Basis", "description": "18 % vom Übernachtungsumsatz nach Plattformgebühr. Inserat, Preise, Gästebetreuung, Monatsbericht.", "itemOffered": {"@type": "Service", "name": "Airbnb-Verwaltung Basis"}}, {"@type": "Offer", "name": "Komplett", "description": "21 % vom Übernachtungsumsatz nach Plattformgebühr. Alles inklusive Reinigung, Wäsche, Check-in und Kontrolle.", "itemOffered": {"@type": "Service", "name": "Airbnb-Verwaltung Komplett"}}], "priceRange": "18 % – 21 % Provision"}</script>
 </head>
 <body>
@@ -43,7 +43,7 @@
 </header>
 <main class="legal"><div class="wrap crumbs"><a href="../">Alpinhost</a> › Datenschutzerklärung</div><section class="block" style="padding-top:30px"><div class="wrap prose"><h1 style="font-size:clamp(32px,4vw,46px)">Datenschutzerklärung</h1><p>Wir nehmen den Schutz Ihrer Daten ernst und bearbeiten Personendaten nach dem Schweizer Datenschutzgesetz (DSG).</p>
 <h2>Verantwortlich</h2><p>R&amp;B Digital Market KlG, Marke Alpinhost, Kellerstrasse 29, 6005 Luzern. Kontakt: <a href="mailto:info@alpinhost.ch">info@alpinhost.ch</a> oder WhatsApp wie im Impressum angegeben.</p>
-<h2>Anfragen</h2><p>Wenn Sie uns über das Formular eine Anfrage senden, wird Ihre Nachricht in WhatsApp vorbereitet und erst gesendet, wenn Sie selbst auf Senden tippen. Wir verwenden Ihre Angaben nur, um Ihre Anfrage zu beantworten, und geben sie nicht weiter.</p>
+<h2>Anfragen</h2><p>Wenn Sie das Formular absenden, erhalten wir Ihre Angaben per E-Mail. Für die Übermittlung nutzen wir den Dienst FormSubmit, der die Angaben an unser Postfach weiterleitet. Wählen Sie WhatsApp, wird Ihre Nachricht in WhatsApp vorbereitet und erst gesendet, wenn Sie selbst auf Senden tippen. Wir verwenden Ihre Angaben nur, um Ihre Anfrage zu beantworten.</p>
 <h2>Keine Cookies, kein Tracking</h2><p>Diese Website setzt keine Cookies und verwendet keine Analyse- oder Werbedienste.</p>
 <h2>Hosting und Schriften</h2><p>Beim Aufruf der Website verarbeitet unser Hosting-Anbieter technisch notwendige Daten wie die IP-Adresse. Die Schriften werden von Google Fonts geladen. Dabei wird Ihre IP-Adresse an Google übermittelt.</p>
 <h2>Ihre Rechte</h2><p>Sie können jederzeit Auskunft über Ihre bei uns gespeicherten Daten verlangen und deren Berichtigung oder Löschung beantragen.</p></div></section></main>
@@ -59,7 +59,8 @@
 <div><label for="m-tel">Telefon</label><input autocomplete="tel" id="m-tel" type="tel"/></div>
 <div><label for="m-ort">Ort der Wohnung</label><input id="m-ort" placeholder="z.B. Grindelwald"/></div>
 <div><label for="m-zi">Zimmer</label><select id="m-zi"><option>1</option><option selected="">2</option><option>3</option><option>4 oder mehr</option></select></div>
-<div class="full"><button class="btn btn-primary" type="submit">Anfrage per WhatsApp senden</button></div>
+<input aria-hidden="true" autocomplete="off" id="m-hp" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" tabindex="-1" type="text"/>
+<div class="full formbtns"><button class="btn btn-primary" type="submit">Anfrage senden</button><button class="btn btn-wa" id="m-wa" type="button">Per WhatsApp senden</button></div>
 <p class="full alt" id="m-msg">Wir melden uns am selben Werktag. Lieber direkt anrufen? <b>+41 79 531 81 11</b></p>
 </form>
 </div>
@@ -72,6 +73,6 @@
 <p class="credits">Fotos: Wikimedia Commons. Grindelwald mit Eiger und Kapellbrücke Luzern: Leonhard Lenz, CC0 · Frühling über Grindelwald: Speedy Füllemann, CC BY 3.0 · Winter bei Grindelwald: Robert Campbell KOR, CC BY 2.0 · Bern Altstadt: August Geyler, CC BY-SA 4.0 · Weggis: Arkelin, CC BY 4.0 · Interlaken vom Harder Kulm: Ank Kumar, CC BY-SA 4.0 · Lauterbrunnental: Chensiyuan, CC BY-SA 4.0 · Wengen im Winter: Jpatokal, CC BY-SA 4.0 · Schlüsselbox: Brainy J, CC0. Marktdaten: GuestFavorites, November 2025 bis Oktober 2026.</p>
 </div>
 </footer>
-<script defer="" src="../assets/site.js?v=e67bc66c"></script>
+<script defer="" src="../assets/site.js?v=b32ce2b4"></script>
 </body>
 </html>

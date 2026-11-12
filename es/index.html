@@ -354,12 +354,14 @@
 <form id="leadform" novalidate="">
 <div><label for="f-name">Nombre</label><input autocomplete="name" id="f-name" name="name" required=""/></div>
 <div><label for="f-tel">Teléfono</label><input autocomplete="tel" id="f-tel" name="tel" required="" type="tel"/></div>
+<div class="full"><label for="f-mail">Correo (opcional)</label><input autocomplete="email" id="f-mail" name="email" type="email"/></div>
 <div><label for="f-ort">Ubicación del apartamento</label><input id="f-ort" name="ort" placeholder="p. ej. Grindelwald" required=""/></div>
 <div><label for="f-zi">Habitaciones</label><select id="f-zi" name="zi"><option>1</option><option selected="">2</option><option>3</option><option>4 o más</option></select></div>
 <div><label for="f-status">Usted es</label><select id="f-status" name="status"><option>Propietario</option><option>Inquilino</option></select></div>
 <div><label for="f-pkg">Paquete</label><select id="f-pkg" name="pkg"><option>Completo 21 %</option><option>Básico 18 %</option><option>Aún no lo sé</option></select></div>
 <div class="full"><label for="f-msg">Mensaje (opcional)</label><textarea id="f-msg" name="msg" placeholder="¿El apartamento ya se alquila? ¿Desde cuándo?"></textarea></div>
-<div class="full"><button class="btn btn-primary" type="submit">Enviar consulta por WhatsApp</button></div>
+<input aria-hidden="true" autocomplete="off" id="f-hp" name="_honey" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" tabindex="-1" type="text"/>
+<div class="full formbtns"><button class="btn btn-primary" type="submit">Enviar consulta</button><button class="btn btn-wa" id="f-wa" type="button">Enviar por WhatsApp</button></div>
 <p aria-live="polite" class="formmsg" id="formmsg">Solo usamos sus datos para esta consulta.</p>
 </form>
 </div>
@@ -378,7 +380,8 @@
 <div><label for="m-tel">Teléfono</label><input autocomplete="tel" id="m-tel" type="tel"/></div>
 <div><label for="m-ort">Ubicación del apartamento</label><input id="m-ort" placeholder="p. ej. Grindelwald"/></div>
 <div><label for="m-zi">Habitaciones</label><select id="m-zi"><option>1</option><option selected="">2</option><option>3</option><option>4 o más</option></select></div>
-<div class="full"><button class="btn btn-primary" type="submit">Enviar consulta por WhatsApp</button></div>
+<input aria-hidden="true" autocomplete="off" id="m-hp" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" tabindex="-1" type="text"/>
+<div class="full formbtns"><button class="btn btn-primary" type="submit">Enviar consulta</button><button class="btn btn-wa" id="m-wa" type="button">Enviar por WhatsApp</button></div>
 <p class="full alt" id="m-msg">Le contestamos el mismo día laborable. ¿Prefiere llamar? <b>+41 79 531 81 11</b></p>
 </form>
 </div>
@@ -391,6 +394,6 @@
 <p class="credits">Fotos: Wikimedia Commons. Grindelwald con el Eiger y puente de la Capilla de Lucerna: Leonhard Lenz, CC0 · Primavera sobre Grindelwald: Speedy Füllemann, CC BY 3.0 · Invierno cerca de Grindelwald: Robert Campbell KOR, CC BY 2.0 · Casco antiguo de Berna: August Geyler, CC BY-SA 4.0 · Weggis: Arkelin, CC BY 4.0 · Interlaken desde el Harder Kulm: Ank Kumar, CC BY-SA 4.0 · Valle de Lauterbrunnen: Chensiyuan, CC BY-SA 4.0 · Wengen en invierno: Jpatokal, CC BY-SA 4.0 · Caja de llaves: Brainy J, CC0. Datos de mercado: GuestFavorites, noviembre de 2025 a octubre de 2026.</p>
 </div>
 </footer>
-<script defer="" src="/assets/site.es.js?v=f0da0c42"></script>
+<script defer="" src="/assets/site.es.js?v=5a94eb62"></script>
 </body>
 </html>

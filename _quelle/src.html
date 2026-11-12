@@ -216,6 +216,10 @@ fieldset{border:0;margin:0;padding:0}
 .direct div{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .copy{border:1.5px solid color-mix(in srgb,var(--onlake) 50%,transparent);background:transparent;color:var(--onlake);border-radius:999px;padding:5px 12px;font:600 12.5px var(--body);cursor:pointer}
 .formmsg{grid-column:1/-1;font-size:14px;color:var(--muted)}
+.formbtns{display:flex;flex-wrap:wrap;gap:10px}
+.formbtns .btn{flex:1 1 200px;justify-content:center;text-align:center}
+.btn-wa{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+.btn[disabled]{opacity:.6;cursor:default}
 .formmsg a{color:var(--lake);font-weight:600}
 @media (max-width:860px){.contact{grid-template-columns:1fr;padding:28px}.contact form{grid-template-columns:1fr}}
 
@@ -586,12 +590,14 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
       <form id="leadform" novalidate>
         <div><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
         <div><label for="f-tel">Telefon</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" required></div>
+        <div class="full"><label for="f-mail">E-Mail (optional)</label><input id="f-mail" name="email" type="email" autocomplete="email"></div>
         <div><label for="f-ort">Ort der Wohnung</label><input id="f-ort" name="ort" placeholder="z.B. Grindelwald" required></div>
         <div><label for="f-zi">Zimmer</label><select id="f-zi" name="zi"><option>1</option><option selected>2</option><option>3</option><option>4 oder mehr</option></select></div>
         <div><label for="f-status">Sie sind</label><select id="f-status" name="status"><option>Eigentümer</option><option>Mieter</option></select></div>
         <div><label for="f-pkg">Paket</label><select id="f-pkg" name="pkg"><option>Komplett 21 %</option><option>Basis 18 %</option><option>Noch offen</option></select></div>
         <div class="full"><label for="f-msg">Nachricht (optional)</label><textarea id="f-msg" name="msg" placeholder="Wird die Wohnung schon vermietet? Seit wann?"></textarea></div>
-        <div class="full"><button class="btn btn-primary" type="submit">Anfrage per WhatsApp senden</button></div>
+        <input type="text" name="_honey" id="f-hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <div class="full formbtns"><button class="btn btn-primary" type="submit">Anfrage senden</button><button class="btn btn-wa" type="button" id="f-wa">Per WhatsApp senden</button></div>
         <p class="formmsg" id="formmsg" aria-live="polite">Wir verwenden Ihre Angaben nur für diese Anfrage.</p>
       </form>
     </div>
@@ -612,7 +618,8 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
       <div><label for="m-tel">Telefon</label><input id="m-tel" type="tel" autocomplete="tel"></div>
       <div><label for="m-ort">Ort der Wohnung</label><input id="m-ort" placeholder="z.B. Grindelwald"></div>
       <div><label for="m-zi">Zimmer</label><select id="m-zi"><option>1</option><option selected>2</option><option>3</option><option>4 oder mehr</option></select></div>
-      <div class="full"><button class="btn btn-primary" type="submit">Anfrage per WhatsApp senden</button></div>
+      <input type="text" id="m-hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <div class="full formbtns"><button class="btn btn-primary" type="submit">Anfrage senden</button><button class="btn btn-wa" type="button" id="m-wa">Per WhatsApp senden</button></div>
       <p class="full alt" id="m-msg">Wir melden uns am selben Werktag. Lieber direkt anrufen? <b>+41 79 531 81 11</b></p>
     </form>
   </div>
@@ -713,25 +720,54 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
     card.addEventListener("click", function(e){ if(e.target.closest("summary,details p")) return; e.preventDefault(); openModal(pkg); });
     card.addEventListener("keydown", function(e){ if((e.key==="Enter"||e.key===" ") && e.target===card){ e.preventDefault(); openModal(pkg); } });
   });
+  var EP="https://formsubmit.co/ajax/info@alpinhost.ch", WA="https://wa.me/41795318111?text=";
+  function fv(id){ return document.getElementById(id).value.trim(); }
+  function sendMail(data, msg, btn, waUrl){
+    var old=btn.textContent; btn.disabled=true; btn.textContent="Wird gesendet …";
+    data._template="table"; data._captcha="false"; data.Sprache=document.documentElement.lang; data.Seite=location.pathname;
+    fetch(EP,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(data)})
+      .then(function(r){ return r.json(); })
+      .then(function(j){ if(String(j.success)!=="true") throw new Error("send"); msg.innerHTML='<b>Danke, Ihre Anfrage ist bei uns.</b> Wir melden uns am selben Werktag.'; btn.textContent="Gesendet"; })
+      .catch(function(){ btn.disabled=false; btn.textContent=old; msg.innerHTML='Das Senden hat nicht geklappt. Bitte <a href="'+waUrl+'" target="_blank" rel="noopener" style="color:var(--lake);font-weight:600">per WhatsApp senden</a> oder an <a href="mailto:info@alpinhost.ch" style="color:var(--lake);font-weight:600">info@alpinhost.ch</a> schreiben.'; });
+  }
+  function openWa(url, msg){
+    window.open(url, "_blank", "noopener");
+    msg.innerHTML='Ihre Anfrage ist vorbereitet. <a href="'+url+'" target="_blank" rel="noopener" style="color:var(--lake);font-weight:600">In WhatsApp öffnen und senden</a>. Lieber anrufen? <b>+41 79 531 81 11</b>';
+  }
+  // Paket-Fenster
+  function mData(){
+    var msg=document.getElementById("m-msg");
+    var need=["m-name","m-tel","m-ort"].filter(function(id){return !fv(id);});
+    if(need.length){ msg.textContent="Bitte Name, Telefon und Ort der Wohnung ausfüllen."; document.getElementById(need[0]).focus(); return null; }
+    var pkg=document.getElementById("m-pkgname").textContent;
+    var text="Anfrage Alpinhost\nPaket: "+pkg+"\nName: "+fv("m-name")+"\nTelefon: "+fv("m-tel")+"\nOrt: "+fv("m-ort")+"\nZimmer: "+fv("m-zi");
+    return {msg:msg, wa:WA+encodeURIComponent(text), data:{_subject:"Anfrage Alpinhost: "+fv("m-ort"), Name:fv("m-name"), Telefon:fv("m-tel"), Ort:fv("m-ort"), Zimmer:fv("m-zi"), Paket:pkg}};
+  }
   document.getElementById("m-form").addEventListener("submit", function(e){
     e.preventDefault();
-    var g=function(id){return document.getElementById(id).value.trim();}, msg=document.getElementById("m-msg");
-    var need=["m-name","m-tel","m-ort"].filter(function(id){return !g(id);});
-    if(need.length){ msg.textContent="Bitte Name, Telefon und Ort der Wohnung ausfüllen."; document.getElementById(need[0]).focus(); return; }
-    var text="Anfrage Alpinhost\nPaket: "+document.getElementById("m-pkgname").textContent+"\nName: "+g("m-name")+"\nTelefon: "+g("m-tel")+"\nOrt: "+g("m-ort")+"\nZimmer: "+g("m-zi");
-    var url="https://wa.me/41795318111?text="+encodeURIComponent(text);
-    msg.innerHTML='Ihre Anfrage ist vorbereitet. <a href="'+url+'" target="_blank" rel="noopener" style="color:var(--lake);font-weight:600">In WhatsApp öffnen und senden</a>. Lieber anrufen? <b>+41 79 531 81 11</b>';
+    var d=mData(); if(!d) return;
+    if(fv("m-hp")) return;
+    sendMail(d.data, d.msg, e.target.querySelector('button[type="submit"]'), d.wa);
   });
-  var f = document.getElementById("leadform");
+  document.getElementById("m-wa").addEventListener("click", function(){ var d=mData(); if(d) openWa(d.wa, d.msg); });
+  // Kontaktformular
+  function fData(){
+    var msg=document.getElementById("formmsg");
+    var need=["f-name","f-tel","f-ort"].filter(function(id){ return !fv(id); });
+    if(need.length){ msg.textContent="Bitte Name, Telefon und Ort der Wohnung ausfüllen."; document.getElementById(need[0]).focus(); return null; }
+    var text="Anfrage Alpinhost\nName: "+fv("f-name")+"\nTelefon: "+fv("f-tel")+(fv("f-mail")?"\nE-Mail: "+fv("f-mail"):"")+"\nOrt: "+fv("f-ort")+"\nZimmer: "+fv("f-zi")+"\nStatus: "+fv("f-status")+"\nPaket: "+fv("f-pkg")+(fv("f-msg")?"\nNachricht: "+fv("f-msg"):"");
+    var data={_subject:"Anfrage Alpinhost: "+fv("f-ort"), Name:fv("f-name"), Telefon:fv("f-tel"), Ort:fv("f-ort"), Zimmer:fv("f-zi"), Status:fv("f-status"), Paket:fv("f-pkg")};
+    if(fv("f-mail")){ data["E-Mail"]=fv("f-mail"); data._replyto=fv("f-mail"); }
+    if(fv("f-msg")) data.Nachricht=fv("f-msg");
+    return {msg:msg, wa:WA+encodeURIComponent(text), data:data};
+  }
+  var f=document.getElementById("leadform");
   f.addEventListener("submit", function(e){
     e.preventDefault();
-    var msg = document.getElementById("formmsg");
-    var need = ["f-name","f-tel","f-ort"].filter(function(id){ return !document.getElementById(id).value.trim(); });
-    if (need.length){ msg.textContent = "Bitte Name, Telefon und Ort der Wohnung ausfüllen."; document.getElementById(need[0]).focus(); return; }
-    var g = function(id){ return document.getElementById(id).value.trim(); };
-    var text = "Anfrage Alpinhost\nName: "+g("f-name")+"\nTelefon: "+g("f-tel")+"\nOrt: "+g("f-ort")+"\nZimmer: "+g("f-zi")+"\nStatus: "+g("f-status")+"\nPaket: "+g("f-pkg")+(g("f-msg")?"\nNachricht: "+g("f-msg"):"");
-    var url = "https://wa.me/41795318111?text=" + encodeURIComponent(text);
-    msg.innerHTML = 'Ihre Anfrage ist vorbereitet. <a href="'+url+'" target="_blank" rel="noopener">In WhatsApp öffnen und senden</a>. Falls WhatsApp nicht öffnet, rufen Sie uns an.';
+    var d=fData(); if(!d) return;
+    if(fv("f-hp")) return;
+    sendMail(d.data, d.msg, f.querySelector('button[type="submit"]'), d.wa);
   });
+  document.getElementById("f-wa").addEventListener("click", function(){ var d=fData(); if(d) openWa(d.wa, d.msg); });
 })();
 </script>

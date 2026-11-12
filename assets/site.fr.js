@@ -84,24 +84,53 @@
     card.addEventListener("click", function(e){ if(e.target.closest("summary,details p")) return; e.preventDefault(); openModal(pkg); });
     card.addEventListener("keydown", function(e){ if((e.key==="Enter"||e.key===" ") && e.target===card){ e.preventDefault(); openModal(pkg); } });
   });
+  var EP="https://formsubmit.co/ajax/info@alpinhost.ch", WA="https://wa.me/41795318111?text=";
+  function fv(id){ return document.getElementById(id).value.trim(); }
+  function sendMail(data, msg, btn, waUrl){
+    var old=btn.textContent; btn.disabled=true; btn.textContent="Envoi en cours …";
+    data._template="table"; data._captcha="false"; data.Sprache=document.documentElement.lang; data.Seite=location.pathname;
+    fetch(EP,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(data)})
+      .then(function(r){ return r.json(); })
+      .then(function(j){ if(String(j.success)!=="true") throw new Error("send"); msg.innerHTML='<b>Merci, nous avons bien reçu votre demande.</b> Nous vous répondons le jour ouvrable même.'; btn.textContent="Envoyé"; })
+      .catch(function(){ btn.disabled=false; btn.textContent=old; msg.innerHTML='L’envoi n’a pas fonctionné. Veuillez <a href="'+waUrl+'" target="_blank" rel="noopener" style="color:var(--lake);font-weight:600">envoyer par WhatsApp</a> ou écrire à <a href="mailto:info@alpinhost.ch" style="color:var(--lake);font-weight:600">info@alpinhost.ch</a>.'; });
+  }
+  function openWa(url, msg){
+    window.open(url, "_blank", "noopener");
+    msg.innerHTML='Votre demande est prête. <a href="'+url+'" target="_blank" rel="noopener" style="color:var(--lake);font-weight:600">Ouvrir et envoyer dans WhatsApp</a>. Vous préférez appeler ? <b>+41 79 531 81 11</b>';
+  }
+  // Paket-Fenster
+  function mData(){
+    var msg=document.getElementById("m-msg");
+    var need=["m-name","m-tel","m-ort"].filter(function(id){return !fv(id);});
+    if(need.length){ msg.textContent="Veuillez indiquer le nom, le téléphone et le lieu du logement."; document.getElementById(need[0]).focus(); return null; }
+    var pkg=document.getElementById("m-pkgname").textContent;
+    var text="Alpinhost enquiry (FR)\nPackage: "+pkg+"\nName: "+fv("m-name")+"\nPhone: "+fv("m-tel")+"\nLocation: "+fv("m-ort")+"\nRooms: "+fv("m-zi");
+    return {msg:msg, wa:WA+encodeURIComponent(text), data:{_subject:"Anfrage Alpinhost: "+fv("m-ort"), Name:fv("m-name"), Telefon:fv("m-tel"), Ort:fv("m-ort"), Zimmer:fv("m-zi"), Paket:pkg}};
+  }
   document.getElementById("m-form").addEventListener("submit", function(e){
     e.preventDefault();
-    var g=function(id){return document.getElementById(id).value.trim();}, msg=document.getElementById("m-msg");
-    var need=["m-name","m-tel","m-ort"].filter(function(id){return !g(id);});
-    if(need.length){ msg.textContent="Veuillez indiquer le nom, le téléphone et le lieu du logement."; document.getElementById(need[0]).focus(); return; }
-    var text="Alpinhost enquiry (FR)\nPackage: "+document.getElementById("m-pkgname").textContent+"\nName: "+g("m-name")+"\nPhone: "+g("m-tel")+"\nLocation: "+g("m-ort")+"\nRooms: "+g("m-zi");
-    var url="https://wa.me/41795318111?text="+encodeURIComponent(text);
-    msg.innerHTML='Votre demande est prête. <a href="'+url+'" target="_blank" rel="noopener" style="color:var(--lake);font-weight:600">Ouvrir et envoyer dans WhatsApp</a>. Vous préférez appeler ? <b>+41 79 531 81 11</b>';
+    var d=mData(); if(!d) return;
+    if(fv("m-hp")) return;
+    sendMail(d.data, d.msg, e.target.querySelector('button[type="submit"]'), d.wa);
   });
-  var f = document.getElementById("leadform");
-  if (f) f.addEventListener("submit", function(e){
+  document.getElementById("m-wa").addEventListener("click", function(){ var d=mData(); if(d) openWa(d.wa, d.msg); });
+  // Kontaktformular
+  function fData(){
+    var msg=document.getElementById("formmsg");
+    var need=["f-name","f-tel","f-ort"].filter(function(id){ return !fv(id); });
+    if(need.length){ msg.textContent="Veuillez indiquer le nom, le téléphone et le lieu du logement."; document.getElementById(need[0]).focus(); return null; }
+    var text="Alpinhost enquiry (FR)\nName: "+fv("f-name")+"\nPhone: "+fv("f-tel")+(fv("f-mail")?"\nE-Mail: "+fv("f-mail"):"")+"\nLocation: "+fv("f-ort")+"\nRooms: "+fv("f-zi")+"\nStatus: "+fv("f-status")+"\nPackage: "+fv("f-pkg")+(fv("f-msg")?"\nMessage: "+fv("f-msg"):"");
+    var data={_subject:"Anfrage Alpinhost: "+fv("f-ort"), Name:fv("f-name"), Telefon:fv("f-tel"), Ort:fv("f-ort"), Zimmer:fv("f-zi"), Status:fv("f-status"), Paket:fv("f-pkg")};
+    if(fv("f-mail")){ data["E-Mail"]=fv("f-mail"); data._replyto=fv("f-mail"); }
+    if(fv("f-msg")) data.Nachricht=fv("f-msg");
+    return {msg:msg, wa:WA+encodeURIComponent(text), data:data};
+  }
+  var f=document.getElementById("leadform");
+  f.addEventListener("submit", function(e){
     e.preventDefault();
-    var msg = document.getElementById("formmsg");
-    var need = ["f-name","f-tel","f-ort"].filter(function(id){ return !document.getElementById(id).value.trim(); });
-    if (need.length){ msg.textContent = "Veuillez indiquer le nom, le téléphone et le lieu du logement."; document.getElementById(need[0]).focus(); return; }
-    var g = function(id){ return document.getElementById(id).value.trim(); };
-    var text = "Alpinhost enquiry (FR)\nName: "+g("f-name")+"\nPhone: "+g("f-tel")+"\nLocation: "+g("f-ort")+"\nRooms: "+g("f-zi")+"\nStatus: "+g("f-status")+"\nPackage: "+g("f-pkg")+(g("f-msg")?"\nMessage: "+g("f-msg"):"");
-    var url = "https://wa.me/41795318111?text=" + encodeURIComponent(text);
-    msg.innerHTML = 'Votre demande est prête. <a href="'+url+'" target="_blank" rel="noopener">Ouvrir et envoyer dans WhatsApp</a>. Si WhatsApp ne s’ouvre pas, appelez-nous.';
+    var d=fData(); if(!d) return;
+    if(fv("f-hp")) return;
+    sendMail(d.data, d.msg, f.querySelector('button[type="submit"]'), d.wa);
   });
+  document.getElementById("f-wa").addEventListener("click", function(){ var d=fData(); if(d) openWa(d.wa, d.msg); });
 })();

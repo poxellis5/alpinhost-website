@@ -428,7 +428,7 @@ legal("impressum", "Impressum | Alpinhost", "Impressum",
 legal("datenschutz", "Datenschutz | Alpinhost", "Datenschutzerklärung",
  """<p>Wir nehmen den Schutz Ihrer Daten ernst und bearbeiten Personendaten nach dem Schweizer Datenschutzgesetz (DSG).</p>
 <h2>Verantwortlich</h2><p>R&amp;B Digital Market KlG, Marke Alpinhost, Kellerstrasse 29, 6005 Luzern. Kontakt: <a href="mailto:info@alpinhost.ch">info@alpinhost.ch</a> oder WhatsApp wie im Impressum angegeben.</p>
-<h2>Anfragen</h2><p>Wenn Sie uns über das Formular eine Anfrage senden, wird Ihre Nachricht in WhatsApp vorbereitet und erst gesendet, wenn Sie selbst auf Senden tippen. Wir verwenden Ihre Angaben nur, um Ihre Anfrage zu beantworten, und geben sie nicht weiter.</p>
+<h2>Anfragen</h2><p>Wenn Sie das Formular absenden, erhalten wir Ihre Angaben per E-Mail. Für die Übermittlung nutzen wir den Dienst FormSubmit, der die Angaben an unser Postfach weiterleitet. Wählen Sie WhatsApp, wird Ihre Nachricht in WhatsApp vorbereitet und erst gesendet, wenn Sie selbst auf Senden tippen. Wir verwenden Ihre Angaben nur, um Ihre Anfrage zu beantworten.</p>
 <h2>Keine Cookies, kein Tracking</h2><p>Diese Website setzt keine Cookies und verwendet keine Analyse- oder Werbedienste.</p>
 <h2>Hosting und Schriften</h2><p>Beim Aufruf der Website verarbeitet unser Hosting-Anbieter technisch notwendige Daten wie die IP-Adresse. Die Schriften werden von Google Fonts geladen. Dabei wird Ihre IP-Adresse an Google übermittelt.</p>
 <h2>Ihre Rechte</h2><p>Sie können jederzeit Auskunft über Ihre bei uns gespeicherten Daten verlangen und deren Berichtigung oder Löschung beantragen.</p>""")

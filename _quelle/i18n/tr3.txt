@@ -21,3 +21,22 @@ en: Email:
 fr: E-mail :
 it: E-mail:
 es: Correo:
+
+
+de: Anfrage senden
+en: Send enquiry
+fr: Envoyer la demande
+it: Invia la richiesta
+es: Enviar consulta
+
+de: Per WhatsApp senden
+en: Send via WhatsApp
+fr: Envoyer par WhatsApp
+it: Invia via WhatsApp
+es: Enviar por WhatsApp
+
+de: E-Mail (optional)
+en: Email (optional)
+fr: E-mail (facultatif)
+it: E-mail (facoltativa)
+es: Correo (opcional)
