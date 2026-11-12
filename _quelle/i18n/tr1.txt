@@ -1438,11 +1438,11 @@ fr: Vallée de Lauterbrunnen avec ses parois abruptes et des sommets enneigés
 it: Valle di Lauterbrunnen con pareti rocciose ripide e cime innevate sullo sfondo
 es: Valle de Lauterbrunnen con paredes de roca escarpadas y cumbres nevadas al fondo
 
-de: <strong>2</strong><span>Wohnungen bereits in unserer Betreuung</span>
-en: <strong>2</strong><span>apartments already in our care</span>
-fr: <strong>2</strong><span>logements déjà gérés par nos soins</span>
-it: <strong>2</strong><span>appartamenti già in gestione</span>
-es: <strong>2</strong><span>apartamentos ya gestionados por nosotros</span>
+de: <strong>10 Jahre</strong><span>Erfahrung mit Airbnb und Kurzzeitvermietung</span>
+en: <strong>10 years</strong><span>of experience with Airbnb and short-term rentals</span>
+fr: <strong>10 ans</strong><span>d'expérience avec Airbnb et la location de courte durée</span>
+it: <strong>10 anni</strong><span>di esperienza con Airbnb e affitti brevi</span>
+es: <strong>10 años</strong><span>de experiencia con Airbnb y alquiler de corta estancia</span>
 
 de: <a href="{H0}">Alpinhost</a> › Airbnb-Verwaltung in der ganzen Schweiz
 en: <a href="{H0}">Alpinhost</a> › Airbnb management across Switzerland
