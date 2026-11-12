@@ -13,6 +13,21 @@ CSS = re.search(r"<style>(.*?)</style>", src, re.S).group(1)
 JS = re.search(r"<script>(.*?)</script>", src, re.S).group(1)
 
 EXTRA_CSS = """
+/* Hauptnavigation mit Unterreitern */
+nav.main{align-items:center}
+nav.main .mi{position:relative}
+nav.main .mt{display:inline-flex;align-items:center;gap:5px;padding:10px 0}
+nav.main .mt svg{width:11px;height:11px;transition:transform .15s}
+nav.main .mi:hover .mt,nav.main .mi:focus-within .mt{color:var(--ink)}
+nav.main .mi:hover .mt svg,nav.main .mi:focus-within .mt svg{transform:rotate(180deg)}
+nav.main .sub{position:absolute;left:-16px;top:100%;padding-top:6px;visibility:hidden;opacity:0;transform:translateY(-4px);transition:opacity .12s,transform .12s,visibility 0s .12s;z-index:70}
+nav.main .mi:hover .sub,nav.main .mi:focus-within .sub{visibility:visible;opacity:1;transform:none;transition:opacity .12s,transform .12s}
+nav.main .mi.shut .sub{visibility:hidden;opacity:0}
+nav.main .sub>div{background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 44px rgba(15,34,48,.16);padding:8px;display:grid;min-width:230px;width:max-content;max-width:360px}
+nav.main .sub a{padding:9px 12px;border-radius:8px;color:var(--ink);font-size:15px;line-height:1.3;font-weight:500}
+nav.main .sub a:hover,nav.main .sub a:focus-visible{background:var(--mist,#EEF2F4);color:var(--lake)}
+[id^="l-"],[id^="p-"],[id^="frage-"],.rg-cat[id]{scroll-margin-top:90px}
+
 .top .wrap{flex-wrap:nowrap}
 .crumbs{font-family:var(--mono);font-size:12.5px;color:var(--muted);padding-top:22px}
 .crumbs a{color:var(--muted)}
@@ -243,6 +258,28 @@ ORG = {
   "priceRange":"18 % – 21 % Provision"
 }
 
+FAQ_NAV = re.findall(r'<details id="(frage-\d+)"><summary>(.*?)</summary>', src)
+def nav_html(root, home=False):
+    """Hauptnavigation. Grosse Reiter mit Unterreitern, die beim Ueberfahren aufklappen."""
+    a = lambda h: (h if home else f"{root}{h}")
+    chev = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>'
+    def group(label, href, items, extra=""):
+        subs = "".join(f'<a href="{h}">{t}</a>' for t, h in items)
+        return f'<div class="mi"{extra}><a class="mt" href="{href}">{label}{chev}</a><div class="sub"><div>{subs}</div></div></div>'
+    leist = [("Inserat und Fotos","#l-inserat"),("Preise jeden Tag","#l-preise"),("Gäste rund um die Uhr","#l-gaeste"),("Check-in ohne Schlüsselübergabe","#l-checkin"),("Reinigung und Wäsche","#l-reinigung"),("Abrechnung und Bericht","#l-bericht")]
+    preise = [("Basis 18 %","#p-basis"),("Komplett 21 %","#p-komplett"),("Eine Buchung, offen gerechnet.","#p-beispiel")]
+    regs = [((r["name"][0].upper()+r["name"][1:]), f'{root}{r["slug"]}/') for r in REGIONS.values()]
+    cats = []
+    for art in ARTICLES:
+        if art["cat"] not in cats: cats.append(art["cat"])
+    rg = [(c, f'{root}ratgeber/#{rg_cat_id(c)}') for c in cats] + [("Alle Artikel", f'{root}ratgeber/')]
+    return (group("Leistungen", a("#leistungen"), [(t, a(h)) for t, h in leist])
+          + group("Preise", a("#preise"), [(t, a(h)) for t, h in preise])
+          + f'<a class="mt" href="{a("#rechner")}">Rechner</a>'
+          + group("Regionen", a("#regionen"), regs)
+          + group("Fragen", a("#fragen"), [(t, a("#"+i)) for i, t in FAQ_NAV])
+          + group("Ratgeber", f"{root}ratgeber/", rg, " data-de-only"))
+
 def header(root, home=False):
     a = lambda h: (h if home else f"{root}{h}")
     return f"""<header class="top">
@@ -252,7 +289,7 @@ def header(root, home=False):
       <span>Alpinhost<small>Ferienwohnungs-Management</small></span>
     </a>
     <nav class="main" aria-label="Hauptnavigation">
-      <a href="{a('#leistungen')}">Leistungen</a><a href="{a('#preise')}">Preise</a><a href="{a('#rechner')}">Rechner</a><a href="{a('#regionen')}">Regionen</a><a href="{a('#fragen')}">Fragen</a><a href="{root}ratgeber/" data-de-only>Ratgeber</a>
+      {nav_html(root, home)}
     </nav>
     <!--LANGSW-->
     <a class="btn btn-primary" href="{a('#kontakt')}"><span class="long">Wohnung prüfen lassen</span><span class="short">Anfrage</span></a>
@@ -300,6 +337,20 @@ open(OUT + "/assets/site.css", "w").write(CSS + EXTRA_CSS)
 JS_SAFE = JS.replace('document.getElementById("calcform").addEventListener("change", calc);\n  calc();',
   'var cf=document.getElementById("calcform"); if(cf){ cf.addEventListener("change", calc); calc(); }')
 JS_SAFE = JS_SAFE.replace('  var f = document.getElementById("leadform");\n  f.addEventListener(', '  var f = document.getElementById("leadform");\n  if (f) f.addEventListener(')
+JS_SAFE += """
+(function(){
+  var ms=document.querySelectorAll("nav.main .mi");
+  ms.forEach(function(m){
+    var cx=0, cy=0;
+    function mv(e){ if(Math.abs(e.clientX-cx)+Math.abs(e.clientY-cy)<8) return; var t=m.querySelector(".mt"); if(t&&t.matches(":hover")) return; m.classList.remove("shut"); document.removeEventListener("mousemove",mv); }
+    m.addEventListener("click",function(e){ if(e.target.closest(".sub a")){ cx=e.clientX; cy=e.clientY; m.classList.add("shut"); if(document.activeElement) document.activeElement.blur(); document.addEventListener("mousemove",mv); } });
+    m.addEventListener("keydown",function(e){ if(e.key==="Escape"){ m.classList.add("shut"); var t=m.querySelector(".mt"); if(t) t.focus(); } });
+    m.addEventListener("focusout",function(e){ if(!m.contains(e.relatedTarget)&&!m.matches(":hover")) m.classList.remove("shut"); });
+  });
+  function openFaq(){ var h=location.hash.slice(1); if(!/^frage-\\d+$/.test(h)) return; var d=document.getElementById(h); if(d&&d.tagName==="DETAILS"){ d.open=true; d.scrollIntoView({block:"start"}); } }
+  window.addEventListener("hashchange",openFaq); openFaq();
+})();
+"""
 open(OUT + "/assets/site.js", "w").write(JS_SAFE)
 import hashlib
 AV_CSS = hashlib.md5((CSS + EXTRA_CSS).encode()).hexdigest()[:8]
@@ -348,7 +399,8 @@ body = body[:tt_start] + tt_new + body[tt_end:]
 body = body.replace('<section class="block" id="fragen"', rg_home_teaser() + '<section class="block" id="fragen"', 1)
 assert "{{" not in body, "placeholder left"
 
-faqs = re.findall(r'<details><summary>(.*?)</summary><div class="ans">(.*?)</div></details>', body, re.S)
+faqs = re.findall(r'<details(?: id="[^"]*")?><summary>(.*?)</summary><div class="ans">(.*?)</div></details>', body, re.S)
+assert len(faqs) >= 6, "FAQ der Startseite nicht gefunden"
 FAQ = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":re.sub("<[^>]+>","",a)}} for q,a in faqs]}
 WEB = {"@context":"https://schema.org","@type":"WebSite","name":"Alpinhost","url":DOMAIN+"/","inLanguage":"de-CH","publisher":{"@id":DOMAIN+"/#org"}}
 home_title = "Airbnb-Verwaltung Schweiz – Ferienwohnung vermieten | Alpinhost"

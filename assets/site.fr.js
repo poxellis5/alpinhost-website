@@ -135,3 +135,16 @@
   var fwa=document.getElementById("f-wa");
   if(fwa) fwa.addEventListener("click", function(){ var d=fData(); if(d) openWa(d.wa, d.msg); });
 })();
+
+(function(){
+  var ms=document.querySelectorAll("nav.main .mi");
+  ms.forEach(function(m){
+    var cx=0, cy=0;
+    function mv(e){ if(Math.abs(e.clientX-cx)+Math.abs(e.clientY-cy)<8) return; var t=m.querySelector(".mt"); if(t&&t.matches(":hover")) return; m.classList.remove("shut"); document.removeEventListener("mousemove",mv); }
+    m.addEventListener("click",function(e){ if(e.target.closest(".sub a")){ cx=e.clientX; cy=e.clientY; m.classList.add("shut"); if(document.activeElement) document.activeElement.blur(); document.addEventListener("mousemove",mv); } });
+    m.addEventListener("keydown",function(e){ if(e.key==="Escape"){ m.classList.add("shut"); var t=m.querySelector(".mt"); if(t) t.focus(); } });
+    m.addEventListener("focusout",function(e){ if(!m.contains(e.relatedTarget)&&!m.matches(":hover")) m.classList.remove("shut"); });
+  });
+  function openFaq(){ var h=location.hash.slice(1); if(!/^frage-\d+$/.test(h)) return; var d=document.getElementById(h); if(d&&d.tagName==="DETAILS"){ d.open=true; d.scrollIntoView({block:"start"}); } }
+  window.addEventListener("hashchange",openFaq); openFaq();
+})();

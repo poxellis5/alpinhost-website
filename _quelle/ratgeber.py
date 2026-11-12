@@ -677,6 +677,11 @@ def rg_card(a, root, sizes="(max-width: 620px) 100vw, (max-width: 1060px) 50vw, 
 RG_HOME = ("ferienwohnung-vermieten-ertrag", "airbnb-einnahmen-versteuern", "airbnb-oder-booking")
 RG_HOME_CREDITS = rg_credits([RG_BY_SLUG[s]["photo"][0] for s in RG_HOME])
 
+def rg_cat_id(c):
+    import re as _re
+    t = c.lower().replace("ä","ae").replace("ö","oe").replace("ü","ue")
+    return "thema-" + _re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+
 def rg_home_teaser():
     picks = [RG_BY_SLUG[s] for s in RG_HOME]
     return f"""<section class="block" id="ratgeber" style="padding-top:0" data-de-only>
@@ -721,7 +726,7 @@ def build_ratgeber():
     groups = ""
     for c in RG_CATS:
         arts = [a for a in ARTICLES if a["cat"] == c]
-        groups += f'<h2 class="rg-cat">{c}</h2><div class="rg-grid">{"".join(rg_card(a, root) for a in arts)}</div>'
+        groups += f'<h2 class="rg-cat" id="{rg_cat_id(c)}">{c}</h2><div class="rg-grid">{"".join(rg_card(a, root) for a in arts)}</div>'
     crumbs = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
         {"@type":"ListItem","position":1,"name":"Alpinhost","item":DOMAIN+"/"},
         {"@type":"ListItem","position":2,"name":"Ratgeber","item":DOMAIN+"/ratgeber/"}]}
