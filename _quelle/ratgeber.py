@@ -762,7 +762,7 @@ def build_ratgeber():
             {"@type":"ListItem","position":2,"name":"Ratgeber","item":DOMAIN+"/ratgeber/"},
             {"@type":"ListItem","position":3,"name":a["h1"],"item":full}]}
         art = {"@context":"https://schema.org","@type":"Article","headline":a["h1"],"description":a["desc"],"inLanguage":"de-CH",
-               "image":[f'{DOMAIN}/img/og-{a["photo"][0]}.jpg', f'{DOMAIN}/img/{a["photo"][0]}-1600.webp'],"datePublished":RG_DATE,"dateModified":RG_DATE,
+               "image":[f'{DOMAIN}/img/og-{a["photo"][0]}.jpg', f'{DOMAIN}/img/{a["photo"][0]}-1600.webp'],"datePublished":a.get("date",RG_DATE),"dateModified":a.get("updated",a.get("date",RG_DATE)),
                "author":{"@type":"Organization","name":"Alpinhost","url":DOMAIN+"/"},"publisher":{"@id":DOMAIN+"/#org"},
                "mainEntityOfPage":full,"articleSection":a["cat"],"isAccessibleForFree":True}
         faq = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":t}} for q, t in a["faq"]]}
@@ -779,7 +779,7 @@ def build_ratgeber():
   <p class="eyebrow">{a['cat']} · {a['mins']} Min. Lesezeit</p>
   <h1>{a['h1']}</h1>
   <p class="lead" style="margin-top:18px">{a['lead']}</p>
-  <p class="art-meta">Stand: {RG_STAND} · Alpinhost Redaktion</p>
+  <p class="art-meta">Stand: {a.get("stand",RG_STAND)} · Alpinhost Redaktion</p>
   <figure class="photo art-hero">{img(a['photo'][0], a['photo'][1], sizes="(max-width: 1180px) 100vw, 1180px", root=root, eager=True)}</figure>
   <p class="art-credit">{a['photo'][2]}</p>
 </header>
@@ -813,7 +813,7 @@ def build_ratgeber():
 <section class="wrap srcs" aria-label="Quellen">
   <p class="srcs-h">Quellen</p>
   <ol>{srcs}</ol>
-  <p>Alle Angaben wurden im {RG_STAND} geprüft. Sie ersetzen keine Rechts- oder Steuerberatung.</p>
+  <p>Alle Angaben wurden im {a.get("stand",RG_STAND)} geprüft. Sie ersetzen keine Rechts- oder Steuerberatung.</p>
 </section>
 </main>"""
         h = head(a["title"] + " | Alpinhost", a["desc"], url, root, [ORG, crumbs, art, faq], ogimg=f'img/og-{a["photo"][0]}.jpg').replace('<meta property="og:type" content="website">', '<meta property="og:type" content="article">')
@@ -822,9 +822,10 @@ def build_ratgeber():
     # ---- RSS-Feed
     from email.utils import format_datetime
     import datetime as _dt
-    pub = format_datetime(_dt.datetime.strptime(RG_DATE, "%Y-%m-%d").replace(hour=8, tzinfo=_dt.timezone.utc))
+    rfc = lambda d: format_datetime(_dt.datetime.strptime(d, "%Y-%m-%d").replace(hour=8, tzinfo=_dt.timezone.utc))
+    pub = rfc(max(a.get("date", RG_DATE) for a in ARTICLES))
     esc = lambda t: t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    items = "".join(f'<item><title>{esc(a["h1"])}</title><link>{DOMAIN}/ratgeber/{a["slug"]}/</link><guid isPermaLink="true">{DOMAIN}/ratgeber/{a["slug"]}/</guid><description>{esc(a["desc"])}</description><category>{esc(a["cat"])}</category><pubDate>{pub}</pubDate></item>\n' for a in ARTICLES)
+    items = "".join(f'<item><title>{esc(a["h1"])}</title><link>{DOMAIN}/ratgeber/{a["slug"]}/</link><guid isPermaLink="true">{DOMAIN}/ratgeber/{a["slug"]}/</guid><description>{esc(a["desc"])}</description><category>{esc(a["cat"])}</category><pubDate>{rfc(a.get("date", RG_DATE))}</pubDate></item>\n' for a in ARTICLES)
     write("ratgeber/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alpinhost Ratgeber</title><link>{DOMAIN}/ratgeber/</link><atom:link href="{DOMAIN}/ratgeber/feed.xml" rel="self" type="application/rss+xml"/><description>Ratgeber für Eigentümer von Ferienwohnungen in der Schweiz</description><language>de-CH</language><lastBuildDate>{pub}</lastBuildDate>\n{items}</channel></rss>\n')
     json.dump(urls, open("i18n/ratgeber_urls.json", "w"))
     return urls

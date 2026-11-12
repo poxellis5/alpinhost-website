@@ -126,11 +126,12 @@
     return {msg:msg, wa:WA+encodeURIComponent(text), data:data};
   }
   var f=document.getElementById("leadform");
-  f.addEventListener("submit", function(e){
+  if(f) f.addEventListener("submit", function(e){
     e.preventDefault();
     var d=fData(); if(!d) return;
     if(fv("f-hp")) return;
     sendMail(d.data, d.msg, f.querySelector('button[type="submit"]'), d.wa);
   });
-  document.getElementById("f-wa").addEventListener("click", function(){ var d=fData(); if(d) openWa(d.wa, d.msg); });
+  var fwa=document.getElementById("f-wa");
+  if(fwa) fwa.addEventListener("click", function(){ var d=fData(); if(d) openWa(d.wa, d.msg); });
 })();

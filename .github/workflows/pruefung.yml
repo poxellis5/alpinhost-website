@@ -1,0 +1,33 @@
+name: Seitenpruefung
+# Prueft alle 6 Stunden, ob jede Seite aus der Sitemap erreichbar ist und die wichtigsten Teile da sind.
+# Schlaegt der Lauf fehl, sieht es der Pflege-Agent beim naechsten Lauf (gh run list) und GitHub meldet es per Mail.
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Alle Seiten aus der Sitemap abrufen
+        run: |
+          set -e
+          curl -sS -m 30 https://alpinhost.ch/sitemap.xml -o sitemap.xml
+          grep -o '<loc>[^<]*</loc>' sitemap.xml | sed 's/<[^>]*>//g' > urls.txt
+          n=$(wc -l < urls.txt); echo "Seiten in der Sitemap: $n"
+          test "$n" -ge 40
+          fail=0
+          while read -r u; do
+            code=$(curl -sS -m 30 -o /dev/null -w "%{http_code}" "$u" || echo 000)
+            if [ "$code" != "200" ]; then echo "FEHLER $code $u"; fail=1; fi
+          done < urls.txt
+          for u in https://alpinhost.ch/robots.txt https://alpinhost.ch/llms.txt https://alpinhost.ch/ratgeber/feed.xml https://alpinhost.ch/assets/site.js https://alpinhost.ch/assets/site.css; do
+            code=$(curl -sS -m 30 -o /dev/null -w "%{http_code}" "$u" || echo 000)
+            if [ "$code" != "200" ]; then echo "FEHLER $code $u"; fail=1; fi
+          done
+          curl -sS -m 30 https://alpinhost.ch/ -o home.html
+          grep -q 'id="leadform"' home.html || { echo "FEHLER Kontaktformular fehlt"; fail=1; }
+          grep -q 'id="region"' home.html || { echo "FEHLER Rechner fehlt"; fail=1; }
+          curl -sS -m 30 https://alpinhost.ch/assets/site.js | grep -q 'formsubmit.co/ajax' || { echo "FEHLER Formular-Versand fehlt im Skript"; fail=1; }
+          curl -sS -m 30 -o /dev/null -w "HTTPS-Weiterleitung: %{http_code}\n" http://alpinhost.ch/
+          exit $fail
