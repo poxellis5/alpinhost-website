@@ -92,7 +92,7 @@
     fetch(EP,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(data)})
       .then(function(r){ return r.json(); })
       .then(function(j){ if(String(j.success)!=="true") throw new Error("send"); msg.innerHTML='<b>Thank you, we have received your enquiry.</b> We will get back to you the same working day.'; btn.textContent="Sent"; })
-      .catch(function(){ btn.disabled=false; btn.textContent=old; msg.innerHTML='Sending did not work. Please <a href="'+waUrl+'" target="_blank" rel="noopener" style="color:var(--lake);font-weight:600">send via WhatsApp</a> or write to <a href="mailto:info@alpinhost.ch" style="color:var(--lake);font-weight:600">info@alpinhost.ch</a>.'; });
+      .catch(function(){ btn.disabled=false; btn.textContent=old; msg.innerHTML='Sending did not work. Please <a href="'+waUrl+'" target="_blank" rel="noopener" style="color:var(--lake);font-weight:600">send via WhatsApp</a> or write to <a href="mailto:info@alpinhost.ch?subject='+encodeURIComponent(data._subject)+'&body='+waUrl.split("text=")[1]+'" style="color:var(--lake);font-weight:600">info@alpinhost.ch</a>.'; });
   }
   function openWa(url, msg){
     window.open(url, "_blank", "noopener");
