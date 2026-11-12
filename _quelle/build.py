@@ -219,7 +219,6 @@ def head(title, desc, path, root, schema_list, ogimg="img/og-grindelwald-eiger.j
     schemas = "\n".join(f'<script type="application/ld+json">{json.dumps(s, ensure_ascii=False)}</script>' for s in schema_list)
     return f"""<title>{title}</title>
 <meta name="description" content="{desc}">
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="canonical" href="{url}">
 <link rel="alternate" hreflang="de-CH" href="{url}">
 <meta property="og:type" content="website">
