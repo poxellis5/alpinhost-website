@@ -204,6 +204,7 @@ def process(de_path, file, lang, jsv):
     s = BeautifulSoup(html, "html.parser")
     indexable = de_path in INDEXABLE
     if lang != "de":
+        for el in s.select("[data-de-only]"): el.decompose()
         translate_children(s.head, lang, de_path); translate_children(s.body, lang, de_path)
         for el in s.find_all(True):
             for a in ("alt","aria-label","title","placeholder","data-pkg"):
@@ -243,6 +244,8 @@ if __name__ == "__main__":
         alts = "".join(f'<xhtml:link rel="alternate" hreflang="{HTML_LANG[l]}" href="{DOMAIN}{lang_path(p, l)}"/>' for l in ALL) + f'<xhtml:link rel="alternate" hreflang="x-default" href="{DOMAIN}{p}"/>'
         for l in ALL:
             sm.append(f'  <url><loc>{DOMAIN}{lang_path(p, l)}</loc><lastmod>{TODAY}</lastmod><priority>{"1.0" if p == "/" else "0.8"}</priority>{alts}</url>')
+    for u in json.load(open("i18n/ratgeber_urls.json")):
+        sm.append(f'  <url><loc>{DOMAIN}/{u}</loc><lastmod>{TODAY}</lastmod><priority>{"0.7" if u == "ratgeber/" else "0.6"}</priority></url>')
     sm.append("</urlset>")
     open("site/sitemap.xml", "w", encoding="utf-8").write("\n".join(sm) + "\n")
     # llms.txt ergänzen

@@ -41,8 +41,42 @@ EXTRA_CSS = """
 .footlinks a{color:var(--muted);text-decoration:none}
 .footlinks a:hover{color:var(--ink)}
 .legal .prose{max-width:72ch}
+.prose>*{min-width:0}
+.prose h3{font-size:20px;margin-top:6px}
+.prose a{color:var(--lake)}
+.prose ol{margin:0;padding-left:22px;color:var(--muted);display:grid;gap:6px}
+.art-head{padding-block:22px 0}
+.art-head h1{font-size:clamp(32px,4.6vw,54px);font-weight:800;letter-spacing:-.03em;max-width:24ch;margin-top:14px}
+.art-meta{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:16px}
+.photo.art-hero{margin:26px 0 0;aspect-ratio:16/8;order:0}
+@media (max-width:900px){.photo.art-hero{aspect-ratio:16/10}}
+.art-credit{font-size:12.5px;color:var(--muted);margin-top:10px;max-width:90ch}
+.art-credit a{color:inherit}
+.keybox{background:var(--lake-soft);border-radius:var(--r);padding:20px 22px}
+.keybox>b{display:block;font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--lake);margin-bottom:10px}
+.keybox ul{color:var(--ink)}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--paper)}
+.tbl table{border-collapse:collapse;width:100%;font-size:15px}
+.tbl th,.tbl td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.tbl .n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tbl tr:last-child td{border-bottom:0}
+.swipe{display:none;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+@media (max-width:620px){.swipe{display:block}.tbl.wide table{min-width:520px}.tbl th,.tbl td{padding:9px 10px}}
+.note{font-size:14.5px;border-left:3px solid var(--glow);padding-left:14px}
+.srcs{font-size:14px;margin-top:10px;display:grid;gap:10px}
+.srcs h2{font-size:20px;margin-top:8px}
+.srcs a{word-break:break-word}
+.rg-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:1060px){.rg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.rg-grid{grid-template-columns:1fr}}
+.rg-cat{font-size:clamp(24px,3vw,32px);margin:44px 0 18px}
+.rg-cat:first-child{margin-top:0}
+.rg-card h3{font-size:19px;line-height:1.25}
+.article .sidecard .btn{text-align:center;justify-content:center}
 .langsw{position:relative;margin-left:0;flex:none}
 @media (max-width:900px){.langsw{margin-left:auto}.top .btn{margin-left:0}}
+@media (max-width:900px){.top .brand{margin-right:auto}}
 .langsw summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:13px;font-weight:500;padding:8px 10px;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;gap:6px;color:var(--ink);background:var(--paper)}
 .langsw summary::-webkit-details-marker{display:none}
 .langsw summary svg{width:10px;height:10px}
@@ -157,6 +191,8 @@ REGIONS = {
  ),
 }
 
+exec(open("ratgeber.py", encoding="utf-8").read())
+
 def head(title, desc, path, root, schema_list, ogimg="img/og-grindelwald-eiger.jpg"):
     url = DOMAIN + "/" + path
     schemas = "\n".join(f'<script type="application/ld+json">{json.dumps(s, ensure_ascii=False)}</script>' for s in schema_list)
@@ -210,7 +246,7 @@ def header(root, home=False):
       <span>Alpinhost<small>Ferienwohnungs-Management</small></span>
     </a>
     <nav class="main" aria-label="Hauptnavigation">
-      <a href="{a('#leistungen')}">Leistungen</a><a href="{a('#preise')}">Preise</a><a href="{a('#rechner')}">Rechner</a><a href="{a('#regionen')}">Regionen</a><a href="{a('#fragen')}">Fragen</a>
+      <a href="{a('#leistungen')}">Leistungen</a><a href="{a('#preise')}">Preise</a><a href="{a('#rechner')}">Rechner</a><a href="{a('#regionen')}">Regionen</a><a href="{a('#fragen')}">Fragen</a><a href="{root}ratgeber/" data-de-only>Ratgeber</a>
     </nav>
     <!--LANGSW-->
     <a class="btn btn-primary" href="{a('#kontakt')}"><span class="long">Wohnung prüfen lassen</span><span class="short">Anfrage</span></a>
@@ -223,7 +259,7 @@ def footer(root):
   <div class="wrap">
     <div><b>Alpinhost</b><br>Ferienwohnungs-Management für Airbnb und Booking.com in der ganzen Schweiz.<br><br>WhatsApp und Telefon: {PHONE}<br>E-Mail: <a href="mailto:info@alpinhost.ch" style="color:inherit">info@alpinhost.ch</a></div>
     <div class="footlinks"><b>Regionen</b>{reg}</div>
-    <div class="footlinks"><b>Unternehmen</b><a href="{root}#preise">Preise</a><a href="{root}#fragen">Fragen</a><a href="{root}impressum/">Impressum</a><a href="{root}datenschutz/">Datenschutz</a><span>Alpinhost ist eine Marke der R&amp;B Digital Market KlG</span></div>
+    <div class="footlinks"><b>Unternehmen</b><a href="{root}#preise">Preise</a><a href="{root}#fragen">Fragen</a><a href="{root}ratgeber/" data-de-only>Ratgeber</a><a href="{root}impressum/">Impressum</a><a href="{root}datenschutz/">Datenschutz</a><span>Alpinhost ist eine Marke der R&amp;B Digital Market KlG</span></div>
     <p class="credits">Fotos: Wikimedia Commons. Grindelwald mit Eiger und Kapellbrücke Luzern: Leonhard Lenz, CC0 · Frühling über Grindelwald: Speedy Füllemann, CC BY 3.0 · Winter bei Grindelwald: Robert Campbell KOR, CC BY 2.0 · Bern Altstadt: August Geyler, CC BY-SA 4.0 · Weggis: Arkelin, CC BY 4.0 · Interlaken vom Harder Kulm: Ank Kumar, CC BY-SA 4.0 · Lauterbrunnental: Chensiyuan, CC BY-SA 4.0 · Wengen im Winter: Jpatokal, CC BY-SA 4.0 · Schlüsselbox: Brainy J, CC0.</p>
   </div>
 </footer>"""
@@ -303,6 +339,7 @@ tt = body[tt_start:tt_end]
 tt_new = '<div class="timetable"><div class="tt-wrap"><div>' + tt[len('<div class="timetable">'):-len('</div>')] + \
   f'</div><figure class="tt-photo" style="margin:0">{img("schluesselbox","Geöffnete Schlüsselbox mit Wohnungsschlüssel und Zahlenschloss", sizes="(max-width: 900px) 100vw, 30vw", wh=(1600,1323))}<figcaption>Check-in mit Schlüsselbox</figcaption></figure></div></div>'
 body = body[:tt_start] + tt_new + body[tt_end:]
+body = body.replace('<section class="block" id="fragen"', rg_home_teaser() + '<section class="block" id="fragen"', 1)
 assert "{{" not in body, "placeholder left"
 
 faqs = re.findall(r'<details><summary>(.*?)</summary><div class="ans">(.*?)</div></details>', body, re.S)
@@ -393,6 +430,8 @@ legal("datenschutz", "Datenschutz | Alpinhost", "Datenschutzerklärung",
 write("404.html", page_shell(head("Seite nicht gefunden | Alpinhost", "Diese Seite gibt es nicht.", "404.html", "/", [ORG]).replace('<link rel="canonical"', '<meta name="robots" content="noindex">\n<link rel="canonical"'),
   '<main><section class="block"><div class="wrap prose"><h1>Diese Seite gibt es nicht.</h1><p>Vielleicht hat sich die Adresse geändert. <a href="/">Zur Startseite</a></p></div></section></main>', "/"))
 
+RG_URLS = build_ratgeber()
+
 # ---------- sitemap, robots, llms, CNAME
 urls = [""] + [r["slug"] + "/" for r in REGIONS.values()]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
@@ -414,7 +453,7 @@ llms = f"""# Alpinhost
 
 ## Seiten
 - [Startseite]({DOMAIN}/)
-""" + "".join(f"- [{r['h1']}]({DOMAIN}/{r['slug']}/)\n" for r in REGIONS.values())
+""" + "".join(f"- [{r['h1']}]({DOMAIN}/{r['slug']}/)\n" for r in REGIONS.values()) + "\n## Ratgeber für Eigentümer\n" + f"- [Übersicht]({DOMAIN}/ratgeber/)\n" + "".join(f"- [{x['h1']}]({DOMAIN}/ratgeber/{x['slug']}/): {x['teaser']}\n" for x in ARTICLES)
 write("llms.txt", llms)
 write("CNAME", "alpinhost.ch\n")
 write(".nojekyll", "")

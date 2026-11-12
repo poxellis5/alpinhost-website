@@ -18,6 +18,17 @@
 - [Airbnb-Verwaltung in Bern](https://alpinhost.ch/airbnb-verwaltung-bern/)
 - [Airbnb-Verwaltung in der ganzen Schweiz](https://alpinhost.ch/airbnb-verwaltung-schweiz/)
 
+## Ratgeber für Eigentümer
+- [Übersicht](https://alpinhost.ch/ratgeber/)
+- [Was bringt eine Ferienwohnung in der Schweiz wirklich ein?](https://alpinhost.ch/ratgeber/ferienwohnung-vermieten-ertrag/): Auslastung und Nachtpreise in 13 Orten, von Zermatt bis Bern. Mit Rechenbeispiel.
+- [Airbnb oder Booking.com: Wo vermieten Sie Ihre Ferienwohnung besser?](https://alpinhost.ch/ratgeber/airbnb-oder-booking/): Gebühren, Auszahlung, Kurtaxe und Bewertungen im Vergleich, mit Rechenbeispiel.
+- [Selbst vermieten oder eine Verwaltung beauftragen?](https://alpinhost.ch/ratgeber/selbst-vermieten-oder-verwaltung/): Aufwand, Kosten und sieben Fragen, die Sie jeder Verwaltung stellen sollten.
+- [Airbnb-Einnahmen versteuern: Was Eigentümer in der Schweiz wissen müssen](https://alpinhost.ch/ratgeber/airbnb-einnahmen-versteuern/): Einkommenssteuer, Pauschalabzug, Mehrwertsteuer und Eigenmietwert, verständlich erklärt.
+- [Kurtaxe für Ferienwohnungen: Wer zahlt, wer rechnet ab?](https://alpinhost.ch/ratgeber/kurtaxe-ferienwohnung/): Was in Grindelwald und Interlaken gilt und wo Airbnb die Kurtaxe automatisch einzieht.
+- [Brauche ich eine Bewilligung? Regeln für Airbnb in der Schweiz](https://alpinhost.ch/ratgeber/airbnb-regeln-bewilligung-schweiz/): Zweitwohnungsgesetz, 90-Nächte-Regeln, Stockwerkeigentum und Meldepflicht im Überblick.
+- [Ferienwohnung einrichten: Die Checkliste für gute Bewertungen](https://alpinhost.ch/ratgeber/ferienwohnung-einrichten-checkliste/): Betten, Küche, WLAN, Sicherheit und Anreise: die Checkliste zum Abhaken.
+- [Versicherung für die Ferienwohnung: Was bei der Vermietung gilt](https://alpinhost.ch/ratgeber/versicherung-ferienwohnung-vermieten/): Gebäude, Hausrat, Haftpflicht und AirCover: was Sie vor dem ersten Gast klären müssen.
+
 ## Sprachen
 - Deutsch: https://alpinhost.ch/
 - English: https://alpinhost.ch/en/
