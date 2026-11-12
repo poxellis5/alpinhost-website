@@ -285,7 +285,7 @@ def header(root, home=False):
     return f"""<header class="top">
   <div class="wrap">
     <a class="brand" href="{root or './'}" aria-label="Alpinhost, Startseite">
-      <picture><source srcset="/img/logo/alpinhost-quer-weiss.webp" media="(prefers-color-scheme: dark)"><img class="logo" src="/img/logo/alpinhost-quer.webp" width="213" height="40" alt="Alpinhost"></picture>
+      <img class="logo" src="/img/logo/alpinhost-logo-web.webp" width="91" height="55" alt="Alpinhost">
     </a>
     <nav class="main" aria-label="Hauptnavigation">
       {nav_html(root, home)}
