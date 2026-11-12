@@ -233,7 +233,8 @@ def head(title, desc, path, root, schema_list, ogimg="img/og-grindelwald-eiger.j
 <meta name="theme-color" content="#0F2230">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="{root}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/img/logo/alpinhost-icon-192.png" type="image/png" sizes="192x192">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -245,7 +246,7 @@ ORG = {
   "@context":"https://schema.org","@type":"ProfessionalService","@id":DOMAIN+"/#org",
   "name":"Alpinhost","url":DOMAIN+"/","telephone":PHONE.replace(" ",""),
   "description":"Ferienwohnungs-Management für Airbnb und Booking.com in der ganzen Schweiz. Vor Ort in der Jungfrau Region, in Bern und in der Innerschweiz.",
-  "image":DOMAIN+"/img/grindelwald-eiger-1600.webp","logo":DOMAIN+"/favicon.svg",
+  "image":DOMAIN+"/img/grindelwald-eiger-1600.webp","logo":DOMAIN+"/img/logo/alpinhost-logo.png",
   "email":"info@alpinhost.ch",
   "parentOrganization":{"@type":"Organization","name":"R&B Digital Market KlG","address":{"@type":"PostalAddress","streetAddress":"Kellerstrasse 29","postalCode":"6005","addressLocality":"Luzern","addressCountry":"CH"}},
   "areaServed":[{"@type":"Country","name":"Schweiz"},{"@type":"Place","name":"Jungfrau Region"},{"@type":"City","name":"Grindelwald"},{"@type":"City","name":"Interlaken"},{"@type":"City","name":"Lauterbrunnen"},{"@type":"City","name":"Wengen"},{"@type":"City","name":"Luzern"},{"@type":"City","name":"Bern"}],
@@ -284,8 +285,7 @@ def header(root, home=False):
     return f"""<header class="top">
   <div class="wrap">
     <a class="brand" href="{root or './'}" aria-label="Alpinhost, Startseite">
-      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="var(--ink)"/><path d="M7 27 L16 13 L21 20 L25 15 L33 27 Z" fill="var(--snow)"/><path d="M7 31 H33" stroke="var(--lake)" stroke-width="2.4" stroke-linecap="round"/></svg>
-      <span>Alpinhost<small>Ferienwohnungs-Management</small></span>
+      <picture><source srcset="/img/logo/alpinhost-quer-weiss.webp" media="(prefers-color-scheme: dark)"><img class="logo" src="/img/logo/alpinhost-quer.webp" width="213" height="40" alt="Alpinhost"></picture>
     </a>
     <nav class="main" aria-label="Hauptnavigation">
       {nav_html(root, home)}

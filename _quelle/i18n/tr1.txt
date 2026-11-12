@@ -1491,3 +1491,9 @@ en: WhatsApp and phone: <b style="{S0}">+41 79 531 81 11</b>
 fr: WhatsApp et téléphone : <b style="{S0}">+41 79 531 81 11</b>
 it: WhatsApp e telefono: <b style="{S0}">+41 79 531 81 11</b>
 es: WhatsApp y teléfono: <b style="{S0}">+41 79 531 81 11</b>
+
+de: Alpinhost
+en: Alpinhost
+fr: Alpinhost
+it: Alpinhost
+es: Alpinhost

@@ -37,6 +37,9 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;backgroun
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:-.02em}
 .brand small{display:block;font-family:var(--mono);font-weight:400;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .mark{width:34px;height:34px;flex:none}
+.brand .logo{height:40px;width:auto;display:block}
+@media (max-width:520px){.brand .logo{height:32px}}
+@media (max-width:360px){.brand .logo{height:27px}}
 nav.main{display:flex;gap:22px;margin-left:auto;font-size:15px;font-weight:500}
 nav.main a{text-decoration:none;color:var(--muted)}
 nav.main a:hover{color:var(--ink)}
