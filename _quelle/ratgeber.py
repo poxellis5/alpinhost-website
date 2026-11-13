@@ -209,6 +209,104 @@ ARTICLES = [
              ("Alpinhost: Konditionen", "https://alpinhost.ch/#preise")],
 },
 {
+ "slug": "self-check-in-ferienwohnung", "cat": "Vermieten", "mins": 6, "date": "2026-11-13",
+ "h1": "Self-Check-in in der Ferienwohnung: Schlüsselbox, Smart Lock und Anreise-Nachricht",
+ "title": "Self-Check-in: Schlüsselbox oder Smart Lock?",
+ "desc": "Self-Check-in für Airbnb und Booking.com: Schlüsselbox und Smart Lock im Vergleich, Kosten, typische Pannen und eine Anreise-Nachricht als Vorlage.",
+ "teaser": "Schlüsselbox und Smart Lock im Vergleich, typische Pannen und eine Vorlage für die Anreise-Nachricht.",
+ "lead": "Mit Self-Check-in kommen Gäste ohne Schlüsselübergabe in die Wohnung, auch um 23 Uhr. Eine Schlüsselbox gibt es ab rund 30 Franken. Ob die Anreise klappt, entscheidet aber meist die Nachricht, die Sie vorher schicken.",
+ "photo": ("schluesselboxen-zahlencode-wand", "Mehrere Schlüsselboxen mit Zahlencode an einer Backsteinmauer, zwei davon geöffnet",
+           "Schlüsselboxen mit Zahlencode an einer Hauswand. Im Fach hinter der Klappe liegt der Schlüssel."),
+ "key": ["Self-Check-in gehört auf Airbnb weltweit zu den zehn meistgesuchten Ausstattungen (Zahlen 2025).",
+         "Eine Schlüsselbox mit Zahlencode kostet ab rund CHF 30, ein elektronisches Schloss mit Codefeld CHF 238 bis 438 (Beispielpreise November 2026).",
+         "Airbnb zeigt Gästen die genaue Anleitung erst 24 bis 48 Stunden vor der Anreise.",
+         "Die häufigsten Pannen: Box geht nicht auf, Gastgeber nicht erreichbar, Eingang nicht gefunden."],
+ "body": """
+<h2>Was Self-Check-in bedeutet</h2>
+<p>Self-Check-in heisst: Gäste kommen in die Wohnung, ohne dass jemand vor Ort sein muss. Sie reisen an, wann der Zug oder der Flug es erlaubt, und Sie müssen keinen Abend freihalten. Auf Airbnb gehört Self-Check-in weltweit zu den zehn meistgesuchten Ausstattungen (Zahlen 2025). Viele Gäste filtern die Suche danach.</p>
+<p>Airbnb zählt vier Wege als Self-Check-in:</p>
+<ul>
+<li><strong>Schlüsselbox:</strong> ein kleiner Tresor mit Zahlencode, in dem der Schlüssel liegt</li>
+<li><strong>Tastenfeld:</strong> ein elektronisches Schloss, das sich mit einem Code öffnet</li>
+<li><strong>Smart Lock:</strong> ein Schloss mit Internetverbindung, das sich per Code oder App öffnet</li>
+<li><strong>Personal im Haus:</strong> zum Beispiel eine Rezeption, die rund um die Uhr besetzt ist</li>
+</ul>
+<p>Booking.com kennt ähnliche Angaben: Türcode, Schlüsselbox, Rezeption, persönliche Übergabe oder ein vereinbarter Ort für den Schlüssel. Tragen Sie die Art der Anreise auf beiden Plattformen ein, sonst sehen Gäste sie nicht.</p>
+
+<h2>Schlüsselbox oder Smart Lock: der Vergleich</h2>
+<div class="tbl wide"><table>
+<thead><tr><th></th><th>Schlüsselbox</th><th>Elektronisches Schloss mit Codefeld</th><th>Persönliche Übergabe</th></tr></thead>
+<tbody>
+<tr><td>Anschaffung (Beispielpreise November 2026)</td><td>ab rund CHF 30</td><td>CHF 238 bis 438</td><td>CHF 0</td></tr>
+<tr><td>Eigener Code pro Gast</td><td>nur, wenn jemand den Code vor Ort umstellt</td><td>ja, aus der Ferne, mit Ablaufdatum</td><td>nicht nötig</td></tr>
+<tr><td>Strom und Verbindung</td><td>nicht nötig</td><td>Batterien, je nach Modell Internet</td><td>nicht nötig</td></tr>
+<tr><td>Anreise spät am Abend</td><td>ja</td><td>ja</td><td>nur, wenn jemand wartet</td></tr>
+<tr><td>Typische Pannen</td><td>falscher Code, klemmendes Zahlenrad, Schlüssel nicht zurückgelegt, Frost</td><td>leere Batterie, Verbindung weg, Code zu spät verschickt</td><td>Verspätung des Gastes, niemand erreichbar</td></tr>
+</tbody></table></div>
+<p>So setzen sich die Beispielpreise zusammen: Eine Schlüsselbox für die Wand mit vierstelligem Zahlencode kostet im Schweizer Onlinehandel CHF 30.50. Ein elektronisches Schloss zum Nachrüsten kostet beim Hersteller je nach Modell CHF 149 bis 349, das Codefeld dazu CHF 89. Zusammen ergibt das CHF 238 bis 438. Die Montage ist nicht eingerechnet.</p>
+<p>Als Faustregel: Für eine einzelne Wohnung mit wenigen Wechseln genügt eine gute Schlüsselbox. Bei vielen Wechseln, mehreren Wohnungen oder wenn niemand in der Nähe wohnt, lohnt sich das elektronische Schloss, weil Sie Codes aus der Ferne vergeben und sperren.</p>
+
+<h2>Die Schlüsselbox richtig einsetzen</h2>
+<ul>
+<li>Montieren Sie die Box fest an der Wand, nicht an einem Geländer oder Rohr, und nicht direkt neben der Wohnungstür mit Namensschild.</li>
+<li>Wählen Sie einen Ort mit Licht. Im Dunkeln lassen sich Zahlenräder kaum ablesen.</li>
+<li>Stellen Sie nach jedem Gast einen neuen Code ein. Vier Stellen ergeben 10'000 mögliche Codes, das Geburtsjahr und 1234 gehören nicht dazu.</li>
+<li>In einem Mehrfamilienhaus sprechen Sie den Ort vorher mit der Hausverwaltung ab.</li>
+<li>In den Bergen: Wählen Sie eine wetterfeste Box an einer geschützten Stelle. Schnee und Eis blockieren Zahlenräder und Klappen.</li>
+<li>Hinterlegen Sie einen zweiten Schlüssel bei einer Person im Ort.</li>
+</ul>
+
+<h2>Das elektronische Schloss richtig einsetzen</h2>
+<ul>
+<li>Vergeben Sie für jede Buchung einen eigenen Code, der nach der Abreise abläuft. Das gilt für jede Art von Self-Check-in.</li>
+<li>Wechseln Sie die Batterien nach Plan und nicht erst bei der Warnung. Bei einem verbreiteten Modell hält die Batterie des Codefelds bis 18 Monate.</li>
+<li>Prüfen Sie vor dem Kauf, ob das Schloss zu Ihrem Zylinder und zu Ihrer Tür passt.</li>
+<li>Behalten Sie einen Weg ohne Strom: einen normalen Schlüssel in einer Schlüsselbox oder bei einer Person im Ort.</li>
+<li>Bei einer Haustür mit Gegensprechanlage braucht es eine Lösung für beide Türen.</li>
+</ul>
+
+<h2>Was bei der Anreise schiefgeht</h2>
+<p>Eine im Mai 2026 veröffentlichte Auswertung von 37'359 Gästeanfragen an Ferienunterkünfte zeigt: 3'822 davon drehten sich um den Check-in, also rund jede zehnte. Die drei häufigsten Probleme:</p>
+<ol>
+<li>Die Schlüsselbox oder das Schloss geht nicht auf.</li>
+<li>Der Gastgeber ist nicht erreichbar.</li>
+<li>Der Gast findet den Eingang nicht.</li>
+</ol>
+<p>Gäste scheitern also selten am Self-Check-in an sich. Sie scheitern an einem falschen Code, an einer ungenauen Beschreibung oder daran, dass es keinen Plan B gibt. Alle drei Punkte lösen Sie mit einer guten Anreise-Nachricht.</p>
+
+<h2>Die Anreise-Nachricht: Checkliste</h2>
+<ul>
+<li>Check-in-Zeit und was gilt, wenn der Gast früher kommt</li>
+<li>Genaue Adresse mit Kartenlink, dazu Stockwerk und Name an der Klingel</li>
+<li>Foto des Eingangs und der Schlüsselbox, bei Tageslicht aufgenommen</li>
+<li>Schritt für Schritt: Code eingeben, Klappe öffnen, Schlüssel nehmen, Box wieder schliessen</li>
+<li>Parkplatz oder Weg vom Bahnhof, in autofreien Orten wie Wengen und Mürren mit Gehzeit</li>
+<li>WLAN-Name und Passwort</li>
+<li>Telefonnummer für den Notfall und was der Gast tun soll, wenn die Tür nicht aufgeht</li>
+</ul>
+<p>Airbnb zeigt die Art der Anreise sofort nach der Buchung, die genaue Anleitung aber erst 24 bis 48 Stunden vor dem Check-in. Bis zur Anreise ist diese Nachricht oft nach unten gerutscht. Schicken Sie darum am Vortag oder am Morgen der Anreise eine eigene, kurze Nachricht. Bei Booking.com lässt sich hinterlegen, wann Sie die Anleitung schicken: sofort, einen Monat vorher, eine Woche vorher oder am Anreisetag.</p>
+
+<h3>Vorlage zum Anpassen</h3>
+<p><em>Beispiel:</em> «Guten Tag Frau Muster, morgen ist es so weit. Check-in ab 16 Uhr. Adresse: Dorfstrasse 1, 2. Stock, Klingel Alpenblick (Kartenlink). Die Schlüsselbox hängt rechts neben der Haustür, siehe Foto. Code: 4071. Bitte legen Sie den Schlüssel bei der Abreise zurück und verdrehen Sie die Zahlen. WLAN: Alpenblick, Passwort im Wohnzimmer. Geht etwas nicht, erreichen Sie uns unter [Ihre Nummer], auch abends.»</p>
+<p>Schreiben Sie die Nachricht in der Sprache des Gastes, mindestens auf Deutsch und Englisch. Speichern Sie sie als Vorlage, dann ist sie mit zwei Klicks verschickt.</p>
+
+<h2>Vor dem ersten Gast: einmal selbst anreisen</h2>
+<p>Bitten Sie eine Person, die die Wohnung nicht kennt, nur mit Ihrer Nachricht hineinzukommen, am besten bei Dunkelheit. Wo sie zögert, fehlt ein Satz oder ein Foto. Was sonst in die Wohnung gehört, steht in der <a href="../ferienwohnung-einrichten-checkliste/">Checkliste zum Einrichten</a>. Und wer nachts ans Telefon geht, wenn der Code nicht stimmt, ist eine der Fragen im Vergleich <a href="../selbst-vermieten-oder-verwaltung/">selbst vermieten oder Verwaltung</a>.</p>
+<p>Alpinhost richtet für Ihre Wohnung eine Schlüsselbox oder ein Smart Lock ein, vergibt einen Code pro Gast und schickt die Anreise-Informationen in der Sprache des Gastes. <a href="../../#kontakt">Wohnung prüfen lassen</a></p>
+""",
+ "faq": [("Was ist Self-Check-in bei Airbnb?", "Self-Check-in bedeutet, dass Gäste ohne Gastgeber in die Unterkunft kommen. Airbnb zählt dazu Schlüsselbox, Tastenfeld, Smart Lock und Personal im Haus, das rund um die Uhr erreichbar ist."),
+         ("Wann erhalten Gäste den Code für die Schlüsselbox?", "Airbnb zeigt die Art der Anreise sofort nach der Buchung und die genaue Anleitung 24 bis 48 Stunden vor dem Check-in. Schicken Sie zusätzlich am Vortag oder am Morgen der Anreise eine eigene Nachricht mit Code, Foto und Notfallnummer."),
+         ("Schlüsselbox oder Smart Lock: Was ist besser?", "Eine Schlüsselbox kostet ab rund CHF 30 und braucht keinen Strom, der Code muss aber vor Ort umgestellt werden. Ein elektronisches Schloss mit Codefeld kostet CHF 238 bis 438 (Beispielpreise November 2026) und erlaubt einen eigenen Code pro Gast aus der Ferne. Bei vielen Wechseln oder wenn niemand in der Nähe wohnt, lohnt sich das elektronische Schloss."),
+         ("Was tun, wenn der Gast nicht in die Wohnung kommt?", "Wichtig ist ein Plan B, der in der Anreise-Nachricht steht: eine Telefonnummer, die auch abends erreichbar ist, und ein zweiter Schlüssel bei einer Person im Ort oder in einer zweiten Schlüsselbox.")],
+ "sources": [("Airbnb-Hilfe: Was bedeutet Self-Check-in?", "https://www.airbnb.com/help/article/1207"),
+             ("Airbnb-Hilfe: Check-in-Anleitung zum Inserat hinzufügen", "https://www.airbnb.com/help/article/1926"),
+             ("Airbnb Resource Center: How to provide self check-in for smooth arrivals, 31. August 2026", "https://www.airbnb.com/resources/hosting-homes/a/how-to-provide-self-check-in-for-smooth-arrivals-238"),
+             ("Booking.com Connectivity: Check-in Methods", "https://developers.booking.com/connectivity/docs/checkin-methods-api/methods-descriptions"),
+             ("Touch Stay: What 3,822 Guest Questions Reveal About What Goes Wrong at Check-in, 25. Mai 2026", "https://touchstay.com/blog/self-check-in-rental-problems"),
+             ("Galaxus: Schlüsselbox mit vierstelligem Zahlencode, Preis abgerufen am 13. November 2026", "https://www.galaxus.ch/en/s4/product/master-lock-5401eurd-key-safes-key-cabinets-3454677"),
+             ("Nuki: Preise und Angaben zu Smart Lock und Keypad für Ferienwohnungen, abgerufen am 13. November 2026", "https://nuki.io/en-ch/solutions/for-your-vacation-rental/find-your-setup")],
+},
+{
  "slug": "airbnb-einnahmen-versteuern", "cat": "Kosten und Steuern", "mins": 6,
  "h1": "Airbnb-Einnahmen versteuern: Was Eigentümer in der Schweiz wissen müssen",
  "title": "Airbnb Steuern Schweiz: Einnahmen richtig versteuern",
@@ -479,7 +577,7 @@ ARTICLES = [
 </ul>
 
 <h2>Anreise ohne Schlüsselübergabe</h2>
-<p>Mit einer Schlüsselbox oder einem elektronischen Schloss reisen Gäste selbständig an, auch spät am Abend. Sie müssen nicht vor Ort sein. Ändern Sie den Code regelmässig und schicken Sie ihn erst kurz vor der Anreise.</p>
+<p>Mit einer Schlüsselbox oder einem elektronischen Schloss reisen Gäste selbständig an, auch spät am Abend. Sie müssen nicht vor Ort sein. Ändern Sie den Code regelmässig und schicken Sie ihn erst kurz vor der Anreise. Den Vergleich und eine Vorlage für die Nachricht finden Sie im Ratgeber <a href="../self-check-in-ferienwohnung/">Self-Check-in</a>.</p>
 
 <h2>Ihre eigenen Sachen</h2>
 <p>Richten Sie einen abschliessbaren Schrank oder ein Kellerabteil für persönliche Dinge ein. So bleibt die Wohnung für Gäste aufgeräumt, und Sie finden Ihre Sachen wieder, wenn Sie selbst kommen.</p>
