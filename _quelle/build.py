@@ -13,6 +13,8 @@ CSS = re.search(r"<style>(.*?)</style>", src, re.S).group(1)
 JS = re.search(r"<script>(.*?)</script>", src, re.S).group(1)
 
 EXTRA_CSS = """
+.skip{position:absolute;left:-9999px;top:8px;z-index:100;background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:8px;font-weight:600;text-decoration:none}
+.skip:focus{left:8px}
 /* Hauptnavigation mit Unterreitern */
 nav.main{align-items:center}
 nav.main .mi{position:relative}
@@ -309,6 +311,14 @@ def footer(root, credits=""):
 MODAL = src[src.index('<div class="modal" id="pkgmodal"'):src.index('<footer>')].strip()
 
 def page_shell(headhtml, body, root, home=False, credits=""):
+    # Sprunglink fuer Tastatur und Screenreader: Ziel ist das <main> der Seite
+    m = re.search(r'<main\b[^>]*>', body)
+    if m and ' id="' in m.group(0):
+        target = re.search(r' id="([^"]+)"', m.group(0)).group(1)
+    else:
+        target = "inhalt"
+        body = body.replace("<main", '<main id="inhalt"', 1)
+    skip = f'<a class="skip" href="#{target}">Zum Inhalt springen</a>'
     return f"""<!doctype html>
 <html lang="de-CH">
 <head>
@@ -316,6 +326,7 @@ def page_shell(headhtml, body, root, home=False, credits=""):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 {headhtml}</head>
 <body>
+{skip}
 {header(root, home)}
 {body}
 {MODAL}

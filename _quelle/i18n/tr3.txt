@@ -46,3 +46,9 @@ en: Sister companies
 fr: Sociétés sœurs
 it: Società sorelle
 es: Empresas hermanas
+
+de: Zum Inhalt springen
+en: Skip to content
+fr: Aller au contenu
+it: Vai al contenuto
+es: Saltar al contenido
