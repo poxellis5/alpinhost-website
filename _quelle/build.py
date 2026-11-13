@@ -116,7 +116,8 @@ footer .credits + .credits{border-top:0;padding-top:0;margin-top:-8px}
 def img(name, alt, w800=True, cls="", sizes="(max-width: 900px) 100vw, 50vw", root="", eager=False, wh=(1600, 1067)):
     s = f'{root}img/{name}-800.webp'
     big = f'{root}img/{name}-1600.webp'
-    srcset = f'{s} 800w, {big} 1600w' if os.path.exists(os.path.join(OUT, "img", f"{name}-1600.webp")) else f'{s} 800w'
+    mid = f', {root}img/{name}-1200.webp 1200w' if os.path.exists(os.path.join(OUT, "img", f"{name}-1200.webp")) else ''   # Zwischengroesse fuer Handys mit hoher Pixeldichte
+    srcset = f'{s} 800w{mid}, {big} 1600w' if os.path.exists(os.path.join(OUT, "img", f"{name}-1600.webp")) else f'{s} 800w'
     load = 'fetchpriority="high"' if eager else 'loading="lazy"'
     return f'<img src="{s}" srcset="{srcset}" sizes="{sizes}" alt="{alt}" width="{wh[0]}" height="{wh[1]}" {load} decoding="async"{(" class=%s" % cls) if cls else ""}>'
 

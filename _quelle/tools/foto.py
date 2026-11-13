@@ -5,7 +5,7 @@
       -> listet Kandidaten (Titel, Groesse, Lizenz, Urheber) und speichert Vorschaubilder nach /tmp/foto-kandidaten/
          Vorschau IMMER ansehen: Das Bild muss genau zeigen, wovon der Text spricht.
   python3 _quelle/tools/foto.py holen "File:Genauer Titel.jpg" lauterbrunnen-staubbachfall
-      -> laedt das Bild, schneidet auf 3:2, schreibt img/<name>-800.webp, img/<name>-1600.webp, img/og-<name>.jpg
+      -> laedt das Bild, schneidet auf 3:2, schreibt img/<name>-800.webp, img/<name>-1200.webp, img/<name>-1600.webp, img/og-<name>.jpg
          und traegt Urheber und Lizenz in _quelle/rg_img/meta.json ein.
 
 Regeln: nur CC0, CC BY, CC BY-SA oder gemeinfrei. Querformat, mindestens 1600 px breit.
@@ -64,6 +64,7 @@ def holen(title, name):
     l, t = (w - tw) // 2, (h - th) // 2
     im = im.crop((l, t, l + tw, t + th)); out = os.path.join(ROOT, "img") + "/"
     im.resize((1600, 1067), Image.LANCZOS).save(f"{out}{name}-1600.webp", quality=78, method=6)
+    im.resize((1200, 800), Image.LANCZOS).save(f"{out}{name}-1200.webp", quality=77, method=6)
     im.resize((800, 533), Image.LANCZOS).save(f"{out}{name}-800.webp", quality=76, method=6)
     im.resize((1200, 800), Image.LANCZOS).crop((0, 85, 1200, 715)).save(f"{out}og-{name}.jpg", quality=84, optimize=True)
     meta = json.load(open(META, encoding="utf-8"))
