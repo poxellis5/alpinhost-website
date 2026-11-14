@@ -379,6 +379,30 @@ JS_SAFE += """
   document.addEventListener("click",function(e){ var a=e.target.closest&&e.target.closest('a[href*="wa.me"],a[href^="tel:"],a[href^="mailto:"]'); if(a) hit("lead"); },true);
 })();
 """
+JS_SAFE += r"""
+/* WhatsApp-Knopf (Ramon 14.11.2026, «auf allen Websites das grüne WhatsApp-Symbol mit meiner Nummer»): runder grüner Knopf unten rechts.
+   Weicht nach oben aus, wenn unten eine feste Leiste oder ein anderer Knopf steht. Ist auf der Seite schon ein fester WhatsApp-Knopf sichtbar, bleibt er weg. */
+(function(){
+  var CFG={avoid:[],z:50};
+  if(document.querySelector(".wa-fab"))return;
+  var a=document.createElement("a");a.className="wa-fab";a.href="https://wa.me/41795318111"+(CFG.text?"?text="+encodeURIComponent(CFG.text):"");
+  a.target="_blank";a.rel="noopener";a.setAttribute("aria-label",CFG.label||"WhatsApp +41 79 531 81 11");a.title=CFG.label||"WhatsApp +41 79 531 81 11";
+  a.innerHTML='<svg viewBox="0 0 24 24" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></svg>';
+  var st=document.createElement("style");
+  st.textContent=".wa-fab{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:"+(CFG.z||45)+";width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.25);transition:transform .15s,bottom .2s,opacity .2s;text-decoration:none}"+
+    ".wa-fab:hover{transform:scale(1.07)}.wa-fab:focus-visible{outline:3px solid #128C7E;outline-offset:3px}.wa-fab.off{opacity:0;pointer-events:none;visibility:hidden}"+
+    "[dir=rtl] .wa-fab{right:auto;left:max(18px,env(safe-area-inset-left,0px))}@media print{.wa-fab{display:none}}@media (prefers-reduced-motion:reduce){.wa-fab{transition:none}}";
+  document.head.appendChild(st);document.body.appendChild(a);
+  function vis(el){if(!el||el===a)return null;var cs=getComputedStyle(el);if(cs.display==="none"||cs.visibility==="hidden"||+cs.opacity===0)return null;var r=el.getBoundingClientRect();return r.width&&r.height?r:null}
+  function fit(){var H=window.innerHeight,off=0,hide=false;
+    (CFG.hideIf||[]).forEach(function(s){Array.prototype.forEach.call(document.querySelectorAll(s),function(el){if(vis(el))hide=true})});
+    (CFG.avoid||[]).forEach(function(s){Array.prototype.forEach.call(document.querySelectorAll(s),function(el){var r=vis(el);if(r&&r.bottom>=H-140&&r.top<H)off=Math.max(off,H-r.top+12)})});
+    a.classList.toggle("off",hide);a.style.bottom=off?"calc("+Math.round(off)+"px + 0px)":""}
+  var t=null;function soon(){clearTimeout(t);t=setTimeout(fit,120)}
+  window.addEventListener("resize",soon);window.addEventListener("scroll",soon,{passive:true});document.addEventListener("click",soon,true);
+  fit();setTimeout(fit,800);setTimeout(fit,2500);
+})();
+"""
 open(OUT + "/assets/site.js", "w").write(JS_SAFE)
 import hashlib
 AV_CSS = hashlib.md5((CSS + EXTRA_CSS).encode()).hexdigest()[:8]
