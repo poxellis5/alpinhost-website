@@ -868,11 +868,11 @@ fr: Grindelwald, Oberland bernois
 it: Grindelwald, Oberland bernese
 es: Grindelwald, Oberland bernés
 
-de: Keine Cookies, kein Tracking
-en: No cookies, no tracking
-fr: Pas de cookies, pas de suivi
-it: Nessun cookie, nessun tracciamento
-es: Sin cookies ni seguimiento
+de: Keine Cookies, nur anonyme Besuchszahlen
+en: No cookies, only anonymous visit counts
+fr: Pas de cookies, seulement des visites comptées anonymement
+it: Nessun cookie, solo conteggi anonimi delle visite
+es: Sin cookies, solo recuento anónimo de visitas
 
 de: Saubere Wechsel, zuverlässig
 en: Clean turnovers, every time

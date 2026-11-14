@@ -64,11 +64,11 @@ fr: Lucerne · Kriens · Horw · Weggis · Vitznau · Gersau · Engelberg · Zou
 it: Lucerna · Kriens · Horw · Weggis · Vitznau · Gersau · Engelberg · Zugo · Andermatt
 es: Lucerna · Kriens · Horw · Weggis · Vitznau · Gersau · Engelberg · Zug · Andermatt
 
-de: Diese Website setzt keine Cookies und verwendet keine Analyse- oder Werbedienste.
-en: This website sets no cookies and uses no analytics or advertising services.
-fr: Ce site ne dépose aucun cookie et n'utilise aucun service d'analyse ni de publicité.
-it: Questo sito non usa cookie né servizi di analisi o pubblicità.
-es: Este sitio no usa cookies ni servicios de análisis o publicidad.
+de: Diese Website setzt keine Cookies und verwendet keine Werbedienste. Um zu sehen, wie Eigentümer uns finden, zählen wir pro Tag anonym, von welcher Art Quelle ein Besuch kommt (zum Beispiel Suchmaschine, KI-Assistent oder direkt), in welcher Sprache die Seite gelesen wird und ob eine Anfrage abgeschickt wurde. Wir speichern dabei keine IP-Adresse und keine Personendaten. Die Zähler liegen bei Netlify im Konto unserer Schwesterfirma Grindelwald Experiences.
+en: This website sets no cookies and uses no advertising services. To see how owners find us, we count anonymously per day what kind of source a visit comes from (for example a search engine, an AI assistant or direct), which language the page is read in and whether an enquiry was sent. We store no IP address and no personal data. The counters are kept at Netlify in the account of our sister company Grindelwald Experiences.
+fr: Ce site ne dépose aucun cookie et n'utilise aucun service publicitaire. Pour savoir comment les propriétaires nous trouvent, nous comptons chaque jour, de manière anonyme, le type de source d'une visite (par exemple moteur de recherche, assistant IA ou accès direct), la langue de lecture et si une demande a été envoyée. Nous n'enregistrons ni adresse IP ni données personnelles. Les compteurs sont conservés chez Netlify, dans le compte de notre société sœur Grindelwald Experiences.
+it: Questo sito non usa cookie né servizi pubblicitari. Per capire come i proprietari ci trovano, contiamo ogni giorno in forma anonima il tipo di fonte di una visita (per esempio motore di ricerca, assistente IA o accesso diretto), la lingua di lettura e se è stata inviata una richiesta. Non salviamo indirizzi IP né dati personali. I contatori sono conservati presso Netlify, nell'account della nostra società sorella Grindelwald Experiences.
+es: Este sitio no usa cookies ni servicios publicitarios. Para saber cómo nos encuentran los propietarios, contamos cada día de forma anónima el tipo de fuente de una visita (por ejemplo, buscador, asistente de IA o acceso directo), el idioma de lectura y si se envió una consulta. No guardamos direcciones IP ni datos personales. Los contadores se guardan en Netlify, en la cuenta de nuestra empresa hermana Grindelwald Experiences.
 
 de: Grindelwald Dorf · Grund · Terrassenweg · Bussalp · Grindelwald-First · Wargistal
 en: Grindelwald village · Grund · Terrassenweg · Bussalp · Grindelwald-First · Wargistal
