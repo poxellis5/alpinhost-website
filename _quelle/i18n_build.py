@@ -238,16 +238,27 @@ if __name__ == "__main__":
     # 404 ohne Platzhalter
     p404 = open("site/404.html", encoding="utf-8").read().replace("<!--LANGSW-->", "")
     open("site/404.html", "w", encoding="utf-8").write(p404)
-    # Sitemap mit Alternates
+    # Sitemap mit Alternates. lastmod = Tag der letzten echten Aenderung der Seite (nicht der Bautag):
+    # i18n/lastmod.json merkt sich pro Adresse einen Fingerabdruck des Seiteninhalts und das Datum der letzten Aenderung.
+    LM_FILE = "i18n/lastmod.json"
+    LM = json.load(open(LM_FILE, encoding="utf-8")) if os.path.exists(LM_FILE) else {}
+    def lastmod(path):
+        html = open("site" + path + "index.html", encoding="utf-8").read()
+        html = re.sub(r"\?v=[0-9a-f]{6,}", "", html)          # Versionskennung von CSS und Skript zaehlt nicht als Aenderung
+        h = hashlib.sha256(html.encode("utf-8")).hexdigest()[:16]
+        e = LM.get(path)
+        if not e or e["hash"] != h: LM[path] = {"hash": h, "date": TODAY}
+        return LM[path]["date"]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     for p in INDEXABLE:
         alts = "".join(f'<xhtml:link rel="alternate" hreflang="{HTML_LANG[l]}" href="{DOMAIN}{lang_path(p, l)}"/>' for l in ALL) + f'<xhtml:link rel="alternate" hreflang="x-default" href="{DOMAIN}{p}"/>'
         for l in ALL:
-            sm.append(f'  <url><loc>{DOMAIN}{lang_path(p, l)}</loc><lastmod>{TODAY}</lastmod><priority>{"1.0" if p == "/" else "0.8"}</priority>{alts}</url>')
+            sm.append(f'  <url><loc>{DOMAIN}{lang_path(p, l)}</loc><lastmod>{lastmod(lang_path(p, l))}</lastmod><priority>{"1.0" if p == "/" else "0.8"}</priority>{alts}</url>')
     for u in json.load(open("i18n/ratgeber_urls.json")):
-        sm.append(f'  <url><loc>{DOMAIN}/{u}</loc><lastmod>{TODAY}</lastmod><priority>{"0.7" if u == "ratgeber/" else "0.6"}</priority></url>')
+        sm.append(f'  <url><loc>{DOMAIN}/{u}</loc><lastmod>{lastmod("/" + u)}</lastmod><priority>{"0.7" if u == "ratgeber/" else "0.6"}</priority></url>')
     sm.append("</urlset>")
     open("site/sitemap.xml", "w", encoding="utf-8").write("\n".join(sm) + "\n")
+    json.dump(LM, open(LM_FILE, "w", encoding="utf-8"), indent=1, sort_keys=True)
     # llms.txt ergänzen
     llms = open("site/llms.txt", encoding="utf-8").read()
     if "## Sprachen" not in llms:
