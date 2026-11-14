@@ -367,7 +367,8 @@ JS_SAFE += """
 JS_SAFE += """
 (function(){
   var EP="https://grindelwaldexperiences.ch/api/stats",SRC="direct",L=document.documentElement.lang||"de";
-  function hit(e){ try{ if(!/alpinhost\\.ch$/.test(location.hostname)) return; navigator.sendBeacon(EP,JSON.stringify({e:e,s:SRC,l:L,w:"alpinhost"})); }catch(x){} }
+  try{ var NQ=new URLSearchParams(location.search).get("nostat"); if(NQ==="1") localStorage.setItem("nostat","1"); if(NQ==="0") localStorage.removeItem("nostat"); }catch(x){}
+  function hit(e){ try{ if(!/alpinhost\\.ch$/.test(location.hostname)||navigator.webdriver||localStorage.getItem("nostat")==="1") return; navigator.sendBeacon(EP,JSON.stringify({e:e,s:SRC,l:L,w:"alpinhost"})); }catch(x){} }
   try{ SRC=sessionStorage.getItem("ah-src")||""; if(!SRC){
     var us=(new URLSearchParams(location.search).get("utm_source")||"").toLowerCase(),rh="";
     try{ rh=document.referrer?new URL(document.referrer).hostname.replace(/^www\\./,""):""; }catch(x){}
