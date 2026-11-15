@@ -65,7 +65,7 @@ ARTICLES = [
 <h2>Was Sie vom Ertrag noch abziehen müssen</h2>
 <ul>
 <li>Nebenkosten: Heizung, Strom, Wasser, Internet</li>
-<li>Versicherungen und Unterhalt der Wohnung</li>
+<li><a href="../versicherung-ferienwohnung-vermieten/">Versicherungen</a> und Unterhalt der Wohnung</li>
 <li>Verbrauchsmaterial wie Kaffee, Seife und WC-Papier</li>
 <li>Steuern auf den Mieteinnahmen</li>
 <li>Hypothekarzinsen, falls vorhanden</li>
@@ -158,7 +158,7 @@ ARTICLES = [
 <h2>Was bei jeder Buchung anfällt</h2>
 <ul>
 <li>Anfrage beantworten, oft auf Englisch und oft abends</li>
-<li>Anreise erklären: Weg, Parkplatz, Schlüssel, Hausordnung</li>
+<li>Anreise erklären: Weg, Parkplatz, <a href="../self-check-in-ferienwohnung/">Schlüssel</a>, Hausordnung</li>
 <li>Erreichbar sein, wenn der Gast den Schlüssel nicht findet oder die Heizung streikt</li>
 <li>Nach der Abreise reinigen, Betten frisch beziehen, Wäsche waschen</li>
 <li>Wohnung kontrollieren und Schäden festhalten</li>
@@ -172,7 +172,7 @@ ARTICLES = [
 <p>88 Wechsel heissen 88 Reinigungen und 88 Anreisen, verteilt über das ganze Jahr, auch an Weihnachten und in Ihren eigenen Ferien.</p>
 
 <h2>Was eine Verwaltung kostet</h2>
-<p>Marktüblich sind in der Schweiz 15 bis 25 Prozent. Die Zahl allein sagt wenig. Fragen Sie immer nach der Berechnungsgrundlage: Wird der Prozentsatz vor oder nach Abzug der Plattformgebühr gerechnet? Zählt die Reinigungsgebühr dazu?</p>
+<p>Marktüblich sind in der Schweiz 15 bis 25 Prozent. Die Zahl allein sagt wenig. Fragen Sie immer nach der Berechnungsgrundlage: Wird der Prozentsatz vor oder nach Abzug der <a href="../airbnb-oder-booking/">Plattformgebühr</a> gerechnet? Zählt die Reinigungsgebühr dazu?</p>
 <p>Ein Beispiel mit unseren Konditionen: Nach der Plattformgebühr bleiben in Grindelwald rund CHF 45'558 pro Jahr. Davon gehen im Komplett-Paket 21 % an uns, also CHF 9'567. Bei Ihnen bleiben CHF 35'991. Reinigung, Wäsche, Anreise und Kontrolle sind darin organisiert.</p>
 
 <h2>Wann sich selbst vermieten lohnt</h2>
