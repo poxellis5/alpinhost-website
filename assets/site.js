@@ -80,9 +80,7 @@
   document.addEventListener("keydown", function(e){ if(e.key==="Escape" && !modal.hidden) closeModal(); });
   document.querySelectorAll(".plan").forEach(function(card){
     var pkg=card.querySelector(".choose").dataset.pkg;
-    card.setAttribute("tabindex","0"); card.setAttribute("role","button"); card.setAttribute("aria-label","Paket "+pkg+" wählen");
     card.addEventListener("click", function(e){ if(e.target.closest("summary,details p")) return; e.preventDefault(); openModal(pkg); });
-    card.addEventListener("keydown", function(e){ if((e.key==="Enter"||e.key===" ") && e.target===card){ e.preventDefault(); openModal(pkg); } });
   });
   var EP="https://formsubmit.co/ajax/info@alpinhost.ch", WA="https://wa.me/41795318111?text=";
   function fv(id){ return document.getElementById(id).value.trim(); }
