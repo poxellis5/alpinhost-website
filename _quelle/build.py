@@ -368,16 +368,17 @@ JS_SAFE += """
 (function(){
   var EP="https://grindelwaldexperiences.ch/api/stats",SRC="direct",L=document.documentElement.lang||"de";
   try{ var NQ=new URLSearchParams(location.search).get("nostat"); if(NQ==="1") localStorage.setItem("nostat","1"); if(NQ==="0") localStorage.removeItem("nostat"); }catch(x){}
-  function hit(e,t){ try{ if(!/alpinhost\\.ch$/.test(location.hostname)||navigator.webdriver||localStorage.getItem("nostat")==="1") return; navigator.sendBeacon(EP,JSON.stringify({e:e,s:SRC,l:L,w:"alpinhost",p:location.pathname,t:t||""})); }catch(x){} }
+  function hit(e,t,x){ try{ if(!/alpinhost\\.ch$/.test(location.hostname)||navigator.webdriver||localStorage.getItem("nostat")==="1") return; navigator.sendBeacon(EP,JSON.stringify(Object.assign({e:e,s:SRC,l:L,w:"alpinhost",p:location.pathname,t:t||""},x||{}))); }catch(x){} }
   try{ SRC=sessionStorage.getItem("ah-src")||""; if(!SRC){
     var us=(new URLSearchParams(location.search).get("utm_source")||"").toLowerCase(),rh="";
     try{ rh=document.referrer?new URL(document.referrer).hostname.replace(/^www\\./,""):""; }catch(x){}
     var KN=[["chatgpt","chatgpt"],["openai","chatgpt"],["perplexity","perplexity"],["gemini","gemini"],["copilot","copilot"],["claude.ai","claude"],["google","google"],["bing","bing"],["duckduckgo","duckduckgo"],["yahoo","yahoo"],["grindelwaldexperiences","grindelwaldexperiences"],["jungfrauflights","jungfrauflights"],["linkedin","linkedin"],["instagram","instagram"],["facebook","facebook"]],h=us+" "+rh;
     for(var k=0;k<KN.length;k++) if(h.indexOf(KN[k][0])>=0){ SRC=KN[k][1]; break; }
     if(!SRC) SRC=rh&&rh.indexOf("alpinhost")<0?("ref:"+rh).slice(0,40):(us?("utm:"+us).slice(0,40):"direct");
-    sessionStorage.setItem("ah-src",SRC); hit("visit"); } else hit("page"); }catch(x){ SRC=SRC||"direct"; }
+    sessionStorage.setItem("ah-src",SRC); hit("visit","",{bl:navigator.language||"",r:rh&&rh.indexOf("alpinhost")<0?document.referrer.split(/[?#]/)[0]:""}); } else hit("page"); }catch(x){ SRC=SRC||"direct"; }
   var lf=document.getElementById("leadform"); if(lf) lf.addEventListener("submit",function(){ hit("lead"); });
   document.addEventListener("click",function(e){ var a=e.target.closest&&e.target.closest('a[href*="wa.me"],a[href^="tel:"],a[href^="mailto:"]'); if(a) hit("lead"); },true);
+ (function(){var t0=Date.now(),mx=0,sent=0;function sc(){try{var d=document.documentElement,v=(window.scrollY+window.innerHeight)/Math.max(d.scrollHeight,1);if(v>mx)mx=v}catch(x){}}window.addEventListener("scroll",sc,{passive:true});sc();function go(){if(sent)return;sent=1;hit("stay","",{d:Math.round((Date.now()-t0)/1000),sc:Math.min(100,Math.round(mx*100))})}window.addEventListener("pagehide",go);document.addEventListener("visibilitychange",function(){if(document.visibilityState==="hidden")go()})})();
 })();
 """
 open(OUT + "/assets/site.js", "w").write(JS_SAFE)
@@ -510,7 +511,7 @@ legal("datenschutz", "Datenschutz | Alpinhost", "Datenschutzerklärung",
  """<p>Wir nehmen den Schutz Ihrer Daten ernst und bearbeiten Personendaten nach dem Schweizer Datenschutzgesetz (DSG).</p>
 <h2>Verantwortlich</h2><p>R&amp;B Digital Market KlG, Marke Alpinhost, Kellerstrasse 29, 6005 Luzern. Kontakt: <a href="mailto:info@alpinhost.ch">info@alpinhost.ch</a> oder WhatsApp wie im Impressum angegeben.</p>
 <h2>Anfragen</h2><p>Wenn Sie das Formular absenden, erhalten wir Ihre Angaben per E-Mail. Für die Übermittlung nutzen wir den Dienst FormSubmit, der die Angaben an unser Postfach weiterleitet. Wählen Sie WhatsApp, wird Ihre Nachricht in WhatsApp vorbereitet und erst gesendet, wenn Sie selbst auf Senden tippen. Wir verwenden Ihre Angaben nur, um Ihre Anfrage zu beantworten.</p>
-<h2>Keine Cookies, nur anonyme Besuchszahlen</h2><p>Diese Website setzt keine Cookies und verwendet keine Werbedienste. Um zu sehen, wie Eigentümer uns finden, zählen wir pro Tag anonym, von welcher Art Quelle ein Besuch kommt (zum Beispiel Suchmaschine, KI-Assistent oder direkt), in welcher Sprache die Seite gelesen wird, welche Seiten aufgerufen werden und ob eine Anfrage abgeschickt wurde. Wir speichern dabei keine IP-Adresse und keine Personendaten. Die Zähler liegen bei Netlify im Konto unserer Schwesterfirma Grindelwald Experiences.</p>
+<h2>Keine Cookies, nur anonyme Besuchszahlen</h2><p>Diese Website setzt keine Cookies und verwendet keine Werbedienste. Um zu sehen, wie Eigentümer uns finden, zählen wir pro Tag anonym, von welcher Art Quelle ein Besuch kommt (zum Beispiel Suchmaschine, KI-Assistent oder direkt), in welcher Sprache die Seite gelesen wird, welche Seiten aufgerufen und wie lange und wie weit sie gelesen werden, von welcher Website ein Besuch kommt, Land und Ort (von Netlify aus der IP-Adresse abgeleitet), Gerätetyp, Betriebssystem, Browser, Browsersprache, Uhrzeit und Wochentag sowie ob eine Anfrage abgeschickt wurde. Wir speichern dabei keine IP-Adresse und keine Personendaten, es sind nur Zähler ohne Bezug zu einer Person. Die Zähler liegen bei Netlify im Konto unserer Schwesterfirma Grindelwald Experiences.</p>
 <h2>Hosting und Schriften</h2><p>Beim Aufruf der Website verarbeitet unser Hosting-Anbieter technisch notwendige Daten wie die IP-Adresse. Die Schriften werden von Google Fonts geladen. Dabei wird Ihre IP-Adresse an Google übermittelt.</p>
 <h2>Ihre Rechte</h2><p>Sie können jederzeit Auskunft über Ihre bei uns gespeicherten Daten verlangen und deren Berichtigung oder Löschung beantragen.</p>""")
 
