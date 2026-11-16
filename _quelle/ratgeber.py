@@ -97,7 +97,7 @@ ARTICLES = [
  "body": """
 <h2>Die Gebühren im Vergleich</h2>
 <div class="tbl"><table>
-<thead><tr><th></th><th>Airbnb</th><th>Booking.com</th></tr></thead>
+<thead><tr><td></td><th>Airbnb</th><th>Booking.com</th></tr></thead>
 <tbody>
 <tr><td>Gebühr für Gastgeber</td><td>meist 15,5 %, sonst 14 bis 16 %</td><td>meist rund 15 %</td></tr>
 <tr><td>Zahlungsabwicklung</td><td>inbegriffen</td><td>1,1 bis 3,1 % zusätzlich, wenn Booking.com die Zahlung abwickelt</td></tr>
@@ -110,7 +110,7 @@ ARTICLES = [
 <h2>Rechenbeispiel: 3 Nächte in Grindelwald</h2>
 <p>Eine 2-Zimmer-Wohnung, 3 Nächte zu CHF 205, also CHF 615 Übernachtungsumsatz.</p>
 <div class="tbl"><table>
-<thead><tr><th></th><th class="n">Airbnb</th><th class="n">Booking.com</th></tr></thead>
+<thead><tr><td></td><th class="n">Airbnb</th><th class="n">Booking.com</th></tr></thead>
 <tbody>
 <tr><td>Übernachtungsumsatz</td><td class="n">CHF 615.00</td><td class="n">CHF 615.00</td></tr>
 <tr><td>Gebühr</td><td class="n">− 95.33 (15,5 %)</td><td class="n">− 92.25 (15 %)</td></tr>
@@ -235,7 +235,7 @@ ARTICLES = [
 
 <h2>Schlüsselbox oder Smart Lock: der Vergleich</h2>
 <div class="tbl wide"><table>
-<thead><tr><th></th><th>Schlüsselbox</th><th>Elektronisches Schloss mit Codefeld</th><th>Persönliche Übergabe</th></tr></thead>
+<thead><tr><td></td><th>Schlüsselbox</th><th>Elektronisches Schloss mit Codefeld</th><th>Persönliche Übergabe</th></tr></thead>
 <tbody>
 <tr><td>Anschaffung (Beispielpreise November 2026)</td><td>ab rund CHF 30</td><td>CHF 238 bis 438</td><td>CHF 0</td></tr>
 <tr><td>Eigener Code pro Gast</td><td>nur, wenn jemand den Code vor Ort umstellt</td><td>ja, aus der Ferne, mit Ablaufdatum</td><td>nicht nötig</td></tr>
@@ -689,7 +689,7 @@ def _rg_market_article():
 <p>Die Tabelle zeigt alle aktiven Airbnb-Inserate pro Ort über 12 Monate, von November 2025 bis Oktober 2026. Auslastung heisst: Anteil der gebuchten Nächte an allen verfügbaren Nächten.</p>
 <p class="swipe">Tabelle seitlich wischen →</p>
 <div class="tbl wide"><table>
-<thead><tr><th class="n">Rang</th><th>Ort</th><th class="n">Auslastung</th><th></th><th class="n">Ø Nachtpreis</th><th class="n">Inserate</th></tr></thead>
+<thead><tr><th class="n">Rang</th><th>Ort</th><th class="n">Auslastung</th><td></td><th class="n">Ø Nachtpreis</th><th class="n">Inserate</th></tr></thead>
 <tbody>{t1}</tbody></table></div>
 <p>Zum Vergleich: In der ganzen Schweiz liegt die Auslastung bei 59 % und der Durchschnittspreis bei CHF 199. {above} der 23 Orte liegen über dem Schweizer Schnitt.</p>
 
