@@ -150,14 +150,14 @@
 (function(){
   var EP="https://grindelwaldexperiences.ch/api/stats",SRC="direct",L=document.documentElement.lang||"de";
   try{ var NQ=new URLSearchParams(location.search).get("nostat"); if(NQ==="1") localStorage.setItem("nostat","1"); if(NQ==="0") localStorage.removeItem("nostat"); }catch(x){}
-  function hit(e){ try{ if(!/alpinhost\.ch$/.test(location.hostname)||navigator.webdriver||localStorage.getItem("nostat")==="1") return; navigator.sendBeacon(EP,JSON.stringify({e:e,s:SRC,l:L,w:"alpinhost"})); }catch(x){} }
+  function hit(e,t){ try{ if(!/alpinhost\.ch$/.test(location.hostname)||navigator.webdriver||localStorage.getItem("nostat")==="1") return; navigator.sendBeacon(EP,JSON.stringify({e:e,s:SRC,l:L,w:"alpinhost",p:location.pathname,t:t||""})); }catch(x){} }
   try{ SRC=sessionStorage.getItem("ah-src")||""; if(!SRC){
     var us=(new URLSearchParams(location.search).get("utm_source")||"").toLowerCase(),rh="";
     try{ rh=document.referrer?new URL(document.referrer).hostname.replace(/^www\./,""):""; }catch(x){}
     var KN=[["chatgpt","chatgpt"],["openai","chatgpt"],["perplexity","perplexity"],["gemini","gemini"],["copilot","copilot"],["claude.ai","claude"],["google","google"],["bing","bing"],["duckduckgo","duckduckgo"],["yahoo","yahoo"],["grindelwaldexperiences","grindelwaldexperiences"],["jungfrauflights","jungfrauflights"],["linkedin","linkedin"],["instagram","instagram"],["facebook","facebook"]],h=us+" "+rh;
     for(var k=0;k<KN.length;k++) if(h.indexOf(KN[k][0])>=0){ SRC=KN[k][1]; break; }
     if(!SRC) SRC=rh&&rh.indexOf("alpinhost")<0?("ref:"+rh).slice(0,40):(us?("utm:"+us).slice(0,40):"direct");
-    sessionStorage.setItem("ah-src",SRC); hit("visit"); } }catch(x){ SRC=SRC||"direct"; }
+    sessionStorage.setItem("ah-src",SRC); hit("visit"); } else hit("page"); }catch(x){ SRC=SRC||"direct"; }
   var lf=document.getElementById("leadform"); if(lf) lf.addEventListener("submit",function(){ hit("lead"); });
   document.addEventListener("click",function(e){ var a=e.target.closest&&e.target.closest('a[href*="wa.me"],a[href^="tel:"],a[href^="mailto:"]'); if(a) hit("lead"); },true);
 })();
