@@ -894,7 +894,7 @@ def build_ratgeber():
       <h2>Häufige Fragen</h2>
       {faqs}
     </div>
-    <aside class="sidecard">
+    <div class="sidecard">
       <p class="eyebrow">Ihre Wohnung</p>
       <p style="font-family:var(--display,inherit);font-weight:700;font-size:22px;line-height:1.2">Was bringt Ihre Ferienwohnung?</p>
       <p style="color:var(--muted);font-size:15px">Der Rechner nutzt echte Marktdaten von 24 Schweizer Orten.</p>
@@ -903,7 +903,7 @@ def build_ratgeber():
       <div class="price-mini"><span>Basis</span><b>18 %</b></div>
       <div class="price-mini"><span>Komplett, inkl. Reinigung</span><b>21 %</b></div>
       <p style="font-size:14px;color:var(--muted)">WhatsApp und Telefon: <b style="white-space:nowrap">{PHONE}</b><br>E-Mail: <a href="mailto:info@alpinhost.ch" style="color:inherit;font-weight:600">info@alpinhost.ch</a></p>
-    </aside>
+    </div>
   </div>
 </section>
 </article>

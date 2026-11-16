@@ -478,7 +478,7 @@ for key, r in REGIONS.items():
       <h2>Wo wir arbeiten</h2><p class="places">{places}</p>
       <h2>Weitere Regionen</h2><p class="places">{others}</p>
     </div>
-    <aside class="sidecard">
+    <div class="sidecard">
       <p class="eyebrow">Konditionen</p>
       <div class="price-mini"><span>Basis</span><b>18 %</b></div>
       <div class="price-mini"><span>Komplett, inkl. Reinigung</span><b>21 %</b></div>
@@ -487,7 +487,7 @@ for key, r in REGIONS.items():
       <p style="color:var(--muted);font-size:14.5px">Gerechnet auf den Übernachtungsumsatz nach Plattformgebühr. Bei Leerstand zahlen Sie nichts.</p>
       <a class="btn btn-primary" href="{root}#kontakt">Kostenlos prüfen lassen</a>
       <p style="font-size:14px;color:var(--muted)">WhatsApp und Telefon: <b style="white-space:nowrap">{PHONE}</b><br>E-Mail: <a href="mailto:info@alpinhost.ch" style="color:inherit;font-weight:600">info@alpinhost.ch</a></p>
-    </aside>
+    </div>
   </div>
 </section>
 {rg_html}</main>"""
