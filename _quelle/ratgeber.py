@@ -252,7 +252,7 @@ ARTICLES = [
 <li>Wählen Sie einen Ort mit Licht. Im Dunkeln lassen sich Zahlenräder kaum ablesen.</li>
 <li>Stellen Sie nach jedem Gast einen neuen Code ein. Vier Stellen ergeben 10'000 mögliche Codes, das Geburtsjahr und 1234 gehören nicht dazu.</li>
 <li>In einem Mehrfamilienhaus sprechen Sie den Ort vorher mit der Hausverwaltung ab.</li>
-<li>In den Bergen: Wählen Sie eine wetterfeste Box an einer geschützten Stelle. Schnee und Eis blockieren Zahlenräder und Klappen.</li>
+<li>In den Bergen: Wählen Sie eine wetterfeste Box an einer geschützten Stelle. Schnee und Eis blockieren Zahlenräder und Klappen. Mehr dazu im Artikel <a href="../ferienwohnung-winter-vermieten/">Ferienwohnung im Winter vermieten</a>.</li>
 <li>Hinterlegen Sie einen zweiten Schlüssel bei einer Person im Ort.</li>
 </ul>
 
@@ -651,6 +651,105 @@ ARTICLES = [
  "faq": [("Muss ich meiner Versicherung melden, dass ich über Airbnb vermiete?", "Ja, das empfehlen wir dringend. Viele Policen wurden für die eigene Nutzung abgeschlossen. Fragen Sie schriftlich an, ob die Vermietung an wechselnde Feriengäste gedeckt ist."),
          ("Reicht der Schutz von Airbnb als Versicherung?", "Nein. AirCover deckt Sachschäden bis 3 Millionen US-Dollar und Haftpflicht bis 1 Million US-Dollar, aber nur bei Buchungen über Airbnb. Für andere Buchungen und für das Gebäude brauchen Sie eigene Versicherungen.")],
  "sources": [("Airbnb: AirCover für Gastgeber", "https://www.airbnb.ch/aircover-for-hosts")],
+},
+{
+ "slug": "ferienwohnung-winter-vermieten", "cat": "Wohnung fit machen", "mins": 6, "date": "2026-11-17",
+ "h1": "Ferienwohnung im Winter vermieten: Heizung, Schnee, Skiraum und Anreise",
+ "title": "Ferienwohnung im Winter vermieten: Checkliste",
+ "desc": "Ferienwohnung im Winter vermieten: Heizung aus der Ferne steuern, Frost vermeiden, Skiraum einrichten und die Anreise im Schnee planen. Mit Checkliste.",
+ "teaser": "Heizung aus der Ferne, Frost vermeiden, Platz für Skis und eine Anreise ohne Pannen. Mit Checkliste.",
+ "lead": "Im Winter sind Ferienwohnungen in den Bergen am gefragtesten, und gleichzeitig geht am meisten schief: kalte Wohnung bei der Ankunft, eingefrorene Leitung, kein Platz für nasse Skischuhe. Mit vier Vorbereitungen vermeiden Sie das meiste davon.",
+ "photo": ("skiraum-skis-snowboards", "Skis und Snowboards mit Skistöcken an der Wand eines Skiraums",
+           "Skis und Snowboards in einem Skiraum. Gäste im Winter brauchen einen Platz für ihre Ausrüstung ausserhalb der Wohnung."),
+ "key": ["Zwischen zwei Buchungen genügen in einer Wohnung 12 bis 15 °C, in einem Chalet 6 bis 10 °C.",
+         "Eine Heizungsfernsteuerung kostet mit Einbau rund CHF 500 bis 2'500 und spart bis 60 % Heizenergie.",
+         "Gäste brauchen einen Platz für Skis, Schuhe und nasse Kleider, am besten ausserhalb der Wohnung.",
+         "Die Anreise-Nachricht im Winter nennt Parkplatz, Bahn und den Weg im Schnee."],
+ "body": """
+<h2>Warum der Winter eigene Vorbereitung braucht</h2>
+<p>In der Jungfrau Region beginnt die Skisaison Ende November. Den Skipass für die Jungfrau Ski Region verkaufen die Bergbahnen für die Saison 2026/27 vom 21. November 2026 bis 25. April 2027, mit 211 Pistenkilometern in drei Skigebieten. Wann die Anlagen tatsächlich fahren, hängt vom Schnee ab. Bis Ende November laufen sie oft nur am Wochenende oder teilweise.</p>
+<p>Für Eigentümer heisst das: Die Wohnung muss ab Ende November bereit sein und bis Ende April zuverlässig funktionieren, auch wenn zwischen zwei Buchungen niemand vor Ort ist. In den Bergen dauert die Heizperiode acht Monate oder länger.</p>
+
+<h2>1. Heizung: aus der Ferne steuern</h2>
+<p>Eine leere Ferienwohnung muss nicht warm sein. EnergieSchweiz empfiehlt für die Zeit ohne Gäste:</p>
+<div class="tbl"><table>
+<thead><tr><th>Situation</th><th class="n">Raumtemperatur</th></tr></thead>
+<tbody>
+<tr><td>Wohnung, keine Gäste</td><td class="n">12 bis 15 °C</td></tr>
+<tr><td>Chalet, keine Gäste</td><td class="n">6 bis 10 °C</td></tr>
+<tr><td>Am Vorabend der Anreise hochheizen auf</td><td class="n">rund 20 °C</td></tr>
+</tbody></table></div>
+<p>Jedes Grad weniger spart im Bereich von 16 bis 18 °C rund 6 % Heizkosten. Wer von 21 auf 15 °C absenkt, spart rund 30 %. Das Absenken lohnt sich schon bei fünf Tagen ohne Gäste: Das Aufheizen braucht weniger Energie, als die Wohnung die ganze Zeit warm zu halten.</p>
+<p>Damit das funktioniert, ohne dass jemand vorbeigeht, braucht es eine Heizungsfernsteuerung. Sie schaltet die Heizung per App ein und aus. Mit zusätzlichen Fühlern sehen Sie auch die Temperatur in den Räumen. Einbau und Gerät kosten rund CHF 500 bis 2'500, die Einsparung liegt bei bis zu 60 %. Die Fernsteuerung funktioniert mit den meisten Heizungen, ein Cheminée lässt sich so nicht steuern.</p>
+
+<h3>Rechenbeispiel</h3>
+<p><em>Beispiel mit angenommenen Zahlen:</em> Eine Wohnung kostet bei durchgehend 21 °C CHF 2'500 Heizung pro Winter. Mit Fernsteuerung bleibt sie zwischen den Buchungen auf 15 °C.</p>
+<div class="tbl"><table>
+<tbody>
+<tr><td>Heizkosten pro Winter ohne Absenkung (Annahme)</td><td class="n">CHF 2'500</td></tr>
+<tr><td>Einsparung, wenn die Hälfte der Zeit abgesenkt wird (Annahme rund 15 %)</td><td class="n">− CHF 375</td></tr>
+<tr><td>Einsparung, wenn fast immer abgesenkt wird (rund 30 %)</td><td class="n">− CHF 750</td></tr>
+<tr><td>Fernsteuerung mit Einbau (Mitte der Spanne)</td><td class="n">CHF 1'500</td></tr>
+<tr><td><b>Bezahlt nach</b></td><td class="n"><b>2 bis 4 Wintern</b></td></tr>
+</tbody></table></div>
+<p>Je öfter die Wohnung leer steht, desto schneller ist die Steuerung bezahlt. Bei einer sehr gut gebuchten Wohnung ist der Spareffekt kleiner, der Komfort bleibt: Die Gäste kommen nie in eine kalte Wohnung.</p>
+
+<h2>2. Frost: Leitungen schützen</h2>
+<p>Eine abgesenkte Heizung ist kein Problem, eine ausgefallene schon. Friert eine Wasserleitung ein und platzt, entsteht oft ein grosser Wasserschaden, und den bemerkt in einer leeren Wohnung tagelang niemand.</p>
+<ul>
+<li>Heizung nie ganz abschalten, wenn Wasser in den Leitungen ist.</li>
+<li>Leitungen in kalten Räumen wie Keller, Garage oder Skiraum isolieren. Wo das nicht reicht, hilft ein Frostschutz-Heizkabel mit Thermostat. Die Montage besprechen Sie mit einer Elektrikerin oder einem Elektriker.</li>
+<li>Aussenwasserhähne vor dem ersten Frost absperren und entleeren.</li>
+<li>Bei einer Fernsteuerung mit Fühlern einen Alarm setzen, wenn die Temperatur in der Wohnung unter einen Wert fällt.</li>
+<li>Eine Person im Ort, die einen Schlüssel hat und bei einem Alarm nachsieht.</li>
+</ul>
+<p>Welche Versicherung einen Wasserschaden bezahlt, steht im Artikel <a href="../versicherung-ferienwohnung-vermieten/">Versicherung für die Ferienwohnung</a>.</p>
+
+<h2>3. Skiraum, Schuhe und nasse Kleider</h2>
+<p>Gäste im Winter bringen Skis, Snowboards, Stöcke und nasse Schuhe mit. Ohne Platz dafür landet das alles im Gang oder im Wohnzimmer. Klären Sie, was Ihr Haus bietet, und schreiben Sie es ins Inserat und in die Hausordnung.</p>
+<ul>
+<li><strong>Skiraum oder Keller:</strong> Ein abschliessbarer Platz im Haus ist ideal. Ein Ständer für Skis und Snowboards hält Ordnung.</li>
+<li><strong>Schuhe:</strong> Ein Schuhtrockner, ein Schuhgestell beim Eingang und eine Matte für Schnee.</li>
+<li><strong>Nasse Kleider:</strong> Haken oder ein Ständer zum Trocknen, nicht über dem Heizkörper im Schlafzimmer.</li>
+<li><strong>Kein Skiraum:</strong> Fragen Sie im Sportgeschäft oder bei der Bergbahn im Ort nach einem Skidepot und nennen Sie es in der Gästemappe.</li>
+<li><strong>Für die Wohnung:</strong> zusätzliche Wolldecken, Hausschuhe oder Finken und ein Fusselroller für Wollsachen.</li>
+</ul>
+
+<h2>4. Anreise im Schnee</h2>
+<p>Im Winter kommen Gäste später, müder und mit mehr Gepäck an. Planen Sie die Anreise darum genauer als im Sommer:</p>
+<ul>
+<li><strong>Weg zum Haus:</strong> Wer räumt Zugang und Parkplatz, wenn es über Nacht schneit? Regeln Sie das mit der Hauswartung oder einer Person im Ort und legen Sie eine Schneeschaufel bereit.</li>
+<li><strong>Schlüsselbox:</strong> wetterfest und geschützt montieren. Schnee und Eis blockieren Zahlenräder. Mehr dazu im Artikel <a href="../self-check-in-ferienwohnung/">Self-Check-in</a>.</li>
+<li><strong>Autofreie Orte:</strong> Wengen ist autofrei, Gäste lassen das Auto in Lauterbrunnen und fahren mit der Bahn weiter. Das Parkhaus Lauterbrunnen hat 974 Plätze, ist rund um die Uhr offen und kostet CHF 18 für 8 Stunden. Die Plätze lassen sich online buchen.</li>
+<li><strong>Anreise-Nachricht:</strong> Parkplatz oder Bahnverbindung, Gehzeit vom Bahnhof, ein Foto vom Eingang mit Schnee, Notfallnummer.</li>
+<li><strong>Wetter:</strong> Airbnb empfiehlt, in der Hausordnung auf das saisonale Wetter hinzuweisen und Notfallnummern sowie die genaue Adresse sichtbar in der Wohnung aufzuhängen.</li>
+</ul>
+
+<h2>Checkliste vor dem ersten Wintergast</h2>
+<ul>
+<li>Heizung gewartet, Fernsteuerung getestet, Temperaturen für leer und belegt eingestellt</li>
+<li>Frostschutz geprüft: Aussenhähne entleert, Leitungen in kalten Räumen isoliert</li>
+<li>Person im Ort mit Schlüssel und Telefonnummer</li>
+<li>Platz für Skis und Schuhe, Schuhtrockner, Haken für nasse Kleider</li>
+<li>Schneeräumung von Zugang und Parkplatz geregelt, Schneeschaufel bereit</li>
+<li>Schlüsselbox frostsicher, Ersatzschlüssel im Ort</li>
+<li>Inserat ergänzt: Skiraum, Parkplatz, Weg zur nächsten Bahn</li>
+<li>Kalender für die ganze Saison geöffnet und Tage gesperrt, an denen Sie selbst in der Wohnung sind</li>
+</ul>
+<p>Was sonst in eine Ferienwohnung gehört, steht in der <a href="../ferienwohnung-einrichten-checkliste/">Checkliste zum Einrichten</a>. Wie gut Wohnungen in Ihrem Ort gebucht sind, zeigt der <a href="../../#rechner">Ertragsrechner</a>.</p>
+<p>Alpinhost kümmert sich in der Jungfrau Region um alles, was im Winter vor Ort passieren muss: Heizung vor der Anreise, Kontrolle bei Frost, Schneeräumung organisieren und Gäste, die nicht in die Wohnung kommen. <a href="../../#kontakt">Wohnung prüfen lassen</a></p>
+""",
+ "faq": [("Wie warm muss eine leere Ferienwohnung im Winter sein?", "EnergieSchweiz empfiehlt ohne Gäste 12 bis 15 °C in einer Wohnung und 6 bis 10 °C in einem Chalet. Am Vorabend der Anreise heizen Sie auf rund 20 °C. Ganz abschalten sollten Sie die Heizung nicht, solange Wasser in den Leitungen ist."),
+         ("Lohnt sich eine Heizungsfernsteuerung für die Ferienwohnung?", "Meist ja. Einbau und Gerät kosten rund CHF 500 bis 2'500, die Einsparung beträgt bis zu 60 % der Heizenergie. Je öfter die Wohnung leer steht, desto schneller ist sie bezahlt. Dazu kommen Gäste nie in eine kalte Wohnung."),
+         ("Wie verhindere ich eingefrorene Wasserleitungen?", "Heizung nie ganz abschalten, Leitungen in kalten Räumen isolieren, Aussenhähne vor dem Frost entleeren und bei Bedarf ein Frostschutz-Heizkabel mit Thermostat montieren lassen. Ein Temperaturalarm und eine Person im Ort mit Schlüssel helfen, einen Schaden früh zu bemerken."),
+         ("Wann beginnt die Wintersaison in Grindelwald?", "Den Skipass für die Jungfrau Ski Region verkaufen die Bergbahnen für die Saison 2026/27 vom 21. November 2026 bis 25. April 2027. Wann die Anlagen fahren, hängt vom Schnee ab. Bis Ende November laufen sie oft nur am Wochenende oder teilweise.")],
+ "sources": [("EnergieSchweiz: Heizungsfernsteuerung für Zweitwohnungen, abgerufen am 17. November 2026", "https://www.energieschweiz.ch/wohnen/heizungssysteme/heizungsfernsteuerung/"),
+             ("EnergieSchweiz: So verheizen Sie kein Geld mehr für Ihre Zweitwohnung", "https://www.energieschweiz.ch/stories/zweitwohnung-heizen/"),
+             ("Konferenz Kantonaler Energiedirektoren (EnDK) und EnergieSchweiz: Merkblatt Heizen von Zweitwohnungen", "https://www.endk.ch/de/ablage/ftw-simplelayout-filelistingblock/heizen-zweitwohnungen-d.pdf"),
+             ("Die Mobiliar: Wasserleitung eingefroren, Stand September 2026", "https://www.mobiliar.ch/ratgeber/wasserleitung-eingefroren"),
+             ("Jungfraubahnen: Jungfrau Ski Region, Skipass Saison 2026/27, abgerufen am 17. November 2026", "https://www.jungfrau.ch/de-ch/jungfrau-ski-region/"),
+             ("Jungfraubahnen: Parkhaus Lauterbrunnen, abgerufen am 17. November 2026", "https://www.jungfrau.ch/de-ch/anreise-bahnhoefe-parking/parkieren/parkhaus-lauterbrunnen/"),
+             ("Airbnb Resource Center: Plan ahead for weather emergencies, 26. Juni 2024, aktualisiert 8. August 2024", "https://airbnb.com/resources/hosting-homes/a/preparing-your-spaceand-your-guestsfor-emergencies-134")],
 },
 ]
 

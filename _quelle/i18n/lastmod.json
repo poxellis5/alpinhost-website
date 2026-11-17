@@ -1,30 +1,30 @@
 {
  "/": {
-  "date": "2026-11-13",
+  "date": "2026-11-17",
   "hash": "f6e2a0a1a0aff212"
  },
  "/airbnb-verwaltung-bern/": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "hash": "ce38d09c469da599"
  },
  "/airbnb-verwaltung-grindelwald/": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "hash": "45bb6dd9de99c3d3"
  },
  "/airbnb-verwaltung-interlaken/": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "hash": "bd5b7495d7e402d0"
  },
  "/airbnb-verwaltung-lauterbrunnen-wengen-muerren/": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "hash": "9b9f872ddcf18c94"
  },
  "/airbnb-verwaltung-luzern/": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "hash": "caab7aca245c6215"
  },
  "/airbnb-verwaltung-schweiz/": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "hash": "7360b689ea1d494d"
  },
  "/en/": {
@@ -140,35 +140,39 @@
   "hash": "1f97fbb62123a390"
  },
  "/ratgeber/": {
-  "date": "2026-11-13",
-  "hash": "fc200fafd084f6f8"
+  "date": "2026-11-17",
+  "hash": "fcdc622689e7590d"
  },
  "/ratgeber/airbnb-auslastung-schweiz/": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "hash": "24bcfc353bb0bd07"
  },
  "/ratgeber/airbnb-einnahmen-versteuern/": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "hash": "ce43b853fb43e8d9"
  },
  "/ratgeber/airbnb-oder-booking/": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "hash": "c29fe89c144c10ce"
  },
  "/ratgeber/airbnb-regeln-bewilligung-schweiz/": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "hash": "4c2a906878b700a6"
  },
  "/ratgeber/ferienwohnung-einrichten-checkliste/": {
-  "date": "2026-11-16",
-  "hash": "008bf2da47192b71"
+  "date": "2026-11-17",
+  "hash": "899c5f1cdb4694ed"
  },
  "/ratgeber/ferienwohnung-vermieten-ertrag/": {
   "date": "2026-11-17",
   "hash": "3c433dff2c9975e0"
  },
+ "/ratgeber/ferienwohnung-winter-vermieten/": {
+  "date": "2026-11-17",
+  "hash": "82106570f74ba6b4"
+ },
  "/ratgeber/kurtaxe-ferienwohnung/": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "hash": "383b345672000f75"
  },
  "/ratgeber/selbst-vermieten-oder-verwaltung/": {
@@ -176,11 +180,11 @@
   "hash": "81ce5fdd1491f25b"
  },
  "/ratgeber/self-check-in-ferienwohnung/": {
-  "date": "2026-11-16",
-  "hash": "bfba92ffa823881a"
+  "date": "2026-11-17",
+  "hash": "bbf66fd6c986f1d3"
  },
  "/ratgeber/versicherung-ferienwohnung-vermieten/": {
-  "date": "2026-11-16",
-  "hash": "8f7ffd56d428c9a7"
+  "date": "2026-11-17",
+  "hash": "7b8e657d96ece710"
  }
 }
