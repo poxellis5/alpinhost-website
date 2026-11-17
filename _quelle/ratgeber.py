@@ -41,7 +41,7 @@ ARTICLES = [
 <tr><td>Lugano</td><td class="n">567</td><td class="n">64 %</td><td class="n">CHF 145</td><td class="n">CHF 112</td></tr>
 <tr><td>Bern</td><td class="n">309</td><td class="n">66 %</td><td class="n">CHF 144</td><td class="n">CHF 117</td></tr>
 </tbody></table></div>
-<p>«Typische Wohnung» ist der Median: Die Hälfte der Inserate am Ort verlangt mehr, die andere Hälfte weniger. In der ganzen Schweiz liegt die Auslastung bei 59 % und der Durchschnittspreis bei CHF 199, gerechnet über 36'276 Inserate.</p>
+<p>«Typische Wohnung» ist der Median: Die Hälfte der Inserate am Ort verlangt mehr, die andere Hälfte weniger. In der ganzen Schweiz liegt die <a href="../airbnb-auslastung-schweiz/">Auslastung</a> bei 59 % und der Durchschnittspreis bei CHF 199, gerechnet über 36'276 Inserate.</p>
 
 <h2>Warum der Durchschnitt täuscht</h2>
 <p>In Grindelwald kostet eine Nacht im Durchschnitt CHF 296. Die typische Wohnung verlangt aber nur CHF 206. Der Grund sind grosse Chalets für acht oder zehn Personen, die den Durchschnitt nach oben ziehen. In Verbier ist der Abstand noch grösser: CHF 401 im Durchschnitt, CHF 150 im Median.</p>
@@ -168,7 +168,7 @@ ARTICLES = [
 <p>Dazu kommt die Arbeit im Hintergrund: Preise an Saison und Nachfrage anpassen, Kalender pflegen, Inserat und Fotos aktuell halten.</p>
 
 <h2>Der Aufwand, ehrlich gerechnet</h2>
-<p>Nehmen wir eine Wohnung in Grindelwald mit der durchschnittlichen Auslastung von 72 %. Das sind 263 gebuchte Nächte pro Jahr. Bleiben die Gäste im Schnitt drei Nächte, ergibt das rund 88 Gästewechsel. Die drei Nächte sind eine Annahme, in den Bergen sind kurze Aufenthalte häufig.</p>
+<p>Nehmen wir eine Wohnung in Grindelwald mit der <a href="../airbnb-auslastung-schweiz/">durchschnittlichen Auslastung</a> von 72 %. Das sind 263 gebuchte Nächte pro Jahr. Bleiben die Gäste im Schnitt drei Nächte, ergibt das rund 88 Gästewechsel. Die drei Nächte sind eine Annahme, in den Bergen sind kurze Aufenthalte häufig.</p>
 <p>88 Wechsel heissen 88 Reinigungen und 88 Anreisen, verteilt über das ganze Jahr, auch an Weihnachten und in Ihren eigenen Ferien.</p>
 
 <h2>Was eine Verwaltung kostet</h2>
