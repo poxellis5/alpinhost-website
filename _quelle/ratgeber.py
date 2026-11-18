@@ -557,7 +557,7 @@ ARTICLES = [
 <li>Schnelles, stabiles WLAN. Name und Passwort gut sichtbar</li>
 <li>Ein Tisch, an dem alle Gäste gleichzeitig essen können</li>
 <li>Genügend Steckdosen und ein Adapter für ausländische Stecker</li>
-<li>Heizung, die Gäste selbst bedienen können, mit kurzer Anleitung</li>
+<li><a href="../ferienwohnung-winter-vermieten/">Heizung</a>, die Gäste selbst bedienen können, mit kurzer Anleitung</li>
 </ul>
 
 <h2>In den Bergen zusätzlich</h2>
