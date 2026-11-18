@@ -2,7 +2,7 @@
 <meta name="description" content="Ferienwohnungs-Management für Airbnb und Booking.com in der ganzen Schweiz. Vor Ort in der Jungfrau Region, in Bern und in der Innerschweiz. 18 % oder 21 %, keine Einrichtungsgebühr, 3 Monate Kündigungsfrist.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
 /* Layout: «Fahrplan» – Schweizer Fahrplan-Logik. Ruhige Flächen, Monospace-Zeilen für Zahlen und Abläufe, ein grosses Bergbild als einzige laute Stelle. */
 :root{
@@ -24,6 +24,8 @@
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
 body{background:var(--snow);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+/* Fett (b, strong) mit echtem Schriftschnitt statt künstlich verbreitert: Figtree und IBM Plex Mono sind bis 600 geladen */
+b,strong{font-weight:600}
 .wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 h1,h2,h3{font-family:var(--display);line-height:1.08;letter-spacing:-.02em;text-wrap:balance;margin:0}
 h2{font-size:clamp(30px,4.2vw,46px);font-weight:800}

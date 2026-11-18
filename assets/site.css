@@ -19,6 +19,8 @@
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
 body{background:var(--snow);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+/* Fett (b, strong) mit echtem Schriftschnitt statt künstlich verbreitert: Figtree und IBM Plex Mono sind bis 600 geladen */
+b,strong{font-weight:600}
 .wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 h1,h2,h3{font-family:var(--display);line-height:1.08;letter-spacing:-.02em;text-wrap:balance;margin:0}
 h2{font-size:clamp(30px,4.2vw,46px);font-weight:800}
