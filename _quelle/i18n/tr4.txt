@@ -4,11 +4,11 @@ fr: À propos : Roger Schuppisser et Ramon Stüdeli | Alpinhost
 it: Chi siamo: Roger Schuppisser e Ramon Stüdeli | Alpinhost
 es: Quiénes somos: Roger Schuppisser y Ramon Stüdeli | Alpinhost
 
-de: Roger Schuppisser und Ramon Stüdeli aus Grindelwald betreuen Ihre Ferienwohnung auf Airbnb und Booking.com. Feste Ansprechpartner, die die Region kennen.
-en: Roger Schuppisser and Ramon Stüdeli from Grindelwald look after your holiday apartment on Airbnb and Booking.com. Fixed contacts who know the region.
-fr: Roger Schuppisser et Ramon Stüdeli, de Grindelwald, gèrent votre logement sur Airbnb et Booking.com. Des interlocuteurs fixes qui connaissent la région.
-it: Roger Schuppisser e Ramon Stüdeli di Grindelwald gestiscono la Sua casa vacanza su Airbnb e Booking.com. Referenti fissi che conoscono la regione.
-es: Roger Schuppisser y Ramon Stüdeli, de Grindelwald, gestionan su apartamento vacacional en Airbnb y Booking.com. Contactos fijos que conocen la región.
+de: Roger Schuppisser und Ramon Stüdeli betreuen Ihre Ferienwohnung auf Airbnb und Booking.com. Feste Ansprechpartner, die die Region kennen.
+en: Roger Schuppisser and Ramon Stüdeli look after your holiday apartment on Airbnb and Booking.com. Fixed contacts who know the region.
+fr: Roger Schuppisser et Ramon Stüdeli gèrent votre logement de vacances sur Airbnb et Booking.com. Des interlocuteurs fixes qui connaissent la région.
+it: Roger Schuppisser e Ramon Stüdeli gestiscono la Sua casa vacanza su Airbnb e Booking.com. Referenti fissi che conoscono la regione.
+es: Roger Schuppisser y Ramon Stüdeli gestionan su apartamento vacacional en Airbnb y Booking.com. Contactos fijos que conocen la región.
 
 de: <a href="{H0}">Alpinhost</a> › Über uns
 en: <a href="{H0}">Alpinhost</a> › About us
@@ -16,11 +16,11 @@ fr: <a href="{H0}">Alpinhost</a> › À propos
 it: <a href="{H0}">Alpinhost</a> › Chi siamo
 es: <a href="{H0}">Alpinhost</a> › Quiénes somos
 
-de: Zwei Grindelwalder, ein Ziel: Ihre Wohnung in guten Händen.
-en: Two Grindelwald locals, one goal: your apartment in good hands.
-fr: Deux habitants de Grindelwald, un seul objectif : votre logement entre de bonnes mains.
-it: Due di Grindelwald, un solo obiettivo: il Suo appartamento in buone mani.
-es: Dos vecinos de Grindelwald, un objetivo: su apartamento en buenas manos.
+de: Wir behandeln Ihre Wohnung wie unsere eigene.
+en: We treat your home as if it were our own.
+fr: Nous prenons soin de votre logement comme s’il était le nôtre.
+it: Trattiamo il Suo appartamento come se fosse nostro.
+es: Tratamos su vivienda como si fuera nuestra.
 
 de: Wir sind Roger Schuppisser und Ramon Stüdeli. Seit über 10 Jahren empfangen wir Gäste aus der ganzen Welt. Wir wissen, wie viel Arbeit hinter einer guten Bewertung steckt, und wir mögen genau diese Arbeit.
 en: We are Roger Schuppisser and Ramon Stüdeli. For more than 10 years we have been welcoming guests from all over the world. We know how much work goes into a good review, and that is exactly the work we enjoy.

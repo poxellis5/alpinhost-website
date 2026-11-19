@@ -534,7 +534,7 @@ TEAM_PHOTO = ("roger-schuppisser-ramon-stuedeli", "Roger Schuppisser und Ramon S
 def about_page():
     root = "../"; url = "ueber-uns/"
     title = "Über uns: Roger Schuppisser und Ramon Stüdeli | Alpinhost"
-    desc = "Roger Schuppisser und Ramon Stüdeli aus Grindelwald betreuen Ihre Ferienwohnung auf Airbnb und Booking.com. Feste Ansprechpartner, die die Region kennen."
+    desc = "Roger Schuppisser und Ramon Stüdeli betreuen Ihre Ferienwohnung auf Airbnb und Booking.com. Feste Ansprechpartner, die die Region kennen."
     n, alt, wh = TEAM_PHOTO
     pic = (f'<img src="{root}img/{n}-800.webp" srcset="{root}img/{n}-800.webp 800w, {root}img/{n}-1200.webp 1200w" '
            f'sizes="(max-width: 900px) 100vw, 520px" alt="{alt}" width="{wh[0]}" height="{wh[1]}" fetchpriority="high" decoding="async">')
@@ -550,7 +550,7 @@ def about_page():
   <div class="wrap hero-grid">
     <div class="text">
       <h1 class="eyebrow">Über uns</h1>
-      <h2>Zwei Grindelwalder, ein Ziel: Ihre Wohnung in guten Händen.</h2>
+      <h2>Wir behandeln Ihre Wohnung wie unsere eigene.</h2>
       <p>Wir sind Roger Schuppisser und Ramon Stüdeli. Seit über 10 Jahren empfangen wir Gäste aus der ganzen Welt. Wir wissen, wie viel Arbeit hinter einer guten Bewertung steckt, und wir mögen genau diese Arbeit.</p>
       <p>Bei uns haben Sie feste Ansprechpartner, die die Region kennen und erreichbar sind, wenn etwas ist.</p>
       <div class="cta-row"><a class="btn btn-primary" href="{root}#kontakt">Wohnung prüfen lassen</a><a class="btn btn-ghost" href="https://wa.me/{WA}" rel="noopener">Per WhatsApp schreiben</a></div>

@@ -33,7 +33,7 @@
  },
  "/en/about-us/": {
   "date": "2026-11-19",
-  "hash": "d77b9131826955d2"
+  "hash": "112470db29611b48"
  },
  "/en/airbnb-management-bern/": {
   "date": "2026-11-19",
@@ -89,7 +89,7 @@
  },
  "/es/sobre-nosotros/": {
   "date": "2026-11-19",
-  "hash": "8aacce1cee1b09c2"
+  "hash": "4c939d4138dbba05"
  },
  "/fr/": {
   "date": "2026-11-19",
@@ -97,7 +97,7 @@
  },
  "/fr/a-propos/": {
   "date": "2026-11-19",
-  "hash": "7474a1b63318c423"
+  "hash": "f48888d7d947bff2"
  },
  "/fr/gestion-airbnb-berne/": {
   "date": "2026-11-19",
@@ -129,7 +129,7 @@
  },
  "/it/chi-siamo/": {
   "date": "2026-11-19",
-  "hash": "83250a76329ed1c1"
+  "hash": "e3e23c9e4eb8fdea"
  },
  "/it/gestione-airbnb-berna/": {
   "date": "2026-11-19",
@@ -205,6 +205,6 @@
  },
  "/ueber-uns/": {
   "date": "2026-11-19",
-  "hash": "75d0da7aac84afc7"
+  "hash": "29e79f517405b638"
  }
 }
