@@ -517,7 +517,7 @@ legal("datenschutz", "Datenschutz | Alpinhost", "Datenschutzerklärung",
 
 # ---------- 404
 write("404.html", page_shell(head("Seite nicht gefunden | Alpinhost", "Diese Seite gibt es nicht.", "404.html", "/", [ORG]).replace('<link rel="canonical"', '<meta name="robots" content="noindex">\n<link rel="canonical"'),
-  '<main><section class="block"><div class="wrap prose"><h1>Diese Seite gibt es nicht.</h1><p>Vielleicht hat sich die Adresse geändert. <a href="/">Zur Startseite</a></p></div></section></main>', "/"))
+  '<main><section class="block"><div class="wrap prose"><h1>Diese Seite gibt es nicht.</h1><p>Vielleicht hat sich die Adresse geändert. <a href="/">Zur Startseite</a></p><ul><li><a href="/ratgeber/">Ratgeber für Eigentümer</a></li><li><a href="/#rechner">Ertragsrechner</a></li><li><a href="/#kontakt">Kontakt</a></li></ul><ul class="lang404"><li lang="en">This page does not exist. <a href="/en/" hreflang="en">English homepage</a></li><li lang="fr">Cette page n’existe pas. <a href="/fr/" hreflang="fr">Page d’accueil en français</a></li><li lang="it">Questa pagina non esiste. <a href="/it/" hreflang="it">Pagina iniziale in italiano</a></li><li lang="es">Esta página no existe. <a href="/es/" hreflang="es">Página de inicio en español</a></li></ul></div></section></main>', "/"))
 
 RG_URLS = build_ratgeber()
 
