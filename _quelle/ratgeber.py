@@ -653,7 +653,7 @@ ARTICLES = [
  "sources": [("Airbnb: AirCover für Gastgeber", "https://www.airbnb.ch/aircover-for-hosts")],
 },
 {
- "slug": "ferienwohnung-winter-vermieten", "cat": "Wohnung fit machen", "mins": 6, "date": "2026-11-17",
+ "slug": "ferienwohnung-winter-vermieten", "cat": "Wohnung fit machen", "mins": 6, "date": "2026-11-17", "updated": "2026-11-19", "stand": "November 2026",
  "h1": "Ferienwohnung im Winter vermieten: Heizung, Schnee, Skiraum und Anreise",
  "title": "Ferienwohnung im Winter vermieten: Checkliste",
  "desc": "Ferienwohnung im Winter vermieten: Heizung aus der Ferne steuern, Frost vermeiden, Skiraum einrichten und die Anreise im Schnee planen. Mit Checkliste.",
@@ -677,9 +677,9 @@ ARTICLES = [
 <tbody>
 <tr><td>Wohnung, keine Gäste</td><td class="n">12 bis 15 °C</td></tr>
 <tr><td>Chalet, keine Gäste</td><td class="n">6 bis 10 °C</td></tr>
-<tr><td>Am Vorabend der Anreise hochheizen auf</td><td class="n">rund 20 °C</td></tr>
+<tr><td>Wohnräume, wenn Gäste da sind</td><td class="n">rund 20 °C</td></tr>
 </tbody></table></div>
-<p>Jedes Grad weniger spart im Bereich von 16 bis 18 °C rund 6 % Heizkosten. Wer von 21 auf 15 °C absenkt, spart rund 30 %. Das Absenken lohnt sich schon bei fünf Tagen ohne Gäste: Das Aufheizen braucht weniger Energie, als die Wohnung die ganze Zeit warm zu halten.</p>
+<p>Jedes Grad Raumtemperatur mehr erhöht die Heizkosten um 6 bis 10 %. Das Absenken lohnt sich: Sie sparen mehr Energie, als das spätere Aufheizen vor der Anreise braucht.</p>
 <p>Damit das funktioniert, ohne dass jemand vorbeigeht, braucht es eine Heizungsfernsteuerung. Sie schaltet die Heizung per App ein und aus. Mit zusätzlichen Fühlern sehen Sie auch die Temperatur in den Räumen. Einbau und Gerät kosten rund CHF 500 bis 2'500, die Einsparung liegt bei bis zu 60 %. Die Fernsteuerung funktioniert mit den meisten Heizungen, ein Cheminée lässt sich so nicht steuern.</p>
 
 <h3>Rechenbeispiel</h3>
@@ -739,13 +739,13 @@ ARTICLES = [
 <p>Was sonst in eine Ferienwohnung gehört, steht in der <a href="../ferienwohnung-einrichten-checkliste/">Checkliste zum Einrichten</a>. Wie gut Wohnungen in Ihrem Ort gebucht sind, zeigt der <a href="../../#rechner">Ertragsrechner</a>.</p>
 <p>Alpinhost kümmert sich in der Jungfrau Region um alles, was im Winter vor Ort passieren muss: Heizung vor der Anreise, Kontrolle bei Frost, Schneeräumung organisieren und Gäste, die nicht in die Wohnung kommen. <a href="../../#kontakt">Wohnung prüfen lassen</a></p>
 """,
- "faq": [("Wie warm muss eine leere Ferienwohnung im Winter sein?", "EnergieSchweiz empfiehlt ohne Gäste 12 bis 15 °C in einer Wohnung und 6 bis 10 °C in einem Chalet. Am Vorabend der Anreise heizen Sie auf rund 20 °C. Ganz abschalten sollten Sie die Heizung nicht, solange Wasser in den Leitungen ist."),
+ "faq": [("Wie warm muss eine leere Ferienwohnung im Winter sein?", "EnergieSchweiz empfiehlt ohne Gäste 12 bis 15 °C in einer Wohnung und 6 bis 10 °C in einem Chalet. Vor der Anreise heizen Sie die Wohnräume wieder auf rund 20 °C. Ganz abschalten sollten Sie die Heizung nicht, solange Wasser in den Leitungen ist."),
          ("Lohnt sich eine Heizungsfernsteuerung für die Ferienwohnung?", "Meist ja. Einbau und Gerät kosten rund CHF 500 bis 2'500, die Einsparung beträgt bis zu 60 % der Heizenergie. Je öfter die Wohnung leer steht, desto schneller ist sie bezahlt. Dazu kommen Gäste nie in eine kalte Wohnung."),
          ("Wie verhindere ich eingefrorene Wasserleitungen?", "Heizung nie ganz abschalten, Leitungen in kalten Räumen isolieren, Aussenhähne vor dem Frost entleeren und bei Bedarf ein Frostschutz-Heizkabel mit Thermostat montieren lassen. Ein Temperaturalarm und eine Person im Ort mit Schlüssel helfen, einen Schaden früh zu bemerken."),
          ("Wann beginnt die Wintersaison in Grindelwald?", "Den Skipass für die Jungfrau Ski Region verkaufen die Bergbahnen für die Saison 2026/27 vom 21. November 2026 bis 25. April 2027. Wann die Anlagen fahren, hängt vom Schnee ab. Bis Ende November laufen sie oft nur am Wochenende oder teilweise.")],
  "sources": [("EnergieSchweiz: Heizungsfernsteuerung für Zweitwohnungen, abgerufen am 17. November 2026", "https://www.energieschweiz.ch/wohnen/heizungssysteme/heizungsfernsteuerung/"),
              ("EnergieSchweiz: So verheizen Sie kein Geld mehr für Ihre Zweitwohnung", "https://www.energieschweiz.ch/stories/zweitwohnung-heizen/"),
-             ("Konferenz Kantonaler Energiedirektoren (EnDK) und EnergieSchweiz: Merkblatt Heizen von Zweitwohnungen", "https://www.endk.ch/de/ablage/ftw-simplelayout-filelistingblock/heizen-zweitwohnungen-d.pdf"),
+             ("EnergieSchweiz: Heizen mit Köpfchen, Stand Februar 2022, abgerufen am 19. November 2026", "https://pubdb.bfe.admin.ch/de/publication/download/447"),
              ("Die Mobiliar: Wasserleitung eingefroren, Stand September 2026", "https://www.mobiliar.ch/ratgeber/wasserleitung-eingefroren"),
              ("Jungfraubahnen: Jungfrau Ski Region, Skipass Saison 2026/27, abgerufen am 17. November 2026", "https://www.jungfrau.ch/de-ch/jungfrau-ski-region/"),
              ("Jungfraubahnen: Parkhaus Lauterbrunnen, abgerufen am 17. November 2026", "https://www.jungfrau.ch/de-ch/anreise-bahnhoefe-parking/parkieren/parkhaus-lauterbrunnen/"),
