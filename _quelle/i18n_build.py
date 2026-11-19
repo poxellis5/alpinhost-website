@@ -20,6 +20,7 @@ SLUG = {
  "/airbnb-verwaltung-luzern/": {"en": "/en/airbnb-management-lucerne/", "fr": "/fr/gestion-airbnb-lucerne/", "it": "/it/gestione-airbnb-lucerna/", "es": "/es/gestion-airbnb-lucerna/"},
  "/airbnb-verwaltung-bern/": {"en": "/en/airbnb-management-bern/", "fr": "/fr/gestion-airbnb-berne/", "it": "/it/gestione-airbnb-berna/", "es": "/es/gestion-airbnb-berna/"},
  "/airbnb-verwaltung-schweiz/": {"en": "/en/airbnb-management-switzerland/", "fr": "/fr/gestion-airbnb-suisse/", "it": "/it/gestione-airbnb-svizzera/", "es": "/es/gestion-airbnb-suiza/"},
+ "/ueber-uns/": {"en": "/en/about-us/", "fr": "/fr/a-propos/", "it": "/it/chi-siamo/", "es": "/es/sobre-nosotros/"},
  "/impressum/": {"en": "/en/imprint/", "fr": "/fr/mentions-legales/", "it": "/it/note-legali/", "es": "/es/aviso-legal/"},
  "/datenschutz/": {"en": "/en/privacy/", "fr": "/fr/protection-des-donnees/", "it": "/it/privacy/", "es": "/es/privacidad/"},
 }
@@ -194,7 +195,7 @@ def build_js():
     return vers
 
 # ---------- Seiten
-PAGES = {"/": "index.html", "/impressum/": "impressum/index.html", "/datenschutz/": "datenschutz/index.html"}
+PAGES = {"/": "index.html", "/ueber-uns/": "ueber-uns/index.html", "/impressum/": "impressum/index.html", "/datenschutz/": "datenschutz/index.html"}
 for p in SLUG:
     if p.startswith("/airbnb-verwaltung-"): PAGES[p] = p.strip("/") + "/index.html"
 

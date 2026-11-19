@@ -97,6 +97,19 @@ footer .credits + .credits{border-top:0;padding-top:0;margin-top:-8px}
 .rg-cat:first-child{margin-top:0}
 .rg-card h3{font-size:19px;line-height:1.25}
 .article .sidecard .btn{text-align:center;justify-content:center}
+/* Seite Ueber uns */
+.team-hero{padding-block:28px 84px}
+.team-hero .hero-grid{grid-template-columns:1.05fr .95fr;align-items:center}
+.team-hero h1{font-size:12.5px;font-weight:500;letter-spacing:.12em;line-height:1.6}
+.team-hero h2{font-size:clamp(34px,4.6vw,56px);letter-spacing:-.03em;margin-top:14px;max-width:18ch}
+.team-hero .text{display:grid;gap:18px;max-width:60ch}
+.team-hero .text p{color:var(--muted);font-size:18px}
+.team-hero .text h2+p{margin-top:8px}
+.team-hero .cta-row{margin-top:10px}
+.team-hero .text .direct-line{font-size:15px;color:var(--muted)}
+.team-hero .direct-line a{color:var(--ink);font-weight:600;white-space:nowrap}
+.team-photo{margin:0;aspect-ratio:3/4;max-width:520px;justify-self:end;width:100%}
+@media (max-width:900px){.team-hero{padding-bottom:56px}.team-hero .hero-grid{grid-template-columns:1fr;gap:28px}.team-photo{order:0;aspect-ratio:4/4.2;max-width:none;justify-self:stretch}.team-photo img{object-position:50% 18%}}
 .langsw{position:relative;margin-left:0;flex:none}
 @media (max-width:900px){.langsw{margin-left:auto}.top .btn{margin-left:0}}
 @media (max-width:900px){.top .brand{margin-right:auto}}
@@ -304,7 +317,7 @@ def footer(root, credits=""):
   <div class="wrap">
     <div><b>Alpinhost</b><br>Ferienwohnungs-Management für Airbnb und Booking.com in der ganzen Schweiz.<br><br>WhatsApp und Telefon: {PHONE}<br>E-Mail: <a href="mailto:info@alpinhost.ch" style="color:inherit">info@alpinhost.ch</a></div>
     <div class="footlinks"><b>Regionen</b>{reg}</div>
-    <div class="footlinks"><b>Unternehmen</b><a href="{root}#preise">Preise</a><a href="{root}#fragen">Fragen</a><a href="{root}ratgeber/" data-de-only>Ratgeber</a><a href="{root}impressum/">Impressum</a><a href="{root}datenschutz/">Datenschutz</a><span>Alpinhost ist eine Marke der R&amp;B Digital Market KlG</span><span style="margin-top:8px">Schwesterunternehmen</span><a href="https://grindelwaldexperiences.ch/" rel="noopener">Grindelwald Experiences</a><a href="https://www.jungfrauflights.com/" rel="noopener">Jungfrau Flights</a></div>
+    <div class="footlinks"><b>Unternehmen</b><a href="{root}ueber-uns/">Über uns</a><a href="{root}#preise">Preise</a><a href="{root}#fragen">Fragen</a><a href="{root}ratgeber/" data-de-only>Ratgeber</a><a href="{root}impressum/">Impressum</a><a href="{root}datenschutz/">Datenschutz</a><span>Alpinhost ist eine Marke der R&amp;B Digital Market KlG</span><span style="margin-top:8px">Schwesterunternehmen</span><a href="https://grindelwaldexperiences.ch/" rel="noopener">Grindelwald Experiences</a><a href="https://www.jungfrauflights.com/" rel="noopener">Jungfrau Flights</a></div>
     <p class="credits">Fotos: Wikimedia Commons. Grindelwald mit Eiger und Kapellbrücke Luzern: Leonhard Lenz, CC0 · Frühling über Grindelwald: Speedy Füllemann, CC BY 3.0 · Winter bei Grindelwald: Robert Campbell KOR, CC BY 2.0 · Bern Altstadt: August Geyler, CC BY-SA 4.0 · Weggis: Arkelin, CC BY 4.0 · Interlaken vom Harder Kulm: Ank Kumar, CC BY-SA 4.0 · Lauterbrunnental: Chensiyuan, CC BY-SA 4.0 · Wengen im Winter: Jpatokal, CC BY-SA 4.0 · Schlüsselbox: Brainy J, CC0. Marktdaten: GuestFavorites, November 2025 bis Oktober 2026.</p>{f'<p class="credits" data-de-only>{credits}</p>' if credits else ""}
   </div>
 </footer>"""
@@ -515,6 +528,41 @@ legal("datenschutz", "Datenschutz | Alpinhost", "Datenschutzerklärung",
 <h2>Hosting und Schriften</h2><p>Beim Aufruf der Website verarbeitet unser Hosting-Anbieter technisch notwendige Daten wie die IP-Adresse. Die Schriften werden von Google Fonts geladen. Dabei wird Ihre IP-Adresse an Google übermittelt.</p>
 <h2>Ihre Rechte</h2><p>Sie können jederzeit Auskunft über Ihre bei uns gespeicherten Daten verlangen und deren Berichtigung oder Löschung beantragen.</p>""")
 
+# ---------- Ueber uns (Text von Ramon freigegeben, Variante B, 19.11.2026)
+TEAM = ["Roger Schuppisser", "Ramon Stüdeli"]
+TEAM_PHOTO = ("roger-schuppisser-ramon-stuedeli", "Roger Schuppisser und Ramon Stüdeli von Alpinhost", (1200, 1600))
+def about_page():
+    root = "../"; url = "ueber-uns/"
+    title = "Über uns: Roger Schuppisser und Ramon Stüdeli | Alpinhost"
+    desc = "Roger Schuppisser und Ramon Stüdeli aus Grindelwald betreuen Ihre Ferienwohnung auf Airbnb und Booking.com. Feste Ansprechpartner, die die Region kennen."
+    n, alt, wh = TEAM_PHOTO
+    pic = (f'<img src="{root}img/{n}-800.webp" srcset="{root}img/{n}-800.webp 800w, {root}img/{n}-1200.webp 1200w" '
+           f'sizes="(max-width: 900px) 100vw, 520px" alt="{alt}" width="{wh[0]}" height="{wh[1]}" fetchpriority="high" decoding="async">')
+    crumbs = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Alpinhost","item":DOMAIN+"/"},
+        {"@type":"ListItem","position":2,"name":"Über uns","item":DOMAIN+"/"+url}]}
+    about = {"@context":"https://schema.org","@type":"AboutPage","name":"Über uns","url":DOMAIN+"/"+url,"inLanguage":"de-CH",
+             "about":{"@id":DOMAIN+"/#org"},"primaryImageOfPage":DOMAIN+f"/img/{n}-1200.webp",
+             "mainEntity":[{"@type":"Person","name":p,"worksFor":{"@id":DOMAIN+"/#org"}} for p in TEAM]}
+    b = f"""<main>
+<div class="wrap crumbs"><a href="{root}">Alpinhost</a> › Über uns</div>
+<section class="team-hero">
+  <div class="wrap hero-grid">
+    <div class="text">
+      <h1 class="eyebrow">Über uns</h1>
+      <h2>Zwei Grindelwalder, ein Ziel: Ihre Wohnung in guten Händen.</h2>
+      <p>Wir sind Roger Schuppisser und Ramon Stüdeli. Seit über 10 Jahren empfangen wir Gäste aus der ganzen Welt. Wir wissen, wie viel Arbeit hinter einer guten Bewertung steckt, und wir mögen genau diese Arbeit.</p>
+      <p>Bei uns haben Sie feste Ansprechpartner, die die Region kennen und erreichbar sind, wenn etwas ist.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="{root}#kontakt">Wohnung prüfen lassen</a><a class="btn btn-ghost" href="https://wa.me/{WA}" rel="noopener">Per WhatsApp schreiben</a></div>
+      <p class="direct-line">WhatsApp und Telefon: <a href="tel:{PHONE.replace(' ', '')}">{PHONE}</a><br>E-Mail: <a href="mailto:info@alpinhost.ch">info@alpinhost.ch</a></p>
+    </div>
+    <figure class="photo team-photo">{pic}</figure>
+  </div>
+</section>
+</main>"""
+    write(url + "index.html", page_shell(head(title, desc, url, root, [ORG, crumbs, about], ogimg=f"img/og-{n}.jpg"), b, root))
+about_page()
+
 # ---------- 404
 write("404.html", page_shell(head("Seite nicht gefunden | Alpinhost", "Diese Seite gibt es nicht.", "404.html", "/", [ORG]).replace('<link rel="canonical"', '<meta name="robots" content="noindex">\n<link rel="canonical"'),
   '<main><section class="block"><div class="wrap prose"><h1>Diese Seite gibt es nicht.</h1><p>Vielleicht hat sich die Adresse geändert. <a href="/">Zur Startseite</a></p><ul><li><a href="/ratgeber/">Ratgeber für Eigentümer</a></li><li><a href="/#rechner">Ertragsrechner</a></li><li><a href="/#kontakt">Kontakt</a></li></ul><ul class="lang404"><li lang="en">This page does not exist. <a href="/en/" hreflang="en">English homepage</a></li><li lang="fr">Cette page n’existe pas. <a href="/fr/" hreflang="fr">Page d’accueil en français</a></li><li lang="it">Questa pagina non esiste. <a href="/it/" hreflang="it">Pagina iniziale in italiano</a></li><li lang="es">Esta página no existe. <a href="/es/" hreflang="es">Página de inicio en español</a></li></ul></div></section></main>', "/"))
@@ -522,7 +570,7 @@ write("404.html", page_shell(head("Seite nicht gefunden | Alpinhost", "Diese Sei
 RG_URLS = build_ratgeber()
 
 # ---------- sitemap, robots, llms, CNAME
-urls = [""] + [r["slug"] + "/" for r in REGIONS.values()]
+urls = [""] + [r["slug"] + "/" for r in REGIONS.values()] + ["ueber-uns/"]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
 for u in urls:
     sm += f'  <url><loc>{DOMAIN}/{u}</loc><lastmod>{TODAY}</lastmod><changefreq>monthly</changefreq><priority>{"1.0" if u=="" else "0.8"}</priority></url>\n'
@@ -542,7 +590,7 @@ llms = f"""# Alpinhost
 
 ## Seiten
 - [Startseite]({DOMAIN}/)
-""" + "".join(f"- [{r['h1']}]({DOMAIN}/{r['slug']}/)\n" for r in REGIONS.values()) + "\n## Ratgeber für Eigentümer\n" + f"- [Übersicht]({DOMAIN}/ratgeber/)\n" + "".join(f"- [{x['h1']}]({DOMAIN}/ratgeber/{x['slug']}/): {x['teaser']}\n" for x in ARTICLES)
+""" + "".join(f"- [{r['h1']}]({DOMAIN}/{r['slug']}/)\n" for r in REGIONS.values()) + f"- [Über uns: Roger Schuppisser und Ramon Stüdeli]({DOMAIN}/ueber-uns/)\n" + "\n## Ratgeber für Eigentümer\n" + f"- [Übersicht]({DOMAIN}/ratgeber/)\n" + "".join(f"- [{x['h1']}]({DOMAIN}/ratgeber/{x['slug']}/): {x['teaser']}\n" for x in ARTICLES)
 write("llms.txt", llms)
 write("CNAME", "alpinhost.ch\n")
 write(".nojekyll", "")

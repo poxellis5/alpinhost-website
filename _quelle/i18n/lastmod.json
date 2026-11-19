@@ -1,190 +1,210 @@
 {
  "/": {
-  "date": "2026-11-18",
-  "hash": "2682bbcd8115d605"
+  "date": "2026-11-19",
+  "hash": "953087f80c7c91c3"
  },
  "/airbnb-verwaltung-bern/": {
-  "date": "2026-11-18",
-  "hash": "89efa5b174e2a58e"
+  "date": "2026-11-19",
+  "hash": "4bae19e9a1e1ca4b"
  },
  "/airbnb-verwaltung-grindelwald/": {
-  "date": "2026-11-18",
-  "hash": "a80259382e1be203"
+  "date": "2026-11-19",
+  "hash": "25093eed8ce1013e"
  },
  "/airbnb-verwaltung-interlaken/": {
-  "date": "2026-11-18",
-  "hash": "646b3a920d1d41f8"
+  "date": "2026-11-19",
+  "hash": "10da3b42590fb238"
  },
  "/airbnb-verwaltung-lauterbrunnen-wengen-muerren/": {
-  "date": "2026-11-18",
-  "hash": "f064381477b9664c"
+  "date": "2026-11-19",
+  "hash": "c5b8e0a17524c1ed"
  },
  "/airbnb-verwaltung-luzern/": {
-  "date": "2026-11-18",
-  "hash": "a5ec257aae1cbd85"
+  "date": "2026-11-19",
+  "hash": "67f824da004adb5c"
  },
  "/airbnb-verwaltung-schweiz/": {
-  "date": "2026-11-18",
-  "hash": "8b5a22576bee059b"
+  "date": "2026-11-19",
+  "hash": "37175d253e21ca70"
  },
  "/en/": {
-  "date": "2026-11-18",
-  "hash": "4be0d6f80146942d"
+  "date": "2026-11-19",
+  "hash": "991fff421d86ae85"
+ },
+ "/en/about-us/": {
+  "date": "2026-11-19",
+  "hash": "d77b9131826955d2"
  },
  "/en/airbnb-management-bern/": {
-  "date": "2026-11-18",
-  "hash": "fadcaa5db81c96b1"
+  "date": "2026-11-19",
+  "hash": "d87f5a427ebb42c2"
  },
  "/en/airbnb-management-grindelwald/": {
-  "date": "2026-11-18",
-  "hash": "fb1a33f70c795d68"
+  "date": "2026-11-19",
+  "hash": "0f223e24af3ebcc3"
  },
  "/en/airbnb-management-interlaken/": {
-  "date": "2026-11-18",
-  "hash": "70568148197b71c6"
+  "date": "2026-11-19",
+  "hash": "63c3ec27df2c89a0"
  },
  "/en/airbnb-management-lauterbrunnen-wengen-muerren/": {
-  "date": "2026-11-18",
-  "hash": "22e04d12863836f8"
+  "date": "2026-11-19",
+  "hash": "0e8158aa79d612f3"
  },
  "/en/airbnb-management-lucerne/": {
-  "date": "2026-11-18",
-  "hash": "ce689ebbcd548c66"
+  "date": "2026-11-19",
+  "hash": "f56bd60a757b133e"
  },
  "/en/airbnb-management-switzerland/": {
-  "date": "2026-11-18",
-  "hash": "b25957f7ce59d102"
+  "date": "2026-11-19",
+  "hash": "f076bef32a04834d"
  },
  "/es/": {
-  "date": "2026-11-18",
-  "hash": "467678bf7972a3f9"
+  "date": "2026-11-19",
+  "hash": "937680e1139fbc9e"
  },
  "/es/gestion-airbnb-berna/": {
-  "date": "2026-11-18",
-  "hash": "23c87010218a9114"
+  "date": "2026-11-19",
+  "hash": "475136446742f647"
  },
  "/es/gestion-airbnb-grindelwald/": {
-  "date": "2026-11-18",
-  "hash": "69a592ae711a36ba"
+  "date": "2026-11-19",
+  "hash": "e7f13dd1d3920356"
  },
  "/es/gestion-airbnb-interlaken/": {
-  "date": "2026-11-18",
-  "hash": "37caba1305814671"
+  "date": "2026-11-19",
+  "hash": "7cdf8006eae43964"
  },
  "/es/gestion-airbnb-lauterbrunnen-wengen-muerren/": {
-  "date": "2026-11-18",
-  "hash": "c181e34c436a1939"
+  "date": "2026-11-19",
+  "hash": "026dc580af2be45e"
  },
  "/es/gestion-airbnb-lucerna/": {
-  "date": "2026-11-18",
-  "hash": "a43f10185df0ee75"
+  "date": "2026-11-19",
+  "hash": "55427354261eb1ba"
  },
  "/es/gestion-airbnb-suiza/": {
-  "date": "2026-11-18",
-  "hash": "554f96c806b62319"
+  "date": "2026-11-19",
+  "hash": "0426521002bf55ca"
+ },
+ "/es/sobre-nosotros/": {
+  "date": "2026-11-19",
+  "hash": "8aacce1cee1b09c2"
  },
  "/fr/": {
-  "date": "2026-11-18",
-  "hash": "0b262bd809425913"
+  "date": "2026-11-19",
+  "hash": "e2f70ea07ddb764b"
+ },
+ "/fr/a-propos/": {
+  "date": "2026-11-19",
+  "hash": "7474a1b63318c423"
  },
  "/fr/gestion-airbnb-berne/": {
-  "date": "2026-11-18",
-  "hash": "5299e60495b96664"
+  "date": "2026-11-19",
+  "hash": "0e7c0369ac17e110"
  },
  "/fr/gestion-airbnb-grindelwald/": {
-  "date": "2026-11-18",
-  "hash": "8d54d50838757b60"
+  "date": "2026-11-19",
+  "hash": "c49f28c1d53feb70"
  },
  "/fr/gestion-airbnb-interlaken/": {
-  "date": "2026-11-18",
-  "hash": "fbad28fc5c76718f"
+  "date": "2026-11-19",
+  "hash": "98d313a9b49d9864"
  },
  "/fr/gestion-airbnb-lauterbrunnen-wengen-muerren/": {
-  "date": "2026-11-18",
-  "hash": "b5b8404ba5128995"
+  "date": "2026-11-19",
+  "hash": "ed470e8490c4a028"
  },
  "/fr/gestion-airbnb-lucerne/": {
-  "date": "2026-11-18",
-  "hash": "d5760b5d51aab277"
+  "date": "2026-11-19",
+  "hash": "19cbcc2bca967442"
  },
  "/fr/gestion-airbnb-suisse/": {
-  "date": "2026-11-18",
-  "hash": "e930567e276ce5ce"
+  "date": "2026-11-19",
+  "hash": "ae6541335014134d"
  },
  "/it/": {
-  "date": "2026-11-18",
-  "hash": "25615985acb29967"
+  "date": "2026-11-19",
+  "hash": "07ba317f791d2ce3"
+ },
+ "/it/chi-siamo/": {
+  "date": "2026-11-19",
+  "hash": "83250a76329ed1c1"
  },
  "/it/gestione-airbnb-berna/": {
-  "date": "2026-11-18",
-  "hash": "cb5345fe71c5955a"
+  "date": "2026-11-19",
+  "hash": "b1df9ca43ad706c6"
  },
  "/it/gestione-airbnb-grindelwald/": {
-  "date": "2026-11-18",
-  "hash": "664856ed6c500e54"
+  "date": "2026-11-19",
+  "hash": "f7a10b1c02048a02"
  },
  "/it/gestione-airbnb-interlaken/": {
-  "date": "2026-11-18",
-  "hash": "f271ba995fd16a64"
+  "date": "2026-11-19",
+  "hash": "48698795aaba6f8b"
  },
  "/it/gestione-airbnb-lauterbrunnen-wengen-muerren/": {
-  "date": "2026-11-18",
-  "hash": "6b46fe9c2136170b"
+  "date": "2026-11-19",
+  "hash": "e1409a4da2ca7089"
  },
  "/it/gestione-airbnb-lucerna/": {
-  "date": "2026-11-18",
-  "hash": "7c38dedaa4104a99"
+  "date": "2026-11-19",
+  "hash": "b4f405e8069c2830"
  },
  "/it/gestione-airbnb-svizzera/": {
-  "date": "2026-11-18",
-  "hash": "c4adb115ed3f29cf"
+  "date": "2026-11-19",
+  "hash": "fd190c909979f85b"
  },
  "/ratgeber/": {
-  "date": "2026-11-18",
-  "hash": "462b6937fc13b5d2"
+  "date": "2026-11-19",
+  "hash": "2c2ba0d00215325a"
  },
  "/ratgeber/airbnb-auslastung-schweiz/": {
-  "date": "2026-11-18",
-  "hash": "1c4c753d70e408a3"
+  "date": "2026-11-19",
+  "hash": "eb0f64224c32367b"
  },
  "/ratgeber/airbnb-einnahmen-versteuern/": {
-  "date": "2026-11-18",
-  "hash": "4a300034eaea91be"
+  "date": "2026-11-19",
+  "hash": "218cc3648c813f89"
  },
  "/ratgeber/airbnb-oder-booking/": {
-  "date": "2026-11-18",
-  "hash": "c6675468ddcf8584"
+  "date": "2026-11-19",
+  "hash": "1cd45815ee80a6f8"
  },
  "/ratgeber/airbnb-regeln-bewilligung-schweiz/": {
-  "date": "2026-11-18",
-  "hash": "da6e393d8d7741ac"
+  "date": "2026-11-19",
+  "hash": "38360f025ffb5b59"
  },
  "/ratgeber/ferienwohnung-einrichten-checkliste/": {
-  "date": "2026-11-18",
-  "hash": "af742eb5b526ca3e"
+  "date": "2026-11-19",
+  "hash": "f3a5fece9d455ded"
  },
  "/ratgeber/ferienwohnung-vermieten-ertrag/": {
-  "date": "2026-11-18",
-  "hash": "77a2e3b3230ca9b9"
+  "date": "2026-11-19",
+  "hash": "26f434bddc87d0b2"
  },
  "/ratgeber/ferienwohnung-winter-vermieten/": {
   "date": "2026-11-19",
-  "hash": "1c27a95b06551f96"
+  "hash": "f040ee954cd02143"
  },
  "/ratgeber/kurtaxe-ferienwohnung/": {
-  "date": "2026-11-18",
-  "hash": "af5e8477d41d5c3c"
+  "date": "2026-11-19",
+  "hash": "842209d453297303"
  },
  "/ratgeber/selbst-vermieten-oder-verwaltung/": {
-  "date": "2026-11-18",
-  "hash": "bb2aefd11233fe5e"
+  "date": "2026-11-19",
+  "hash": "ce7776d5072c0929"
  },
  "/ratgeber/self-check-in-ferienwohnung/": {
-  "date": "2026-11-18",
-  "hash": "ee7f8ec43aaa5c33"
+  "date": "2026-11-19",
+  "hash": "10891c715b1f30aa"
  },
  "/ratgeber/versicherung-ferienwohnung-vermieten/": {
-  "date": "2026-11-18",
-  "hash": "ba4359e36197d3a0"
+  "date": "2026-11-19",
+  "hash": "8a01138013f48ef6"
+ },
+ "/ueber-uns/": {
+  "date": "2026-11-19",
+  "hash": "75d0da7aac84afc7"
  }
 }
