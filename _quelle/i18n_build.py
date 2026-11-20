@@ -128,6 +128,13 @@ def fix_head(s, page_path, lang, indexable):
     if ogu: ogu["content"] = url
     ogl = s.find("meta", property="og:locale")
     if ogl: ogl["content"] = OG_LOC[lang]
+    for m in s.find_all("meta", property="og:locale:alternate"): m.decompose()
+    if indexable and ogl:
+        a = ogl
+        for l in ALL:
+            if l == lang: continue
+            t = s.new_tag("meta", property="og:locale:alternate", content=OG_LOC[l])
+            a.insert_after(t); a.insert_after("\n"); a = t
     if indexable and can:
         anchor = can
         for l in ALL + ["x-default"]:
