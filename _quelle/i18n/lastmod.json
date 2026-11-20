@@ -140,24 +140,24 @@
   "hash": "285873bf8ffe9b55"
  },
  "/ratgeber/": {
-  "date": "2026-11-18",
-  "hash": "462b6937fc13b5d2"
+  "date": "2026-11-20",
+  "hash": "5a982cdbff4d5393"
  },
  "/ratgeber/airbnb-auslastung-schweiz/": {
   "date": "2026-11-18",
   "hash": "1c4c753d70e408a3"
  },
  "/ratgeber/airbnb-einnahmen-versteuern/": {
-  "date": "2026-11-18",
-  "hash": "4a300034eaea91be"
+  "date": "2026-11-20",
+  "hash": "1f401394b1114131"
  },
  "/ratgeber/airbnb-oder-booking/": {
   "date": "2026-11-18",
   "hash": "c6675468ddcf8584"
  },
  "/ratgeber/airbnb-regeln-bewilligung-schweiz/": {
-  "date": "2026-11-18",
-  "hash": "da6e393d8d7741ac"
+  "date": "2026-11-20",
+  "hash": "b3dd75bacd2bdbea"
  },
  "/ratgeber/ferienwohnung-einrichten-checkliste/": {
   "date": "2026-11-18",
@@ -172,8 +172,8 @@
   "hash": "1c27a95b06551f96"
  },
  "/ratgeber/kurtaxe-ferienwohnung/": {
-  "date": "2026-11-18",
-  "hash": "af5e8477d41d5c3c"
+  "date": "2026-11-20",
+  "hash": "c94e703edd0dd927"
  },
  "/ratgeber/selbst-vermieten-oder-verwaltung/": {
   "date": "2026-11-18",
@@ -186,5 +186,9 @@
  "/ratgeber/versicherung-ferienwohnung-vermieten/": {
   "date": "2026-11-18",
   "hash": "ba4359e36197d3a0"
+ },
+ "/ratgeber/zweitwohnungsgesetz-ferienwohnung/": {
+  "date": "2026-11-20",
+  "hash": "c1a98977c02f1870"
  }
 }

@@ -308,7 +308,7 @@ nav.main .sub a:hover,nav.main .sub a:focus-visible{background:var(--mist,#EEF2F
 .prose a{color:var(--lake)}
 .prose ol{margin:0;padding-left:22px;color:var(--muted);display:grid;gap:6px}
 .art-head{padding-block:22px 0}
-.art-head h1{font-size:clamp(32px,4.6vw,54px);font-weight:800;letter-spacing:-.03em;max-width:24ch;margin-top:14px}
+.art-head h1{font-size:clamp(32px,4.6vw,54px);font-weight:800;letter-spacing:-.03em;max-width:24ch;margin-top:14px;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
 .art-meta{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:16px}
 .photo.art-hero{margin:26px 0 0;aspect-ratio:16/8;order:0}
 @media (max-width:900px){.photo.art-hero{aspect-ratio:16/10}}

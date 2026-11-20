@@ -457,7 +457,7 @@ ARTICLES = [
 <p class="note">Dieser Artikel ist ein Überblick und keine Rechtsberatung. Die Regeln ändern sich laufend. Verbindlich ist die Auskunft Ihrer Gemeinde.</p>
 
 <h2>1. Das Zweitwohnungsgesetz</h2>
-<p>In Gemeinden mit mehr als 20 % Zweitwohnungen dürfen keine neuen Zweitwohnungen mehr bewilligt werden. Das betrifft die meisten Ferienorte in den Bergen. Für Eigentümer ist wichtig, wann die Wohnung entstanden ist:</p>
+<p>In Gemeinden mit mehr als 20 % Zweitwohnungen dürfen keine neuen Zweitwohnungen mehr bewilligt werden. Das betrifft die meisten Ferienorte in den Bergen. Ausführlich erklärt im Artikel <a href="../zweitwohnungsgesetz-ferienwohnung/">Zweitwohnungsgesetz für Eigentümer</a>. Für Eigentümer ist wichtig, wann die Wohnung entstanden ist:</p>
 <ul>
 <li><b>Altrechtliche Wohnungen:</b> Wohnungen, die am 11. März 2012 bestanden oder bewilligt waren, sind in der Art der Wohnnutzung frei. Sie dürfen als Ferienwohnung vermietet werden.</li>
 <li><b>Neuere Wohnungen:</b> Sie wurden nur als Erstwohnung oder als touristisch bewirtschaftete Wohnung bewilligt. Was erlaubt ist, steht in der Baubewilligung und im Grundbuch.</li>
@@ -509,6 +509,89 @@ ARTICLES = [
              ("Interlaken Tourismus: Informationen für Beherbergende", "https://www.interlaken.swiss/info-service/informationen-fuer-beherbergende"),
              ("Bundesgericht, Urteil 5A_436/2018 vom 4. April 2019", None),
              ("Ausländer- und Integrationsgesetz (AIG), Art. 16, und Obligationenrecht, Art. 262", None)],
+},
+{
+ "slug": "zweitwohnungsgesetz-ferienwohnung", "cat": "Kosten und Steuern", "mins": 6, "date": "2026-11-20", "stand": "November 2026",
+ "h1": "Zweitwohnungsgesetz: Was Eigentümer einer Ferienwohnung wissen müssen",
+ "title": "Zweitwohnungsgesetz: Was Eigentümer wissen müssen",
+ "desc": "Darf ich meine Wohnung auf Airbnb vermieten? Altrechtlich, Erstwohnung oder touristisch bewirtschaftet: das Zweitwohnungsgesetz für Eigentümer erklärt.",
+ "teaser": "Altrechtlich, Erstwohnung oder touristisch bewirtschaftet: was das Gesetz für die Vermietung bedeutet.",
+ "lead": "Ob Sie Ihre Wohnung an Feriengäste vermieten dürfen, hängt vor allem von einem Datum ab: dem 11. März 2012. Wohnungen, die damals schon bestanden, sind frei. Für neuere Wohnungen in Gemeinden mit über 20 Prozent Zweitwohnungen gelten Auflagen, die im Grundbuch stehen. Hier steht, wie Sie das prüfen und was erlaubt ist.",
+ "photo": ("wengen-dorf-sommer", "Blick auf das Dorf Wengen im Sommer mit Chalets, Hotels und Wohnhäusern am Hang",
+           "Wengen gehört zur Gemeinde Lauterbrunnen. Dort sind 61 % aller Wohnungen Zweitwohnungen (Stand Oktober 2026)."),
+ "key": ["In 326 von 2110 Schweizer Gemeinden liegt der Zweitwohnungsanteil über 20 Prozent, darunter Grindelwald und Lauterbrunnen (Stand Oktober 2026).",
+         "Wohnungen, die am 11. März 2012 bestanden oder bewilligt waren, dürfen als Ferienwohnung vermietet werden, sofern Kanton und Gemeinde nichts Strengeres vorschreiben.",
+         "Neue Wohnungen in diesen Gemeinden werden mit wenigen Ausnahmen nur als Erstwohnung oder touristisch bewirtschaftete Wohnung bewilligt. Die Auflage steht im Grundbuch.",
+         "Seit 1. Oktober 2024 dürfen altrechtliche Wohnungen um bis zu 30 % erweitert und abgebrochen und neu gebaut werden, ohne die freie Nutzung zu verlieren."],
+ "body": """
+<p class="note">Dieser Artikel ist ein Überblick und keine Rechtsberatung. Verbindlich sind Baubewilligung, Grundbuch und die Auskunft Ihrer Gemeinde.</p>
+
+<h2>Worum es geht</h2>
+<p>Das Bundesgesetz über Zweitwohnungen gilt seit dem 1. Januar 2016. Es setzt die Zweitwohnungsinitiative um, die am 11. März 2012 angenommen wurde. Der Kern: In Gemeinden mit mehr als 20 Prozent Zweitwohnungen dürfen keine neuen Zweitwohnungen bewilligt werden.</p>
+<p>Als Zweitwohnung gilt jede Wohnung, in der niemand mit Hauptwohnsitz gemeldet ist. Eine Ferienwohnung, die Sie selbst nutzen oder an Gäste vermieten, ist also eine Zweitwohnung. Wohnungen für Wochenaufenthalter, Dienstwohnungen im Gastgewerbe oder Wohnungen, die höchstens zwei Jahre leer stehen und zur Dauermiete angeboten werden, sind den Erstwohnungen gleichgestellt.</p>
+
+<h2>Betrifft es meine Gemeinde?</h2>
+<p>Jede Gemeinde führt ein Wohnungsinventar. Das Bundesamt für Raumentwicklung wertet es aus und veröffentlicht die Anteile. Im Datenstand vom 31. Oktober 2026 unterstehen 326 von 2110 Gemeinden den Bauvorschriften des Gesetzes. Ab 2027 rechnet der Bund die Anteile direkt aus dem eidgenössischen Gebäude- und Wohnungsregister.</p>
+<div class="tbl"><table>
+<thead><tr><th>Gemeinde</th><th class="n">Anteil</th><th>Gesetz gilt</th></tr></thead>
+<tbody>
+<tr><td>Grindelwald</td><td class="n">62,8 %</td><td>ja</td></tr>
+<tr><td>Lauterbrunnen</td><td class="n">61,4 %</td><td>ja</td></tr>
+<tr><td>Engelberg</td><td class="n">55,9 %</td><td>ja</td></tr>
+<tr><td>Zermatt</td><td class="n">51,9 %</td><td>ja</td></tr>
+<tr><td>Brienz (BE)</td><td class="n">37,8 %</td><td>ja</td></tr>
+<tr><td>Weggis</td><td class="n">25,0 %</td><td>ja</td></tr>
+<tr><td>Interlaken</td><td class="n">15,3 %</td><td>nein</td></tr>
+<tr><td>Bern</td><td class="n">13,4 %</td><td>nein</td></tr>
+<tr><td>Wilderswil</td><td class="n">13,1 %</td><td>nein</td></tr>
+<tr><td>Luzern</td><td class="n">10,1 %</td><td>nein</td></tr>
+</tbody></table></div>
+<p>Wengen und Mürren gehören zur Gemeinde Lauterbrunnen. Liegt Ihre Gemeinde unter 20 Prozent, schränkt das Zweitwohnungsgesetz die Vermietung nicht ein. Andere Regeln können trotzdem gelten, etwa die 90-Nächte-Grenze in der Stadt Luzern oder die Bewilligung im Raum Interlaken. Mehr dazu im Artikel <a href="../airbnb-regeln-bewilligung-schweiz/">Regeln für Airbnb in der Schweiz</a>.</p>
+
+<h2>Die drei Arten von Wohnungen</h2>
+<h3>1. Altrechtliche Wohnung</h3>
+<p>Altrechtlich ist eine Wohnung, die am 11. März 2012 rechtmässig bestand oder rechtskräftig bewilligt war. Sie ist in der Art der Nutzung frei. Sie dürfen sie selbst bewohnen, als Ferienwohnung nutzen, an Gäste vermieten oder verkaufen. Kantone und Gemeinden dürfen aber strengere Regeln erlassen, um Missbrauch zu verhindern, und die Umnutzung von Erst- zu Zweitwohnungen bewilligungspflichtig machen.</p>
+<h3>2. Erstwohnung mit Auflage</h3>
+<p>Neue Wohnungen in Gemeinden über 20 Prozent werden mit wenigen Ausnahmen nur als Erstwohnung oder als touristisch bewirtschaftete Wohnung bewilligt. Bei einer Erstwohnung muss dort jemand mit Hauptwohnsitz leben oder eine gleichgestellte Nutzung bestehen. Vermieten dürfen Sie die Wohnung nur so, dass die Auflage eingehalten bleibt, also an Mieter, die dort wohnen. Kurzzeitvermietung an Feriengäste ist nicht erlaubt.</p>
+<h3>3. Touristisch bewirtschaftete Wohnung</h3>
+<p>Diese Wohnungen muss der Eigentümer dauerhaft und ausschliesslich Gästen für kurze Aufenthalte anbieten, zu markt- und ortsüblichen Bedingungen. Das Gesetz kennt zwei Fälle:</p>
+<ul>
+<li><b>Einliegerwohnung:</b> Die Wohnung liegt im selben Haus, in dem der Eigentümer seinen Hauptwohnsitz hat.</li>
+<li><b>Wohnung in einem strukturierten Beherbergungsbetrieb:</b> Die Wohnung ist nicht auf den Eigentümer zugeschnitten. Der Betrieb bietet hotelmässige Dienstleistungen, die die Mehrheit der Gäste nutzt, hat ein hotelähnliches Konzept und wird einheitlich bewirtschaftet.</li>
+</ul>
+<p>Eigene Ferien in dieser Wohnung sind damit ausgeschlossen. Wer von einer Erstwohnung zu einer touristisch bewirtschafteten Wohnung wechseln will, braucht eine Baubewilligung.</p>
+
+<h2>So finden Sie heraus, was für Ihre Wohnung gilt</h2>
+<ol>
+<li><b>Baujahr und Bewilligung:</b> Stand die Wohnung am 11. März 2012 schon, oder war sie da rechtskräftig bewilligt?</li>
+<li><b>Grundbuchauszug:</b> Eine Nutzungsbeschränkung ist im Grundbuch angemerkt, als Erstwohnung, Einliegerwohnung oder Wohnung in einem Beherbergungsbetrieb.</li>
+<li><b>Baubewilligung:</b> Dort steht die Auflage im Wortlaut.</li>
+<li><b>Gemeinde:</b> Fragen Sie die Bauverwaltung, ob kommunale Regeln gelten, auch für altrechtliche Wohnungen.</li>
+<li><b>Stockwerkeigentum:</b> Das Reglement kann die Kurzzeitvermietung zusätzlich einschränken.</li>
+</ol>
+
+<h2>Umbau und Erweiterung seit Oktober 2024</h2>
+<p>Seit dem 1. Oktober 2024 gilt eine Lockerung für altrechtliche Wohnungen. Sie dürfen erneuert, umgebaut, abgebrochen und neu aufgebaut werden, ohne dass eine Nutzungsbeschränkung entsteht. In der Bauzone darf die Hauptnutzfläche um höchstens 30 % der Fläche vom 11. März 2012 wachsen. In diesem Rahmen sind auch zusätzliche Wohnungen erlaubt. Geht die Erweiterung über 30 % hinaus, muss der zusätzliche Teil als Erstwohnung oder touristisch bewirtschaftete Wohnung genutzt werden.</p>
+<p><b>Rechenbeispiel (Annahme):</b> Eine altrechtliche Wohnung hatte am 11. März 2012 eine Hauptnutzfläche von 80 m². 30 % davon sind 24 m². Nach dem Umbau darf sie bis 104 m² gross sein und bleibt frei vermietbar. Kanton und Gemeinde können solche Änderungen stärker einschränken und eine Baubewilligung verlangen.</p>
+
+<h2>Wenn die Erstwohnung nicht mehr genutzt wird</h2>
+<p>Die Auflage einer Erstwohnung kann vorübergehend ausgesetzt werden. Das ist möglich bei Todesfall, Wohnsitzwechsel oder Änderung des Zivilstands, oder wenn die Wohnung trotz öffentlicher Ausschreibung zu einem angemessenen Preis keinen Mieter oder Käufer findet. Die Behörde befristet die Aussetzung auf höchstens zwei Jahre. Wer sich auf die erfolglose Ausschreibung beruft, muss regelmässige Inserate zu markt- und ortsüblichen Bedingungen nachweisen und belegen, dass die Wohnung jederzeit bezugsbereit war.</p>
+<p>Wer eine Wohnung entgegen der Auflage nutzt, riskiert ein Benutzungsverbot. Vorsätzliche Verstösse bestraft das Gesetz mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe.</p>
+
+<h2>Was das für die Vermietung heisst</h2>
+<p>In Grindelwald, Wengen oder Mürren lohnt sich der Blick ins Grundbuch vor dem ersten Inserat. Eine altrechtliche Wohnung kann voll vermietet werden. Wie gut Ferienwohnungen am Ort gebucht sind, zeigt die <a href="../airbnb-auslastung-schweiz/">Auslastung von 23 Schweizer Orten</a>. Was Ihre Wohnung einbringen könnte, rechnet der <a href="../../#rechner">Ertragsrechner</a>.</p>
+<p>Alpinhost prüft mit Ihnen kostenlos, ob und wie Ihre Wohnung vermietet werden kann, und übernimmt danach die Vermietung auf Airbnb und Booking.com. <a href="../../#kontakt">Wohnung prüfen lassen</a></p>
+""",
+ "faq": [("Darf ich meine Ferienwohnung in Grindelwald auf Airbnb vermieten?", "Grindelwald hat einen Zweitwohnungsanteil von 62,8 % (Stand Oktober 2026). Altrechtliche Wohnungen, die am 11. März 2012 bestanden oder bewilligt waren, dürfen Sie vermieten, sofern die Gemeinde nichts Strengeres vorschreibt. Bei neueren Wohnungen entscheidet die Auflage in Baubewilligung und Grundbuch."),
+         ("Was ist eine altrechtliche Wohnung?", "Eine Wohnung, die am 11. März 2012 rechtmässig bestand oder rechtskräftig bewilligt war. Sie ist in der Art der Nutzung frei, unter Vorbehalt strengerer Regeln von Kanton und Gemeinde."),
+         ("Darf ich eine Erstwohnung kurzzeitig an Feriengäste vermieten?", "Nein. Eine Wohnung mit Erstwohnungsauflage muss von Personen mit Hauptwohnsitz oder gleichgestellt genutzt werden. Vermieten dürfen Sie sie nur an Mieter, die dort wohnen. Für den Wechsel zu einer touristisch bewirtschafteten Wohnung braucht es eine Baubewilligung."),
+         ("Wo sehe ich, ob meine Wohnung eine Nutzungsbeschränkung hat?", "Im Grundbuchauszug ist die Beschränkung angemerkt. Den genauen Wortlaut finden Sie in der Baubewilligung. Bei Unklarheit hilft die Bauverwaltung der Gemeinde.")],
+ "sources": [("Bundesgesetz über Zweitwohnungen (ZWG), SR 702, Stand 1. Oktober 2024", "https://lexfind.ch/tolv/248202/de"),
+             ("Zweitwohnungsverordnung (ZWV), SR 702.1", "https://res.cloudinary.com/adminch/image/private/s--Dd0fjiqX--/v1719842660/Bundespublikationen/702-1d.pdf"),
+             ("Bundesamt für Raumentwicklung: Wohnungsinventar und Zweitwohnungsanteil, Datenstand 31. Oktober 2026", "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.are.wohnungsinventar-zweitwohnungsanteil"),
+             ("Bundesrat: Medienmitteilung zum Zweitwohnungsanteil vom 31. März 2026", "https://www.admin.ch/de/newnsb/Hqdc7I9fzT_q-r_RJkn85"),
+             ("LawMedia: Gelockertes Zweitwohnungsgesetz ab 1. Oktober 2024, 16. September 2024", "https://law.ch/lawnews/2024/09/gelockertes-zweitwohnungsgesetz-br-setzt-es-auf-01-10-2024-in-kraft/"),
+             ("ch.ch: Zweit- oder Ferienwohnung kaufen", "https://www.ch.ch/de/wohnen/wohneigentum/immobilien-kaufen/zweit-oder-ferienwohnung-kaufen")],
 },
 {
  "slug": "ferienwohnung-einrichten-checkliste", "cat": "Wohnung fit machen", "mins": 5,
