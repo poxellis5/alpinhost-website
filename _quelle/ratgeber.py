@@ -950,7 +950,7 @@ def build_ratgeber():
     hub_cred = rg_credits(["wengen-dorf-sommer"] + [a["photo"][0] for a in ARTICLES])
     h = head("Ratgeber: Ferienwohnung vermieten in der Schweiz | Alpinhost",
         "Ratgeber für Eigentümer von Ferienwohnungen: Ertrag, Auslastung, Airbnb oder Booking.com, Steuern, Kurtaxe, Regeln, Einrichtung und Versicherung.",
-        "ratgeber/", root, [ORG, crumbs, coll], ogimg="img/og-wengen-dorf-sommer.jpg")
+        "ratgeber/", root, [ORG, crumbs, coll], ogimg="img/og-wengen-dorf-sommer.jpg", ogalt="Blick auf das Dorf Wengen im Sommer mit Chalets, Wiesen und Wald")
     write("ratgeber/index.html", page_shell(RG_ROBOTS + RG_FEED + h, b, root, credits=hub_cred))
 
     # ---- Artikel
@@ -1018,7 +1018,7 @@ def build_ratgeber():
   <p>Alle Angaben wurden im {a.get("stand",RG_STAND)} geprüft. Sie ersetzen keine Rechts- oder Steuerberatung.</p>
 </section>
 </main>"""
-        h = head(a["title"] + " | Alpinhost", a["desc"], url, root, [ORG, crumbs, art, faq], ogimg=f'img/og-{a["photo"][0]}.jpg').replace('<meta property="og:type" content="website">', '<meta property="og:type" content="article">')
+        h = head(a["title"] + " | Alpinhost", a["desc"], url, root, [ORG, crumbs, art, faq], ogimg=f'img/og-{a["photo"][0]}.jpg', ogalt=a["photo"][1]).replace('<meta property="og:type" content="website">', '<meta property="og:type" content="article">')
         write(url + "index.html", page_shell(RG_ROBOTS + RG_FEED + h, b, root, credits=cred))
 
     # ---- RSS-Feed

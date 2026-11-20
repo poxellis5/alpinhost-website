@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Baut die statische Website alpinhost.ch aus src.html (Startseite) und Seitenvorlagen."""
-import re, json, os, shutil, datetime
+import re, json, os, shutil, datetime, html as _html
 
 DOMAIN = "https://alpinhost.ch"
 OUT = "site"
@@ -217,7 +217,7 @@ REGIONS = {
 
 exec(open("ratgeber.py", encoding="utf-8").read())
 
-def head(title, desc, path, root, schema_list, ogimg="img/og-grindelwald-eiger.jpg"):
+def head(title, desc, path, root, schema_list, ogimg="img/og-grindelwald-eiger.jpg", ogalt="Chalets im Dorf Grindelwald, dahinter der Eiger"):
     url = DOMAIN + "/" + path
     schemas = "\n".join(f'<script type="application/ld+json">{json.dumps(s, ensure_ascii=False)}</script>' for s in schema_list)
     return f"""<title>{title}</title>
@@ -233,6 +233,7 @@ def head(title, desc, path, root, schema_list, ogimg="img/og-grindelwald-eiger.j
 <meta property="og:image" content="{DOMAIN}/{ogimg}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{_html.escape(ogalt, quote=True)}">
 <meta name="theme-color" content="#0F2230">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -492,7 +493,7 @@ for key, r in REGIONS.items():
   </div>
 </section>
 {rg_html}</main>"""
-    write(url + "index.html", page_shell(head(r["title"], r["desc"], url, root, [ORG, crumbs, svc], ogimg=f"img/og-{r['photo'][0]}.jpg"), b, root, credits=rg_cred))
+    write(url + "index.html", page_shell(head(r["title"], r["desc"], url, root, [ORG, crumbs, svc], ogimg=f"img/og-{r['photo'][0]}.jpg", ogalt=r['photo'][1]), b, root, credits=rg_cred))
 
 # ---------- legal
 def legal(slug, title, h1, html):

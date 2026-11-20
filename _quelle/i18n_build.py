@@ -220,7 +220,7 @@ def process(de_path, file, lang, jsv):
                     if t in T: el[a] = T[t][lang]
                     else: MISSING.setdefault(t, "attr " + de_path)
         for m in s.find_all("meta"):
-            if m.get("name") == "description" or m.get("property") in ("og:title", "og:description"):
+            if m.get("name") == "description" or m.get("property") in ("og:title", "og:description", "og:image:alt"):
                 t = norm(m["content"])
                 if t in T: m["content"] = T[t][lang]
                 else: MISSING.setdefault(t, "meta " + de_path)
