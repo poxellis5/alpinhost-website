@@ -239,6 +239,7 @@ def head(title, desc, path, root, schema_list, ogimg="img/og-grindelwald-eiger.j
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/img/logo/alpinhost-icon-192.png" type="image/png" sizes="192x192">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
@@ -545,6 +546,7 @@ llms = f"""# Alpinhost
 - [Startseite]({DOMAIN}/)
 """ + "".join(f"- [{r['h1']}]({DOMAIN}/{r['slug']}/)\n" for r in REGIONS.values()) + "\n## Ratgeber für Eigentümer\n" + f"- [Übersicht]({DOMAIN}/ratgeber/)\n" + "".join(f"- [{x['h1']}]({DOMAIN}/ratgeber/{x['slug']}/): {x['teaser']}\n" for x in ARTICLES)
 write("llms.txt", llms)
+write("site.webmanifest", json.dumps({"name": "Alpinhost", "short_name": "Alpinhost", "lang": "de", "start_url": "/", "scope": "/", "display": "browser", "theme_color": "#0F2230", "background_color": "#F2F5F6", "icons": [{"src": "/img/logo/alpinhost-icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "/img/logo/alpinhost-icon-512.png", "sizes": "512x512", "type": "image/png"}]}, ensure_ascii=False, indent=1) + "\n")
 write("CNAME", "alpinhost.ch\n")
 write(".nojekyll", "")
 print("built", len(urls), "indexable pages")
