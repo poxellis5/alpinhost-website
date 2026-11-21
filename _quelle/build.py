@@ -223,7 +223,7 @@ def head(title, desc, path, root, schema_list, ogimg="img/og-grindelwald-eiger.j
     return f"""<title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{url}">
-<link rel="alternate" hreflang="de-CH" href="{url}">
+<link rel="alternate" hreflang="de-CH" href="{url}"><link rel="alternate" hreflang="x-default" href="{url}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_CH">
 <meta property="og:site_name" content="Alpinhost">
