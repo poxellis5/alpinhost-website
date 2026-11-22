@@ -354,7 +354,7 @@ footer .credits + .credits{border-top:0;padding-top:0;margin-top:-8px}
 .team-hero .text .direct-line{font-size:15px;color:var(--muted)}
 .team-hero .direct-line a{color:var(--ink);font-weight:600;white-space:nowrap}
 .team-photo{margin:0;aspect-ratio:3/4;max-width:520px;justify-self:end;width:100%}
-@media (max-width:900px){.team-hero{padding-bottom:56px}.team-hero .hero-grid{grid-template-columns:1fr;gap:28px}.team-photo{order:0;aspect-ratio:4/4.2;max-width:none;justify-self:stretch}.team-photo img{object-position:50% 18%}}
+@media (max-width:900px){.team-hero{padding-bottom:56px}.team-hero .hero-grid{grid-template-columns:1fr;gap:18px}.team-hero .text{display:contents}.team-hero .text>*{order:4}.team-hero .text>h1{order:1}.team-hero .text>h2{order:2}.team-photo{order:3;aspect-ratio:4/4.2;max-width:none;justify-self:stretch;margin-block:6px 4px}.team-photo img{object-position:50% 18%}}
 .langsw{position:relative;margin-left:0;flex:none}
 @media (max-width:900px){.langsw{margin-left:auto}.top .btn{margin-left:0}}
 @media (max-width:900px){.top .brand{margin-right:auto}}
