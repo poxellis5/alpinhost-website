@@ -1,0 +1,47 @@
+de: Über uns: Roger Schuppisser und Ramon Stüdeli | Alpinhost
+en: About us: Roger Schuppisser and Ramon Stüdeli | Alpinhost
+fr: À propos : Roger Schuppisser et Ramon Stüdeli | Alpinhost
+it: Chi siamo: Roger Schuppisser e Ramon Stüdeli | Alpinhost
+es: Quiénes somos: Roger Schuppisser y Ramon Stüdeli | Alpinhost
+
+de: Roger Schuppisser und Ramon Stüdeli betreuen Ihre Ferienwohnung auf Airbnb und Booking.com. Feste Ansprechpartner, die die Region kennen.
+en: Roger Schuppisser and Ramon Stüdeli look after your holiday apartment on Airbnb and Booking.com. Fixed contacts who know the region.
+fr: Roger Schuppisser et Ramon Stüdeli gèrent votre logement de vacances sur Airbnb et Booking.com. Des interlocuteurs fixes qui connaissent la région.
+it: Roger Schuppisser e Ramon Stüdeli gestiscono la Sua casa vacanza su Airbnb e Booking.com. Referenti fissi che conoscono la regione.
+es: Roger Schuppisser y Ramon Stüdeli gestionan su apartamento vacacional en Airbnb y Booking.com. Contactos fijos que conocen la región.
+
+de: <a href="{H0}">Alpinhost</a> › Über uns
+en: <a href="{H0}">Alpinhost</a> › About us
+fr: <a href="{H0}">Alpinhost</a> › À propos
+it: <a href="{H0}">Alpinhost</a> › Chi siamo
+es: <a href="{H0}">Alpinhost</a> › Quiénes somos
+
+de: Wir behandeln Ihre Wohnung wie unsere eigene.
+en: We treat your home as if it were our own.
+fr: Nous prenons soin de votre logement comme s’il était le nôtre.
+it: Trattiamo il Suo appartamento come se fosse nostro.
+es: Tratamos su vivienda como si fuera nuestra.
+
+de: Wir sind Roger Schuppisser und Ramon Stüdeli. Seit über 10 Jahren empfangen wir Gäste aus der ganzen Welt. Wir wissen, wie viel Arbeit hinter einer guten Bewertung steckt, und wir mögen genau diese Arbeit.
+en: We are Roger Schuppisser and Ramon Stüdeli. For more than 10 years we have been welcoming guests from all over the world. We know how much work goes into a good review, and that is exactly the work we enjoy.
+fr: Nous sommes Roger Schuppisser et Ramon Stüdeli. Depuis plus de 10 ans, nous accueillons des voyageurs du monde entier. Nous savons combien de travail se cache derrière une bonne évaluation, et c’est précisément ce travail que nous aimons.
+it: Siamo Roger Schuppisser e Ramon Stüdeli. Da oltre 10 anni accogliamo ospiti da tutto il mondo. Sappiamo quanto lavoro c’è dietro una buona recensione, ed è proprio questo il lavoro che ci piace.
+es: Somos Roger Schuppisser y Ramon Stüdeli. Desde hace más de 10 años recibimos a huéspedes de todo el mundo. Sabemos cuánto trabajo hay detrás de una buena valoración, y es justo el trabajo que nos gusta.
+
+de: Bei uns haben Sie feste Ansprechpartner, die die Region kennen und erreichbar sind, wenn etwas ist.
+en: With us, you have fixed contacts who know the region and can be reached whenever something comes up.
+fr: Chez nous, vous avez des interlocuteurs fixes qui connaissent la région et restent joignables en cas de besoin.
+it: Con noi ha referenti fissi che conoscono la regione e sono raggiungibili quando serve.
+es: Con nosotros tiene contactos fijos que conocen la región y están localizables cuando surge algo.
+
+de: Per WhatsApp schreiben
+en: Message us on WhatsApp
+fr: Écrire sur WhatsApp
+it: Ci scriva su WhatsApp
+es: Escríbanos por WhatsApp
+
+de: Roger Schuppisser und Ramon Stüdeli von Alpinhost
+en: Roger Schuppisser and Ramon Stüdeli of Alpinhost
+fr: Roger Schuppisser et Ramon Stüdeli d’Alpinhost
+it: Roger Schuppisser e Ramon Stüdeli di Alpinhost
+es: Roger Schuppisser y Ramon Stüdeli de Alpinhost

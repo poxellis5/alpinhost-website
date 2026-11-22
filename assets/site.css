@@ -342,6 +342,19 @@ footer .credits + .credits{border-top:0;padding-top:0;margin-top:-8px}
 .rg-cat:first-child{margin-top:0}
 .rg-card h3{font-size:19px;line-height:1.25}
 .article .sidecard .btn{text-align:center;justify-content:center}
+/* Seite Ueber uns */
+.team-hero{padding-block:28px 84px}
+.team-hero .hero-grid{grid-template-columns:1.05fr .95fr;align-items:center}
+.team-hero h1{font-size:12.5px;font-weight:500;letter-spacing:.12em;line-height:1.6}
+.team-hero h2{font-size:clamp(34px,4.6vw,56px);letter-spacing:-.03em;margin-top:14px;max-width:18ch}
+.team-hero .text{display:grid;gap:18px;max-width:60ch}
+.team-hero .text p{color:var(--muted);font-size:18px}
+.team-hero .text h2+p{margin-top:8px}
+.team-hero .cta-row{margin-top:10px}
+.team-hero .text .direct-line{font-size:15px;color:var(--muted)}
+.team-hero .direct-line a{color:var(--ink);font-weight:600;white-space:nowrap}
+.team-photo{margin:0;aspect-ratio:3/4;max-width:520px;justify-self:end;width:100%}
+@media (max-width:900px){.team-hero{padding-bottom:56px}.team-hero .hero-grid{grid-template-columns:1fr;gap:28px}.team-photo{order:0;aspect-ratio:4/4.2;max-width:none;justify-self:stretch}.team-photo img{object-position:50% 18%}}
 .langsw{position:relative;margin-left:0;flex:none}
 @media (max-width:900px){.langsw{margin-left:auto}.top .btn{margin-left:0}}
 @media (max-width:900px){.top .brand{margin-right:auto}}

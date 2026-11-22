@@ -17,6 +17,7 @@
 - [Airbnb-Verwaltung in Luzern und der Innerschweiz](https://alpinhost.ch/airbnb-verwaltung-luzern/)
 - [Airbnb-Verwaltung in Bern](https://alpinhost.ch/airbnb-verwaltung-bern/)
 - [Airbnb-Verwaltung in der ganzen Schweiz](https://alpinhost.ch/airbnb-verwaltung-schweiz/)
+- [Über uns: Roger Schuppisser und Ramon Stüdeli](https://alpinhost.ch/ueber-uns/)
 
 ## Ratgeber für Eigentümer
 - [Übersicht](https://alpinhost.ch/ratgeber/)
