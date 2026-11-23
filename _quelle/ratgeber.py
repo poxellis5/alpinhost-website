@@ -1048,7 +1048,7 @@ def build_ratgeber():
             {"@type":"ListItem","position":3,"name":a["h1"],"item":full}]}
         art = {"@context":"https://schema.org","@type":"Article","headline":a["h1"],"description":a["desc"],"inLanguage":"de-CH",
                "image":[f'{DOMAIN}/img/og-{a["photo"][0]}.jpg', f'{DOMAIN}/img/{a["photo"][0]}-1600.webp'],"datePublished":a.get("date",RG_DATE),"dateModified":a.get("updated",a.get("date",RG_DATE)),
-               "author":{"@type":"Organization","name":"Alpinhost","url":DOMAIN+"/"},"publisher":{"@id":DOMAIN+"/#org"},
+               "author":{"@type":"Organization","@id":DOMAIN+"/#org","name":"Alpinhost","url":DOMAIN+"/"},"publisher":{"@id":DOMAIN+"/#org"},
                "mainEntityOfPage":full,"articleSection":a["cat"],"isAccessibleForFree":True}
         faq = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":t}} for q, t in a["faq"]]}
         keys = "".join(f"<li>{k}</li>" for k in a["key"])
