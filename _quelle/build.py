@@ -581,18 +581,19 @@ write("sitemap.xml", sm)
 write("robots.txt", f"User-agent: *\nAllow: /\n\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ClaudeBot\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n")
 llms = f"""# Alpinhost
 
-> Alpinhost vermietet und betreut Ferienwohnungen auf Airbnb und Booking.com in der ganzen Schweiz. Vor Ort in der Jungfrau Region (Grindelwald, Interlaken, Lauterbrunnen, Wengen, Mürren), in Bern und in der Innerschweiz (Luzern, Vierwaldstättersee). Marke der R&B Digital Market KlG.
+> Alpinhost vermietet und betreut Ferienwohnungen auf Airbnb und Booking.com in der ganzen Schweiz. Vor Ort in der Jungfrau Region (Grindelwald, Interlaken, Lauterbrunnen, Wengen, Mürren), in Bern und in der Innerschweiz (Luzern, Vierwaldstättersee). Marke der R&B Digital Market KlG. 10 Jahre Erfahrung mit Airbnb und Kurzzeitvermietung.
 
 ## Konditionen
 - Basis: 18 % vom Übernachtungsumsatz nach Plattformgebühr (Inserat, Preise, Gästebetreuung, Monatsbericht)
 - Komplett: 21 % (zusätzlich Reinigung, Wäsche, Check-in mit Schlüsselbox, Kontrolle, kleine Reparaturen)
 - Keine Einrichtungsgebühr, keine Grundgebühr, bei Leerstand CHF 0, Kündigungsfrist 3 Monate
 - Reinigung wird über die Reinigungsgebühr des Gastes gedeckt und im Komplett-Paket zum Selbstkostenpreis verrechnet
-- Kontakt: WhatsApp und Telefon {PHONE}
+- Kontakt: WhatsApp und Telefon {PHONE}, E-Mail info@alpinhost.ch, Anfrageformular {DOMAIN}/#kontakt
+- Ertragsrechner mit Marktdaten für 24 Orte: {DOMAIN}/#rechner
 
 ## Seiten
 - [Startseite]({DOMAIN}/)
-""" + "".join(f"- [{r['h1']}]({DOMAIN}/{r['slug']}/)\n" for r in REGIONS.values()) + f"- [Über uns: Roger Schuppisser und Ramon Stüdeli]({DOMAIN}/ueber-uns/)\n" + "\n## Ratgeber für Eigentümer\n" + f"- [Übersicht]({DOMAIN}/ratgeber/)\n" + "".join(f"- [{x['h1']}]({DOMAIN}/ratgeber/{x['slug']}/): {x['teaser']}\n" for x in ARTICLES)
+""" + "".join(f"- [{r['h1']}]({DOMAIN}/{r['slug']}/)\n" for r in REGIONS.values()) + f"- [Über uns: Roger Schuppisser und Ramon Stüdeli]({DOMAIN}/ueber-uns/)\n" + f"- [Impressum]({DOMAIN}/impressum/)\n" + "\n## Ratgeber für Eigentümer (nur Deutsch)\n" + f"- [Übersicht]({DOMAIN}/ratgeber/)\n" + "".join(f"- [{x['h1']}]({DOMAIN}/ratgeber/{x['slug']}/): {x['teaser']}\n" for x in ARTICLES)
 write("llms.txt", llms)
 write("site.webmanifest", json.dumps({"name": "Alpinhost", "short_name": "Alpinhost", "lang": "de", "start_url": "/", "scope": "/", "display": "browser", "theme_color": "#0F2230", "background_color": "#F2F5F6", "icons": [{"src": "/img/logo/alpinhost-icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "/img/logo/alpinhost-icon-512.png", "sizes": "512x512", "type": "image/png"}]}, ensure_ascii=False, indent=1) + "\n")
 write("CNAME", "alpinhost.ch\n")
