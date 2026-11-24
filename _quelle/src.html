@@ -588,7 +588,7 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
         <p class="lead" style="margin-top:16px">Wir prüfen es kostenlos und unverbindlich. Sie bekommen eine ehrliche Einschätzung mit Zahlen, auch wenn die Antwort Nein ist.</p>
         <div class="direct">
           <div><span>WhatsApp und Telefon</span></div>
-          <div><b id="phone">+41 79 531 81 11</b><button class="copy" type="button" data-copy="phone">Kopieren</button></div>
+          <div><b id="phone">+41 76 275 81 96</b><button class="copy" type="button" data-copy="phone">Kopieren</button></div>
           <div><span>E-Mail</span></div>
           <div><a href="mailto:info@alpinhost.ch" style="color:inherit;font-weight:600">info@alpinhost.ch</a></div>
         </div>
@@ -626,7 +626,7 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
       <div><label for="m-zi">Zimmer</label><select id="m-zi"><option>1</option><option selected>2</option><option>3</option><option>4 oder mehr</option></select></div>
       <input type="text" id="m-hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
       <div class="full formbtns"><button class="btn btn-primary" type="submit">Anfrage senden</button><button class="btn btn-wa" type="button" id="m-wa">Per WhatsApp senden</button></div>
-      <p class="full alt" id="m-msg">Wir melden uns am selben Werktag. Lieber direkt anrufen? <b>+41 79 531 81 11</b></p>
+      <p class="full alt" id="m-msg">Wir melden uns am selben Werktag. Lieber direkt anrufen? <b>+41 76 275 81 96</b></p>
     </form>
   </div>
 </div>
@@ -724,7 +724,7 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
     var pkg=card.querySelector(".choose").dataset.pkg;
     card.addEventListener("click", function(e){ if(e.target.closest("summary,details p")) return; e.preventDefault(); openModal(pkg); });
   });
-  var EP="https://formsubmit.co/ajax/info@alpinhost.ch", WA="https://wa.me/41795318111?text=";
+  var EP="https://formsubmit.co/ajax/info@alpinhost.ch", WA="https://wa.me/41762758196?text=";
   function fv(id){ return document.getElementById(id).value.trim(); }
   function sendMail(data, msg, btn, waUrl){
     var old=btn.textContent; btn.disabled=true; btn.textContent="Wird gesendet …";
@@ -736,7 +736,7 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
   }
   function openWa(url, msg){
     window.open(url, "_blank", "noopener");
-    msg.innerHTML='Ihre Anfrage ist vorbereitet. <a href="'+url+'" target="_blank" rel="noopener" style="color:var(--lake);font-weight:600">In WhatsApp öffnen und senden</a>. Lieber anrufen? <b>+41 79 531 81 11</b>';
+    msg.innerHTML='Ihre Anfrage ist vorbereitet. <a href="'+url+'" target="_blank" rel="noopener" style="color:var(--lake);font-weight:600">In WhatsApp öffnen und senden</a>. Lieber anrufen? <b>+41 76 275 81 96</b>';
   }
   // Paket-Fenster
   function mData(){

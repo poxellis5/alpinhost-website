@@ -1486,11 +1486,11 @@ fr: L'adresse a peut-être changé. <a href="{H0}">Retour à l'accueil</a>
 it: Forse l'indirizzo è cambiato. <a href="{H0}">Vai alla home</a>
 es: Quizá la dirección ha cambiado. <a href="{H0}">Ir a la página de inicio</a>
 
-de: WhatsApp und Telefon: <b style="{S0}">+41 79 531 81 11</b>
-en: WhatsApp and phone: <b style="{S0}">+41 79 531 81 11</b>
-fr: WhatsApp et téléphone : <b style="{S0}">+41 79 531 81 11</b>
-it: WhatsApp e telefono: <b style="{S0}">+41 79 531 81 11</b>
-es: WhatsApp y teléfono: <b style="{S0}">+41 79 531 81 11</b>
+de: WhatsApp und Telefon: <b style="{S0}">+41 76 275 81 96</b>
+en: WhatsApp and phone: <b style="{S0}">+41 76 275 81 96</b>
+fr: WhatsApp et téléphone : <b style="{S0}">+41 76 275 81 96</b>
+it: WhatsApp e telefono: <b style="{S0}">+41 76 275 81 96</b>
+es: WhatsApp y teléfono: <b style="{S0}">+41 76 275 81 96</b>
 
 de: Alpinhost
 en: Alpinhost

@@ -82,7 +82,7 @@
     var pkg=card.querySelector(".choose").dataset.pkg;
     card.addEventListener("click", function(e){ if(e.target.closest("summary,details p")) return; e.preventDefault(); openModal(pkg); });
   });
-  var EP="https://formsubmit.co/ajax/info@alpinhost.ch", WA="https://wa.me/41795318111?text=";
+  var EP="https://formsubmit.co/ajax/info@alpinhost.ch", WA="https://wa.me/41762758196?text=";
   function fv(id){ return document.getElementById(id).value.trim(); }
   function sendMail(data, msg, btn, waUrl){
     var old=btn.textContent; btn.disabled=true; btn.textContent="Wird gesendet …";
@@ -94,7 +94,7 @@
   }
   function openWa(url, msg){
     window.open(url, "_blank", "noopener");
-    msg.innerHTML='Ihre Anfrage ist vorbereitet. <a href="'+url+'" target="_blank" rel="noopener" style="color:var(--lake);font-weight:600">In WhatsApp öffnen und senden</a>. Lieber anrufen? <b>+41 79 531 81 11</b>';
+    msg.innerHTML='Ihre Anfrage ist vorbereitet. <a href="'+url+'" target="_blank" rel="noopener" style="color:var(--lake);font-weight:600">In WhatsApp öffnen und senden</a>. Lieber anrufen? <b>+41 76 275 81 96</b>';
   }
   // Paket-Fenster
   function mData(){

@@ -5,8 +5,8 @@ import re, json, os, shutil, datetime, html as _html
 DOMAIN = "https://alpinhost.ch"
 OUT = "site"
 TODAY = datetime.date.today().isoformat()
-PHONE = "+41 79 531 81 11"
-WA = "41795318111"
+PHONE = "+41 76 275 81 96"
+WA = "41762758196"
 
 src = open("src.html", encoding="utf-8").read()
 CSS = re.search(r"<style>(.*?)</style>", src, re.S).group(1)
