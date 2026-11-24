@@ -163,7 +163,7 @@ ARTICLES = [
 <li>Nach der Abreise reinigen, Betten frisch beziehen, Wäsche waschen</li>
 <li>Wohnung kontrollieren und Schäden festhalten</li>
 <li>Verbrauchsmaterial nachfüllen</li>
-<li>Gast bewerten, Kurtaxe abrechnen, Einnahmen für die Steuern festhalten</li>
+<li>Gast bewerten, Kurtaxe abrechnen, <a href="../airbnb-einnahmen-versteuern/">Einnahmen für die Steuern</a> festhalten</li>
 </ul>
 <p>Dazu kommt die Arbeit im Hintergrund: Preise an Saison und Nachfrage anpassen, Kalender pflegen, Inserat und Fotos aktuell halten.</p>
 
@@ -173,7 +173,7 @@ ARTICLES = [
 
 <h2>Was eine Verwaltung kostet</h2>
 <p>Marktüblich sind in der Schweiz 15 bis 25 Prozent. Die Zahl allein sagt wenig. Fragen Sie immer nach der Berechnungsgrundlage: Wird der Prozentsatz vor oder nach Abzug der <a href="../airbnb-oder-booking/">Plattformgebühr</a> gerechnet? Zählt die Reinigungsgebühr dazu?</p>
-<p>Ein Beispiel mit unseren Konditionen: Nach der Plattformgebühr bleiben in Grindelwald rund CHF 45'558 pro Jahr. Davon gehen im Komplett-Paket 21 % an uns, also CHF 9'567. Bei Ihnen bleiben CHF 35'991. Reinigung, Wäsche, Anreise und Kontrolle sind darin organisiert.</p>
+<p>Ein Beispiel mit unseren Konditionen: Nach der Plattformgebühr bleiben in Grindelwald <a href="../ferienwohnung-vermieten-ertrag/">rund CHF 45'558 pro Jahr</a>. Davon gehen im Komplett-Paket 21 % an uns, also CHF 9'567. Bei Ihnen bleiben CHF 35'991. Reinigung, Wäsche, Anreise und Kontrolle sind darin organisiert.</p>
 
 <h2>Wann sich selbst vermieten lohnt</h2>
 <ul>
