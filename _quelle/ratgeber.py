@@ -610,7 +610,7 @@ ARTICLES = [
 <h2>Schlafen</h2>
 <ul>
 <li>Gute Matratzen und Matratzenschoner</li>
-<li>Zwei Sätze Bettwäsche pro Bett, damit immer ein Satz bereit ist</li>
+<li>Zwei Sätze Bettwäsche pro Bett, damit immer ein Satz bereit ist (mehr dazu im Artikel <a href="../ferienwohnung-reinigung-waesche/">Reinigung und Wäsche</a>)</li>
 <li>Zwei Kissen pro Person, eines davon flach</li>
 <li>Vorhänge oder Läden, die das Zimmer abdunkeln</li>
 <li>Nachttisch, Leselampe und eine freie Steckdose neben dem Bett</li>
@@ -833,6 +833,98 @@ ARTICLES = [
              ("Jungfraubahnen: Jungfrau Ski Region, Skipass Saison 2026/27, abgerufen am 17. November 2026", "https://www.jungfrau.ch/de-ch/jungfrau-ski-region/"),
              ("Jungfraubahnen: Parkhaus Lauterbrunnen, abgerufen am 17. November 2026", "https://www.jungfrau.ch/de-ch/anreise-bahnhoefe-parking/parkieren/parkhaus-lauterbrunnen/"),
              ("Airbnb Resource Center: Plan ahead for weather emergencies, 26. Juni 2024, aktualisiert 8. August 2024", "https://airbnb.com/resources/hosting-homes/a/preparing-your-spaceand-your-guestsfor-emergencies-134")],
+},
+{
+ "slug": "ferienwohnung-reinigung-waesche", "cat": "Wohnung fit machen", "mins": 6, "date": "2026-11-24", "stand": "November 2026",
+ "h1": "Reinigung und Wäsche in der Ferienwohnung: Ablauf, Zeit und Kosten pro Wechsel",
+ "title": "Reinigung der Ferienwohnung: Ablauf und Kosten",
+ "desc": "Reinigung und Wäsche bei jedem Gästewechsel: Ablauf, Checkliste, Kosten mit Rechenbeispiel und was Gäste auf Airbnb seit 20. November 2026 noch tun müssen.",
+ "teaser": "Ablauf und Checkliste für jeden Gästewechsel, Kosten mit Rechenbeispiel und die neuen Airbnb-Regeln zum Check-out.",
+ "lead": "Nach jeder Abreise muss die Wohnung bis zum nächsten Check-in wieder wie neu sein, auch nach nur einer Nacht. Wie lange das dauert und was es kostet, hängt vom Ablauf ab. Und seit dem 20. November 2026 dürfen Gastgeber auf Airbnb weniger Arbeit an die Gäste abgeben.",
+ "photo": ("bett-weisse-waesche", "Benutztes Bett mit zerwühlter weisser Bettwäsche und mehreren Kissen",
+           "So sieht das Bett nach der Abreise aus. Bei jedem Wechsel kommt die ganze Wäsche weg und das Bett wird frisch bezogen."),
+ "key": ["Jeder Aufenthalt braucht eine volle Reinigung, auch eine einzige Nacht.",
+         "Seit dem 20. November 2026 dürfen Gastgeber auf Airbnb von Gästen nicht mehr verlangen, Geschirr zu spülen, Betten abzuziehen oder den Abfall hinauszubringen.",
+         "Auf Airbnb lässt sich eine tiefere Reinigungsgebühr für Aufenthalte von 1 bis 2 Nächten festlegen.",
+         "Ein zweites Set Wäsche pro Bett macht kurze Wechsel am selben Tag erst möglich."],
+ "body": """
+<h2>Was bei jedem Wechsel anfällt</h2>
+<p>Zwischen Check-out und Check-in liegen oft nur wenige Stunden. In dieser Zeit muss die Wohnung gereinigt, die Wäsche gewechselt und das Verbrauchsmaterial aufgefüllt sein. Gäste, die eine Reinigungsgebühr bezahlen, erwarten ausdrücklich einen hohen Standard. Ein Haar im Bad oder ein Krümel im Besteckfach kostet schneller einen Stern als eine kleine Küche.</p>
+<p>Bewährt hat sich, mit der Wäsche zu beginnen: alle Betten abziehen und die Tücher einsammeln. So läuft die Waschmaschine, während der Rest der Wohnung gereinigt wird. Wer am selben Tag einen neuen Gast hat, braucht ein Ersatzset Bettwäsche und Tücher, das schon sauber im Schrank liegt.</p>
+
+<h2>Der Ablauf in 8 Schritten</h2>
+<ol>
+<li><strong>Lüften und Kontrolle:</strong> Fenster öffnen, kurz durch alle Räume gehen, Schäden und Fundsachen mit Foto festhalten.</li>
+<li><strong>Wäsche:</strong> Betten abziehen, Tücher, Geschirrtücher und Badvorleger einsammeln, erste Maschine starten.</li>
+<li><strong>Küche:</strong> Geschirr spülen und einräumen, Kühlschrank leeren, Backofen, Kochfeld, Kaffeemaschine und Abfalleimer reinigen.</li>
+<li><strong>Bad:</strong> WC, Dusche, Lavabo, Spiegel und Armaturen, Haare im Abfluss entfernen.</li>
+<li><strong>Oberflächen:</strong> Tische, Türgriffe, Lichtschalter, Fernbedienungen, auch unter dem Bett und in den Schubladen.</li>
+<li><strong>Böden:</strong> staubsaugen, dann feucht aufnehmen, von hinten zur Tür.</li>
+<li><strong>Betten und Auffüllen:</strong> Betten frisch beziehen, Tücher hinlegen, WC-Papier, Seife, Spülmittel, Kaffee und Abfallsäcke auffüllen.</li>
+<li><strong>Schlusskontrolle:</strong> Licht, Heizung, Fenster, Fotos aller Räume für die eigene Ablage.</li>
+</ol>
+<p>Dazu kommt alle zwei bis drei Monate eine Tiefenreinigung, zum Beispiel Fenster, Schränke innen und alle Geräte.</p>
+
+<h2>Neu seit 20. November 2026: Was Gäste beim Check-out noch tun müssen</h2>
+<p>Airbnb hat die Hausregeln vereinheitlicht. Gastgeber wählen seither aus sieben Standardregeln. Arbeiten, die normalerweise eine Reinigungskraft erledigt, dürfen Sie den Gästen in der Regel nicht mehr vorschreiben. Ausnahmen gibt es nur in besonderen Fällen.</p>
+<div class="tbl"><table>
+<thead><tr><th>Dürfen Sie weiter verlangen</th><th>Dürfen Sie nicht mehr verlangen</th></tr></thead>
+<tbody>
+<tr><td>Geschirr in die Spüle stellen</td><td>Geschirr spülen</td></tr>
+<tr><td>Benutzte Tücher an einem Ort sammeln</td><td>Betten abziehen</td></tr>
+<tr><td>Abfall und Recycling trennen</td><td>Abfall hinausbringen</td></tr>
+<tr><td>Licht löschen und die Wohnung abschliessen</td><td>Gebühren für etwas, das im Inserat schon enthalten ist, oder eigene Bussen</td></tr>
+</tbody></table></div>
+<p>Wichtig für Ihren Ablauf: Alle Regeln und Bitten müssen vor der Buchung im dafür vorgesehenen Teil des Inserats stehen. Neue Pflichten per Nachricht oder auf einem Zettel in der Wohnung sind nicht mehr erlaubt. Gäste können bei der Bewertung angeben, dass Regeln unerwartet oder übertrieben waren. Inserate mit wiederholt tiefen Bewertungen aus diesem Grund kann Airbnb entfernen.</p>
+<p>Für die Reinigung heisst das: Planen Sie pro Wechsel die Zeit für Geschirr und Abfall fest ein, statt mit Hilfe der Gäste zu rechnen. Prüfen Sie auch Ihre Anreise-Nachricht und die Gästemappe auf alte Check-out-Listen.</p>
+
+<h2>Was ein Wechsel kostet: Rechenbeispiel</h2>
+<p>Den grössten Teil der Kosten macht die Arbeitszeit aus. Als Untergrenze für den Stundenlohn hilft der Mindestlohn, den der Bund für Hausangestellte in Privathaushalten festlegt: CHF 20.35 pro Stunde für Ungelernte (Stand 1. Januar 2026). Mit dem Zuschlag für vier Wochen Ferien und einen Feiertag sind es CHF 22.15. Reinigungsfirmen verrechnen mehr, weil Sozialversicherungen, Anfahrt und Material dazukommen.</p>
+<p><em>Beispiel</em> für eine Wohnung mit 2,5 Zimmern. Die Stunden sind Annahmen, messen Sie bei Ihren ersten Wechseln die echte Zeit.</p>
+<div class="tbl"><table>
+<thead><tr><th>Annahme</th><th class="n">Stunden</th><th class="n">Lohn zu CHF 22.15</th></tr></thead>
+<tbody>
+<tr><td>Wechsel nach einem kurzen Aufenthalt</td><td class="n">3</td><td class="n">CHF 66.45</td></tr>
+<tr><td>Wechsel nach einer Woche</td><td class="n">4</td><td class="n">CHF 88.60</td></tr>
+<tr><td>Wechsel mit Tiefenreinigung</td><td class="n">6</td><td class="n">CHF 132.90</td></tr>
+</tbody></table></div>
+<p>Dazu kommen pro Wechsel das Waschen und Trocknen der Wäsche, Reinigungsmittel und Verbrauchsmaterial. Rechnen Sie diese Posten für Ihre Wohnung einmal genau aus, dann kennen Sie Ihre echten Kosten pro Wechsel.</p>
+
+<h2>Die Reinigungsgebühr richtig festlegen</h2>
+<p>Auf Airbnb legen Sie die Reinigungsgebühr pro Aufenthalt fest, im Kalender unter Preise und Gebühren. Sie können zusätzlich eine tiefere Gebühr für Aufenthalte von 1 bis 2 Nächten bestimmen. Welche gilt, entscheidet Airbnb bei der Buchung anhand der Aufenthaltsdauer. Bei Sonderangeboten wird die Gebühr nicht automatisch übernommen, Sie müssen sie selbst hinzufügen.</p>
+<p>Gäste sehen die Reinigungsgebühr als eigenen Posten im Gesamtpreis. Airbnb ordnet Inserate nach Gesamtpreis und Qualität im Vergleich zu ähnlichen Inseraten in der Nähe. Eine hohe Gebühr kann also Buchungen kosten. Airbnb empfiehlt, mit der Gebühr die Reinigung zu bezahlen und nicht zusätzlich zu verdienen.</p>
+<p><em>Beispiel:</em> Eine Reinigungsgebühr von CHF 90 macht bei 2 Nächten CHF 45 pro Nacht aus, bei 7 Nächten CHF 12.86 pro Nacht. Darum wirken hohe Gebühren vor allem bei kurzen Aufenthalten teuer. Drei Wege, damit umzugehen:</p>
+<ul>
+<li>tiefere Gebühr für 1 bis 2 Nächte</li>
+<li>Mindestaufenthalt von zwei oder drei Nächten in ruhigen Zeiten</li>
+<li>einen Teil der Reinigung in den Nachtpreis einrechnen</li>
+</ul>
+
+<h2>Checkliste vor dem ersten Gast</h2>
+<ul>
+<li>Mindestens ein Ersatzset Bettwäsche und Tücher pro Bett, sauber im Schrank</li>
+<li>Reinigungsmaterial an einem Ort, mit Liste zum Nachfüllen</li>
+<li>Schriftlicher Ablauf für die Reinigungskraft, mit Fotos, wie die Wohnung am Schluss aussehen soll</li>
+<li>Eine Vertretung, wenn die Reinigungskraft krank ist oder Ferien hat</li>
+<li>Check-out-Zeit und Check-in-Zeit mit genug Abstand für die Reinigung</li>
+<li>Hausregeln auf Airbnb an die neuen Standardregeln angepasst</li>
+<li>Fotos nach jeder Reinigung, damit Sie Schäden belegen können</li>
+</ul>
+<p>Was die Wohnung an Grundausstattung braucht, steht in der <a href="../ferienwohnung-einrichten-checkliste/">Checkliste zum Einrichten</a>. Wie Gäste ohne Schlüsselübergabe ankommen und abreisen, erklärt der Artikel <a href="../self-check-in-ferienwohnung/">Self-Check-in</a>. Und ob Sie Reinigung und Wäsche selbst organisieren oder abgeben, ist eine der Fragen im Vergleich <a href="../selbst-vermieten-oder-verwaltung/">selbst vermieten oder Verwaltung</a>.</p>
+<p>Alpinhost organisiert bei jedem Wechsel Reinigung, Wäsche und Kontrolle mit Fotos. Wie viel Ihre Wohnung nach diesen Kosten einbringt, zeigt der <a href="../../#rechner">Ertragsrechner</a>.</p>
+""",
+ "faq": [("Was muss bei der Reinigung einer Ferienwohnung gemacht werden?", "Bei jedem Wechsel: Wäsche wechseln, Küche und Bad reinigen, Oberflächen und Böden, Verbrauchsmaterial auffüllen und zum Schluss alles kontrollieren. Alle zwei bis drei Monate kommt eine Tiefenreinigung dazu."),
+         ("Darf ich Airbnb-Gäste bitten, die Betten abzuziehen?", "Seit dem 20. November 2026 in der Regel nicht mehr. Airbnb erlaubt nur noch angemessene Bitten wie Geschirr in die Spüle stellen, benutzte Tücher sammeln, Abfall trennen, Licht löschen und abschliessen. Alle Regeln müssen vor der Buchung im Inserat stehen."),
+         ("Wie hoch sollte die Reinigungsgebühr sein?", "So hoch wie Ihre echten Kosten pro Wechsel, nicht höher. Airbnb zeigt die Gebühr im Gesamtpreis und vergleicht diesen mit ähnlichen Inseraten. Für Aufenthalte von 1 bis 2 Nächten können Sie eine tiefere Gebühr festlegen."),
+         ("Wie viel Bettwäsche brauche ich pro Bett?", "Mindestens zwei Sets: eines auf dem Bett und eines sauber im Schrank. So ist ein Wechsel am selben Tag möglich, auch wenn die Wäsche vom letzten Gast noch nicht trocken ist.")],
+ "sources": [("Airbnb-Hilfe: Reinigungsgebühren zu Inseraten hinzufügen, abgerufen am 24. November 2026", "https://www.airbnb.com/help/article/58"),
+             ("Airbnb Resource Center: Everything you need to know about cleaning fees, 31. März 2026", "https://www.airbnb.com/resources/hosting-homes/a/everything-you-need-to-know-about-cleaning-fees-470"),
+             ("Airbnb Resource Center: A clear and simple checkout, 20. Oktober 2026", "https://www.airbnb.com/resources/hosting-homes/a/a-clear-and-simple-checkout-584"),
+             ("Airbnb Resource Center: Clean like a pro with these expert tips, 20. August 2024", "https://www.airbnb.com/resources/hosting-homes/a/clean-like-a-pro-with-these-expert-tips-663"),
+             ("Associated Press (NY1): Airbnb guests no longer have to wash the dishes or strip the beds at checkout, 22. Oktober 2026", "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/10/22/airbnb-guests-no-longer-have-to-wash-the-dishes-or-strip-the-beds-at-checkout"),
+             ("Skift: Airbnb’s New Policy for Hosts: Don’t Ask Guests to Wash Dishes or Strip Beds, 21. Oktober 2026", "https://skift.com/2026/10/21/airbnbs-new-policy-for-hosts-dont-ask-guests-to-wash-dishes-or-strip-beds/"),
+             ("SECO: Informationen zum NAV Hauswirtschaft, Stand 1. Januar 2026", "https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/wirtschaft-arbeit/erwerbstaetigkeit-von-auslaendern/informationen-zu-einzelnen-branchen/26_01_01%20Informationen%20zum%20NAV%20Hauswirtschaft.pdf"),
+             ("Hostfully: Wie viel sollten Sie für die Reinigung Ihrer Ferienunterkunft berechnen?, 10. März 2026", "https://www.hostfully.com/de/blog/wie-viel-sollten-sie-fuer-die-reinigung-ihrer-ferienunterkunft-berechnen/")],
 },
 ]
 
