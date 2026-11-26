@@ -57,7 +57,7 @@ ARTICLES = [
 <tr><td>Nachtpreis im Jahresschnitt</td><td class="n">CHF 205</td></tr>
 <tr><td>Auslastung 72 %, gebuchte Nächte</td><td class="n">263</td></tr>
 <tr><td>Umsatz pro Jahr</td><td class="n">CHF 53'915</td></tr>
-<tr><td>Plattformgebühr 15,5 %</td><td class="n">− CHF 8'357</td></tr>
+<tr><td><a href="../airbnb-oder-booking/">Plattformgebühr</a> 15,5 %</td><td class="n">− CHF 8'357</td></tr>
 <tr><td><b>Bleibt nach Plattformgebühr</b></td><td class="n"><b>CHF 45'558</b></td></tr>
 </tbody></table></div>
 <p>Wer selbst vermietet, behält diesen Betrag und macht die Arbeit selbst. Mit unserem Komplett-Paket (21 %) bleiben CHF 35'991 pro Jahr, also rund CHF 3'000 pro Monat. Die Reinigung deckt die Reinigungsgebühr, die der Gast zusätzlich bezahlt.</p>
@@ -194,7 +194,7 @@ ARTICLES = [
 <h2>Sieben Fragen an jede Verwaltung</h2>
 <ol>
 <li>Worauf genau wird die Provision gerechnet?</li>
-<li>Wer bezahlt die Reinigung, und zu welchem Preis?</li>
+<li>Wer bezahlt die <a href="../ferienwohnung-reinigung-waesche/">Reinigung</a>, und zu welchem Preis?</li>
 <li>Gibt es eine Einrichtungsgebühr oder eine Grundgebühr bei Leerstand?</li>
 <li>Wem gehören die Inserate und die Konten auf den Plattformen?</li>
 <li>Auf welches Konto zahlt die Plattform aus?</li>
@@ -911,7 +911,7 @@ ARTICLES = [
 <li>Fotos nach jeder Reinigung, damit Sie Schäden belegen können</li>
 </ul>
 <p>Was die Wohnung an Grundausstattung braucht, steht in der <a href="../ferienwohnung-einrichten-checkliste/">Checkliste zum Einrichten</a>. Wie Gäste ohne Schlüsselübergabe ankommen und abreisen, erklärt der Artikel <a href="../self-check-in-ferienwohnung/">Self-Check-in</a>. Und ob Sie Reinigung und Wäsche selbst organisieren oder abgeben, ist eine der Fragen im Vergleich <a href="../selbst-vermieten-oder-verwaltung/">selbst vermieten oder Verwaltung</a>.</p>
-<p>Alpinhost organisiert bei jedem Wechsel Reinigung, Wäsche und Kontrolle mit Fotos. Wie viel Ihre Wohnung nach diesen Kosten einbringt, zeigt der <a href="../../#rechner">Ertragsrechner</a>.</p>
+<p>Alpinhost organisiert bei jedem Wechsel Reinigung, Wäsche und Kontrolle mit Fotos. Wie viel Ihre Wohnung nach diesen Kosten einbringt, zeigt der <a href="../../#rechner">Ertragsrechner</a>. Ein Rechenbeispiel und die Kosten, die oft vergessen gehen, stehen im Artikel <a href="../ferienwohnung-vermieten-ertrag/">Was bringt eine Ferienwohnung wirklich ein?</a></p>
 """,
  "faq": [("Was muss bei der Reinigung einer Ferienwohnung gemacht werden?", "Bei jedem Wechsel: Wäsche wechseln, Küche und Bad reinigen, Oberflächen und Böden, Verbrauchsmaterial auffüllen und zum Schluss alles kontrollieren. Alle zwei bis drei Monate kommt eine Tiefenreinigung dazu."),
          ("Darf ich Airbnb-Gäste bitten, die Betten abzuziehen?", "Seit dem 20. November 2026 in der Regel nicht mehr. Airbnb erlaubt nur noch angemessene Bitten wie Geschirr in die Spüle stellen, benutzte Tücher sammeln, Abfall trennen, Licht löschen und abschliessen. Alle Regeln müssen vor der Buchung im Inserat stehen."),
