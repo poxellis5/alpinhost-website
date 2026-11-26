@@ -911,7 +911,7 @@ ARTICLES = [
 <li>Fotos nach jeder Reinigung, damit Sie Schäden belegen können</li>
 </ul>
 <p>Was die Wohnung an Grundausstattung braucht, steht in der <a href="../ferienwohnung-einrichten-checkliste/">Checkliste zum Einrichten</a>. Wie Gäste ohne Schlüsselübergabe ankommen und abreisen, erklärt der Artikel <a href="../self-check-in-ferienwohnung/">Self-Check-in</a>. Und ob Sie Reinigung und Wäsche selbst organisieren oder abgeben, ist eine der Fragen im Vergleich <a href="../selbst-vermieten-oder-verwaltung/">selbst vermieten oder Verwaltung</a>.</p>
-<p>Alpinhost organisiert bei jedem Wechsel Reinigung, Wäsche und Kontrolle mit Fotos. Wie viel Ihre Wohnung nach diesen Kosten einbringt, zeigt der <a href="../../#rechner">Ertragsrechner</a>.</p>
+<p>Alpinhost organisiert bei jedem Wechsel Reinigung, Wäsche und Kontrolle mit Fotos. Wie viel Ihre Wohnung nach diesen Kosten einbringt, zeigt der <a href="../../#rechner">Ertragsrechner</a>. Ein Rechenbeispiel und die Kosten, die oft vergessen gehen, stehen im Artikel <a href="../ferienwohnung-vermieten-ertrag/">Was bringt eine Ferienwohnung wirklich ein?</a></p>
 """,
  "faq": [("Was muss bei der Reinigung einer Ferienwohnung gemacht werden?", "Bei jedem Wechsel: Wäsche wechseln, Küche und Bad reinigen, Oberflächen und Böden, Verbrauchsmaterial auffüllen und zum Schluss alles kontrollieren. Alle zwei bis drei Monate kommt eine Tiefenreinigung dazu."),
          ("Darf ich Airbnb-Gäste bitten, die Betten abzuziehen?", "Seit dem 20. November 2026 in der Regel nicht mehr. Airbnb erlaubt nur noch angemessene Bitten wie Geschirr in die Spüle stellen, benutzte Tücher sammeln, Abfall trennen, Licht löschen und abschliessen. Alle Regeln müssen vor der Buchung im Inserat stehen."),
