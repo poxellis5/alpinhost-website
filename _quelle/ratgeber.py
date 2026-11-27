@@ -44,7 +44,7 @@ ARTICLES = [
 <p>«Typische Wohnung» ist der Median: Die Hälfte der Inserate am Ort verlangt mehr, die andere Hälfte weniger. In der ganzen Schweiz liegt die <a href="../airbnb-auslastung-schweiz/">Auslastung</a> bei 59 % und der Durchschnittspreis bei CHF 199, gerechnet über 36'276 Inserate.</p>
 
 <h2>Warum der Durchschnitt täuscht</h2>
-<p>In Grindelwald kostet eine Nacht im Durchschnitt CHF 296. Die typische Wohnung verlangt aber nur CHF 206. Der Grund sind grosse Chalets für acht oder zehn Personen, die den Durchschnitt nach oben ziehen. In Verbier ist der Abstand noch grösser: CHF 401 im Durchschnitt, CHF 150 im Median.</p>
+<p><a href="../ferienwohnung-grindelwald-vermieten/">In Grindelwald</a> kostet eine Nacht im Durchschnitt CHF 296. Die typische Wohnung verlangt aber nur CHF 206. Der Grund sind grosse Chalets für acht oder zehn Personen, die den Durchschnitt nach oben ziehen. In Verbier ist der Abstand noch grösser: CHF 401 im Durchschnitt, CHF 150 im Median.</p>
 <p>Wer eine 2-Zimmer-Wohnung besitzt, sollte deshalb mit dem Median rechnen und nicht mit dem Durchschnitt.</p>
 
 <h2>Der Ort entscheidet nicht allein</h2>
