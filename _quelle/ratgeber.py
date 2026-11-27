@@ -926,6 +926,104 @@ ARTICLES = [
              ("SECO: Informationen zum NAV Hauswirtschaft, Stand 1. Januar 2026", "https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/wirtschaft-arbeit/erwerbstaetigkeit-von-auslaendern/informationen-zu-einzelnen-branchen/26_01_01%20Informationen%20zum%20NAV%20Hauswirtschaft.pdf"),
              ("Hostfully: Wie viel sollten Sie für die Reinigung Ihrer Ferienunterkunft berechnen?, 10. März 2026", "https://www.hostfully.com/de/blog/wie-viel-sollten-sie-fuer-die-reinigung-ihrer-ferienunterkunft-berechnen/")],
 },
+{
+ "slug": "ferienwohnung-grindelwald-vermieten", "cat": "Vermieten", "mins": 6, "date": "2026-11-27", "stand": "November 2026",
+ "h1": "Ferienwohnung in Grindelwald vermieten: Auslastung, Preise und Gäste in Zahlen",
+ "title": "Ferienwohnung Grindelwald vermieten: die Zahlen",
+ "desc": "Ferienwohnung in Grindelwald vermieten: 72 % Auslastung, CHF 296 pro Nacht, 570 Inserate. Logiernächte, Herkunft der Gäste und Rechenbeispiel.",
+ "teaser": "Auslastung, Nachtpreise, Logiernächte und Herkunft der Gäste in Grindelwald, mit Rechenbeispiel für Eigentümer.",
+ "lead": "Eine Ferienwohnung in Grindelwald ist im Schnitt an 72 % aller Nächte gebucht, zu durchschnittlich CHF 296 pro Nacht. Das ist deutlich mehr als im Schweizer Schnitt. Doch zwischen guten und schwachen Wohnungen liegen Welten. Hier sind die Zahlen, die für Eigentümer zählen.",
+ "photo": ("grindelwald-eiger", "Chalets und Wohnhäuser im Dorf Grindelwald, links der Eiger mit Schnee, rechts ein Zug",
+           "Chalets und Wohnhäuser in Grindelwald, links der Eiger. In Grindelwald sind rund 570 Unterkünfte auf Airbnb inseriert."),
+ "key": ["Airbnb-Wohnungen in Grindelwald sind im Schnitt zu 72 % ausgelastet, der Schweizer Schnitt liegt bei 59 %.",
+         "Der durchschnittliche Nachtpreis beträgt CHF 296, die Hälfte der Inserate verlangt weniger als CHF 206.",
+         "Ferienwohnungen in Grindelwald zählten 2025 rund 372'000 einzeln gemeldete Logiernächte, 58 % mehr als 2021.",
+         "Fast zwei Drittel der Gäste kommen aus dem Ausland, in Ferienwohnungen vor allem aus Korea, den USA, Deutschland und Grossbritannien."],
+ "body": """
+<h2>Die Marktzahlen auf einen Blick</h2>
+<p>Die Zahlen gelten für alle aktiven Airbnb-Inserate in Grindelwald über zwölf Monate, von November 2025 bis Oktober 2026. Auslastung heisst: Anteil der gebuchten Nächte an allen Nächten, an denen die Wohnung buchbar war.</p>
+<div class="tbl"><table>
+<thead><tr><th>Kennzahl</th><th class="n">Grindelwald</th><th class="n">Schweiz</th></tr></thead>
+<tbody>
+<tr><td>Aktive Inserate</td><td class="n">570</td><td class="n">–</td></tr>
+<tr><td>Auslastung im Durchschnitt</td><td class="n">72 %</td><td class="n">59 %</td></tr>
+<tr><td>Nachtpreis im Durchschnitt</td><td class="n">CHF 296</td><td class="n">CHF 199</td></tr>
+<tr><td>Umsatz pro Jahr im Durchschnitt</td><td class="n">CHF 77'548</td><td class="n">–</td></tr>
+</tbody></table></div>
+<p>Grindelwald gehört damit zu den am besten gebuchten Orten der Schweiz. Im <a href="../airbnb-auslastung-schweiz/">Vergleich von 23 Schweizer Orten</a> liegt nur die Stadt Luzern höher. Am stärksten gebucht sind die Monate Juni und August, am schwächsten November und März.</p>
+
+<h2>Gute und schwache Wohnungen im Vergleich</h2>
+<p>Der Durchschnitt verdeckt grosse Unterschiede. Grosse Chalets mit hohen Preisen ziehen ihn nach oben. Aussagekräftiger ist der Median, also der Wert genau in der Mitte: Die Hälfte der Wohnungen liegt darüber, die andere Hälfte darunter.</p>
+<div class="tbl"><table>
+<thead><tr><th>Gruppe</th><th class="n">Auslastung</th><th class="n">Nachtpreis</th><th class="n">Umsatz pro Jahr</th></tr></thead>
+<tbody>
+<tr><td>Beste 10 %</td><td class="n">94 %</td><td class="n">CHF 472</td><td class="n">CHF 107'668</td></tr>
+<tr><td>Beste 25 %</td><td class="n">81 %</td><td class="n">CHF 312</td><td class="n">CHF 68'762</td></tr>
+<tr><td>Median</td><td class="n">62 %</td><td class="n">CHF 206</td><td class="n">–</td></tr>
+<tr><td>Schwächste 25 %</td><td class="n">38 %</td><td class="n">CHF 116</td><td class="n">CHF 19'563</td></tr>
+</tbody></table></div>
+<p>Die Werte jeder Spalte sind einzeln ermittelt. Eine Wohnung mit 94 % Auslastung hat also nicht automatisch auch einen Nachtpreis von CHF 472. Klar ist trotzdem: Zwischen dem schwächsten und dem besten Viertel liegt mehr als das Dreifache an Umsatz. Neben Lage und Grösse spielen Fotos, Preise, Bewertungen und schnelle Antworten eine Rolle.</p>
+
+<h2>Rechenbeispiel: Was 10 Prozentpunkte Auslastung ausmachen</h2>
+<p><em>Beispiel</em> mit einer Wohnung zum Median-Preis von CHF 206 pro Nacht:</p>
+<div class="tbl"><table>
+<thead><tr><th></th><th class="n">Median 62 %</th><th class="n">Durchschnitt 72 %</th></tr></thead>
+<tbody>
+<tr><td>Gebuchte Nächte pro Jahr</td><td class="n">226</td><td class="n">263</td></tr>
+<tr><td>Nachtpreis</td><td class="n">CHF 206</td><td class="n">CHF 206</td></tr>
+<tr><td>Umsatz pro Jahr</td><td class="n">CHF 46'556</td><td class="n">CHF 54'178</td></tr>
+</tbody></table></div>
+<p>37 Nächte mehr bringen beim gleichen Preis rund CHF 7'600 mehr Umsatz im Jahr. Davon gehen noch Plattformgebühr, Reinigung und allenfalls die Verwaltung ab. Wie viel am Schluss bleibt, zeigt der Artikel <a href="../ferienwohnung-vermieten-ertrag/">Was bringt eine Ferienwohnung ein</a>. Für Ihre eigene Wohnung rechnet der <a href="../../#rechner">Ertragsrechner</a> mit den Zahlen von Grindelwald.</p>
+
+<h2>Logiernächte: Ferienwohnungen wachsen langfristig</h2>
+<p>Grindelwald Tourismus zählt jede Übernachtung im Dorf. 2025 war mit 1'587'509 Logiernächten das drittbeste Jahr der Geschichte, nach den Rekordjahren 2023 und 2024. Die Ferienwohnungen haben seit 2021 stark zugelegt.</p>
+<div class="tbl"><table>
+<thead><tr><th>Jahr</th><th class="n">Hotels</th><th class="n">Ferienwohnungen*</th><th class="n">Total Grindelwald</th></tr></thead>
+<tbody>
+<tr><td>2021</td><td class="n">451'959</td><td class="n">236'008</td><td class="n">1'105'546</td></tr>
+<tr><td>2022</td><td class="n">651'411</td><td class="n">331'485</td><td class="n">1'415'607</td></tr>
+<tr><td>2023</td><td class="n">802'790</td><td class="n">360'994</td><td class="n">1'616'580</td></tr>
+<tr><td>2024</td><td class="n">789'418</td><td class="n">378'444</td><td class="n">1'615'374</td></tr>
+<tr><td>2025</td><td class="n">766'031</td><td class="n">372'469</td><td class="n">1'587'509</td></tr>
+</tbody></table></div>
+<p>* Nur einzeln gemeldete Übernachtungen in Ferienwohnungen. Wohnungen mit Pauschale sind nicht dabei, im Total aber schon. Das Total enthält auch Berghotels, Herbergen und Camping.</p>
+<p>2025 gingen die Hotels um 3 % zurück, die Ferienwohnungen nur um 1,6 %. Schweizweit stiegen die Logiernächte in Ferienwohnungen 2025 um 4,3 % auf 7,4 Millionen. Ein Aufenthalt in einer Ferienwohnung dauert im Schweizer Schnitt 5,9 Nächte.</p>
+
+<h2>Woher die Gäste kommen</h2>
+<p>Über alle Unterkünfte stammen 35 % der Logiernächte in Grindelwald aus der Schweiz, 23 % aus Asien, 22 % aus dem übrigen Europa, 14 % aus Amerika und 6 % aus den Golfstaaten, Afrika und Ozeanien. In den Ferienwohnungen sieht die Spitze so aus:</p>
+<div class="tbl"><table>
+<thead><tr><th>Herkunft</th><th class="n">Logiernächte 2025</th><th class="n">Veränderung zu 2024</th></tr></thead>
+<tbody>
+<tr><td>Schweiz und Liechtenstein</td><td class="n">71'064</td><td class="n">−25,2 %</td></tr>
+<tr><td>Korea</td><td class="n">55'086</td><td class="n">−3,7 %</td></tr>
+<tr><td>USA und Kanada</td><td class="n">54'907</td><td class="n">+15,4 %</td></tr>
+<tr><td>Deutschland</td><td class="n">39'221</td><td class="n">−6,2 %</td></tr>
+<tr><td>Grossbritannien und Irland</td><td class="n">23'117</td><td class="n">+22,5 %</td></tr>
+</tbody></table></div>
+<p>Für Eigentümer heisst das: Das Inserat muss auf Englisch überzeugen, die Hausregeln und die Anreise-Nachricht ebenso. Viele Gäste reisen von weit her an, kommen spät abends mit der Bahn und kennen weder Schnee noch Schweizer Waschmaschinen.</p>
+
+<h2>Checkliste: So holen Sie in Grindelwald mehr heraus</h2>
+<ul>
+<li><strong>Preise nach Saison:</strong> Im Juni und August höher, im November und März tiefer. Ein fester Preis übers ganze Jahr verschenkt Geld in der Hochsaison und Nächte in der Nebensaison.</li>
+<li><strong>Inserat auf Englisch:</strong> Titel, Beschreibung und Fotos für internationale Gäste schreiben, mit Bahnhof, Bahnen und Aussicht auf den Eiger.</li>
+<li><strong>Anreise ohne Wartezeit:</strong> Viele Gäste kommen spät an. Ein <a href="../self-check-in-ferienwohnung/">Self-Check-in</a> mit Schlüsselbox oder Smart Lock erspart Ihnen Abende am Telefon.</li>
+<li><strong>Winter vorbereiten:</strong> Platz für Skis, ein Ort für nasse Schuhe und eine Heizung, die sich aus der Ferne steuern lässt. Mehr dazu im Artikel <a href="../ferienwohnung-winter-vermieten/">Ferienwohnung im Winter vermieten</a>.</li>
+<li><strong>Kalender offen halten:</strong> Wer viele Wochen selbst blockiert, fällt in die Gruppe mit tiefer Auslastung. Eigene Ferien früh eintragen, am besten in der Nebensaison.</li>
+</ul>
+<p>Rechtliche Fragen wie das <a href="../zweitwohnungsgesetz-ferienwohnung/">Zweitwohnungsgesetz</a> oder die <a href="../kurtaxe-ferienwohnung/">Kurtaxe</a> behandeln wir in eigenen Artikeln.</p>
+
+<h2>Wie Alpinhost hilft</h2>
+<p>Wir wohnen in Grindelwald und vermieten Ferienwohnungen auf Airbnb und Booking.com: Inserat, Preise nach Saison, Gäste, Reinigung und Abrechnung. Wie viel Ihre Wohnung einbringen kann, sehen Sie im <a href="../../#rechner">Ertragsrechner</a>. Für eine Einschätzung mit Vergleichswohnungen aus Ihrer Nachbarschaft <a href="../../#kontakt">schreiben Sie uns</a>.</p>
+""",
+ "faq": [("Wie gut sind Ferienwohnungen in Grindelwald gebucht?", "Airbnb-Wohnungen in Grindelwald sind im Schnitt an 72 % der buchbaren Nächte belegt (November 2025 bis Oktober 2026). Die Hälfte der Wohnungen liegt unter 62 %, das beste Viertel über 81 %."),
+         ("Wie viel kostet eine Nacht in einer Ferienwohnung in Grindelwald?", "Im Durchschnitt CHF 296. Die Hälfte der Inserate verlangt weniger als CHF 206, das beste Zehntel CHF 472 und mehr. Der Durchschnitt liegt höher, weil grosse Chalets ihn nach oben ziehen."),
+         ("Wann ist in Grindelwald Hochsaison?", "Am stärksten gebucht sind Juni und August. Am schwächsten sind November und März. In diesen Monaten lohnen sich tiefere Preise oder kürzere Mindestaufenthalte."),
+         ("Woher kommen die Gäste in Grindelwald?", "2025 stammten 35 % der Logiernächte aus der Schweiz, 23 % aus Asien, 22 % aus dem übrigen Europa und 14 % aus Amerika. In Ferienwohnungen sind nach den Schweizer Gästen Korea, die USA und Kanada, Deutschland und Grossbritannien am stärksten.")],
+ "sources": [("GuestFavorites: Airbnb Occupancy Rates in Grindelwald, Zeitraum November 2025 bis Oktober 2026, aktualisiert am 2. November 2026", "https://www.guestfavorites.com/airbnb-occupancy-rates-in-grindelwald-switzerland"),
+             ("Grindelwald Tourismus: Geschäftsbericht 2025 (Logiernächte 2021 bis 2025, Herkunft der Gäste)", "https://grindelwald.swiss/files/websites/grindelwald.swiss/Bilder/Footer/%C3%9Cber%20uns/Gesch%C3%A4ftsbericht/Jahresbericht%20GT%202025.pdf?version=037287d307446e6b"),
+             ("Plattform J: 2025 war das drittbeste Geschäftsjahr, 24. Juni 2026", "https://www.plattformj.ch/artikel/244277/"),
+             ("Bundesamt für Statistik: Steigerung um 4,7 % in der Parahotellerie im Jahr 2025, 29. Mai 2026", "https://www.admin.ch/de/newnsb/DV17RfFkK2dtKmgVs_tYb")],
+},
 ]
 
 # ---------- Datenseite: Auslastung nach Ort (Zahlen aus dem Rechner in src.html)
@@ -971,7 +1069,7 @@ def _rg_market_article():
 <h3>Städte sind gleichmässig gebucht</h3>
 <p>Zürich, Genf, Lausanne, Bern, Basel und Lugano liegen alle zwischen {round(cmin*100)} und {round(cmax*100)} %. Die Nachtpreise sind tiefer als in den Bergen, von CHF {min(c["adr"] for c in cities)} bis CHF {max(c["adr"] for c in cities)}. Die Stadt Luzern sticht heraus: {pct(top)} Auslastung bei CHF {top["adr"]} pro Nacht.</p>
 <h3>Die Jungfrau Region verbindet beides</h3>
-<p>Grindelwald erreicht {pct(g)} bei CHF {g["adr"]} pro Nacht. Interlaken liegt bei {pct(by["interlaken"])} und CHF {by["interlaken"]["adr"]}, Wengen, Mürren und Lauterbrunnen bei {pct(by["lauterbrunnen"])} und CHF {by["lauterbrunnen"]["adr"]}. Hohe Auslastung und hohe Preise kommen hier zusammen.</p>
+<p><a href="../ferienwohnung-grindelwald-vermieten/">Grindelwald</a> erreicht {pct(g)} bei CHF {g["adr"]} pro Nacht. Interlaken liegt bei {pct(by["interlaken"])} und CHF {by["interlaken"]["adr"]}, Wengen, Mürren und Lauterbrunnen bei {pct(by["lauterbrunnen"])} und CHF {by["lauterbrunnen"]["adr"]}. Hohe Auslastung und hohe Preise kommen hier zusammen.</p>
 <h3>Wintersportorte: weniger Nächte, höhere Preise</h3>
 <p>Die grossen Wintersportorte im Wallis und in Graubünden liegen zwischen {round(smin*100)} und {round(smax*100)} %. Dafür sind die Preise oft hoch: {dear[0]["name"]} führt mit CHF {dear[0]["adr"]} pro Nacht, {dear[1]["name"]} folgt mit CHF {dear[1]["adr"]}.</p>
 
@@ -1014,6 +1112,7 @@ def _rg_market_article():
     }
 
 RG_CREDITS.setdefault("luzern-kapellbruecke", {"author": "Leonhard Lenz", "lic": "CC0", "desc": ""})
+RG_CREDITS.setdefault("grindelwald-eiger", {"author": "Leonhard Lenz", "lic": "CC0", "desc": ""})
 ARTICLES.insert(1, _rg_market_article())
 
 RG_BY_SLUG = {a["slug"]: a for a in ARTICLES}

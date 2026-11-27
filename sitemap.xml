@@ -40,9 +40,9 @@
   <url><loc>https://alpinhost.ch/fr/a-propos/</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="de-CH" href="https://alpinhost.ch/ueber-uns/"/><xhtml:link rel="alternate" hreflang="en" href="https://alpinhost.ch/en/about-us/"/><xhtml:link rel="alternate" hreflang="fr-CH" href="https://alpinhost.ch/fr/a-propos/"/><xhtml:link rel="alternate" hreflang="it-CH" href="https://alpinhost.ch/it/chi-siamo/"/><xhtml:link rel="alternate" hreflang="es" href="https://alpinhost.ch/es/sobre-nosotros/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://alpinhost.ch/ueber-uns/"/></url>
   <url><loc>https://alpinhost.ch/it/chi-siamo/</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="de-CH" href="https://alpinhost.ch/ueber-uns/"/><xhtml:link rel="alternate" hreflang="en" href="https://alpinhost.ch/en/about-us/"/><xhtml:link rel="alternate" hreflang="fr-CH" href="https://alpinhost.ch/fr/a-propos/"/><xhtml:link rel="alternate" hreflang="it-CH" href="https://alpinhost.ch/it/chi-siamo/"/><xhtml:link rel="alternate" hreflang="es" href="https://alpinhost.ch/es/sobre-nosotros/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://alpinhost.ch/ueber-uns/"/></url>
   <url><loc>https://alpinhost.ch/es/sobre-nosotros/</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="de-CH" href="https://alpinhost.ch/ueber-uns/"/><xhtml:link rel="alternate" hreflang="en" href="https://alpinhost.ch/en/about-us/"/><xhtml:link rel="alternate" hreflang="fr-CH" href="https://alpinhost.ch/fr/a-propos/"/><xhtml:link rel="alternate" hreflang="it-CH" href="https://alpinhost.ch/it/chi-siamo/"/><xhtml:link rel="alternate" hreflang="es" href="https://alpinhost.ch/es/sobre-nosotros/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://alpinhost.ch/ueber-uns/"/></url>
-  <url><loc>https://alpinhost.ch/ratgeber/</loc><lastmod>2026-11-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://alpinhost.ch/ratgeber/</loc><lastmod>2026-11-27</lastmod><priority>0.7</priority></url>
   <url><loc>https://alpinhost.ch/ratgeber/ferienwohnung-vermieten-ertrag/</loc><lastmod>2026-11-25</lastmod><priority>0.6</priority></url>
-  <url><loc>https://alpinhost.ch/ratgeber/airbnb-auslastung-schweiz/</loc><lastmod>2026-11-24</lastmod><priority>0.6</priority></url>
+  <url><loc>https://alpinhost.ch/ratgeber/airbnb-auslastung-schweiz/</loc><lastmod>2026-11-27</lastmod><priority>0.6</priority></url>
   <url><loc>https://alpinhost.ch/ratgeber/airbnb-oder-booking/</loc><lastmod>2026-11-24</lastmod><priority>0.6</priority></url>
   <url><loc>https://alpinhost.ch/ratgeber/selbst-vermieten-oder-verwaltung/</loc><lastmod>2026-11-27</lastmod><priority>0.6</priority></url>
   <url><loc>https://alpinhost.ch/ratgeber/self-check-in-ferienwohnung/</loc><lastmod>2026-11-22</lastmod><priority>0.6</priority></url>
@@ -54,4 +54,5 @@
   <url><loc>https://alpinhost.ch/ratgeber/versicherung-ferienwohnung-vermieten/</loc><lastmod>2026-11-24</lastmod><priority>0.6</priority></url>
   <url><loc>https://alpinhost.ch/ratgeber/ferienwohnung-winter-vermieten/</loc><lastmod>2026-11-24</lastmod><priority>0.6</priority></url>
   <url><loc>https://alpinhost.ch/ratgeber/ferienwohnung-reinigung-waesche/</loc><lastmod>2026-11-26</lastmod><priority>0.6</priority></url>
+  <url><loc>https://alpinhost.ch/ratgeber/ferienwohnung-grindelwald-vermieten/</loc><lastmod>2026-11-27</lastmod><priority>0.6</priority></url>
 </urlset>
