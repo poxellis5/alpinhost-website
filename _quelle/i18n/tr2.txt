@@ -52,11 +52,11 @@ fr: Nous confirmons la réservation, vérifions l'hôte et envoyons le message d
 it: Confermiamo la prenotazione, verifichiamo l'ospite e inviamo il messaggio di benvenuto.
 es: Confirmamos la reserva, verificamos al huésped y enviamos el mensaje de bienvenida.
 
-de: Wir melden uns am selben Werktag. Lieber direkt anrufen? <b>+41 79 531 81 11</b>
-en: We'll get back to you the same working day. Prefer to call? <b>+41 79 531 81 11</b>
-fr: Nous vous répondons le jour ouvrable même. Vous préférez appeler ? <b>+41 79 531 81 11</b>
-it: La ricontattiamo in giornata. Preferisce chiamare? <b>+41 79 531 81 11</b>
-es: Le contestamos el mismo día laborable. ¿Prefiere llamar? <b>+41 79 531 81 11</b>
+de: Wir melden uns am selben Werktag. Lieber direkt anrufen? <b>+41 76 275 81 96</b>
+en: We'll get back to you the same working day. Prefer to call? <b>+41 76 275 81 96</b>
+fr: Nous vous répondons le jour ouvrable même. Vous préférez appeler ? <b>+41 76 275 81 96</b>
+it: La ricontattiamo in giornata. Preferisce chiamare? <b>+41 76 275 81 96</b>
+es: Le contestamos el mismo día laborable. ¿Prefiere llamar? <b>+41 76 275 81 96</b>
 
 de: Luzern · Kriens · Horw · Weggis · Vitznau · Gersau · Engelberg · Zug · Andermatt
 en: Lucerne · Kriens · Horw · Weggis · Vitznau · Gersau · Engelberg · Zug · Andermatt
@@ -172,11 +172,11 @@ fr: L'hôte paie les frais de ménage en plus. Ils servent au ménage et ne font
 it: Le spese di pulizia le paga l'ospite in aggiunta. Vanno alla pulizia e non fanno parte del calcolo.
 es: La tarifa de limpieza la paga el huésped aparte. Se destina a la limpieza y no forma parte del cálculo.
 
-de: WhatsApp und Telefon: +41 79 531 81 11<br/>E-Mail: <a href="{H0}">info@alpinhost.ch</a>
-en: WhatsApp and phone: +41 79 531 81 11<br/>Email: <a href="{H0}">info@alpinhost.ch</a>
-fr: WhatsApp et téléphone : +41 79 531 81 11<br/>E-mail : <a href="{H0}">info@alpinhost.ch</a>
-it: WhatsApp e telefono: +41 79 531 81 11<br/>E-mail: <a href="{H0}">info@alpinhost.ch</a>
-es: WhatsApp y teléfono: +41 79 531 81 11<br/>Correo: <a href="{H0}">info@alpinhost.ch</a>
+de: WhatsApp und Telefon: +41 76 275 81 96<br/>E-Mail: <a href="{H0}">info@alpinhost.ch</a>
+en: WhatsApp and phone: +41 76 275 81 96<br/>Email: <a href="{H0}">info@alpinhost.ch</a>
+fr: WhatsApp et téléphone : +41 76 275 81 96<br/>E-mail : <a href="{H0}">info@alpinhost.ch</a>
+it: WhatsApp e telefono: +41 76 275 81 96<br/>E-mail: <a href="{H0}">info@alpinhost.ch</a>
+es: WhatsApp y teléfono: +41 76 275 81 96<br/>Correo: <a href="{H0}">info@alpinhost.ch</a>
 
 de: Wir betreuen Wohnungen in der Stadt Bern und im Umland bis nach Thun und Spiez, am Tor zum Berner Oberland.
 en: We manage apartments in the city of Bern and the surrounding area as far as Thun and Spiez, the gateway to the Bernese Oberland.

@@ -4,11 +4,11 @@ fr: Gestion de locations de vacances pour Airbnb et Booking.com dans toute la Su
 it: Gestione di case vacanza per Airbnb e Booking.com in tutta la Svizzera.
 es: Gestión de alquileres vacacionales para Airbnb y Booking.com en toda Suiza.
 
-de: WhatsApp und Telefon: +41 79 531 81 11
-en: WhatsApp and phone: +41 79 531 81 11
-fr: WhatsApp et téléphone : +41 79 531 81 11
-it: WhatsApp e telefono: +41 79 531 81 11
-es: WhatsApp y teléfono: +41 79 531 81 11
+de: WhatsApp und Telefon: +41 76 275 81 96
+en: WhatsApp and phone: +41 76 275 81 96
+fr: WhatsApp et téléphone : +41 76 275 81 96
+it: WhatsApp e telefono: +41 76 275 81 96
+es: WhatsApp y teléfono: +41 76 275 81 96
 
 de: WhatsApp und Telefon:
 en: WhatsApp and phone:
