@@ -34,7 +34,7 @@
   function val(name){ var el=document.querySelector('input[name="'+name+'"]:checked'); return el?parseFloat(el.value):0; }
   function calc(){
     var key = document.getElementById("region").value, r = R[key];
-    var i = val("rooms"), c = val("pkg");
+    var i = val("rooms");
     var w = document.getElementById("warn");
     if (!r){
       document.getElementById("res").innerHTML = "Estimation personnalisée";
@@ -47,7 +47,7 @@
     var adr = Math.round(r.adr*SIZE_ADR[i]/5)*5;
     var nights = Math.round(365*occ);
     var gross = nights * adr;
-    var fee = gross*FEE, net = gross-fee, comm = net*c, keep = net-comm;
+    var fee = gross*FEE, net = gross-fee, keep = net;
     var m = keep/12;
     document.getElementById("res").innerHTML = chf(m*0.85) + " – " + chf(m*1.15).replace("CHF ","") + " <small>par mois</small>";
     document.getElementById("lines").innerHTML =
@@ -56,8 +56,7 @@
       "<div><span>Prix moyen par nuit</span><span>"+chf(adr)+"</span></div>"+
       "<div><span>Chiffre d’affaires annuel</span><span>"+chf(gross)+"</span></div>"+
       "<div><span>Frais de plateforme 15,5 %</span><span>− "+chf(fee).replace("CHF ","")+"</span></div>"+
-      "<div><span>Commission "+Math.round(c*100)+" %</span><span>− "+chf(comm).replace("CHF ","")+"</span></div>"+
-      "<div><span>Il vous reste par an</span><span>"+chf(keep)+"</span></div>";
+      "<div><span>Revenu locatif après frais de plateforme par an</span><span>"+chf(keep)+"</span></div>";
     w.hidden=true;
     document.getElementById("basis").textContent = r.n ? "Base : "+r.n.toLocaleString("de-CH").replace(/,/g,"’")+" annonces Airbnb actives – "+r.name+", prix moyen par nuit "+chf(r.adr)+", taux d’occupation moyen "+Math.round(r.occ*100)+" %." : "Base : moyenne des annonces Airbnb de Suisse centrale, prix moyen par nuit "+chf(r.adr)+", taux d’occupation moyen "+Math.round(r.occ*100)+" %.";
   }

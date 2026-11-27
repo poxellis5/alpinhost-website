@@ -1,5 +1,5 @@
 <title>Alpinhost</title>
-<meta name="description" content="Ferienwohnungs-Management für Airbnb und Booking.com in der ganzen Schweiz. Vor Ort in der Jungfrau Region, in Bern und in der Innerschweiz. 18 % oder 21 %, keine Einrichtungsgebühr, 3 Monate Kündigungsfrist.">
+<meta name="description" content="Ferienwohnungs-Management für Airbnb und Booking.com in der ganzen Schweiz. Vor Ort in der Jungfrau Region, in Bern und in der Innerschweiz. Keine Einrichtungsgebühr, 3 Monate Kündigungsfrist.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
@@ -136,7 +136,7 @@ section.block{padding-block:84px}
 @media (prefers-reduced-motion: reduce){.items .chev{transition:none}}
 .plan .choose{justify-self:start;margin-top:6px}
 @media (max-width:820px){.pricing{grid-template-columns:1fr}}
-.conditions{margin-top:20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.conditions{margin-top:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 .cond{border-top:2px solid var(--ink);padding-top:14px}
 .cond b{display:block;font-family:var(--display);font-size:17px;margin-bottom:4px}
 .cond p{color:var(--muted);font-size:15px}
@@ -284,7 +284,7 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
       <h1 style="margin-top:14px">Ihre Ferienwohnung vermietet. <em>Ohne dass Sie sich kümmern.</em></h1>
       <p class="lead">Wir übernehmen Inserat, Preise, Gäste, Reinigung und Abrechnung. Wir bieten die ganze Schweiz an und sind in der Jungfrau Region, in Bern und in der Innerschweiz selbst vor Ort.</p>
       <div class="terms num" aria-label="Konditionen auf einen Blick">
-        <div><span>Provision</span><b>18 % oder 21 %</b></div>
+        <div><span>Kosten</span><b>Nur bei Buchung</b></div>
         <div><span>Einrichtungsgebühr</span><b>CHF 0</b></div>
         <div><span>Bei Leerstand</span><b>CHF 0</b></div>
         <div><span>Kündigungsfrist</span><b>3 Monate</b></div>
@@ -350,13 +350,13 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
 <section class="block" id="preise" style="padding-top:0">
   <div class="wrap">
     <div class="head">
-      <div><p class="eyebrow">Preise</p><h2 style="margin-top:12px">18 oder 21 Prozent. Sonst nichts.</h2></div>
-      <p class="lead">Wir verdienen nur, wenn Ihre Wohnung gebucht wird. Marktüblich sind in der Schweiz 15 bis 25 Prozent, je nach Leistung und Berechnungsgrundlage. Wir sagen offen, worauf unser Prozentsatz gerechnet wird.</p>
+      <div><p class="eyebrow">Preise</p><h2 style="margin-top:12px">Zwei Pakete. Keine Fixkosten.</h2></div>
+      <p class="lead">Wir verdienen nur, wenn Ihre Wohnung gebucht wird. Ihr persönliches Angebot erhalten Sie nach der kostenlosen Prüfung Ihrer Wohnung.</p>
     </div>
     <div class="pricing">
       <article class="plan" id="p-basis">
         <span class="tag">Basis</span>
-        <div class="price num">18 %<small>vom Übernachtungsumsatz</small></div>
+        <div class="price" style="font-size:clamp(32px,4vw,42px)">Auf Anfrage<small style="display:block;margin:6px 0 0">nach kostenloser Prüfung</small></div>
         <p style="color:var(--muted)">Für Eigentümer in der Nähe, die Reinigung und Schlüssel selbst organisieren.</p>
         <ul class="items">
           <li><details class="yes"><summary><svg class="ck" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.2"/></svg><span>Inserat, Texte und Fotoauswahl</span><svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary><p>Wir schreiben das Inserat auf Deutsch und Englisch, auf Wunsch auch auf Französisch, Italienisch und Spanisch, wählen die besten Fotos aus und ordnen sie so, dass die Wohnung in der Suche auffällt. Neue Profi-Fotos organisieren wir auf Wunsch zum Fixpreis.</p></details></li>
@@ -366,11 +366,11 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
           <li><details class="yes"><summary><svg class="ck" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.2"/></svg><span>Monatsbericht mit allen Buchungen</span><svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary><p>Ende Monat erhalten Sie eine Übersicht mit allen Buchungen, Einnahmen und unserer Provision. Damit haben Sie auch die Belege für Ihre Steuererklärung.</p></details></li>
           <li><details class="no"><summary><svg class="ck" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10h10" stroke="currentColor" stroke-width="2"/></svg><span>Reinigung, Wäsche und Check-in organisieren Sie</span><svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary><p>Sie beauftragen und bezahlen Ihr eigenes Reinigungsteam und regeln die Schlüssel. Wir sagen Ihrem Team nach jeder Buchung, wann gereinigt werden muss.</p></details></li>
         </ul>
-        <a class="btn btn-ghost choose" href="#kontakt" data-pkg="Basis 18 %">Basis wählen</a>
+        <a class="btn btn-ghost choose" href="#kontakt" data-pkg="Basis">Basis wählen</a>
       </article>
       <article class="plan feature" id="p-komplett">
         <span class="tag">Komplett · empfohlen</span>
-        <div class="price num">21 %<small>vom Übernachtungsumsatz</small></div>
+        <div class="price" style="font-size:clamp(32px,4vw,42px)">Auf Anfrage<small style="display:block;margin:6px 0 0">nach kostenloser Prüfung</small></div>
         <p style="color:var(--muted)">Wir führen alles. Sie haben eine Ansprechperson und sonst keine Arbeit.</p>
         <ul class="items">
           <li><details class="yes"><summary><svg class="ck" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.2"/></svg><span>Alles aus dem Basis-Paket</span><svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary><p>Inserat, Preise, Gästebetreuung rund um die Uhr und Monatsbericht sind inbegriffen.</p></details></li>
@@ -380,30 +380,14 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
           <li><details class="yes"><summary><svg class="ck" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.2"/></svg><span>Kleine Reparaturen bis zum vereinbarten Betrag</span><svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary><p>Eine defekte Glühbirne oder ein tropfender Wasserhahn: Kleinigkeiten erledigen wir sofort bis zu dem Betrag, den wir mit Ihnen vereinbaren. Alles darüber nur mit Ihrer Freigabe.</p></details></li>
           <li><details class="yes"><summary><svg class="ck" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.2"/></svg><span>Kontrolle nach jedem Wechsel, mit Fotos</span><svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary><p>Nach jeder Reinigung prüfen wir die Wohnung nach Checkliste und machen Fotos. Schäden melden wir sofort und fordern sie über die Plattform ein.</p></details></li>
         </ul>
-        <a class="btn btn-primary choose" href="#kontakt" data-pkg="Komplett 21 %">Komplett wählen</a>
+        <a class="btn btn-primary choose" href="#kontakt" data-pkg="Komplett">Komplett wählen</a>
       </article>
     </div>
     <div class="conditions">
-      <div class="cond"><b>Worauf wir rechnen</b><p>Übernachtungsumsatz nach Abzug der Plattformgebühr. Nicht auf die Reinigungsgebühr.</p></div>
       <div class="cond"><b>Was nichts kostet</b><p>Keine Einrichtungsgebühr, keine Grundgebühr, keine Mindestlaufzeit. Kündigung jederzeit mit 3 Monaten Frist auf Monatsende.</p></div>
       <div class="cond"><b>Was separat ist</b><p>Fotos, Ausstattung und Möblierung zum Fixpreis, den wir Ihnen vorher nennen. Die Reinigung deckt die Reinigungsgebühr, die der Gast bezahlt.</p></div>
     </div>
 
-    <div class="example">
-      <div style="display:grid;gap:12px;align-content:start">
-        <p class="eyebrow">Rechenbeispiel</p>
-        <h3 id="p-beispiel" style="font-size:26px">Eine Buchung, offen gerechnet.</h3>
-        <p>3 Nächte zu CHF 240. Airbnb verlangt von professionellen Gastgebern rund 15,5 Prozent Gebühr. Die Reinigungsgebühr zahlt der Gast, sie geht an die Reinigung. Die Auszahlung geht direkt von der Plattform an Sie, wir stellen Ende Monat unsere Provision in Rechnung.</p>
-      </div>
-      <div class="receipt num" aria-label="Rechenbeispiel">
-        <div class="row"><span>3 Nächte × CHF 240</span><span>720.00</span></div>
-        <div class="row minus"><span>Plattformgebühr 15,5 %</span><span>− 111.60</span></div>
-        <div class="row"><span>Übernachtungsumsatz netto</span><span>608.40</span></div>
-        <div class="row minus"><span>Provision Komplett 21 %</span><span>− 127.76</span></div>
-        <div class="row total"><span>Bleibt bei Ihnen</span><span>CHF 480.64</span></div>
-        <p class="note">Die Reinigungsgebühr zahlt der Gast zusätzlich. Sie geht an die Reinigung und ist nicht Teil der Rechnung.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -466,17 +450,10 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
             <input type="radio" name="rooms" id="r4" value="3"><label for="r4">4+ Zimmer</label>
           </div>
         </fieldset>
-        <fieldset class="field">
-          <legend>Paket</legend>
-          <div class="seg">
-            <input type="radio" name="pkg" id="p18" value="0.18"><label for="p18">Basis 18 %</label>
-            <input type="radio" name="pkg" id="p20" value="0.21" checked><label for="p20">Komplett 21 %</label>
-          </div>
-        </fieldset>
         <p style="font-size:14px;color:var(--muted)">Grundlage sind echte Marktdaten pro Ort: durchschnittliche Auslastung und Nachtpreis aller aktiven Airbnb-Inserate der letzten 12 Monate (November 2025 bis Oktober 2026). Der Nachtpreis wird nach Wohnungsgrösse angepasst.</p>
       </form>
       <div class="out" aria-live="polite">
-        <p class="eyebrow">Geschätzt pro Monat, im Jahresschnitt</p>
+        <p class="eyebrow">Geschätzter Mietertrag pro Monat nach Plattformgebühr</p>
         <div class="big num" id="res">CHF 0</div>
         <div class="lines num" id="lines"></div>
         <p class="fine" id="basis" style="color:#C9D6DD"></p>
@@ -570,7 +547,7 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
     </div>
     <div class="faq">
       <details id="frage-1"><summary>Wie viel verdiene ich mit meiner Wohnung?</summary><div class="ans">Das hängt von Ort, Grösse und Ausstattung ab. Der Rechner oben gibt eine erste Schätzung. Nach einer Besichtigung nennen wir Ihnen eine Spanne mit allen Annahmen. Eine Ertragsgarantie geben wir nicht.</div></details>
-      <details id="frage-2"><summary>Worauf genau rechnen Sie die 18 oder 21 Prozent?</summary><div class="ans">Auf den Übernachtungsumsatz nach Abzug der Plattformgebühr. Die Reinigungsgebühr zahlt der Gast zusätzlich, darauf verlangen wir keine Provision. Steht die Wohnung leer, zahlen Sie nichts.</div></details>
+      <details id="frage-2"><summary>Was kostet Ihre Verwaltung?</summary><div class="ans">Das hängt von Ort, Grösse und Paket ab. Ihr persönliches Angebot erhalten Sie nach der kostenlosen Prüfung Ihrer Wohnung. Es gibt keine Einrichtungsgebühr, und steht die Wohnung leer, zahlen Sie nichts.</div></details>
       <details id="frage-3"><summary>Wer bezahlt die Reinigung?</summary><div class="ans">Der Gast. Für jede Buchung gibt es eine Reinigungsgebühr, die die Plattform zusammen mit dem Übernachtungsumsatz an Sie auszahlt. Im Komplett-Paket bezahlen wir das Reinigungsteam und stellen Ihnen die Reinigung Ende Monat zusammen mit unserer Provision in Rechnung, zum Selbstkostenpreis und ohne Provision. Im Basis-Paket organisieren und bezahlen Sie die Reinigung selbst.</div></details>
       <details id="frage-4"><summary>Wie lange bin ich gebunden?</summary><div class="ans">Es gibt keine Mindestlaufzeit. Sie können jederzeit mit 3 Monaten Frist auf Monatsende kündigen. Bereits bestätigte Buchungen führen wir zu Ende oder übergeben sie geordnet.</div></details>
       <details id="frage-5"><summary>Was ist mit Versicherung und Schäden?</summary><div class="ans">Wir prüfen mit Ihnen vor dem Start, ob Ihre Gebäude-, Hausrat- und Haftpflichtversicherung die Kurzzeitvermietung abdeckt. Schäden melden wir mit Fotos bei der Plattform. Kleine Reparaturen erledigen wir im Komplett-Paket bis zum vereinbarten Betrag, alles darüber nur nach Ihrer Freigabe.</div></details>
@@ -600,7 +577,7 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
         <div><label for="f-ort">Ort der Wohnung</label><input id="f-ort" name="ort" placeholder="z.B. Grindelwald" required></div>
         <div><label for="f-zi">Zimmer</label><select id="f-zi" name="zi"><option>1</option><option selected>2</option><option>3</option><option>4 oder mehr</option></select></div>
         <div><label for="f-status">Sie sind</label><select id="f-status" name="status"><option>Eigentümer</option><option>Mieter</option></select></div>
-        <div><label for="f-pkg">Paket</label><select id="f-pkg" name="pkg"><option>Komplett 21 %</option><option>Basis 18 %</option><option>Noch offen</option></select></div>
+        <div><label for="f-pkg">Paket</label><select id="f-pkg" name="pkg"><option>Komplett</option><option>Basis</option><option>Noch offen</option></select></div>
         <div class="full"><label for="f-msg">Nachricht (optional)</label><textarea id="f-msg" name="msg" placeholder="Wird die Wohnung schon vermietet? Seit wann?"></textarea></div>
         <input type="text" name="_honey" id="f-hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         <div class="full formbtns"><button class="btn btn-primary" type="submit">Anfrage senden</button><button class="btn btn-wa" type="button" id="f-wa">Per WhatsApp senden</button></div>
@@ -618,7 +595,7 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
       <div><p class="eyebrow">Kostenlose Prüfung</p><h3 id="m-title" style="margin-top:6px">Wohnung anmelden</h3></div>
       <button class="modal-x" type="button" id="m-close" aria-label="Schliessen">×</button>
     </div>
-    <div class="modal-pkg"><span>Gewähltes Paket</span><b id="m-pkgname">Komplett 21 %</b></div>
+    <div class="modal-pkg"><span>Gewähltes Paket</span><b id="m-pkgname">Komplett</b></div>
     <form id="m-form" novalidate>
       <div><label for="m-name">Name</label><input id="m-name" autocomplete="name"></div>
       <div><label for="m-tel">Telefon</label><input id="m-tel" type="tel" autocomplete="tel"></div>
@@ -675,7 +652,7 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
   function val(name){ var el=document.querySelector('input[name="'+name+'"]:checked'); return el?parseFloat(el.value):0; }
   function calc(){
     var key = document.getElementById("region").value, r = R[key];
-    var i = val("rooms"), c = val("pkg");
+    var i = val("rooms");
     var w = document.getElementById("warn");
     if (!r){
       document.getElementById("res").innerHTML = "Persönliche Schätzung";
@@ -688,7 +665,7 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
     var adr = Math.round(r.adr*SIZE_ADR[i]/5)*5;
     var nights = Math.round(365*occ);
     var gross = nights * adr;
-    var fee = gross*FEE, net = gross-fee, comm = net*c, keep = net-comm;
+    var fee = gross*FEE, net = gross-fee, keep = net;
     var m = keep/12;
     document.getElementById("res").innerHTML = chf(m*0.85) + " – " + chf(m*1.15).replace("CHF ","") + " <small>pro Monat</small>";
     document.getElementById("lines").innerHTML =
@@ -697,8 +674,7 @@ footer .credits{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18
       "<div><span>Nachtpreis im Schnitt</span><span>"+chf(adr)+"</span></div>"+
       "<div><span>Umsatz pro Jahr</span><span>"+chf(gross)+"</span></div>"+
       "<div><span>Plattformgebühr 15,5 %</span><span>− "+chf(fee).replace("CHF ","")+"</span></div>"+
-      "<div><span>Provision "+Math.round(c*100)+" %</span><span>− "+chf(comm).replace("CHF ","")+"</span></div>"+
-      "<div><span>Bleibt bei Ihnen pro Jahr</span><span>"+chf(keep)+"</span></div>";
+      "<div><span>Mietertrag nach Plattformgebühr pro Jahr</span><span>"+chf(keep)+"</span></div>";
     w.hidden=true;
     document.getElementById("basis").textContent = r.n ? "Basis: "+r.n.toLocaleString("de-CH").replace(/,/g,"’")+" aktive Airbnb-Inserate in "+r.name+", Ø Nachtpreis "+chf(r.adr)+", Ø Auslastung "+Math.round(r.occ*100)+" %." : "Basis: Durchschnitt der Airbnb-Inserate in der Zentralschweiz, Ø Nachtpreis "+chf(r.adr)+", Ø Auslastung "+Math.round(r.occ*100)+" %.";
   }

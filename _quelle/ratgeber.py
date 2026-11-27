@@ -60,7 +60,7 @@ ARTICLES = [
 <tr><td><a href="../airbnb-oder-booking/">Plattformgebühr</a> 15,5 %</td><td class="n">− CHF 8'357</td></tr>
 <tr><td><b>Bleibt nach Plattformgebühr</b></td><td class="n"><b>CHF 45'558</b></td></tr>
 </tbody></table></div>
-<p>Wer selbst vermietet, behält diesen Betrag und macht die Arbeit selbst. Mit unserem Komplett-Paket (21 %) bleiben CHF 35'991 pro Jahr, also rund CHF 3'000 pro Monat. Die Reinigung deckt die Reinigungsgebühr, die der Gast zusätzlich bezahlt.</p>
+<p>Wer selbst vermietet, behält diesen Betrag und macht die Arbeit selbst. Mit einer Verwaltung geht davon die Provision ab, dafür sind Inserat, Gäste, Reinigung und Kontrolle organisiert. Die Reinigung deckt die Reinigungsgebühr, die der Gast zusätzlich bezahlt.</p>
 
 <h2>Was Sie vom Ertrag noch abziehen müssen</h2>
 <ul>
@@ -173,7 +173,7 @@ ARTICLES = [
 
 <h2>Was eine Verwaltung kostet</h2>
 <p>Marktüblich sind in der Schweiz 15 bis 25 Prozent. Die Zahl allein sagt wenig. Fragen Sie immer nach der Berechnungsgrundlage: Wird der Prozentsatz vor oder nach Abzug der <a href="../airbnb-oder-booking/">Plattformgebühr</a> gerechnet? Zählt die Reinigungsgebühr dazu?</p>
-<p>Ein Beispiel mit unseren Konditionen: Nach der Plattformgebühr bleiben in Grindelwald <a href="../ferienwohnung-vermieten-ertrag/">rund CHF 45'558 pro Jahr</a>. Davon gehen im Komplett-Paket 21 % an uns, also CHF 9'567. Bei Ihnen bleiben CHF 35'991. Reinigung, Wäsche, Anreise und Kontrolle sind darin organisiert.</p>
+<p>Ein Beispiel: Nach der Plattformgebühr bleiben in Grindelwald <a href="../ferienwohnung-vermieten-ertrag/">rund CHF 45'558 pro Jahr</a>. Davon geht bei einer Verwaltung die Provision ab. Dafür sind Reinigung, Wäsche, Anreise und Kontrolle organisiert. Was das bei Ihrer Wohnung ausmacht, rechnen wir Ihnen in der kostenlosen Prüfung aus.</p>
 
 <h2>Wann sich selbst vermieten lohnt</h2>
 <ul>
@@ -201,9 +201,9 @@ ARTICLES = [
 <li>Wie lange ist die Kündigungsfrist?</li>
 <li>Was steht im Monatsbericht?</li>
 </ol>
-<p>Unsere Antworten: Wir rechnen auf den Übernachtungsumsatz nach Plattformgebühr. Es gibt keine Einrichtungsgebühr und keine Kosten bei Leerstand. Die Konten bleiben Ihre, die Plattform zahlt direkt an Sie aus, und die Kündigungsfrist beträgt 3 Monate. <a href="../../#preise">Alle Konditionen</a></p>
+<p>Unsere Antworten: Es gibt keine Einrichtungsgebühr und keine Kosten bei Leerstand. Die Konten bleiben Ihre, die Plattform zahlt direkt an Sie aus, und die Kündigungsfrist beträgt 3 Monate. <a href="../../#preise">Alle Konditionen</a></p>
 """,
- "faq": [("Was kostet eine Airbnb-Verwaltung in der Schweiz?", "Marktüblich sind 15 bis 25 Prozent. Wichtig ist die Berechnungsgrundlage. Alpinhost verlangt 18 % im Basis-Paket und 21 % im Komplett-Paket, gerechnet auf den Übernachtungsumsatz nach Plattformgebühr."),
+ "faq": [("Was kostet eine Airbnb-Verwaltung in der Schweiz?", "Marktüblich sind 15 bis 25 Prozent. Wichtig ist die Berechnungsgrundlage. Bei Alpinhost erhalten Sie Ihr Angebot nach der kostenlosen Prüfung Ihrer Wohnung. Es gibt keine Einrichtungsgebühr und keine Kosten bei Leerstand."),
          ("Wem gehört das Inserat, wenn eine Verwaltung es führt?", "Das ist je nach Anbieter verschieden. Fragen Sie vor Vertragsabschluss danach. Bei Alpinhost bleiben Inserate und Konten beim Eigentümer.")],
  "sources": [("GuestFavorites: Airbnb-Auslastung in Grindelwald, Stand November 2026", "https://www.guestfavorites.com/airbnb-occupancy-rates-by-city-in-switzerland"),
              ("Alpinhost: Konditionen", "https://alpinhost.ch/#preise")],
@@ -1273,8 +1273,7 @@ def build_ratgeber():
       <p style="color:var(--muted);font-size:15px">Der Rechner nutzt echte Marktdaten von 24 Schweizer Orten.</p>
       <a class="btn btn-primary" href="{root}#rechner">Ertrag berechnen</a>
       <a class="btn btn-ghost" href="{root}#kontakt">Wohnung kostenlos prüfen lassen</a>
-      <div class="price-mini"><span>Basis</span><b>18 %</b></div>
-      <div class="price-mini"><span>Komplett, inkl. Reinigung</span><b>21 %</b></div>
+      <div class="price-mini"><span>Basis oder Komplett</span><b>Auf Anfrage</b></div>
       <p style="font-size:14px;color:var(--muted)">WhatsApp und Telefon: <b style="white-space:nowrap">{PHONE}</b><br>E-Mail: <a href="mailto:info@alpinhost.ch" style="color:inherit;font-weight:600">info@alpinhost.ch</a></p>
     </div>
   </div>

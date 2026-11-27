@@ -138,7 +138,7 @@ REGIONS = {
  "grindelwald": dict(
    slug="airbnb-verwaltung-grindelwald", name="Grindelwald",
    title="Airbnb-Verwaltung Grindelwald | Wohnung vermieten | Alpinhost",
-   desc="Wir vermieten und betreuen Ihre Ferienwohnung in Grindelwald auf Airbnb und Booking.com. Vor Ort im Dorf. 18 % oder 21 %, keine Einrichtungsgebühr.",
+   desc="Wir vermieten und betreuen Ihre Ferienwohnung in Grindelwald auf Airbnb und Booking.com. Vor Ort im Dorf. Keine Einrichtungsgebühr.",
    h1="Airbnb-Verwaltung in Grindelwald",
    lead="Wir wohnen in Grindelwald und kümmern uns um Ihre Ferienwohnung, als wäre es unsere eigene: Inserat, Preise, Gäste, Reinigung und Abrechnung.",
    photo=("grindelwald-eiger", "Chalets im Dorf Grindelwald, dahinter der Eiger", (1600,1068)),
@@ -154,7 +154,7 @@ REGIONS = {
  "interlaken": dict(
    slug="airbnb-verwaltung-interlaken", name="Interlaken",
    title="Airbnb-Verwaltung Interlaken | Wohnung vermieten | Alpinhost",
-   desc="Ferienwohnung in Interlaken, Wilderswil oder am Brienzersee professionell vermieten. Airbnb und Booking.com, Reinigung, Gäste. 18 % oder 21 %.",
+   desc="Ferienwohnung in Interlaken, Wilderswil oder am Brienzersee professionell vermieten. Airbnb und Booking.com, Reinigung, Gäste. Keine Einrichtungsgebühr.",
    h1="Airbnb-Verwaltung in Interlaken",
    lead="Interlaken ist das Tor zur Jungfrau Region. Wir vermieten Ihre Wohnung an die Gäste, die von hier aus die Berge entdecken, und kümmern uns um alles dazwischen.",
    photo=("interlaken-harder-kulm", "Blick vom Harder Kulm auf Interlaken, den Thunersee und die Berge", (1600,1067)),
@@ -199,7 +199,7 @@ REGIONS = {
  "bern": dict(
    slug="airbnb-verwaltung-bern", name="Bern",
    title="Airbnb-Verwaltung Bern | Wohnung vermieten | Alpinhost",
-   desc="Wohnung in Bern oder Thun auf Airbnb und Booking.com vermieten lassen. Inserat, Preise, Gäste, Reinigung und Abrechnung. 18 % oder 21 %.",
+   desc="Wohnung in Bern oder Thun auf Airbnb und Booking.com vermieten lassen. Inserat, Preise, Gäste, Reinigung und Abrechnung. Keine Einrichtungsgebühr.",
    h1="Airbnb-Verwaltung in Bern",
    lead="Bern zieht Städtereisende, Geschäftsgäste und Besucher an, die von hier ins Berner Oberland fahren. Wir vermieten Ihre Wohnung an genau diese Gäste.",
    photo=("bern-altstadt-aare", "Altstadt von Bern mit Münster an der Aare", (1600,1063)),
@@ -270,10 +270,9 @@ ORG = {
   "areaServed":[{"@type":"Country","name":"Schweiz"},{"@type":"Place","name":"Jungfrau Region"},{"@type":"City","name":"Grindelwald"},{"@type":"City","name":"Interlaken"},{"@type":"City","name":"Lauterbrunnen"},{"@type":"City","name":"Wengen"},{"@type":"City","name":"Luzern"},{"@type":"City","name":"Bern"}],
   "knowsLanguage":["de","en","fr","it","es"],
   "makesOffer":[
-    {"@type":"Offer","name":"Basis","description":"18 % vom Übernachtungsumsatz nach Plattformgebühr. Inserat, Preise, Gästebetreuung, Monatsbericht.","itemOffered":{"@type":"Service","name":"Airbnb-Verwaltung Basis"}},
-    {"@type":"Offer","name":"Komplett","description":"21 % vom Übernachtungsumsatz nach Plattformgebühr. Alles inklusive Reinigung, Wäsche, Check-in und Kontrolle.","itemOffered":{"@type":"Service","name":"Airbnb-Verwaltung Komplett"}}
-  ],
-  "priceRange":"18 % – 21 % Provision"
+    {"@type":"Offer","name":"Basis","description":"Inserat, Preise, Gästebetreuung, Monatsbericht.","itemOffered":{"@type":"Service","name":"Airbnb-Verwaltung Basis"}},
+    {"@type":"Offer","name":"Komplett","description":"Alles inklusive Reinigung, Wäsche, Check-in und Kontrolle.","itemOffered":{"@type":"Service","name":"Airbnb-Verwaltung Komplett"}}
+  ]
 }
 
 FAQ_NAV = re.findall(r'<details id="(frage-\d+)"><summary>(.*?)</summary>', src)
@@ -285,7 +284,7 @@ def nav_html(root, home=False):
         subs = "".join(f'<a href="{h}">{t}</a>' for t, h in items)
         return f'<div class="mi"{extra}><a class="mt" href="{href}">{label}{chev}</a><div class="sub"><div>{subs}</div></div></div>'
     leist = [("Inserat und Fotos","#l-inserat"),("Preise jeden Tag","#l-preise"),("Gäste rund um die Uhr","#l-gaeste"),("Check-in ohne Schlüsselübergabe","#l-checkin"),("Reinigung und Wäsche","#l-reinigung"),("Abrechnung und Bericht","#l-bericht")]
-    preise = [("Basis 18 %","#p-basis"),("Komplett 21 %","#p-komplett"),("Eine Buchung, offen gerechnet.","#p-beispiel")]
+    preise = [("Basis","#p-basis"),("Komplett","#p-komplett")]
     regs = [((r["name"][0].upper()+r["name"][1:]), f'{root}{r["slug"]}/') for r in REGIONS.values()]
     cats = []
     for art in ARTICLES:
@@ -449,7 +448,7 @@ assert len(faqs) >= 6, "FAQ der Startseite nicht gefunden"
 FAQ = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":re.sub("<[^>]+>","",a)}} for q,a in faqs]}
 WEB = {"@context":"https://schema.org","@type":"WebSite","name":"Alpinhost","url":DOMAIN+"/","inLanguage":"de-CH","publisher":{"@id":DOMAIN+"/#org"}}
 home_title = "Airbnb-Verwaltung Schweiz – Ferienwohnung vermieten | Alpinhost"
-home_desc = "Wir vermieten und betreuen Ihre Ferienwohnung auf Airbnb und Booking.com. Ganze Schweiz, vor Ort in Jungfrau Region, Bern und Innerschweiz. 18 % oder 21 %."
+home_desc = "Wir vermieten und betreuen Ihre Ferienwohnung auf Airbnb und Booking.com. Ganze Schweiz, vor Ort in Jungfrau Region, Bern und Innerschweiz."
 write("index.html", page_shell(head(home_title, home_desc, "", "", [ORG, WEB, FAQ]), body, "", home=True, credits=RG_HOME_CREDITS))
 
 # ---------- region pages
@@ -461,7 +460,7 @@ for key, r in REGIONS.items():
         {"@type":"ListItem","position":2,"name":r["h1"],"item":DOMAIN+"/"+url}]}
     svc = {"@context":"https://schema.org","@type":"Service","name":r["h1"],"serviceType":"Ferienwohnungs-Management, Airbnb-Verwaltung",
            "provider":{"@id":DOMAIN+"/#org"},"areaServed":{"@type":"Place","name":r["name"]},"url":DOMAIN+"/"+url,
-           "offers":[{"@type":"Offer","name":"Basis","description":"18 % vom Übernachtungsumsatz nach Plattformgebühr"},{"@type":"Offer","name":"Komplett","description":"21 % vom Übernachtungsumsatz nach Plattformgebühr"}]}
+           "offers":[{"@type":"Offer","name":"Basis","description":"Inserat, Preise, Gästebetreuung, Monatsbericht"},{"@type":"Offer","name":"Komplett","description":"Alles inklusive Reinigung, Wäsche, Check-in und Kontrolle"}]}
     secs = "".join(f"<h2>{h}</h2><p>{t}</p>" for h, t in r["body"])
     p2 = ""
     if r["photo2"]:
@@ -478,7 +477,7 @@ for key, r in REGIONS.items():
       <h1 style="margin-top:14px">{r['h1']}</h1>
       <p class="lead" style="margin-top:18px">{r['lead']}</p>
       <div class="terms num" aria-label="Konditionen auf einen Blick">
-        <div><span>Provision</span><b>18 % oder 21 %</b></div>
+        <div><span>Kosten</span><b>Nur bei Buchung</b></div>
         <div><span>Einrichtungsgebühr</span><b>CHF 0</b></div>
         <div><span>Bei Leerstand</span><b>CHF 0</b></div>
         <div><span>Kündigungsfrist</span><b>3 Monate</b></div>
@@ -496,11 +495,10 @@ for key, r in REGIONS.items():
     </div>
     <div class="sidecard">
       <p class="eyebrow">Konditionen</p>
-      <div class="price-mini"><span>Basis</span><b>18 %</b></div>
-      <div class="price-mini"><span>Komplett, inkl. Reinigung</span><b>21 %</b></div>
+      <div class="price-mini"><span>Basis oder Komplett</span><b>Auf Anfrage</b></div>
       <div class="price-mini"><span>Einrichtungsgebühr</span><b>CHF 0</b></div>
       <div class="price-mini"><span>Kündigungsfrist</span><b>3 Monate</b></div>
-      <p style="color:var(--muted);font-size:14.5px">Gerechnet auf den Übernachtungsumsatz nach Plattformgebühr. Bei Leerstand zahlen Sie nichts.</p>
+      <p style="color:var(--muted);font-size:14.5px">Ihr Angebot erhalten Sie nach der kostenlosen Prüfung. Bei Leerstand zahlen Sie nichts.</p>
       <a class="btn btn-primary" href="{root}#kontakt">Kostenlos prüfen lassen</a>
       <p style="font-size:14px;color:var(--muted)">WhatsApp und Telefon: <b style="white-space:nowrap">{PHONE}</b><br>E-Mail: <a href="mailto:info@alpinhost.ch" style="color:inherit;font-weight:600">info@alpinhost.ch</a></p>
     </div>
@@ -587,8 +585,9 @@ llms = f"""# Alpinhost
 > Alpinhost vermietet und betreut Ferienwohnungen auf Airbnb und Booking.com in der ganzen Schweiz. Vor Ort in der Jungfrau Region (Grindelwald, Interlaken, Lauterbrunnen, Wengen, Mürren), in Bern und in der Innerschweiz (Luzern, Vierwaldstättersee). Marke der R&B Digital Market KlG. 10 Jahre Erfahrung mit Airbnb und Kurzzeitvermietung.
 
 ## Konditionen
-- Basis: 18 % vom Übernachtungsumsatz nach Plattformgebühr (Inserat, Preise, Gästebetreuung, Monatsbericht)
-- Komplett: 21 % (zusätzlich Reinigung, Wäsche, Check-in mit Schlüsselbox, Kontrolle, kleine Reparaturen)
+- Basis: Inserat, Preise, Gästebetreuung, Monatsbericht
+- Komplett: zusätzlich Reinigung, Wäsche, Check-in mit Schlüsselbox, Kontrolle, kleine Reparaturen
+- Preis auf Anfrage nach kostenloser Prüfung der Wohnung
 - Keine Einrichtungsgebühr, keine Grundgebühr, bei Leerstand CHF 0, Kündigungsfrist 3 Monate
 - Reinigung wird über die Reinigungsgebühr des Gastes gedeckt und im Komplett-Paket zum Selbstkostenpreis verrechnet
 - Kontakt: WhatsApp und Telefon {PHONE}, E-Mail info@alpinhost.ch, Anfrageformular {DOMAIN}/#kontakt

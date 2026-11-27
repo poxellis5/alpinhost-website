@@ -1,0 +1,119 @@
+de: Kosten
+en: Cost
+fr: Coût
+it: Costi
+es: Coste
+
+de: Nur bei Buchung
+en: Only when booked
+fr: Seulement si réservé
+it: Solo se prenotato
+es: Solo si se reserva
+
+de: Zwei Pakete. Keine Fixkosten.
+en: Two packages. No fixed costs.
+fr: Deux formules. Aucun coût fixe.
+it: Due pacchetti. Nessun costo fisso.
+es: Dos paquetes. Sin costes fijos.
+
+de: Wir verdienen nur, wenn Ihre Wohnung gebucht wird. Ihr persönliches Angebot erhalten Sie nach der kostenlosen Prüfung Ihrer Wohnung.
+en: We only earn when your apartment is booked. You receive your personal offer after the free assessment of your apartment.
+fr: Nous ne gagnons que si votre appartement est réservé. Vous recevez votre offre personnelle après l’évaluation gratuite de votre appartement.
+it: Guadagniamo solo se il vostro appartamento viene prenotato. Ricevete la vostra offerta personale dopo la valutazione gratuita dell’appartamento.
+es: Solo ganamos cuando su apartamento se reserva. Recibe su oferta personal tras la evaluación gratuita de su apartamento.
+
+de: Auf Anfrage
+en: On request
+fr: Sur demande
+it: Su richiesta
+es: A consultar
+
+de: nach kostenloser Prüfung
+en: after a free assessment
+fr: après évaluation gratuite
+it: dopo una valutazione gratuita
+es: tras una evaluación gratuita
+
+de: Geschätzter Mietertrag pro Monat nach Plattformgebühr
+en: Estimated rental income per month after platform fee
+fr: Revenu locatif estimé par mois après frais de plateforme
+it: Ricavo stimato al mese dopo la commissione della piattaforma
+es: Ingresos estimados al mes tras la comisión de la plataforma
+
+de: Gewähltes Paket
+en: Selected package
+fr: Formule choisie
+it: Pacchetto scelto
+es: Paquete elegido
+
+de: Basis oder Komplett
+en: Basic or Complete
+fr: Base ou Complet
+it: Base o Completo
+es: Básico o Completo
+
+de: Ihr Angebot erhalten Sie nach der kostenlosen Prüfung. Bei Leerstand zahlen Sie nichts.
+en: You receive your offer after the free assessment. When the apartment is vacant, you pay nothing.
+fr: Vous recevez votre offre après l’évaluation gratuite. Si l’appartement n’est pas loué, vous ne payez rien.
+it: Ricevete la vostra offerta dopo la valutazione gratuita. Se l’appartamento resta libero, non pagate nulla.
+es: Recibe su oferta tras la evaluación gratuita. Si el apartamento está vacío, no paga nada.
+
+de: Inserat, Preise, Gästebetreuung, Monatsbericht.
+en: Listing, pricing, guest support, monthly report.
+fr: Annonce, prix, accueil des hôtes, rapport mensuel.
+it: Annuncio, prezzi, assistenza ospiti, rapporto mensile.
+es: Anuncio, precios, atención a huéspedes, informe mensual.
+
+de: Alles inklusive Reinigung, Wäsche, Check-in und Kontrolle.
+en: Everything including cleaning, laundry, check-in and inspection.
+fr: Tout compris : ménage, linge, check-in et contrôle.
+it: Tutto incluso: pulizia, biancheria, check-in e controllo.
+es: Todo incluido: limpieza, lavandería, check-in y control.
+
+de: Inserat, Preise, Gästebetreuung, Monatsbericht
+en: Listing, pricing, guest support, monthly report
+fr: Annonce, prix, accueil des hôtes, rapport mensuel
+it: Annuncio, prezzi, assistenza ospiti, rapporto mensile
+es: Anuncio, precios, atención a huéspedes, informe mensual
+
+de: Alles inklusive Reinigung, Wäsche, Check-in und Kontrolle
+en: Everything including cleaning, laundry, check-in and inspection
+fr: Tout compris : ménage, linge, check-in et contrôle
+it: Tutto incluso: pulizia, biancheria, check-in e controllo
+es: Todo incluido: limpieza, lavandería, check-in y control
+
+de: Wir vermieten und betreuen Ihre Ferienwohnung auf Airbnb und Booking.com. Ganze Schweiz, vor Ort in Jungfrau Region, Bern und Innerschweiz.
+en: We let and manage your holiday apartment on Airbnb and Booking.com. All of Switzerland, on site in the Jungfrau Region, Bern and Central Switzerland.
+fr: Nous louons et gérons votre appartement sur Airbnb et Booking.com. Toute la Suisse, sur place dans la région de la Jungfrau, à Berne et en Suisse centrale.
+it: Affittiamo e gestiamo il vostro appartamento su Airbnb e Booking.com. Tutta la Svizzera, sul posto nella regione della Jungfrau, a Berna e in Svizzera centrale.
+es: Alquilamos y gestionamos su apartamento vacacional en Airbnb y Booking.com. Toda Suiza, presentes en la región de Jungfrau, Berna y Suiza central.
+
+de: Wohnung in Bern oder Thun auf Airbnb und Booking.com vermieten lassen. Inserat, Preise, Gäste, Reinigung und Abrechnung. Keine Einrichtungsgebühr.
+en: Let your apartment in Bern or Thun on Airbnb and Booking.com. Listing, pricing, guests, cleaning and statements. No setup fee.
+fr: Faites louer votre appartement à Berne ou Thoune sur Airbnb et Booking.com. Annonce, prix, hôtes, ménage et décompte. Sans frais d’installation.
+it: Fate affittare il vostro appartamento a Berna o Thun su Airbnb e Booking.com. Annuncio, prezzi, ospiti, pulizia e rendiconto. Nessuna tassa di attivazione.
+es: Alquile su apartamento en Berna o Thun en Airbnb y Booking.com. Anuncio, precios, huéspedes, limpieza y liquidación. Sin cuota de alta.
+
+de: Wir vermieten und betreuen Ihre Ferienwohnung in Grindelwald auf Airbnb und Booking.com. Vor Ort im Dorf. Keine Einrichtungsgebühr.
+en: We let and manage your holiday apartment in Grindelwald on Airbnb and Booking.com. On site in the village. No setup fee.
+fr: Nous louons et gérons votre appartement de vacances à Grindelwald sur Airbnb et Booking.com. Sur place au village. Sans frais d’installation.
+it: Affittiamo e gestiamo il vostro appartamento di vacanza a Grindelwald su Airbnb e Booking.com. Sul posto in paese. Nessuna tassa di attivazione.
+es: Alquilamos y gestionamos su apartamento vacacional en Grindelwald en Airbnb y Booking.com. Presentes en el pueblo. Sin cuota de alta.
+
+de: Ferienwohnung in Interlaken, Wilderswil oder am Brienzersee professionell vermieten. Airbnb und Booking.com, Reinigung, Gäste. Keine Einrichtungsgebühr.
+en: Let your holiday apartment in Interlaken, Wilderswil or on Lake Brienz professionally. Airbnb and Booking.com, cleaning, guests. No setup fee.
+fr: Location pro de votre appartement à Interlaken, Wilderswil ou au lac de Brienz. Airbnb et Booking.com, ménage, hôtes. Sans frais d’installation.
+it: Affitto professionale del vostro appartamento a Interlaken, Wilderswil o sul lago di Brienz. Airbnb e Booking.com, pulizia, ospiti. Senza costi iniziali.
+es: Alquile de forma profesional su apartamento en Interlaken, Wilderswil o junto al lago de Brienz. Airbnb y Booking.com, limpieza, huéspedes. Sin cuota de alta.
+
+de: Was kostet Ihre Verwaltung?
+en: What does your management cost?
+fr: Combien coûte votre gestion ?
+it: Quanto costa la vostra gestione?
+es: ¿Cuánto cuesta su gestión?
+
+de: Das hängt von Ort, Grösse und Paket ab. Ihr persönliches Angebot erhalten Sie nach der kostenlosen Prüfung Ihrer Wohnung. Es gibt keine Einrichtungsgebühr, und steht die Wohnung leer, zahlen Sie nichts.
+en: It depends on the location, size and package. You receive your personal offer after the free assessment of your apartment. There is no setup fee, and when the apartment is vacant, you pay nothing.
+fr: Cela dépend du lieu, de la taille et de la formule. Vous recevez votre offre personnelle après l’évaluation gratuite de votre appartement. Il n’y a pas de frais d’installation, et si l’appartement n’est pas loué, vous ne payez rien.
+it: Dipende da luogo, dimensioni e pacchetto. Ricevete la vostra offerta personale dopo la valutazione gratuita dell’appartamento. Non c’è alcuna tassa di attivazione e, se l’appartamento resta libero, non pagate nulla.
+es: Depende de la ubicación, el tamaño y el paquete. Recibe su oferta personal tras la evaluación gratuita de su apartamento. No hay cuota de alta y, si el apartamento está vacío, no paga nada.

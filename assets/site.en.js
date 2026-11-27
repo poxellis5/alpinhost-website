@@ -34,7 +34,7 @@
   function val(name){ var el=document.querySelector('input[name="'+name+'"]:checked'); return el?parseFloat(el.value):0; }
   function calc(){
     var key = document.getElementById("region").value, r = R[key];
-    var i = val("rooms"), c = val("pkg");
+    var i = val("rooms");
     var w = document.getElementById("warn");
     if (!r){
       document.getElementById("res").innerHTML = "Personal estimate";
@@ -47,7 +47,7 @@
     var adr = Math.round(r.adr*SIZE_ADR[i]/5)*5;
     var nights = Math.round(365*occ);
     var gross = nights * adr;
-    var fee = gross*FEE, net = gross-fee, comm = net*c, keep = net-comm;
+    var fee = gross*FEE, net = gross-fee, keep = net;
     var m = keep/12;
     document.getElementById("res").innerHTML = chf(m*0.85) + " – " + chf(m*1.15).replace("CHF ","") + " <small>per month</small>";
     document.getElementById("lines").innerHTML =
@@ -56,8 +56,7 @@
       "<div><span>Average nightly rate</span><span>"+chf(adr)+"</span></div>"+
       "<div><span>Revenue per year</span><span>"+chf(gross)+"</span></div>"+
       "<div><span>Platform fee 15.5 %</span><span>− "+chf(fee).replace("CHF ","")+"</span></div>"+
-      "<div><span>Commission "+Math.round(c*100)+" %</span><span>− "+chf(comm).replace("CHF ","")+"</span></div>"+
-      "<div><span>You keep per year</span><span>"+chf(keep)+"</span></div>";
+      "<div><span>Rental income after platform fee per year</span><span>"+chf(keep)+"</span></div>";
     w.hidden=true;
     document.getElementById("basis").textContent = r.n ? "Based on "+r.n.toLocaleString("de-CH").replace(/,/g,"’")+" active Airbnb listings in "+r.name+", avg. nightly rate "+chf(r.adr)+", avg. occupancy "+Math.round(r.occ*100)+" %." : "Based on the average of Airbnb listings in Central Switzerland, avg. nightly rate "+chf(r.adr)+", avg. occupancy "+Math.round(r.occ*100)+" %.";
   }
