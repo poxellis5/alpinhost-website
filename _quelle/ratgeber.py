@@ -1010,7 +1010,7 @@ ARTICLES = [
 <li><strong>Winter vorbereiten:</strong> Platz für Skis, ein Ort für nasse Schuhe und eine Heizung, die sich aus der Ferne steuern lässt. Mehr dazu im Artikel <a href="../ferienwohnung-winter-vermieten/">Ferienwohnung im Winter vermieten</a>.</li>
 <li><strong>Kalender offen halten:</strong> Wer viele Wochen selbst blockiert, fällt in die Gruppe mit tiefer Auslastung. Eigene Ferien früh eintragen, am besten in der Nebensaison.</li>
 </ul>
-<p>Rechtliche Fragen wie das <a href="../zweitwohnungsgesetz-ferienwohnung/">Zweitwohnungsgesetz</a> oder die <a href="../kurtaxe-ferienwohnung/">Kurtaxe</a> behandeln wir in eigenen Artikeln.</p>
+<p>Rechtliche Fragen wie das <a href="../zweitwohnungsgesetz-ferienwohnung/">Zweitwohnungsgesetz</a>, die <a href="../airbnb-regeln-bewilligung-schweiz/">Regeln und Bewilligungen</a> oder die <a href="../kurtaxe-ferienwohnung/">Kurtaxe</a> behandeln wir in eigenen Artikeln.</p>
 
 <h2>Wie Alpinhost hilft</h2>
 <p>Wir wohnen in Grindelwald und vermieten Ferienwohnungen auf Airbnb und Booking.com: Inserat, Preise nach Saison, Gäste, Reinigung und Abrechnung. Wie viel Ihre Wohnung einbringen kann, sehen Sie im <a href="../../#rechner">Ertragsrechner</a>. Für eine Einschätzung mit Vergleichswohnungen aus Ihrer Nachbarschaft <a href="../../#kontakt">schreiben Sie uns</a>.</p>
