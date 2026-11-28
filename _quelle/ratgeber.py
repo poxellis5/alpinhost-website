@@ -168,7 +168,7 @@ ARTICLES = [
 <p>Dazu kommt die Arbeit im Hintergrund: Preise an Saison und Nachfrage anpassen, Kalender pflegen, Inserat und Fotos aktuell halten.</p>
 
 <h2>Der Aufwand, ehrlich gerechnet</h2>
-<p>Nehmen wir eine Wohnung in Grindelwald mit der <a href="../airbnb-auslastung-schweiz/">durchschnittlichen Auslastung</a> von 72 %. Das sind 263 gebuchte Nächte pro Jahr. Bleiben die Gäste im Schnitt drei Nächte, ergibt das rund 88 Gästewechsel. Die drei Nächte sind eine Annahme, in den Bergen sind kurze Aufenthalte häufig.</p>
+<p>Nehmen wir eine <a href="../ferienwohnung-grindelwald-vermieten/">Wohnung in Grindelwald</a> mit der <a href="../airbnb-auslastung-schweiz/">durchschnittlichen Auslastung</a> von 72 %. Das sind 263 gebuchte Nächte pro Jahr. Bleiben die Gäste im Schnitt drei Nächte, ergibt das rund 88 Gästewechsel. Die drei Nächte sind eine Annahme, in den Bergen sind kurze Aufenthalte häufig.</p>
 <p>88 Wechsel heissen 88 Reinigungen und 88 Anreisen, verteilt über das ganze Jahr, auch an Weihnachten und in Ihren eigenen Ferien.</p>
 
 <h2>Was eine Verwaltung kostet</h2>
